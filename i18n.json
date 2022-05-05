@@ -1,0 +1,13 @@
+{
+  "locales": ["en", "es"],
+  "defaultLocale": "es",
+  "pages": {
+    "*": ["common", "footer", "navbar"],
+    "/": ["home"],
+    "/info": ["info"],
+    "/programa": ["program"],
+    "/artistas": ["artists"],
+    "/talentos": ["talents"],
+    "/contactar": ["contact"]
+  }
+}
