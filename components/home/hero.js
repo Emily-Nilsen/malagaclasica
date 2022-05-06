@@ -34,12 +34,12 @@ export default function Hero() {
                 </div>
                 <div className="relative px-4 sm:px-6 lg:px-8 h-full items-center justify-center flex">
                   <div>
-                    <h1 className="text-center text-6xl font-extrabold tracking-normal sm:text-7xl lg:text-8xl">
+                    <h1 className="text-center text-7xl font-extrabold tracking-normal sm:text-8xl lg:text-9xl">
                       <span className="block text-greyCrescendo">
                         crescendo
                       </span>
                     </h1>
-                    <h2 className="mt-3 max-w-lg mx-auto text-center text-2xl sm:text-3xl lg:text-4xl text-greyCrescendo sm:max-w-3xl">
+                    <h2 className="mt-3 max-w-lg mx-auto text-center text-3xl sm:text-4xl lg:text-5xl text-greyCrescendo sm:max-w-3xl">
                       6__12/6/2022
                     </h2>
                   </div>
@@ -52,58 +52,79 @@ export default function Hero() {
           <div className="bg-greyCrescendo">
             <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
               <p className="text-center text-sm font-semibold uppercase text-coalCrescendo tracking-wide">
-                Organizan y Colobora
+                {t('home:cloud_title')}
               </p>
-              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="/static/ayuntamiento.svg"
-                    alt="Ayuntamiento de Málaga"
-                  />
+              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-8">
+                <div className="col-span-1 flex justify-center md:col-span-1 lg:col-span-2">
+                  <div className="h-12">
+                    <Image
+                      width={200}
+                      height={50}
+                      src="/static/ayuntamiento.svg"
+                      alt="Ayuntamiento de Málaga"
+                    />
+                  </div>
                 </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="/static/malaga-procultura.svg"
-                    alt="Málaga Procultura"
-                  />
+                <div className="col-span-1 flex justify-center md:col-span-1 lg:col-span-2">
+                  <div className="h-12">
+                    <Image
+                      width={200}
+                      height={50}
+                      src="/static/malaga-procultura.svg"
+                      alt="Málaga Procultura"
+                    />
+                  </div>
                 </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="/static/cervantes.svg"
-                    alt="Teatro Cervantes"
-                  />
+                <div className="col-span-1 flex justify-center md:col-span-1 lg:col-span-2">
+                  <div className="h-12">
+                    <Image
+                      width={200}
+                      height={50}
+                      src="/static/cervantes.svg"
+                      alt="Teatro Cervantes"
+                    />
+                  </div>
                 </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="/static/echegaray.svg"
-                    alt="Teatro Echegaray"
-                  />
+                <div className="col-span-1 flex justify-center md:col-span-1 md:col-start-1 lg:col-span-2">
+                  <div className="h-12">
+                    <Image
+                      width={200}
+                      height={50}
+                      src="/static/echegaray.svg"
+                      alt="Teatro Echegaray"
+                    />
+                  </div>
                 </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="/static/aig.svg"
-                    alt="Acadamia Internacional Galamian"
-                  />
+                <div className="col-span-1 flex justify-center md:col-span-1 lg:col-span-2 lg:col-start-2">
+                  <div className="h-12">
+                    <Image
+                      width={200}
+                      height={50}
+                      src="/static/aig.svg"
+                      alt="Acadamia Internacional Galamian"
+                    />
+                  </div>
                 </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="/static/reina-nilsen.svg"
-                    alt="Fundación Reina Nilsen"
-                  />
+                <div className="col-span-1 flex justify-center md:col-span-1 lg:col-span-2">
+                  <div className="h-12">
+                    <Image
+                      width={200}
+                      height={50}
+                      src="/static/reina-nilsen.svg"
+                      alt="Fundación Reina Nilsen"
+                    />
+                  </div>
                 </div>
 
-                <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="/static/la-caixa.svg"
-                    alt="Fundación La Caixa"
-                  />
+                <div className="col-span-2 flex justify-center md:col-span-1 md:col-start-2 lg:col-span-2">
+                  <div className="h-12">
+                    <Image
+                      width={200}
+                      height={50}
+                      src="/static/la-caixa.svg"
+                      alt="Fundación La Caixa"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import Layout from '../components/layout';
 import Hero from '../components/home/hero';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <Layout>
       <div>
         <div className="bg-greyCrescendo">
-          <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto py-10 px-4 sm:py-16 sm:px-6 lg:px-8">
             <div className="text-center">
               <div className="grid grid-cols-3 gap-0 lg:max-w-lg max-w-xs sm:max-w-sm mx-auto">
                 <div className="col-span-1 flex justify-self-end">
@@ -22,7 +24,7 @@ export default function Home() {
                 </div>
                 <div className="col-span-2 flex justify-center items-center">
                   <div>
-                    <p className="text-2xl sm:text-3xl lg:text-4xl font-normal text-coalCrescendo tracking-wide uppercase">
+                    <p className="text-2xl sm:text-3xl lg:text-4xl font-normal text-coalCrescendo tracking-wider uppercase">
                       Málaga Clásica
                     </p>
                   </div>
@@ -31,11 +33,11 @@ export default function Home() {
 
               <div className="w-fit mx-auto border-y border-coalCrescendo">
                 <p className="py-1 px-2 text-xl font-light text-coalCrescendo sm:text-2xl lg:text-3xl">
-                  Festival Internacional de Música de Cámara
+                  {t('home:title')}
                 </p>
               </div>
-              <h3 className="max-w-xl mt-5 mx-auto text-2xl sm:text-3xl lg:text-4xl text-mossCrescendo uppercase">
-                X Aniversario
+              <h3 className="max-w-xl mt-5 mx-auto text-2xl sm:text-3xl lg:text-4xl text-mossCrescendo uppercase tracking-wider">
+                {t('home:subtitle')}
               </h3>
             </div>
           </div>

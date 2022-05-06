@@ -11,11 +11,6 @@ const LanguageSwitcher = () => {
   const { locale, locales, defaultLocale, asPath } = useRouter();
   const { t } = useTranslation();
 
-  // const [showMe, setShowMe] = useState(true);
-  // function toggle() {
-  //   setShowMe(!showMe);
-  // }
-
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
   }
@@ -30,11 +25,15 @@ const LanguageSwitcher = () => {
               <>
                 <Popover.Button
                   className={classNames(
-                    open ? 'text-neutral-700' : 'text-neutral-500',
-                    'group bg-t rounded-none inline-flex items-center text-base font-normal hover:text-neutral-900 focus:outline-none focus:ring-0'
+                    open
+                      ? 'bg-blueCrescendo backdrop-opacity-25'
+                      : 'text-mossCrescendo',
+                    'group bg-t rounded-none inline-flex items-center text-base font-normal hover:text-coalCrescendo focus:outline-none focus:ring-0'
                   )}
                 >
-                  <span>{t('common:button_language')}</span>
+                  <span className="py-2 px-4">
+                    {t('navbar:button_language')}
+                  </span>
                   <ChevronDownIcon
                     className={classNames(
                       open ? 'text-neutral-500' : 'text-neutral-400',
@@ -53,11 +52,11 @@ const LanguageSwitcher = () => {
                   leaveFrom="opacity-100 translate-y-0"
                   leaveTo="opacity-0 translate-y-1"
                 >
-                  <Popover.Panel className="absolute z-10 -translate-x-7 md:translate-x-7 md:right-0">
+                  <Popover.Panel className="block absolute z-10 top-full inset-x-0 transform shadow-none bg-white">
                     <div className="overflow-hidden rounded-none shadow-none ring-0">
                       <div className="relative grid w-full gap-0 px-4 py-6 bg-neutral-50 sm:gap-0 sm:pr-8">
                         <Popover.Button>
-                          <button className="px-4 py-2 mt-6 transition duration-200 ease-in-out hover:text-neutral-900 hover:bg-neutral-100">
+                          <button className="px-4 py-2 transition duration-200 ease-in-out hover:text-neutral-900 hover:bg-neutral-100">
                             <Link
                               activeClassName={locale === 'en'}
                               href={asPath}
@@ -86,21 +85,6 @@ const LanguageSwitcher = () => {
             )}
           </Popover>
         </Popover.Group>
-
-        {/* <button
-          onClick={toggle}
-          className="px-2 transition duration-200 ease-in-out hover:text-neutral-900"
-        >
-          {showMe ? (
-            <Link activeClassName={locale === 'es'} href={asPath} locale="es">
-              español
-            </Link>
-          ) : (
-            <Link activeClassName={locale === 'en'} href={asPath} locale="en">
-              English
-            </Link>
-          )}
-        </button> */}
       </div>
     </div>
   );
