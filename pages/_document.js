@@ -10,10 +10,10 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
-          <link rel="icon" href="/vercel.svg" />
+          <link rel="icon" href="/crescendo-grey.svg" />
           <link
             rel="stylesheet"
-            href="https://use.typekit.net/egi6zfi.css"
+            href="https://use.typekit.net/zgi1gdg.css"
           ></link>
         </Head>
         <body>
