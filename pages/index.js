@@ -34,7 +34,7 @@ export default function Home() {
                   Festival Internacional de Música de Cámara
                 </p>
               </div>
-              <h3 className="max-w-xl mt-5 mx-auto text-2xl sm:text-3xl lg:text-4xl text-coalCrescendo uppercase">
+              <h3 className="max-w-xl mt-5 mx-auto text-2xl sm:text-3xl lg:text-4xl text-mossCrescendo uppercase">
                 X Aniversario
               </h3>
             </div>

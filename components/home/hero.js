@@ -2,15 +2,6 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
-// import {
-//   AnnotationIcon,
-//   ChatAlt2Icon,
-//   InboxIcon,
-//   MenuIcon,
-//   QuestionMarkCircleIcon,
-//   XIcon,
-// } from '@heroicons/react/outline';
-// import { ChevronDownIcon } from '@heroicons/react/solid';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -60,43 +51,58 @@ export default function Hero() {
           {/* Logo cloud */}
           <div className="bg-greyCrescendo">
             <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-              <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
-                Trusted by over 5 very average small businesses
+              <p className="text-center text-sm font-semibold uppercase text-coalCrescendo tracking-wide">
+                Organizan y Colobora
               </p>
-              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                   <img
                     className="h-12"
-                    src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                    alt="Tuple"
+                    src="/static/ayuntamiento.svg"
+                    alt="Ayuntamiento de Málaga"
                   />
                 </div>
                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                   <img
                     className="h-12"
-                    src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                    alt="Mirage"
+                    src="/static/malaga-procultura.svg"
+                    alt="Málaga Procultura"
                   />
                 </div>
                 <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                   <img
                     className="h-12"
-                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                    alt="StaticKit"
+                    src="/static/cervantes.svg"
+                    alt="Teatro Cervantes"
                   />
                 </div>
                 <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
                   <img
                     className="h-12"
-                    src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                    alt="Transistor"
+                    src="/static/echegaray.svg"
+                    alt="Teatro Echegaray"
                   />
                 </div>
+                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
+                  <img
+                    className="h-12"
+                    src="/static/aig.svg"
+                    alt="Acadamia Internacional Galamian"
+                  />
+                </div>
+                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
+                  <img
+                    className="h-12"
+                    src="/static/reina-nilsen.svg"
+                    alt="Fundación Reina Nilsen"
+                  />
+                </div>
+
                 <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
                   <img
                     className="h-12"
-                    src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                    alt="Workcation"
+                    src="/static/la-caixa.svg"
+                    alt="Fundación La Caixa"
                   />
                 </div>
               </div>
