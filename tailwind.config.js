@@ -12,6 +12,11 @@ module.exports = {
         coalCrescendo: '#3E5951',
         mossCrescendo: '#658C81',
       },
+      backgroundImage: {
+        'texture-one': "url('/static/crescendo-texture-one.webp')",
+        'texture-two': "url('/static/crescendo-texture-two.webp')",
+        'texture-three': "url('/static/crescendo-texture-three.webp')",
+      },
     },
   },
   plugins: [

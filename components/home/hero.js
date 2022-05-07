@@ -9,7 +9,7 @@ const container = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.25,
+      staggerChildren: 0.2,
     },
   },
 };
@@ -24,7 +24,7 @@ const itemBottom = {
   show: {
     opacity: [0, 0.2, 0.5, 0.8, 1],
     y: 0,
-    transition: { type: 'spring', stiffness: 30, duration: 1.3, delay: 2 },
+    transition: { type: 'spring', stiffness: 30, duration: 1.3, delay: 1.6 },
   },
 };
 
@@ -60,7 +60,6 @@ export default function Hero() {
                 </div>
                 <div className="relative px-4 sm:px-6 lg:px-8 h-full items-center justify-center flex">
                   <div>
-                    {/* <h1 className="text-center text-7xl font-extrabold tracking-normal sm:text-8xl lg:text-9xl"> */}
                     <motion.h1
                       variants={container}
                       initial="hidden"
@@ -73,7 +72,7 @@ export default function Hero() {
                         </motion.span>
                       ))}
                     </motion.h1>
-                    {/* </h1> */}
+
                     <motion.h2
                       variants={itemBottom}
                       initial="hidden"
