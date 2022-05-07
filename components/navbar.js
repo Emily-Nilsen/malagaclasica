@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 import LanguageSwitcher from './language-switcher';
 import { Fragment } from 'react';
@@ -30,49 +32,28 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const { locale, locales, defaultLocale, asPath } = useRouter();
   const { t } = useTranslation();
-  const languages = [
-    {
-      name: 'English',
-      description:
-        'Get a better understanding of where your traffic is coming from.',
-      href: '#',
-      icon: 'EN',
-    },
-    {
-      name: 'español',
-      description: 'Speak directly to your customers in a more meaningful way.',
-      href: '#',
-      icon: 'ES',
-    },
+
+  const firstConcerts = [
+    { name: 'Anacrusa', href: '#', date: '06' },
+    { name: 'Crescendo', href: '#', date: '07' },
+    { name: 'Equilibrio', href: '#', date: '08' },
+    { name: 'Diversión', href: '#', date: '09' },
   ];
-  const callsToAction = [
-    { name: 'Watch Demo', href: '#', icon: PlayIcon },
-    { name: 'View All Products', href: '#', icon: CheckCircleIcon },
-    { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+  const lastConcerts = [
+    { name: 'Simbiosis', href: '#', date: '10' },
+    { name: 'Virtuosismo', href: '#', date: '11' },
+    { name: 'Fortísimo', href: '#', date: '12' },
   ];
-  const company = [
-    { name: 'About', href: '#', icon: InformationCircleIcon },
-    { name: 'Customers', href: '#', icon: OfficeBuildingIcon },
-    { name: 'Press', href: '#', icon: NewspaperIcon },
-    { name: 'Careers', href: '#', icon: BriefcaseIcon },
-    { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
-  ];
-  const resources = [
-    { name: 'Community', href: '#', icon: UserGroupIcon },
-    { name: 'Partners', href: '#', icon: GlobeAltIcon },
-    { name: 'Guides', href: '#', icon: BookmarkAltIcon },
-    { name: 'Webinars', href: '#', icon: DesktopComputerIcon },
-  ];
-  const blogPosts = [
+  const concertPreviews = [
     {
       id: 1,
       name: 'Boost your conversion rate',
       href: '#',
       preview:
         'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-      imageUrl:
-        'https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80',
+      imageUrl: '/static/crescendo-img-08-thumbnail.webp',
     },
     {
       id: 2,
@@ -80,10 +61,18 @@ export default function Navbar() {
       href: '#',
       preview:
         'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-      imageUrl:
-        'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80',
+      imageUrl: '/static/crescendo-img-12-thumbnail.webp',
     },
   ];
+  const mobileLinks = [
+    { name: `${t('navbar:link_home')}`, href: '/' },
+    { name: `${t('navbar:link_info')}`, href: '/info' },
+    { name: `${t('navbar:link_programa')}`, href: '/programa' },
+    { name: `${t('navbar:link_artistas')}`, href: '/artistas' },
+    { name: `${t('navbar:link_talentos')}`, href: '/talentos' },
+    { name: `${t('navbar:link_contactar')}`, href: '/contactar' },
+  ];
+
   return (
     <Popover className="relative bg-greyCrescendo">
       <div
@@ -91,7 +80,7 @@ export default function Navbar() {
         aria-hidden="true"
       />
       <div className="relative z-20">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-2 py-5 sm:px-4 sm:py-4 lg:px-8 md:justify-start md:space-x-8">
           <Link href="/" passHref>
             <a className="flex">
               <span className="sr-only">Málaga Clásica</span>
@@ -109,15 +98,14 @@ export default function Navbar() {
           </Link>
 
           <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-greyCrescendo rounded-none p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="bg-greyCrescendo rounded-md p-2 inline-flex items-center justify-center text-mossCrescendo hover:text-coalCrescendo hover:bg-white focus:outline-none focus:ring-0 transition duration-200 ease-in-out">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10 justify-between">
-              {/* <div className="flex"> */}
-              <div className="flex space-x-10">
+              <div className="flex md:space-x-7 lg:space-x-10">
                 <Link href="/info" passHref>
                   <a className="text-base font-medium text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
                     {t('navbar:link_info')}
@@ -162,42 +150,48 @@ export default function Navbar() {
                             <nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                               <div>
                                 <h3 className="text-sm font-medium tracking-wide text-mossCrescendo uppercase">
-                                  Company
+                                  Concerts by date
                                 </h3>
                                 <ul role="list" className="mt-5 space-y-6">
-                                  {company.map((item) => (
+                                  {firstConcerts.map((item) => (
                                     <li key={item.name} className="flow-root">
-                                      <a
-                                        href={item.href}
-                                        className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
-                                      >
-                                        <item.icon
-                                          className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
-                                          aria-hidden="true"
-                                        />
-                                        <span className="ml-4 text-coalCrescendo">
-                                          {item.name}
-                                        </span>
-                                      </a>
+                                      <Popover.Button>
+                                        <Link href={item.href} passHref>
+                                          <a className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                            <p
+                                              className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
+                                              aria-hidden="true"
+                                            >
+                                              {item.date}
+                                            </p>
+
+                                            <span className="ml-4 text-coalCrescendo">
+                                              {item.name}
+                                            </span>
+                                          </a>
+                                        </Link>
+                                      </Popover.Button>
                                     </li>
                                   ))}
                                 </ul>
                               </div>
                               <div>
-                                <h3 className="text-sm font-medium tracking-wide text-mossCrescendo uppercase">
-                                  Resources
+                                <h3 className="opacity-0 text-sm font-medium tracking-wide text-mossCrescendo uppercase">
+                                  concerts
                                 </h3>
                                 <ul role="list" className="mt-5 space-y-6">
-                                  {resources.map((item) => (
+                                  {lastConcerts.map((item) => (
                                     <li key={item.name} className="flow-root">
                                       <a
                                         href={item.href}
                                         className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
                                       >
-                                        <item.icon
+                                        <p
                                           className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
                                           aria-hidden="true"
-                                        />
+                                        >
+                                          {item.date}
+                                        </p>
                                         <span className="ml-4 text-coalCrescendo">
                                           {item.name}
                                         </span>
@@ -213,18 +207,21 @@ export default function Navbar() {
                                   From the program
                                 </h3>
                                 <ul role="list" className="mt-6 space-y-6">
-                                  {blogPosts.map((post) => (
+                                  {concertPreviews.map((post) => (
                                     <li key={post.id} className="flow-root">
                                       <a
                                         href={post.href}
                                         className="-m-3 p-3 flex rounded-lg hover:bg-gray-100"
                                       >
                                         <div className="hidden sm:block flex-shrink-0">
-                                          <img
-                                            className="w-32 h-20 object-cover rounded-none"
-                                            src={post.imageUrl}
-                                            alt=""
-                                          />
+                                          <div className="w-32 h-20 object-cover rounded-md overflow-hidden">
+                                            <Image
+                                              width={300}
+                                              height={200}
+                                              src={post.imageUrl}
+                                              alt=""
+                                            />
+                                          </div>
                                         </div>
                                         <div className="w-0 flex-1 sm:ml-8">
                                           <h4 className="text-base font-medium text-mossCrescendo truncate">
@@ -240,14 +237,15 @@ export default function Navbar() {
                                 </ul>
                               </div>
                               <div className="mt-6 text-sm font-medium">
-                                <a
-                                  href="#"
-                                  className="text-greenCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out"
-                                >
-                                  {' '}
-                                  View all concerts{' '}
-                                  <span aria-hidden="true">&rarr;</span>
-                                </a>
+                                <Popover.Button>
+                                  <Link href="/programa" passHref>
+                                    <a className="text-greenCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out">
+                                      {' '}
+                                      View all concerts{' '}
+                                      <span aria-hidden="true">&rarr;</span>
+                                    </a>
+                                  </Link>
+                                </Popover.Button>
                               </div>
                             </div>
                           </div>
@@ -273,7 +271,6 @@ export default function Navbar() {
                   </a>
                 </Link>
               </div>
-              {/* </div> */}
             </Popover.Group>
             <LanguageSwitcher />
           </div>
@@ -294,113 +291,96 @@ export default function Navbar() {
           focus
           className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
         >
-          <div className="rounded-none shadow-none ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-            <div className="pt-5 pb-6 px-5 sm:pb-8">
-              <div className="flex items-center justify-between">
-                <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
-                </div>
-                <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span className="sr-only">Close menu</span>
-                    <XIcon className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
-                </div>
-              </div>
-              <div className="mt-6 sm:mt-8">
-                <nav>
-                  <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
-                    {languages.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
-                      >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                          <item.icon className="h-6 w-6" aria-hidden="true" />
-                        </div>
-                        <div className="ml-4 text-base font-medium text-gray-900">
-                          {item.name}
+          <Popover.Button className="w-full">
+            <div className="rounded-none shadow-none ring-1 ring-blueCrescendo ring-opacity-5 bg-white divide-y-2 divide-blueCrescendo">
+              <div className="pt-5 pb-6 px-5 sm:pb-8">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <Link href="/" passHref>
+                      <a className="flex">
+                        <span className="sr-only">Málaga Clásica</span>
+                        <div className="h-1/2 md:h-8 w-auto sm:h-10">
+                          <Image
+                            className="h-1/2 md:h-8 w-auto sm:h-10"
+                            src="/static/logo-moss.svg"
+                            alt="Málaga Clásica Logo"
+                            layout="fixed"
+                            width={150}
+                            height={40}
+                          />
                         </div>
                       </a>
+                    </Link>
+                  </div>
+                  <div className="-mr-2">
+                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-mossCrescendo hover:text-coalCrescendo hover:bg-greyCrescendo focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blueCrescendo transition duration-200 ease-in-out">
+                      <span className="sr-only">Close menu</span>
+                      <XIcon className="h-6 w-6" aria-hidden="true" />
+                    </Popover.Button>
+                  </div>
+                </div>
+                <div className="mt-6 sm:mt-8">
+                  <nav>
+                    <div className="grid gap-3 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4 pb-6">
+                      <button className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md text-white text-xl">
+                          <p
+                            className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
+                            aria-hidden="true"
+                          >
+                            EN
+                          </p>
+                        </div>
+                        <div className="ml-4 text-base font-medium text-mossCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out">
+                          <Link
+                            activeClassName={locale === 'en'}
+                            href={asPath}
+                            locale="en"
+                          >
+                            English
+                          </Link>
+                        </div>
+                      </button>
+
+                      <button className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md text-white text-xl">
+                          <p
+                            className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
+                            aria-hidden="true"
+                          >
+                            ES
+                          </p>
+                        </div>
+                        <div className="ml-4 text-base font-medium text-mossCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out">
+                          <Link
+                            activeClassName={locale === 'es'}
+                            href={asPath}
+                            locale="es"
+                          >
+                            español
+                          </Link>
+                        </div>
+                      </button>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+
+              <div className="text-left">
+                <div className="py-10 px-5 bg-greyCrescendo">
+                  <div className="grid grid-cols-2 gap-6">
+                    {mobileLinks.map((link, i) => (
+                      <Link key={i} href={link.href} passHref>
+                        <a className="rounded-md text-base font-medium text-coalCrescendo hover:text-greenCrescendo transition duration-200 ease-in-out">
+                          {link.name}
+                        </a>
+                      </Link>
                     ))}
                   </div>
-                  <div className="mt-8 text-base">
-                    <a
-                      href="#"
-                      className="font-medium text-indigo-600 hover:text-indigo-500"
-                    >
-                      {' '}
-                      View all products <span aria-hidden="true">&rarr;</span>
-                    </a>
-                  </div>
-                </nav>
+                </div>
               </div>
             </div>
-            <div className="py-6 px-5">
-              <div className="grid grid-cols-2 gap-4">
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Pricing
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Docs
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Company
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Resources
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Blog
-                </a>
-
-                <a
-                  href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Contact Sales
-                </a>
-              </div>
-              <div className="mt-6">
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                >
-                  Sign up
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
+          </Popover.Button>
         </Popover.Panel>
       </Transition>
     </Popover>

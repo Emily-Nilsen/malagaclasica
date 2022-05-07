@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
 
   return (
     <div className="relative flex items-center tracking-wider">
-      <div className="container flex items-center justify-between w-1/5 text-neutral-500 ">
+      <div className="container flex items-center justify-between text-neutral-500 w-1/5">
         {/* Dropdown menu */}
         <Popover.Group as="nav" className="space-x-10 md:flex">
           <Popover className="relative">
@@ -25,15 +25,11 @@ const LanguageSwitcher = () => {
               <>
                 <Popover.Button
                   className={classNames(
-                    open
-                      ? 'bg-blueCrescendo backdrop-opacity-25'
-                      : 'text-mossCrescendo',
-                    'group bg-t rounded-none inline-flex items-center text-base font-normal hover:text-coalCrescendo focus:outline-none focus:ring-0'
+                    open ? 'bg-blueCrescendo' : 'text-mossCrescendo',
+                    'group bg-t rounded-none inline-flex items-center text-base font-normal hover:text-coalCrescendo focus:outline-none focus:ring-0 transition duration-200 ease-in-out py-2 px-4'
                   )}
                 >
-                  <span className="py-2 px-4">
-                    {t('navbar:button_language')}
-                  </span>
+                  <span className="ml-2">{t('navbar:button_language')}</span>
                   <ChevronDownIcon
                     className={classNames(
                       open ? 'text-neutral-500' : 'text-neutral-400',
@@ -53,10 +49,10 @@ const LanguageSwitcher = () => {
                   leaveTo="opacity-0 translate-y-1"
                 >
                   <Popover.Panel className="block absolute z-10 top-full inset-x-0 transform shadow-none bg-white">
-                    <div className="overflow-hidden rounded-none shadow-none ring-0">
+                    <div className="overflow-hidden rounded-md shadow-none ring-0">
                       <div className="relative grid w-full gap-0 px-4 py-6 bg-neutral-50 sm:gap-0 sm:pr-8">
                         <Popover.Button>
-                          <button className="px-4 py-2 transition duration-200 ease-in-out hover:text-neutral-900 hover:bg-neutral-100">
+                          <button className="px-4 py-2 transition duration-200 ease-in-out hover:text-coalCrescendo hover:bg-neutral-100 rounded-md">
                             <Link
                               activeClassName={locale === 'en'}
                               href={asPath}
@@ -67,7 +63,7 @@ const LanguageSwitcher = () => {
                           </button>
                         </Popover.Button>
                         <Popover.Button>
-                          <button className="px-4 py-2 transition duration-200 ease-in-out hover:text-neutral-900 hover:bg-neutral-100">
+                          <button className="px-4 py-2 transition duration-200 ease-in-out hover:text-coalCrescendo hover:bg-neutral-100 rounded-md">
                             <Link
                               activeClassName={locale === 'es'}
                               href={asPath}

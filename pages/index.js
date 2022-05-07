@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Layout from '../components/layout';
 import Hero from '../components/home/hero';
+import Features from '/components/home/features';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
@@ -43,6 +44,7 @@ export default function Home() {
           </div>
         </div>
         <Hero />
+        <Features />
       </div>
     </Layout>
   );

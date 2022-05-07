@@ -2,6 +2,7 @@ const navbar = {
   button_language: `Language`,
 
   // Links
+  link_home: `Home`,
   link_info: `About`,
   link_programa: `Program`,
   link_artistas: `Artists`,
