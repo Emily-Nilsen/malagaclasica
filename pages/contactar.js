@@ -2,8 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import { motion } from 'framer-motion';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Contactar() {
+  const { t } = useTranslation();
   return (
     <div className="relative bg-greyCrescendo">
       <div className="lg:absolute lg:inset-0">
@@ -19,7 +21,7 @@ export default function Contactar() {
         <div className="lg:pr-8">
           <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-coalCrescendo">
-              Let's work together
+              Lets work together
             </h2>
             <p className="mt-4 text-lg text-mossCrescendo sm:mt-3">
               We’d love to hear from you! Send us a message using the form
