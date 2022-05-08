@@ -52,7 +52,7 @@ export default function Hero() {
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
-                      src="/static/crescendo.webp"
+                      src="/static/crescendo.jpg"
                       alt="Crescendo Festival"
                     />
                   </div>

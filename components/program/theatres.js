@@ -3,29 +3,37 @@ import Link from 'next/link';
 import CervantesMap from './cervantes-map';
 import { motion } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
-import { ExternalLinkIcon, MailIcon } from '@heroicons/react/solid';
+import { ExternalLinkIcon, TicketIcon } from '@heroicons/react/solid';
 
 export default function Theatres() {
   const { t } = useTranslation();
-  const features = [
+  const detailsCervantes = [
     {
-      name: 'Sleek design',
-      description:
-        'The machined kettle has a smooth black finish and contemporary shape that stands apart from most plastic appliances.',
+      name: `${t('program:cervantes_address')}`,
+      description: '',
     },
     {
-      name: 'Comfort handle',
-      description: 'Shaped for steady pours and insulated to prevent burns.',
+      name: `${t('program:cervantes_weekday')}`,
+      description: `${t('program:cervantes_week_hours')}`,
     },
     {
-      name: 'One-button control',
-      description:
-        'The one button control has a digital readout for setting temperature and turning the kettle on and off.',
+      name: `${t('program:cervantes_weekend')}`,
+      description: `${t('program:cervantes_weekend_hours')}`,
     },
     {
-      name: 'Long spout',
-      description:
-        "Designed specifically for controlled pour-overs that don't slash or sputter.",
+      name: '',
+      description: `${t('program:holidays')}`,
+    },
+  ];
+
+  const detailsEchegaray = [
+    {
+      name: `${t('program:echegaray_address')}`,
+      description: '',
+    },
+    {
+      name: `${t('program:ticket_hours')}`,
+      description: `${t('program:echegaray_tickets')}`,
     },
   ];
 
@@ -38,21 +46,21 @@ export default function Theatres() {
             <div>
               <div className="border-b border-gray-200 pb-10">
                 <h2 className="font-medium text-mossCrescendo">
-                  Machined Kettle
+                  {t('program:theatre_subtitle')}
                 </h2>
                 <p className="mt-2 text-3xl font-extrabold tracking-tight text-coalCrescendo sm:text-4xl">
-                  Teatro Cervantes
+                  {t('program:theatre_cervantes')}
                 </p>
               </div>
 
               <dl className="mt-10 space-y-10">
-                {features.map((feature) => (
-                  <div key={feature.name}>
-                    <dt className="text-sm font-medium text-coalCrescendo">
-                      {feature.name}
+                {detailsCervantes.map((detail) => (
+                  <div key={detail.name}>
+                    <dt className="text-base font-medium text-coalCrescendo">
+                      {detail.name}
                     </dt>
-                    <dd className="mt-3 text-sm text-mossCrescendo">
-                      {feature.description}
+                    <dd className="mt-3 text-base text-mossCrescendo">
+                      {detail.description}
                     </dd>
                   </div>
                 ))}
@@ -62,8 +70,11 @@ export default function Theatres() {
                   type="button"
                   className="inline-flex items-center px-4 py-2 border border-transparent shadow-none text-sm font-medium rounded-md text-white hover:text-mossCrescendo bg-mossCrescendo hover:bg-greyCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo transition duration-200 ease-in-out"
                 >
-                  <MailIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
-                  Button text
+                  <TicketIcon
+                    className="-ml-1 mr-2 h-5 w-5"
+                    aria-hidden="true"
+                  />
+                  {t('program:buy_tickets')}
                 </button>
               </div>
             </div>
@@ -148,21 +159,21 @@ export default function Theatres() {
             <div>
               <div className="border-b border-gray-200 pb-10">
                 <h2 className="font-medium text-mossCrescendo">
-                  Machined Kettle
+                  {t('program:theatre_subtitle')}
                 </h2>
                 <p className="mt-2 text-3xl font-extrabold tracking-tight text-coalCrescendo sm:text-4xl">
-                  Teatro Echegaray
+                  {t('program:theatre_echegaray')}
                 </p>
               </div>
 
               <dl className="mt-10 space-y-10">
-                {features.map((feature) => (
-                  <div key={feature.name}>
-                    <dt className="text-sm font-medium text-coalCrescendo">
-                      {feature.name}
+                {detailsEchegaray.map((detail) => (
+                  <div key={detail.name}>
+                    <dt className="text-base font-medium text-coalCrescendo">
+                      {detail.name}
                     </dt>
-                    <dd className="mt-3 text-sm text-mossCrescendo">
-                      {feature.description}
+                    <dd className="mt-3 text-base text-mossCrescendo">
+                      {detail.description}
                     </dd>
                   </div>
                 ))}
@@ -172,8 +183,11 @@ export default function Theatres() {
                   type="button"
                   className="inline-flex items-center px-4 py-2 border border-transparent shadow-none text-sm font-medium rounded-md text-white hover:text-mossCrescendo bg-mossCrescendo hover:bg-greyCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo transition duration-200 ease-in-out"
                 >
-                  <MailIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
-                  Button text
+                  <TicketIcon
+                    className="-ml-1 mr-2 h-5 w-5"
+                    aria-hidden="true"
+                  />
+                  {t('program:buy_tickets')}
                 </button>
               </div>
             </div>

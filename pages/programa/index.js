@@ -10,35 +10,52 @@ export default function Programa() {
 
   const posts = [
     {
-      title: 'Boost your conversion rate',
+      title: `${t('program:concert06_title')}`,
       href: '#',
-      description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-      date: 'Mar 16, 2020',
+      description: `${t('program:concert06_preview')}`,
+      date: `${t('program:concert06_date')}${new Date().getFullYear()}`,
       datetime: '2020-03-16',
     },
     {
-      title: 'How to use search engine optimization to drive sales',
+      title: `${t('program:concert07_title')}`,
       href: '#',
-      description:
-        'Optio cum necessitatibus dolor voluptatum provident commodi et. Qui aperiam fugiat nemo cumque.',
-      date: 'Mar 10, 2020',
+      description: `${t('program:concert07_preview')}`,
+      date: `${t('program:concert07_date')}${new Date().getFullYear()}`,
       datetime: '2020-03-10',
     },
     {
-      title: 'Improve your customer experience',
+      title: `${t('program:concert08_title')}`,
       href: '#',
-      description:
-        'Cupiditate maiores ullam eveniet adipisci in doloribus nulla minus. Voluptas iusto libero adipisci rem et corporis.',
-      date: 'Feb 12, 2020',
+      description: `${t('program:concert08_preview')}`,
+      date: `${t('program:concert08_date')}${new Date().getFullYear()}`,
       datetime: '2020-02-12',
     },
     {
-      title: 'Writing effective landing page copy',
+      title: `${t('program:concert09_title')}`,
       href: '#',
-      description:
-        'Ipsum voluptates quia doloremque culpa qui eius. Id qui id officia molestias quaerat deleniti. Qui facere numquam autem libero quae cupiditate asperiores vitae cupiditate. Cumque id deleniti explicabo.',
-      date: 'Jan 29, 2020',
+      description: `${t('program:concert09_preview')}`,
+      date: `${t('program:concert09_date')}${new Date().getFullYear()}`,
+      datetime: '2020-01-29',
+    },
+    {
+      title: `${t('program:concert10_title')}`,
+      href: '#',
+      description: `${t('program:concert10_preview')}`,
+      date: `${t('program:concert10_date')}${new Date().getFullYear()}`,
+      datetime: '2020-01-29',
+    },
+    {
+      title: `${t('program:concert11_title')}`,
+      href: '#',
+      description: `${t('program:concert11_preview')}`,
+      date: `${t('program:concert11_date')}${new Date().getFullYear()}`,
+      datetime: '2020-01-29',
+    },
+    {
+      title: `${t('program:concert12_title')}`,
+      href: '#',
+      description: `${t('program:concert12_preview')}`,
+      date: `${t('program:concert12_date')}${new Date().getFullYear()}`,
       datetime: '2020-01-29',
     },
   ];
@@ -64,13 +81,17 @@ export default function Programa() {
           />
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+          <h2 className="text-base text-greyCrescendo font-normal tracking-wide">
+            {t('program:date_title')}
+            {new Date().getFullYear()}
+          </h2>
           <h1 className="text-4xl font-extrabold text-greyCrescendo sm:text-5xl lg:text-6xl">
-            Program
+            crescendo
           </h1>
           <p className="mt-6 text-xl text-greyCrescendo max-w-3xl">
-            Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque
-            lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut
-            consectetur. Sit justo viverra non adipisicing elit distinctio.
+            {t('program:hero_text_1')}
+            <span className="font-semibold">{t('program:hero_text_2')}</span>
+            {t('program:hero_text_3')}
           </p>
         </div>
       </div>
@@ -78,11 +99,11 @@ export default function Programa() {
         <div className="relative max-w-lg mx-auto divide-y-2 divide-gray-50 lg:max-w-7xl">
           <div>
             <h1 className="text-4xl font-extrabold text-coalCrescendo sm:text-5xl md:text-6xl">
-              Press
+              {t('program:title')}
             </h1>
             <div className="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center">
               <p className="text-xl text-mossCrescendo">
-                Get weekly articles in your inbox on how to grow your business.
+                {t('program:subtitle')}
               </p>
             </div>
           </div>
@@ -105,7 +126,7 @@ export default function Programa() {
                     href={post.href}
                     className="text-base font-semibold text-greenCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out"
                   >
-                    <h2>Read full story</h2>
+                    <h2>{t('program:read_more')}</h2>
                   </a>
                 </div>
               </div>
