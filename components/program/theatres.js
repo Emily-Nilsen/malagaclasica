@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import CervantesMap from './cervantes-map';
+import EchegarayMap from './echegaray-map';
 import { motion } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
-import { ExternalLinkIcon, TicketIcon } from '@heroicons/react/solid';
+import { TicketIcon } from '@heroicons/react/solid';
 
 export default function Theatres() {
   const { t } = useTranslation();
@@ -138,7 +139,7 @@ export default function Theatres() {
               <div className="grid grid-cols-2 gap-4 mt-4 sm:gap-6 sm:mt-6 lg:gap-8 lg:mt-8">
                 {/* Google Map */}
                 <div className="relative h-0 overflow-hidden shadow-none aspect-w-1 aspect-h-1 rounded-lg">
-                  <CervantesMap />
+                  <EchegarayMap />
                 </div>
                 <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden">
                   <div className="w-full h-full object-center object-cover">

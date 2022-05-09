@@ -6,25 +6,7 @@ import useTranslation from 'next-translate/useTranslation';
 import LanguageSwitcher from './language-switcher';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
-import {
-  BookmarkAltIcon,
-  BriefcaseIcon,
-  ChartBarIcon,
-  CheckCircleIcon,
-  CursorClickIcon,
-  DesktopComputerIcon,
-  GlobeAltIcon,
-  InformationCircleIcon,
-  MenuIcon,
-  NewspaperIcon,
-  OfficeBuildingIcon,
-  PhoneIcon,
-  PlayIcon,
-  ShieldCheckIcon,
-  UserGroupIcon,
-  ViewGridIcon,
-  XIcon,
-} from '@heroicons/react/outline';
+import { MenuIcon, CalendarIcon, XIcon } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 
 function classNames(...classes) {
@@ -36,32 +18,65 @@ export default function Navbar() {
   const { t } = useTranslation();
 
   const firstConcerts = [
-    { name: 'Anacrusa', href: '#', date: '06' },
-    { name: 'Crescendo', href: '#', date: '07' },
-    { name: 'Equilibrio', href: '#', date: '08' },
-    { name: 'Diversión', href: '#', date: '09' },
+    {
+      name: `${t('navbar:concert_overview')}`,
+      href: '/programa',
+      date: ``,
+    },
+    {
+      name: `${t('navbar:concert_06')}`,
+      href: `${t('navbar:concert_06_href')}`,
+      date: '06',
+    },
+    {
+      name: `${t('navbar:concert_07')}`,
+      href: `${t('navbar:concert_07_href')}`,
+      date: '07',
+    },
+    {
+      name: `${t('navbar:concert_08')}`,
+      href: `${t('navbar:concert_08_href')}`,
+      date: '08',
+    },
   ];
   const lastConcerts = [
-    { name: 'Simbiosis', href: '#', date: '10' },
-    { name: 'Virtuosismo', href: '#', date: '11' },
-    { name: 'Fortísimo', href: '#', date: '12' },
+    {
+      name: `${t('navbar:concert_09')}`,
+      href: `${t('navbar:concert_09_href')}`,
+      date: '09',
+    },
+    {
+      name: `${t('navbar:concert_10')}`,
+      href: `${t('navbar:concert_10_href')}`,
+      date: '10',
+    },
+    {
+      name: `${t('navbar:concert_11')}`,
+      href: `${t('navbar:concert_11_href')}`,
+      date: '11',
+    },
+    {
+      name: `${t('navbar:concert_12')}`,
+      href: `${t('navbar:concert_12_href')}`,
+      date: '12',
+    },
   ];
   const concertPreviews = [
     {
       id: 1,
-      name: 'Boost your conversion rate',
-      href: '#',
-      preview:
-        'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+      date: `${t('navbar:date_01')}`,
+      name: `${t('navbar:concert_01')}`,
+      href: `${t('navbar:concert_01_href')}`,
+      preview: `${t('navbar:concert_01_preview')}`,
       imageUrl: '/static/crescendo-img-08-thumbnail.webp',
     },
     {
       id: 2,
-      name: 'How to use search engine optimization to drive traffic to your site',
-      href: '#',
-      preview:
-        'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
-      imageUrl: '/static/crescendo-img-12-thumbnail.webp',
+      date: `${t('navbar:date_02')}`,
+      name: `${t('navbar:concert_02')}`,
+      href: `${t('navbar:concert_02_href')}`,
+      preview: `${t('navbar:concert_02_preview')}`,
+      imageUrl: '/static/crescendo-img-07-thumbnail.webp',
     },
   ];
   const mobileLinks = [
@@ -107,7 +122,7 @@ export default function Navbar() {
             <Popover.Group as="nav" className="flex space-x-10 justify-between">
               <div className="flex md:space-x-7 lg:space-x-10">
                 <Link href="/info" passHref>
-                  <a className="text-base font-medium text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                  <a className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
                     {t('navbar:link_info')}
                   </a>
                 </Link>
@@ -120,7 +135,7 @@ export default function Navbar() {
                           'group bg-greyCrescendo rounded-none inline-flex items-center text-base font-medium hover:text-coalCrescendo focus:outline-none focus:ring-0'
                         )}
                       >
-                        <span className="text-base font-medium text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                        <span className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
                           {t('navbar:link_programa')}
                         </span>
                         <ChevronDownIcon
@@ -150,23 +165,30 @@ export default function Navbar() {
                             <nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                               <div>
                                 <h3 className="text-sm font-medium tracking-wide text-mossCrescendo uppercase">
-                                  Concerts by date
+                                  {t('navbar:overview_title')}
                                 </h3>
                                 <ul role="list" className="mt-5 space-y-6">
                                   {firstConcerts.map((item) => (
                                     <li key={item.name} className="flow-root">
                                       <Popover.Button>
                                         <Link href={item.href} passHref>
-                                          <a className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                          <a className="-m-3 p-3 flex items-center rounded-md text-lg font-medium text-coalCrescendo hover:bg-gray-50">
                                             <p
                                               className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
                                               aria-hidden="true"
                                             >
-                                              {item.date}
+                                              {item.date ? (
+                                                item.date
+                                              ) : (
+                                                <CalendarIcon
+                                                  className="h-6 w-6"
+                                                  aria-hidden="true"
+                                                />
+                                              )}
                                             </p>
 
-                                            <span className="ml-4 text-coalCrescendo">
-                                              {item.name}
+                                            <span className="ml-4 text-coalCrescendo text-lg">
+                                              <h1>{item.name}</h1>
                                             </span>
                                           </a>
                                         </Link>
@@ -184,7 +206,7 @@ export default function Navbar() {
                                     <li key={item.name} className="flow-root">
                                       <a
                                         href={item.href}
-                                        className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+                                        className="-m-3 p-3 flex items-center rounded-md text-lg font-medium text-gray-900 hover:bg-gray-50"
                                       >
                                         <p
                                           className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
@@ -192,8 +214,8 @@ export default function Navbar() {
                                         >
                                           {item.date}
                                         </p>
-                                        <span className="ml-4 text-coalCrescendo">
-                                          {item.name}
+                                        <span className="ml-4 text-coalCrescendo text-lg">
+                                          <h1>{item.name}</h1>
                                         </span>
                                       </a>
                                     </li>
@@ -204,7 +226,7 @@ export default function Navbar() {
                             <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
                                 <h3 className="text-sm font-medium tracking-wide text-mossCrescendo uppercase">
-                                  From the program
+                                  {t('navbar:from_program')}
                                 </h3>
                                 <ul role="list" className="mt-6 space-y-6">
                                   {concertPreviews.map((post) => (
@@ -224,9 +246,12 @@ export default function Navbar() {
                                           </div>
                                         </div>
                                         <div className="w-0 flex-1 sm:ml-8">
-                                          <h4 className="text-base font-medium text-mossCrescendo truncate">
+                                          <h2 className="text-coalCrescendo text-sm opacity-75">
+                                            {post.date}
+                                          </h2>
+                                          <h2 className="text-xl font-semibold text-mossCrescendo truncate">
                                             {post.name}
-                                          </h4>
+                                          </h2>
                                           <p className="mt-1 text-sm text-coalCrescendo">
                                             {post.preview}
                                           </p>
@@ -241,7 +266,7 @@ export default function Navbar() {
                                   <Link href="/programa" passHref>
                                     <a className="text-greenCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out">
                                       {' '}
-                                      View all concerts{' '}
+                                      {t('navbar:all_concerts')}{' '}
                                       <span aria-hidden="true">&rarr;</span>
                                     </a>
                                   </Link>
@@ -256,17 +281,17 @@ export default function Navbar() {
                 </Popover>
 
                 <Link href="/artistas" passHref>
-                  <a className="text-base font-medium text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                  <a className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
                     {t('navbar:link_artistas')}
                   </a>
                 </Link>
                 <Link href="/talentos" passHref>
-                  <a className="text-base font-medium text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                  <a className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
                     {t('navbar:link_talentos')}
                   </a>
                 </Link>
                 <Link href="/contactar" passHref>
-                  <a className="text-base font-medium text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                  <a className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
                     {t('navbar:link_contactar')}
                   </a>
                 </Link>
@@ -292,7 +317,7 @@ export default function Navbar() {
           className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
         >
           <Popover.Button className="w-full">
-            <div className="rounded-none shadow-none ring-1 ring-blueCrescendo ring-opacity-5 bg-white divide-y-2 divide-blueCrescendo">
+            <div className="rounded-none shadow-none ring-1 ring-blueCrescendo ring-opacity-5 bg-white divide-y-2 divide-gray-50">
               <div className="pt-5 pb-6 px-5 sm:pb-8">
                 <div className="flex items-center justify-between">
                   <div>
@@ -367,7 +392,7 @@ export default function Navbar() {
               </div>
 
               <div className="text-left">
-                <div className="py-10 px-5 bg-greyCrescendo">
+                <div className="py-10 px-5 bg-gray-50">
                   <div className="grid grid-cols-2 gap-6">
                     {mobileLinks.map((link, i) => (
                       <Link key={i} href={link.href} passHref>
