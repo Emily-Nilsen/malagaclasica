@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Layout from '../components/layout';
 import Hero from '../components/home/hero';
-import Features from '/components/home/features';
+import Features from '../components/home/features';
+import Testimonials from '../components/home/testimonials';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
                   {t('home:title')}
                 </p>
               </div>
-              <h3 className="max-w-xl mt-5 mx-auto text-2xl sm:text-3xl lg:text-4xl text-mossCrescendo uppercase tracking-wider">
+              <h3 className="max-w-xl mt-5 mx-auto text-2xl sm:text-3xl lg:text-4xl text-mossCrescendo uppercase font-bold tracking-wider">
                 {t('home:subtitle')}
               </h3>
             </div>
@@ -45,6 +46,7 @@ export default function Home() {
         </div>
         <Hero />
         <Features />
+        <Testimonials />
       </div>
     </Layout>
   );

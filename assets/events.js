@@ -91,8 +91,8 @@ const events = [
         artist_3: `ANTONIO ORTÍZ piano`,
       },
     ],
-    image: '/static/crescendo-img-10-waves.webp',
-    image_position: `center`,
+    image: '/static/crescendo-img-01-waves.webp',
+    image_position: `top left`,
   },
 
   // Concert 08 June
@@ -124,8 +124,8 @@ const events = [
         artist_4: `JOSU DE SOLAUN piano`,
       },
     ],
-    image: '/static/crescendo-img-01-waves.webp',
-    image_position: `top left`,
+    image: '/static/crescendo-img-10-waves.webp',
+    image_position: `center`,
   },
 
   // Concert 09 June
@@ -393,8 +393,8 @@ const events = [
         artist_3: `ANTONIO ORTÍZ piano`,
       },
     ],
-    image: '/static/crescendo-img-10-waves.webp',
-    image_position: `center`,
+    image: '/static/crescendo-img-01-waves.webp',
+    image_position: `top left`,
   },
 
   // Conciert0 08 de junio
@@ -426,8 +426,8 @@ const events = [
         artist_4: `JOSU DE SOLAUN piano`,
       },
     ],
-    image: '/static/crescendo-img-01-waves.webp',
-    image_position: `top left`,
+    image: '/static/crescendo-img-10-waves.webp',
+    image_position: `center`,
   },
 
   // Conciert0 09 de junio

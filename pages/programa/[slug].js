@@ -36,45 +36,16 @@ const Concert = ({ event }) => {
   const router = useRouter();
   const { t } = useTranslation();
 
-  const details = [
-    {
-      name: `Clara Wieck Schumann`,
-      info: `(1819-1896), Tres romances, Op.22, para violín y piano`,
-      artist01: `ALISSA MARGULIS violín`,
-      artist02: `JULIEN QUENTIN piano`,
-    },
-    {
-      name: `Johannes Brahms`,
-      info: `(1833-1897), Sonata para violín y piano No.1 en sol mayor, Op.78`,
-      artist01: `ANNA MARGRETHE NILSEN violín`,
-      artist02: `ÓSCAR MARTÍN piano`,
-    },
-    {
-      name: `Joseph Joachim`,
-      info: `(1831-1907), Romance, Op.2, No.1, para violín y piano`,
-      artist01: `ALISSA MARGULIS violín`,
-      artist02: `JULIEN QUENTIN piano`,
-    },
-    {
-      name: 'Ludwig van Beethoven',
-      info: `(1770-1827), Cuarteto de cuerda No.10 ‘Cuarteto de las arpas’, Op.74`,
-      artist01: `JESÚS REINA violín`,
-      artist02: `RUMEN CVETKOV viola`,
-      artist03: `ANNA MARGRETHE NILSEN violín`,
-      artist04: `GABRIEL UREÑA violonchelo`,
-    },
-  ];
-
   return (
     <div className="bg-greyCrescendo">
       <section aria-labelledby="details-heading" className="relative">
-        <div className="aspect-w-3 aspect-h-2 overflow-hidden sm:aspect-w-5 lg:aspect-none lg:absolute lg:w-1/2 lg:h-full lg:pr-4 xl:pr-16">
-          <div className="h-full w-full object-center object-cover lg:h-full lg:w-full">
+        <div className="aspect-w-3 aspect-h-2 overflow-hidden sm:aspect-w-5 2xl:aspect-none 2xl:absolute 2xl:w-1/2 2xl:h-full 2xl:pr-4 xl:pr-16">
+          <div className="h-full w-full object-center object-cover 2xl:h-full 2xl:w-full">
             <Image
               src={event.image}
               alt={event.title}
-              width={600}
-              height={500}
+              width={1500}
+              height={1000}
               layout="fill"
               objectFit="cover"
               objectPosition={event.image_position}
@@ -82,8 +53,8 @@ const Concert = ({ event }) => {
           </div>
         </div>
 
-        <div className="max-w-2xl mx-auto pt-16 pb-24 px-4 sm:pb-32 sm:px-6 lg:max-w-7xl lg:pt-32 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
-          <div className="lg:col-start-2">
+        <div className="max-w-2xl mx-auto pt-16 pb-24 px-4 sm:pb-32 sm:px-6 2xl:max-w-7xl 2xl:pt-32 2xl:px-8 2xl:grid 2xl:grid-cols-2 2xl:gap-x-8">
+          <div className="2xl:col-start-2">
             <h2 id="details-heading" className="font-medium text-mossCrescendo">
               {event.date}
             </h2>

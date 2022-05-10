@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
-import LanguageSwitcher from './language-switcher';
+// import LanguageSwitcher from './language';
+import Language from './language';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, CalendarIcon, XIcon } from '@heroicons/react/outline';
@@ -297,7 +298,7 @@ export default function Navbar() {
                 </Link>
               </div>
             </Popover.Group>
-            <LanguageSwitcher />
+            <Language />
           </div>
         </div>
       </div>

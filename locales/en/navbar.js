@@ -10,7 +10,7 @@ const navbar = {
   link_contactar: `Contact`,
 
   // Program-dropdown
-  overview_title: `June 6–12 concerts`,
+  overview_title: `June concerts, 2022`,
   concert_overview: `Overview`,
   concert_06: `ANACRUSA - Opening concert`,
   concert_06_href: `/en/programa/ANACRUSA-Opening-concert`,

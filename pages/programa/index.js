@@ -13,58 +13,6 @@ export default function Programa(props) {
   const { t } = useTranslation();
   const { locale, locales, asPath } = useRouter();
 
-  // const posts = [
-  //   {
-  //     title: `${t('program:concert06_title')}`,
-  //     href: '#',
-  //     description: `${t('program:concert06_preview')}`,
-  //     date: `${t('program:concert06_date')}${new Date().getFullYear()}`,
-  //     datetime: '2020-03-16',
-  //   },
-  //   {
-  //     title: `${t('program:concert07_title')}`,
-  //     href: '#',
-  //     description: `${t('program:concert07_preview')}`,
-  //     date: `${t('program:concert07_date')}${new Date().getFullYear()}`,
-  //     datetime: '2020-03-10',
-  //   },
-  //   {
-  //     title: `${t('program:concert08_title')}`,
-  //     href: '#',
-  //     description: `${t('program:concert08_preview')}`,
-  //     date: `${t('program:concert08_date')}${new Date().getFullYear()}`,
-  //     datetime: '2020-02-12',
-  //   },
-  //   {
-  //     title: `${t('program:concert09_title')}`,
-  //     href: '#',
-  //     description: `${t('program:concert09_preview')}`,
-  //     date: `${t('program:concert09_date')}${new Date().getFullYear()}`,
-  //     datetime: '2020-01-29',
-  //   },
-  //   {
-  //     title: `${t('program:concert10_title')}`,
-  //     href: '#',
-  //     description: `${t('program:concert10_preview')}`,
-  //     date: `${t('program:concert10_date')}${new Date().getFullYear()}`,
-  //     datetime: '2020-01-29',
-  //   },
-  //   {
-  //     title: `${t('program:concert11_title')}`,
-  //     href: '#',
-  //     description: `${t('program:concert11_preview')}`,
-  //     date: `${t('program:concert11_date')}${new Date().getFullYear()}`,
-  //     datetime: '2020-01-29',
-  //   },
-  //   {
-  //     title: `${t('program:concert12_title')}`,
-  //     href: '#',
-  //     description: `${t('program:concert12_preview')}`,
-  //     date: `${t('program:concert12_date')}${new Date().getFullYear()}`,
-  //     datetime: '2020-01-29',
-  //   },
-  // ];
-
   return (
     <Layout>
       <div className="relative bg-white">
