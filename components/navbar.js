@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
-// import LanguageSwitcher from './language';
 import Language from './language';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
@@ -17,7 +16,6 @@ function classNames(...classes) {
 export default function Navbar() {
   const { locale, locales, defaultLocale, asPath } = useRouter();
   const { t } = useTranslation();
-
   const firstConcerts = [
     {
       name: `${t('navbar:concert_overview')}`,

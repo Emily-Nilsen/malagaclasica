@@ -12,6 +12,7 @@ const common = {
   notfound_title_2: 'Creo que estás perdido.',
   notfound_text: 'Parece que la página que estás buscando no existe.',
   button_back: `Volver`,
+  back_artists: `Volver a los artistas`,
 };
 
 export default common;

@@ -9,7 +9,7 @@ import { CameraIcon } from '@heroicons/react/solid';
 export const getStaticProps = async ({ params }) => {
   const slugify = require('slugify');
   const artistslist = artists.filter(
-    (artist) => slugify(artist.name) === params.slug
+    (artist) => slugify(artist.slug_name) === params.slug
   );
   return {
     props: {
@@ -22,7 +22,7 @@ export const getStaticPaths = async () => {
   const slugify = require('slugify');
   const paths = artists.map((artist) => {
     return {
-      params: { slug: slugify(artist.name) },
+      params: { slug: slugify(artist.slug_name) },
       locale: artist.locale,
     };
   });
@@ -48,16 +48,16 @@ const Artist = ({ artist }) => {
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Artist*/}
             <figure>
-              <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+              <div className="aspect-w-12 aspect-h-10 lg:aspect-none overflow-hidden">
                 <div className="rounded-lg shadow-none object-cover object-center overflow-hidden">
                   <Image
                     layout="responsive"
                     objectFit="cover"
-                    objectPosition="center"
-                    src={artist.image}
-                    alt={artist.name}
-                    width={1184}
-                    height={1376}
+                    objectPosition={artist.image_position}
+                    src={artist.image || '/static/cervantes.webp'}
+                    alt={artist.name || ''}
+                    width={800}
+                    height={666}
                   />
                 </div>
               </div>
@@ -80,7 +80,7 @@ const Artist = ({ artist }) => {
             <h1 className="text-4xl text-coalCrescendo font-extrabold tracking-normal sm:text-5xl">
               {artist.name}
             </h1>
-            <h2 className="mt-2 text-lg text-coalCrescendo">
+            <h2 className="mt-2 text-lg text-coalCrescendo capitalize">
               {artist.instrument}
             </h2>
             <div className="mt-6 text-mossCrescendo space-y-6">
@@ -100,7 +100,8 @@ const Artist = ({ artist }) => {
               <Link href="/artistas" passHref>
                 <a className="text-base font-medium text-coalCrescendo hover:text-mossCrescendo transition duration-200 ease-in-out">
                   {' '}
-                  Back to artists <span aria-hidden="true">&rarr;</span>{' '}
+                  {t('common:back_artists')}{' '}
+                  <span aria-hidden="true">&rarr;</span>{' '}
                 </a>
               </Link>
             </div>
@@ -112,30 +113,3 @@ const Artist = ({ artist }) => {
 };
 
 export default Artist;
-
-{
-  /* <figure>
-              <div className="relative pt-64 pb-10 rounded-2xl shadow-none overflow-hidden aspect-w-12 aspect-h-7 lg:aspect-none">
-                <div className="absolute inset-0 h-full w-full object-cover">
-                  <Image
-                    src={artist.image}
-                    alt={artist.name}
-                    width={600}
-                    height={400}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
-                  />
-                </div>
-              </div>
-              <figcaption className="mt-3 flex text-base text-gray-500">
-                <CameraIcon
-                  className="flex-none w-5 h-5 text-gray-400"
-                  aria-hidden="true"
-                />
-                <span className="ml-2">
-                  {artist.name}, {artist.instrument}
-                </span>
-              </figcaption>
-            </figure> */
-}

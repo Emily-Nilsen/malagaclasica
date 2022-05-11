@@ -12,6 +12,7 @@ const common = {
   notfound_title_2: 'I think you’re lost.',
   notfound_text: "It looks like the page you’re looking for doesn't exist.",
   button_back: `Go back`,
+  back_artists: `Back to artists`,
 };
 
 export default common;
