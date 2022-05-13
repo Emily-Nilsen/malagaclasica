@@ -50,6 +50,8 @@ const Concert = ({ event }) => {
               objectFit="cover"
               objectPosition={event.image_position}
               priority
+              blurDataURL="/static/data-crescendo.webp"
+              placeholder="blur"
             />
           </div>
         </div>

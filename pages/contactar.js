@@ -20,6 +20,9 @@ export default function Contactar() {
               layout="fill"
               objectFit="cover"
               objectPosition="bottom"
+              priority
+              blurDataURL="/static/data-crescendo.webp"
+              placeholder="blur"
             />
           </div>
         </div>

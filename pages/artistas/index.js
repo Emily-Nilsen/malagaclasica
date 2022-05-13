@@ -25,6 +25,9 @@ export default function Artistas(props) {
               layout="fill"
               objectFit="cover"
               objectPosition="top"
+              priority
+              blurDataURL="/static/data-crescendo.webp"
+              placeholder="blur"
             />
           </div>
           <div

@@ -50,6 +50,9 @@ const Talentos = () => {
               layout="responsive"
               objectFit="cover"
               objectPosition="center"
+              priority
+              blurDataURL="/static/crescendo-img-18-blur.webp"
+              placeholder="blur"
             />
           </div>
           <div className="absolute flex flex-col items-center justify-start w-40 py-8 mx-4 md:w-48 lg:w-72 md:flex-row sm:py-10 md:py-10 xl:py-20 md:mx-8 lg:mx-20 xl:mx-20">

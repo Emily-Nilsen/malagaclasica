@@ -47,6 +47,9 @@ export default function Info() {
               layout="fill"
               objectFit="cover"
               objectPosition="top"
+              priority
+              blurDataURL="/static/data-crescendo.webp"
+              placeholder="blur"
             />
           </div>
           <div
@@ -107,6 +110,8 @@ export default function Info() {
                         layout="responsive"
                         objectFit="cover"
                         objectPosition="bottom"
+                        blurDataURL="/static/data-crescendo.webp"
+                        placeholder="blur"
                       />
                     </div>
                     <div className="absolute inset-0 overflow-hidden rounded-lg bg-blueCrescendo mix-blend-multiply" />

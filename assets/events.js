@@ -46,7 +46,7 @@ const events = [
         artist_5: `JOSU DE SOLAUN piano`,
       },
     ],
-    image: '/static/crescendo-img-12-waves.jpg',
+    image: '/static/crescendo-img-12-waves.webp',
     image_position: `center`,
   },
 

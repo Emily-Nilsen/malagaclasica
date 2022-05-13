@@ -31,7 +31,7 @@ export default function InfoTalentos() {
             <div className="relative pt-64 pb-10 overflow-hidden shadow-none rounded-2xl">
               <div className="absolute inset-0 object-cover w-full h-full">
                 <Image
-                  src="/static/aig.jpg"
+                  src="/static/aig.webp"
                   alt="Teatro Echegaray"
                   layout="fill"
                   objectFit="cover"
