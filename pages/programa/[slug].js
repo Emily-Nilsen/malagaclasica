@@ -39,8 +39,8 @@ const Concert = ({ event }) => {
   return (
     <div className="bg-greyCrescendo">
       <section aria-labelledby="details-heading" className="relative">
-        <div className="aspect-w-3 aspect-h-2 overflow-hidden sm:aspect-w-5 2xl:aspect-none 2xl:absolute 2xl:w-1/2 2xl:h-full 2xl:pr-4 xl:pr-16">
-          <div className="h-full w-full object-center object-cover 2xl:h-full 2xl:w-full">
+        <div className="overflow-hidden aspect-w-3 aspect-h-2 sm:aspect-w-5 2xl:aspect-none 2xl:absolute 2xl:w-1/2 2xl:h-full 2xl:pr-4 xl:pr-16">
+          <div className="object-cover object-center w-full h-full 2xl:h-full 2xl:w-full">
             <Image
               src={event.image}
               alt={event.title}
@@ -49,23 +49,24 @@ const Concert = ({ event }) => {
               layout="fill"
               objectFit="cover"
               objectPosition={event.image_position}
+              priority
             />
           </div>
         </div>
 
-        <div className="max-w-2xl mx-auto pt-16 pb-24 px-4 sm:pb-32 sm:px-6 2xl:max-w-7xl 2xl:pt-32 2xl:px-8 2xl:grid 2xl:grid-cols-2 2xl:gap-x-8">
+        <div className="max-w-2xl px-4 pt-16 pb-24 mx-auto sm:pb-32 sm:px-6 2xl:max-w-7xl 2xl:pt-32 2xl:px-8 2xl:grid 2xl:grid-cols-2 2xl:gap-x-8">
           <div className="2xl:col-start-2">
             <h2 id="details-heading" className="font-medium text-mossCrescendo">
               {event.date}
             </h2>
-            <h1 className="mt-4 text-4xl font-extrabold text-coalCrescendo tracking-normal">
+            <h1 className="mt-4 text-4xl font-extrabold tracking-normal text-coalCrescendo">
               {event.title}
             </h1>
             <p className="mt-4 text-coalCrescendo opacity-80">
               {event.location}
             </p>
 
-            <dl className="mt-10 grid grid-cols-1 gap-y-10 gap-x-8 text-base sm:grid-cols-2">
+            <dl className="grid grid-cols-1 mt-10 text-base gap-y-10 gap-x-8 sm:grid-cols-2">
               {event.details.map((detail) => (
                 <div key={detail.composer}>
                   <dt className="font-semibold text-coalCrescendo">
@@ -74,13 +75,13 @@ const Concert = ({ event }) => {
                   <dd className="mt-2 text-coalCrescendo opacity-90">
                     {detail.info}
                   </dd>
-                  <dt className="font-semibold text-coalCrescendo mt-4">
+                  <dt className="mt-4 font-semibold text-coalCrescendo">
                     {detail.composer_2}
                   </dt>
                   <dd className="mt-2 text-coalCrescendo opacity-90">
                     {detail.info_2}
                   </dd>
-                  <dt className="font-semibold text-coalCrescendo mt-4">
+                  <dt className="mt-4 font-semibold text-coalCrescendo">
                     {detail.composer_3}
                   </dt>
                   <dd className="mt-2 text-coalCrescendo opacity-90">
@@ -101,7 +102,7 @@ const Concert = ({ event }) => {
                 </div>
               ))}
             </dl>
-            <div className="border-t border-gray-200 pb-10 mt-10">
+            <div className="pb-10 mt-10 border-t border-gray-200">
               <p className="mt-10 text-coalCrescendo opacity-80">
                 {event.preview}
               </p>
@@ -114,16 +115,16 @@ const Concert = ({ event }) => {
               <p className="mt-4 text-coalCrescendo opacity-80">
                 {event.sent_03}
               </p>
-              <h3 className="mt-10 text-coalCrescendo font-bold tracking-normal uppercase text-lg">
-                <span className="text-mossCrescendo font-medium tracking-wide">
+              <h3 className="mt-10 text-lg font-bold tracking-normal uppercase text-coalCrescendo">
+                <span className="font-medium tracking-wide text-mossCrescendo">
                   {t('common:single_ticket')}{' '}
                 </span>
                 {t('common:ticket_cost')}{' '}
-                <span className="text-mossCrescendo font-medium lowercase tracking-normal">
+                <span className="font-medium tracking-normal lowercase text-mossCrescendo">
                   {t('common:no_discounts')}
                 </span>
               </h3>
-              <div className="mt-10 flex">
+              <div className="flex mt-10">
                 <a
                   href="https://teatrocervantes.com/"
                   target="_blank"
@@ -131,18 +132,18 @@ const Concert = ({ event }) => {
                 >
                   <button
                     type="button"
-                    className="inline-flex items-center px-4 py-2 border border-transparent shadow-none text-sm font-medium rounded-md text-white hover:text-coalCrescendo bg-mossCrescendo hover:bg-blueCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo transition duration-200 ease-in-out"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none hover:text-coalCrescendo bg-mossCrescendo hover:bg-blueCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
                   >
                     <TicketIcon
-                      className="-ml-1 mr-2 h-5 w-5"
+                      className="w-5 h-5 mr-2 -ml-1"
                       aria-hidden="true"
                     />
                     {t('common:buy_tickets')}
                   </button>
                 </a>
                 <Link href="/programa" passHref>
-                  <button className="ml-6 inline-flex justify-center py-2 px-4 border border-transparent shadow-none text-sm font-medium rounded-md text-coalCrescendo bg-white hover:bg-blueCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo transition duration-200 ease-in-out">
-                    {t('common:go_back')}
+                  <button className="inline-flex justify-center px-4 py-2 ml-6 text-sm font-medium transition duration-200 ease-in-out bg-white border border-transparent rounded-md shadow-none text-coalCrescendo hover:bg-blueCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo">
+                    {t('common:program')}
                   </button>
                 </Link>
               </div>

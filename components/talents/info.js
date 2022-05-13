@@ -1,13 +1,21 @@
 import Image from 'next/image';
-
-const stats = [
-  { label: 'Masterclasses', value: 'June 6–8' },
-  { label: 'Time', value: '2 p.m.' },
-  { label: 'Concerts', value: 'June 6–8' },
-  { label: 'Time', value: '6 p.m.' },
-];
+import useTranslation from 'next-translate/useTranslation';
 
 export default function InfoTalentos() {
+  const { t } = useTranslation();
+  const stats = [
+    {
+      label: `${t('talents:masterclasses_title')}`,
+      value: `${t('talents:dates')}`,
+    },
+    {
+      label: `${t('talents:time')}`,
+      value: `${t('talents:masterclasses_time')}`,
+    },
+    { label: `${t('talents:concerts_title')}`, value: `${t('talents:dates')}` },
+    { label: `${t('talents:time')}`, value: `${t('talents:concerts_time')}` },
+  ];
+
   return (
     <div className="relative py-16 bg-gray-50 sm:py-24">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
@@ -36,7 +44,7 @@ export default function InfoTalentos() {
                 <blockquote className="mt-8">
                   <footer className="mt-4">
                     <p className="text-lg font-medium text-white">
-                      Galamian International Academy, Málaga
+                      {t('talents:image_title')}
                     </p>
                   </footer>
                 </blockquote>
@@ -49,30 +57,24 @@ export default function InfoTalentos() {
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h2 className="w-full text-4xl font-semibold text-coalCrescendo md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 xl:text-6xl sm:text-5xl">
-              Concerts & masterclasses
+              {t('talents:title_3')}
             </h2>
             <div className="mt-6 space-y-6 text-mossCrescendo">
-              <p className="text-lg">
-                The approximate duration of each concert is 1 hour.
-              </p>
+              <p className="text-lg">{t('talents:para_1')}</p>
               <p className="text-base leading-7">
-                Concerts and masterclasses take place at the{' '}
+                {t('talents:para_7_start')}
                 <a
                   href="https://www.academiagalamian.com/laacademia"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <span className="font-semibold transition duration-300 ease-in-out hover:text-coalCrescendo">
-                    {' '}
-                    Galamian International Academy
+                    {t('talents:para_7_link')}
                   </span>
                 </a>
-                , situated in the Unicaja María Cristina Concert Hall, Málaga.
+                {t('talents:para_7_end')}
               </p>
-              <p className="text-base leading-7">
-                Detailed information about the program and the chosen groups
-                will be published one week before the shows.
-              </p>
+              <p className="text-base leading-7">{t('talents:para_8')}</p>
             </div>
           </div>
 
@@ -98,11 +100,10 @@ export default function InfoTalentos() {
                 href="https://www.academiagalamian.com/laacademia"
                 target="_blank"
                 rel="noreferrer"
-                className="text-base font-medium transition duration-200 ease-in-out text-coalCrescendo hover:text-blueCrescendo"
+                className="text-base font-medium transition duration-200 ease-in-out text-greenCrescendo hover:text-coalCrescendo"
               >
                 {' '}
-                Free entry while seats are available{' '}
-                <span aria-hidden="true">&rarr;</span>{' '}
+                {t('talents:free_entry')} <span aria-hidden="true">&rarr;</span>{' '}
               </a>
             </div>
           </div>

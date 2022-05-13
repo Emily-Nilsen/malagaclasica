@@ -16,7 +16,7 @@ export default function Artistas(props) {
     <Layout>
       <div className="relative bg-white">
         <div className="absolute inset-0">
-          <div className="w-full h-full object-cover">
+          <div className="object-cover w-full h-full">
             <Image
               src="/static/crescendo-footer.webp"
               alt="Málaga Clásica"
@@ -32,24 +32,24 @@ export default function Artistas(props) {
             aria-hidden="true"
           />
         </div>
-        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-extrabold text-greyCrescendo sm:text-6xl lg:text-7xl">
             {t('artists:hero_title')}
           </h1>
-          <p className="mt-6 text-xl text-greyCrescendo max-w-sm">
+          <p className="max-w-sm mt-6 text-xl text-greyCrescendo">
             {t('artists:hero_subtitle')}
           </p>
         </div>
       </div>
 
       <div className="bg-greyCrescendo">
-        <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+        <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12">
             <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-              <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl text-coalCrescendo max-w-sm sm:max-w-lg">
+              <h1 className="max-w-sm text-4xl font-extrabold leading-8 md:text-6xl text-coalCrescendo sm:text-5xl sm:max-w-lg">
                 {t('artists:title')}
               </h1>
-              <p className="text-xl text-mossCrescendo max-w-sm sm:max-w-md">
+              <p className="max-w-sm text-xl text-mossCrescendo sm:max-w-md">
                 {t('artists:subtitle')}
               </p>
             </div>
@@ -65,9 +65,9 @@ export default function Artistas(props) {
                       href={`/artistas/${slugify(artist.slug_name)}`}
                       passHref
                     >
-                      <div className="space-y-4 cursor-pointer group hover:bg-gray-50 p-6 rounded-lg transition duration-300 ease-in-out">
+                      <div className="p-6 space-y-4 transition duration-300 ease-in-out rounded-lg cursor-pointer group hover:bg-gray-50">
                         <div className="aspect-w-3 aspect-h-2">
-                          <div className="object-cover shadow-none rounded-lg overflow-hidden">
+                          <div className="object-cover overflow-hidden rounded-lg shadow-none">
                             <Image
                               layout="fill"
                               objectFit="cover"
@@ -81,11 +81,11 @@ export default function Artistas(props) {
                         </div>
 
                         <div className="space-y-2">
-                          <div className="text-lg leading-6 font-medium space-y-1">
+                          <div className="space-y-1 text-lg font-medium leading-6">
                             <h3 className="text-coalCrescendo">
                               {artist.name}
                             </h3>
-                            <p className="text-mossCrescendo font-normal capitalize">
+                            <p className="font-normal capitalize text-mossCrescendo">
                               {artist.instrument}
                             </p>
                           </div>

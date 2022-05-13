@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Layout from '../components/layout';
 import { motion } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 
 export default function Contactar() {
   const { t } = useTranslation();
@@ -10,35 +11,62 @@ export default function Contactar() {
     <div className="relative bg-greyCrescendo">
       <div className="lg:absolute lg:inset-0">
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
-            className="h-56 w-full object-cover lg:absolute lg:h-full"
-            src="/static/crescendo.webp"
-            alt=""
-          />
+          <div className="relative object-cover w-full h-64 lg:absolute lg:h-full">
+            <Image
+              src="/static/hero-crescendo.webp"
+              alt=""
+              width={2400}
+              height={1500}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="bottom"
+            />
+          </div>
         </div>
       </div>
-      <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
+      <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
         <div className="lg:pr-8">
           <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-coalCrescendo">
-              Lets work together
+            <h2 className="text-5xl font-extrabold tracking-normal sm:text-6xl text-coalCrescendo">
+              {t('contact:title')}
             </h2>
             <p className="mt-4 text-lg text-mossCrescendo sm:mt-3">
-              We’d love to hear from you! Send us a message using the form
-              opposite, or email us. We’d love to hear from you! Send us a
-              message using the form opposite, or email us.
+              {t('contact:subtitle')}
             </p>
+            <dl className="mt-8 text-base transition duration-200 ease-in-out cursor-pointer text-greenCrescendo hover:text-coalCrescendo">
+              <div className="mt-3">
+                <dt className="sr-only">Email</dt>
+                <dd className="flex">
+                  <MailIcon
+                    className="flex-shrink-0 w-6 h-6 text-blueCrescendo"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">malagaclasica@gmail.com</span>
+                </dd>
+              </div>
+            </dl>
+
+            {/* Contact form */}
             <form
               action="#"
+              subject="Festival Málaga Clásica"
+              name="Málaga Clásica"
+              data-netlify="true"
               method="POST"
-              className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+              className="grid grid-cols-1 mt-16 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
             >
+              <input type="hidden" name="form-name" value="Málaga Clásica" />
+              <input
+                type="hidden"
+                name="subject"
+                value="Festival Málaga Clásica"
+              />
               <div>
                 <label
                   htmlFor="first-name"
                   className="block text-sm font-medium text-coalCrescendo"
                 >
-                  First name
+                  {t('contact:first_name')}
                 </label>
                 <div className="mt-1">
                   <input
@@ -46,7 +74,7 @@ export default function Contactar() {
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
-                    className="block w-full shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo rounded-md"
+                    className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
                   />
                 </div>
               </div>
@@ -55,7 +83,7 @@ export default function Contactar() {
                   htmlFor="last-name"
                   className="block text-sm font-medium text-coalCrescendo"
                 >
-                  Last name
+                  {t('contact:surname')}
                 </label>
                 <div className="mt-1">
                   <input
@@ -63,7 +91,7 @@ export default function Contactar() {
                     name="last-name"
                     id="last-name"
                     autoComplete="family-name"
-                    className="block w-full shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo rounded-md"
+                    className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
                   />
                 </div>
               </div>
@@ -72,7 +100,7 @@ export default function Contactar() {
                   htmlFor="email"
                   className="block text-sm font-medium text-coalCrescendo"
                 >
-                  Email
+                  {t('contact:email')}
                 </label>
                 <div className="mt-1">
                   <input
@@ -80,40 +108,24 @@ export default function Contactar() {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    className="block w-full shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo rounded-md"
+                    className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
                   />
                 </div>
               </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="company"
-                  className="block text-sm font-medium text-coalCrescendo"
-                >
-                  Company
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="company"
-                    id="company"
-                    autoComplete="organization"
-                    className="block w-full shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo rounded-md"
-                  />
-                </div>
-              </div>
+
               <div className="sm:col-span-2">
                 <div className="flex justify-between">
                   <label
                     htmlFor="phone"
                     className="block text-sm font-medium text-coalCrescendo"
                   >
-                    Phone
+                    {t('contact:phone')}
                   </label>
                   <span
                     id="phone-description"
                     className="text-sm text-gray-500"
                   >
-                    Optional
+                    {t('contact:optional')}
                   </span>
                 </div>
                 <div className="mt-1">
@@ -123,7 +135,7 @@ export default function Contactar() {
                     id="phone"
                     autoComplete="tel"
                     aria-describedby="phone-description"
-                    className="block w-full shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo rounded-md"
+                    className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
                   />
                 </div>
               </div>
@@ -133,13 +145,13 @@ export default function Contactar() {
                     htmlFor="how-can-we-help"
                     className="block text-sm font-medium text-coalCrescendo"
                   >
-                    How can we help you?
+                    {t('contact:help')}
                   </label>
                   <span
                     id="how-can-we-help-description"
                     className="text-sm text-gray-500"
                   >
-                    Max. 500 characters
+                    {t('contact:max')}
                   </span>
                 </div>
                 <div className="mt-1">
@@ -148,96 +160,18 @@ export default function Contactar() {
                     name="how-can-we-help"
                     aria-describedby="how-can-we-help-description"
                     rows={4}
-                    className="block w-full shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border border-greyCrescendo rounded-md"
+                    className="block w-full border rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
                     defaultValue={''}
                   />
                 </div>
               </div>
-              <fieldset className="sm:col-span-2">
-                <legend className="block text-sm font-medium text-coalCrescendo">
-                  Expected budget
-                </legend>
-                <div className="mt-4 grid grid-cols-1 gap-y-4">
-                  <div className="flex items-center">
-                    <input
-                      id="budget-under-25k"
-                      name="budget"
-                      defaultValue="under_25k"
-                      type="radio"
-                      className="focus:ring-blueCrescendo h-4 w-4 text-indigo-600 border-greyCrescendo"
-                    />
-                    <label htmlFor="budget-under-25k" className="ml-3">
-                      <span className="block text-sm text-coalCrescendo">
-                        Less than $25K
-                      </span>
-                    </label>
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      id="budget-25k-50k"
-                      name="budget"
-                      defaultValue="25k-50k"
-                      type="radio"
-                      className="focus:ring-blueCrescendo h-4 w-4 text-indigo-600 border-greyCrescendo"
-                    />
-                    <label htmlFor="budget-25k-50k" className="ml-3">
-                      <span className="block text-sm text-coalCrescendo">
-                        $25K – $50K
-                      </span>
-                    </label>
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      id="budget-50k-100k"
-                      name="budget"
-                      defaultValue="50k-100k"
-                      type="radio"
-                      className="focus:ring-blueCrescendo h-4 w-4 text-indigo-600 border-greyCrescendo"
-                    />
-                    <label htmlFor="budget-50k-100k" className="ml-3">
-                      <span className="block text-sm text-coalCrescendo">
-                        $50K – $100K
-                      </span>
-                    </label>
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      id="budget-over-100k"
-                      name="budget"
-                      defaultValue="over_100k"
-                      type="radio"
-                      className="focus:ring-blueCrescendo h-4 w-4 text-indigo-600 border-greyCrescendo"
-                    />
-                    <label htmlFor="budget-over-100k" className="ml-3">
-                      <span className="block text-sm text-coalCrescendo">
-                        $100K+
-                      </span>
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="how-did-you-hear-about-us"
-                  className="block text-sm font-medium text-coalCrescendo"
-                >
-                  How did you hear about us?
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="how-did-you-hear-about-us"
-                    id="how-did-you-hear-about-us"
-                    className="shadow-none focus:ring-blueCrescendo focus:border-blueCrescendo block w-full sm:text-sm border-greyCrescendo rounded-md"
-                  />
-                </div>
-              </div>
+
               <div className="text-right sm:col-span-2">
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-2 px-4 border border-transparent shadow-none text-sm font-medium rounded-md text-white bg-mossCrescendo hover:bg-blueCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo transition duration-200 ease-in-out"
+                  className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none bg-mossCrescendo hover:bg-blueCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
                 >
-                  Submit
+                  {t('contact:submit')}
                 </button>
               </div>
             </form>

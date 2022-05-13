@@ -2,6 +2,7 @@ const common = {
   // buttons
   buy_tickets: `Compra entradas`,
   go_back: `Volver`,
+  program: `Programa`,
 
   single_ticket: `Billete sencillo`,
   ticket_cost: `15€`,

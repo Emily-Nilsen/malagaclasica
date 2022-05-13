@@ -33,16 +33,16 @@ export default function Testimonials() {
   ];
   return (
     <div className="py-16 bg-greyCrescendo">
-      <div className="container mx-auto px-4 flex flex-col lg:items-center justify-between lg:flex-row">
+      <div className="container flex flex-col justify-between px-4 mx-auto lg:items-center lg:flex-row">
         <div className="mb-14 xl:mb-0">
-          <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold leading-10 text-coalCrescendo xl:w-2/3 pr-16 lg:pr-0 max-w-sm">
+          <h1 className="max-w-sm pb-2 pr-16 text-2xl font-semibold sm:pb-4 md:text-4xl xl:text-5xl text-coalCrescendo xl:w-2/3 lg:pr-0 ">
             {t('home:testimonials_title')}
           </h1>
-          <p className="mt-4 text-base leading-normal text-mossCrescendo md:w-2/3 lg:w-3/4 pr-16 lg:pr-0">
+          <p className="pr-16 mt-4 text-base leading-normal text-mossCrescendo md:w-2/3 lg:w-3/4 lg:pr-0">
             {t('home:testimonials_text')}
           </p>
           <Link href="/info" passHref>
-            <button className="hidden w-full sm:w-auto mt-12 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo md:flex items-start justify-center sm:justify-start px-8 py-4 bg-mossCrescendo hover:bg-blueCrescendo rounded text-base font-medium leading-none text-center text-white hover:text-coalCrescendo transition duration-200 ease-in-out">
+            <button className="items-start justify-center hidden w-full px-8 py-4 mt-12 text-base font-medium leading-none text-center text-white transition duration-200 ease-in-out rounded sm:w-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo md:flex sm:justify-start bg-mossCrescendo hover:bg-blueCrescendo hover:text-coalCrescendo">
               {t('home:read_about')}
             </button>
           </Link>
@@ -50,13 +50,13 @@ export default function Testimonials() {
         <div
           role="list"
           aria-label="Testimonials"
-          className="xl:w-1/2 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 flex-wrap justify-center items-start"
+          className="grid flex-wrap items-start justify-center gap-6 xl:w-1/2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1"
         >
           {testimonials.map((testimonial, i) => (
             <div
               key={i}
               role="listitem"
-              className="bg-white shadow-none rounded px-4 pt-4 pb-6 xl:p-8"
+              className="px-4 pt-4 pb-6 bg-white rounded shadow-none xl:p-8"
             >
               <div>
                 <Image
@@ -67,7 +67,7 @@ export default function Testimonials() {
                   aria-hidden="true"
                 />
               </div>
-              <div className="pl-4 pt-4 flex items-start justify-between">
+              <div className="flex items-start justify-between pt-4 pl-4">
                 <div className="mr-6">
                   <p className="xl:text-xl xl:leading-loose text-coalCrescendo">
                     {testimonial.quote}
@@ -89,7 +89,7 @@ export default function Testimonials() {
             </div>
           ))}
           <Link href="/info" passHref>
-            <button className="md:hidden w-full sm:w-auto mt-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo flex items-start justify-center sm:justify-start px-8 py-4 bg-mossCrescendo hover:bg-blueCrescendo rounded text-base font-medium leading-none text-center text-white hover:text-coalCrescendo transition duration-200 ease-in-out">
+            <button className="flex items-start justify-center w-full px-8 py-4 mt-4 text-base font-medium leading-none text-center text-white transition duration-200 ease-in-out rounded md:hidden sm:w-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo sm:justify-start bg-mossCrescendo hover:bg-blueCrescendo hover:text-coalCrescendo">
               {t('home:read_about')}
             </button>
           </Link>

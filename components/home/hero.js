@@ -9,6 +9,7 @@ const container = {
   show: {
     opacity: 1,
     transition: {
+      delay: 0.5,
       staggerChildren: 0.2,
     },
   },
@@ -103,7 +104,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:saturate-200">
+                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
                       <Image
                         width={200}
                         height={50}
@@ -119,7 +120,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:saturate-200">
+                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
                       <Image
                         width={200}
                         height={50}
@@ -135,7 +136,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:saturate-200">
+                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
                       <Image
                         width={200}
                         height={50}
@@ -151,7 +152,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:saturate-200">
+                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
                       <Image
                         width={200}
                         height={50}
@@ -167,7 +168,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:saturate-200">
+                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
                       <Image
                         width={200}
                         height={50}
@@ -183,7 +184,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:saturate-200">
+                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
                       <Image
                         width={200}
                         height={50}
@@ -199,7 +200,7 @@ export default function Hero() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:saturate-200">
+                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
                       <Image
                         width={200}
                         height={50}

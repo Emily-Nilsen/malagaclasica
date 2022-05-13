@@ -46,7 +46,7 @@ export default function Theatres() {
           <div className="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
             <div>
               <div className="pb-10 border-b border-gray-200">
-                <h2 className="font-medium text-mossCrescendo">
+                <h2 className="font-medium text-greenCrescendo">
                   {t('program:theatre_subtitle')}
                 </h2>
                 <p className="mt-2 text-3xl font-extrabold tracking-tight text-coalCrescendo sm:text-4xl">
@@ -160,7 +160,7 @@ export default function Theatres() {
 
             <div className="lg:pl-20">
               <div className="pb-10 border-b border-gray-200">
-                <h2 className="font-medium text-mossCrescendo">
+                <h2 className="font-medium text-greenCrescendo">
                   {t('program:theatre_subtitle')}
                 </h2>
                 <p className="mt-2 text-3xl font-extrabold tracking-tight text-coalCrescendo sm:text-4xl">

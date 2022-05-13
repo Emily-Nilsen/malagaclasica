@@ -245,13 +245,13 @@ export default function Navbar() {
                                           </div>
                                         </div>
                                         <div className="flex-1 w-0 sm:ml-8">
-                                          <h2 className="text-sm opacity-75 text-coalCrescendo">
+                                          <h2 className="text-sm text-greenCrescendo">
                                             {post.date}
                                           </h2>
-                                          <h2 className="text-xl font-semibold truncate text-mossCrescendo">
+                                          <h2 className="text-xl font-semibold truncate text-coalCrescendo">
                                             {post.name}
                                           </h2>
-                                          <p className="mt-1 text-sm text-coalCrescendo">
+                                          <p className="mt-1 text-sm text-mossCrescendo">
                                             {post.preview}
                                           </p>
                                         </div>

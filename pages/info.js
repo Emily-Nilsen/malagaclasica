@@ -38,7 +38,7 @@ export default function Info() {
     <Layout>
       <div className="relative bg-white">
         <div className="absolute inset-0">
-          <div className="w-full h-full object-cover">
+          <div className="object-cover w-full h-full">
             <Image
               src="/static/crescendo-header.webp"
               alt="Málaga Clásica"
@@ -54,13 +54,13 @@ export default function Info() {
             aria-hidden="true"
           />
         </div>
-        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
           <div>
             <motion.h1
               variants={container}
               initial="hidden"
               animate="show"
-              className="block text-greyCrescendo text-left text-5xl font-extrabold tracking-normal sm:text-6xl lg:text-7xl"
+              className="block text-5xl font-extrabold tracking-normal text-left text-greyCrescendo sm:text-6xl lg:text-7xl"
             >
               {crescendo.map((letter, i) => (
                 <motion.span key={i} variants={item}>
@@ -73,32 +73,32 @@ export default function Info() {
               variants={itemBottom}
               initial="hidden"
               animate="show"
-              className="mt-6 text-2xl sm:text-3xl lg:text-4xl text-greyCrescendo max-w-3xl"
+              className="max-w-3xl mt-6 text-2xl sm:text-3xl lg:text-4xl text-greyCrescendo"
             >
               6__12/6/2022
             </motion.h2>
           </div>
         </div>
       </div>
-      <div className="bg-greyCrescendo overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <div className="hidden lg:block bg-blueCrescendo opacity-25 absolute top-0 bottom-0 left-3/4 w-screen" />
+      <div className="overflow-hidden bg-greyCrescendo">
+        <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="absolute top-0 bottom-0 hidden w-screen opacity-25 lg:block bg-blueCrescendo left-3/4" />
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
-              <h2 className="text-base text-mossCrescendo font-normal tracking-wide">
+              <h2 className="text-base font-normal tracking-wide text-greenCrescendo">
                 Málaga Clásica
               </h2>
-              <h1 className="mt-2 text-4xl md:text-6xl leading-8 font-extrabold text-coalCrescendo sm:text-5xl">
+              <h1 className="mt-2 text-4xl font-extrabold leading-8 md:text-6xl text-coalCrescendo sm:text-5xl">
                 {t('info:title')}
               </h1>
             </div>
           </div>
           <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
             <div className="relative lg:row-start-1 lg:col-start-2">
-              <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+              <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                    <div className="rounded-lg shadow-none object-cover object-center overflow-hidden">
+                    <div className="object-cover object-center overflow-hidden rounded-lg shadow-none">
                       <Image
                         src="/static/crescendo-img-19-blue.webp"
                         alt="Málaga Clásica"
@@ -109,14 +109,14 @@ export default function Info() {
                         objectPosition="bottom"
                       />
                     </div>
-                    <div className="absolute inset-0 bg-blueCrescendo mix-blend-multiply overflow-hidden rounded-lg" />
+                    <div className="absolute inset-0 overflow-hidden rounded-lg bg-blueCrescendo mix-blend-multiply" />
                   </div>
-                  {/* <figcaption className="mt-3 flex text-sm text-gray-500">
+                  {/* <figcaption className="flex mt-3 text-sm text-gray-500">
                     <CameraIcon
                       className="flex-none w-5 h-5 text-gray-400"
                       aria-hidden="true"
                     />
-                    <span className="ml-2 text-coalCrescendo opacity-75">
+                    <span className="ml-2 opacity-75 text-coalCrescendo">
                       Photograph by Marcus O’Leary
                     </span>
                   </figcaption> */}
@@ -124,18 +124,18 @@ export default function Info() {
               </div>
             </div>
             <div className="mt-8 lg:mt-0">
-              <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                <p className="text-lg text-coalCrescendo opacity-75">
+              <div className="mx-auto text-base max-w-prose lg:max-w-none">
+                <p className="text-lg opacity-75 text-coalCrescendo">
                   {t('info:para_1')}
                 </p>
               </div>
-              <div className="mt-5 prose prose-cyan mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                <div className="text-coalCrescendo opacity-75">
+              <div className="mx-auto mt-5 prose prose-cyan lg:max-w-none lg:row-start-1 lg:col-start-1">
+                <div className="opacity-75 text-coalCrescendo">
                   <p>{t('info:para_2')}</p>
                   <p>{t('info:para_3')}</p>
                 </div>
                 <h3 className="text-coalCrescendo">{t('info:subtitle')}</h3>
-                <div className="text-coalCrescendo opacity-75">
+                <div className="opacity-75 text-coalCrescendo">
                   <p>{t('info:para_4')}</p>
                 </div>
               </div>

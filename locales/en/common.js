@@ -2,6 +2,7 @@ const common = {
   // buttons
   buy_tickets: `Buy tickets`,
   go_back: `Go back`,
+  program: `Program`,
 
   single_ticket: `Single ticket`,
   ticket_cost: `€15`,

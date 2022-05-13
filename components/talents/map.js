@@ -1,6 +1,7 @@
-import React from 'react';
+import useTranslation from 'next-translate/useTranslation';
 
 function MapTalentos() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="bg-white">
@@ -8,15 +9,15 @@ function MapTalentos() {
           <div className="px-4 pt-16 mx-auto max-w-7xl sm:pt-24 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="mt-1 text-4xl font-extrabold text-mossCrescendo sm:text-5xl sm:tracking-normal lg:text-6xl">
-                Galamian International Academy
+                {t('talents:map_title')}
               </h1>
               <p className="max-w-xl mx-auto mt-5 text-xl text-coalCrescendo">
-                Unicaja María Cristina Concert Hall
+                {t('talents:map_subtitle')}
               </p>
               <div>
                 <dd className="mt-5 text-mossCrescendo">
-                  <p>Calle Marqués de Valdecañas, 2</p>
-                  <p>29008 Málaga</p>
+                  <p>{t('talents:map_address_top')}</p>
+                  <p>{t('talents:map_address_bottom')}</p>
                 </dd>
               </div>
             </div>
