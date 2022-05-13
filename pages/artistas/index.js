@@ -47,7 +47,7 @@ export default function Artistas(props) {
 
       <div className="bg-greyCrescendo">
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-          <div className="space-y-12">
+          <div className="space-y-6 sm:space-y-12">
             <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
               <h1 className="max-w-sm text-4xl font-extrabold leading-none md:text-6xl text-coalCrescendo sm:text-5xl sm:max-w-lg">
                 {t('artists:title')}
@@ -58,7 +58,7 @@ export default function Artistas(props) {
             </div>
             <ul
               role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8 group"
+              className="space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8 group"
             >
               {artists
                 .filter((p) => p.locale === locale)
