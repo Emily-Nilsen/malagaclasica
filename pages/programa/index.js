@@ -17,7 +17,7 @@ export default function Programa(props) {
     <Layout>
       <div className="relative bg-white">
         <div className="absolute inset-0">
-          <div className="w-full h-full object-cover">
+          <div className="object-cover w-full h-full">
             <Image
               src="/static/crescendo-middle.webp"
               alt="Málaga Clásica"
@@ -33,22 +33,22 @@ export default function Programa(props) {
             aria-hidden="true"
           />
         </div>
-        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h2 className="text-lg text-greyCrescendo font-normal tracking-wide">
+        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
+          <h2 className="text-lg font-normal tracking-wide text-greyCrescendo">
             {t('program:date_title')}
             2022
           </h2>
           <h1 className="text-5xl font-extrabold text-greyCrescendo sm:text-6xl lg:text-7xl">
             crescendo
           </h1>
-          <p className="mt-6 text-xl text-greyCrescendo max-w-3xl">
+          <p className="max-w-3xl mt-6 text-xl text-greyCrescendo">
             {t('program:hero_text_1')}
             <span className="font-semibold">{t('program:hero_text_2')}</span>
             {t('program:hero_text_3')}
           </p>
         </div>
       </div>
-      <div className="bg-greyCrescendo pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="px-4 pt-16 pb-20 bg-greyCrescendo sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
           <div>
             <h1 className="text-4xl font-extrabold text-coalCrescendo sm:text-5xl md:text-6xl">
@@ -60,7 +60,7 @@ export default function Programa(props) {
               </p>
             </div>
           </div>
-          <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+          <div className="grid gap-16 pt-10 mt-6 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
             {events
               .filter((p) => p.locale === locale)
               .map((event, i) => (
@@ -68,17 +68,17 @@ export default function Programa(props) {
                   <p className="text-sm text-mossCrescendo">
                     <time dateTime={event.datetime}>{event.date}</time>
                   </p>
-                  <a href="#" className="mt-2 block">
+                  <div className="block mt-2">
                     <p className="text-xl font-semibold text-coalCrescendo">
                       {event.title}
                     </p>
                     <p className="mt-3 text-base text-mossCrescendo">
                       {event.preview}
                     </p>
-                  </a>
+                  </div>
                   <div className="mt-3">
                     <Link href={`/programa/${slugify(event.title)}`} passHref>
-                      <a className="text-base font-semibold text-greenCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out">
+                      <a className="text-base font-semibold transition duration-200 ease-in-out cursor-pointer text-greenCrescendo hover:text-coalCrescendo">
                         <h2>{t('program:read_more')}</h2>
                       </a>
                     </Link>

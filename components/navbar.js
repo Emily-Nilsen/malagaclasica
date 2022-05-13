@@ -90,17 +90,17 @@ export default function Navbar() {
   return (
     <Popover className="relative bg-greyCrescendo">
       <div
-        className="absolute inset-0 shadow-none z-30 pointer-events-none"
+        className="absolute inset-0 z-30 shadow-none pointer-events-none"
         aria-hidden="true"
       />
       <div className="relative z-20">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-2 py-5 sm:px-4 sm:py-4 lg:px-8 md:justify-start md:space-x-8">
+        <div className="flex items-center justify-between px-2 py-5 mx-auto max-w-7xl sm:px-4 sm:py-4 lg:px-8 md:justify-start md:space-x-8">
           <Link href="/" passHref>
             <a className="flex">
               <span className="sr-only">Málaga Clásica</span>
-              <div className="h-1/2 md:h-8 w-auto sm:h-10">
+              <div className="w-auto h-1/2 md:h-8 sm:h-10">
                 <Image
-                  className="h-1/2 md:h-8 w-auto sm:h-10"
+                  className="w-auto h-1/2 md:h-8 sm:h-10"
                   src="/static/logo-moss.svg"
                   alt="Málaga Clásica Logo"
                   layout="fixed"
@@ -111,17 +111,17 @@ export default function Navbar() {
             </a>
           </Link>
 
-          <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-greyCrescendo rounded-md p-2 inline-flex items-center justify-center text-mossCrescendo hover:text-coalCrescendo hover:bg-white focus:outline-none focus:ring-0 transition duration-200 ease-in-out">
+          <div className="-my-2 -mr-2 md:hidden">
+            <Popover.Button className="inline-flex items-center justify-center p-2 transition duration-200 ease-in-out rounded-md bg-greyCrescendo text-mossCrescendo hover:text-coalCrescendo hover:bg-white focus:outline-none focus:ring-0">
               <span className="sr-only">Open menu</span>
-              <MenuIcon className="h-6 w-6" aria-hidden="true" />
+              <MenuIcon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
           </div>
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
-            <Popover.Group as="nav" className="flex space-x-10 justify-between">
+            <Popover.Group as="nav" className="flex justify-between space-x-10">
               <div className="flex md:space-x-7 lg:space-x-10">
                 <Link href="/info" passHref>
-                  <a className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                  <a className="text-base font-normal uppercase transition duration-200 ease-in-out text-mossCrescendo hover:text-coalCrescendo">
                     {t('navbar:link_info')}
                   </a>
                 </Link>
@@ -134,7 +134,7 @@ export default function Navbar() {
                           'group bg-greyCrescendo rounded-none inline-flex items-center text-base font-medium hover:text-coalCrescendo focus:outline-none focus:ring-0'
                         )}
                       >
-                        <span className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                        <span className="text-base font-normal uppercase transition duration-200 ease-in-out text-mossCrescendo hover:text-coalCrescendo">
                           {t('navbar:link_programa')}
                         </span>
                         <ChevronDownIcon
@@ -155,15 +155,15 @@ export default function Navbar() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-1"
                       >
-                        <Popover.Panel className="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-none">
+                        <Popover.Panel className="absolute inset-x-0 z-10 hidden transform shadow-none md:block top-full">
                           <div className="absolute inset-0 flex">
-                            <div className="bg-white w-1/2" />
-                            <div className="bg-gray-50 w-1/2" />
+                            <div className="w-1/2 bg-white" />
+                            <div className="w-1/2 bg-gray-50" />
                           </div>
-                          <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-                            <nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
+                          <div className="relative grid grid-cols-1 mx-auto max-w-7xl lg:grid-cols-2">
+                            <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                               <div>
-                                <h3 className="text-sm font-medium tracking-wide text-mossCrescendo uppercase">
+                                <h3 className="text-sm font-medium tracking-wide uppercase text-mossCrescendo">
                                   {t('navbar:overview_title')}
                                 </h3>
                                 <ul role="list" className="mt-5 space-y-6">
@@ -171,22 +171,22 @@ export default function Navbar() {
                                     <li key={item.name} className="flow-root">
                                       <Popover.Button>
                                         <Link href={item.href} passHref>
-                                          <a className="-m-3 p-3 flex items-center rounded-md text-lg font-medium text-coalCrescendo hover:bg-gray-50">
+                                          <a className="flex items-center p-3 -m-3 text-lg font-medium rounded-md text-coalCrescendo hover:bg-gray-50">
                                             <p
-                                              className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
+                                              className="flex-shrink-0 w-6 h-6 text-blueCrescendo"
                                               aria-hidden="true"
                                             >
                                               {item.date ? (
                                                 item.date
                                               ) : (
                                                 <CalendarIcon
-                                                  className="h-6 w-6"
+                                                  className="w-6 h-6"
                                                   aria-hidden="true"
                                                 />
                                               )}
                                             </p>
 
-                                            <span className="ml-4 text-coalCrescendo text-lg">
+                                            <span className="ml-4 text-lg text-coalCrescendo">
                                               <h1>{item.name}</h1>
                                             </span>
                                           </a>
@@ -197,7 +197,7 @@ export default function Navbar() {
                                 </ul>
                               </div>
                               <div>
-                                <h3 className="opacity-0 text-sm font-medium tracking-wide text-mossCrescendo uppercase">
+                                <h3 className="text-sm font-medium tracking-wide uppercase opacity-0 text-mossCrescendo">
                                   concerts
                                 </h3>
                                 <ul role="list" className="mt-5 space-y-6">
@@ -205,15 +205,15 @@ export default function Navbar() {
                                     <li key={item.name} className="flow-root">
                                       <a
                                         href={item.href}
-                                        className="-m-3 p-3 flex items-center rounded-md text-lg font-medium text-gray-900 hover:bg-gray-50"
+                                        className="flex items-center p-3 -m-3 text-lg font-medium text-gray-900 rounded-md hover:bg-gray-50"
                                       >
                                         <p
-                                          className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
+                                          className="flex-shrink-0 w-6 h-6 text-blueCrescendo"
                                           aria-hidden="true"
                                         >
                                           {item.date}
                                         </p>
-                                        <span className="ml-4 text-coalCrescendo text-lg">
+                                        <span className="ml-4 text-lg text-coalCrescendo">
                                           <h1>{item.name}</h1>
                                         </span>
                                       </a>
@@ -222,9 +222,9 @@ export default function Navbar() {
                                 </ul>
                               </div>
                             </nav>
-                            <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                            <div className="px-4 py-8 bg-gray-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
-                                <h3 className="text-sm font-medium tracking-wide text-mossCrescendo uppercase">
+                                <h3 className="text-sm font-medium tracking-wide uppercase text-mossCrescendo">
                                   {t('navbar:from_program')}
                                 </h3>
                                 <ul role="list" className="mt-6 space-y-6">
@@ -232,10 +232,10 @@ export default function Navbar() {
                                     <li key={post.id} className="flow-root">
                                       <a
                                         href={post.href}
-                                        className="-m-3 p-3 flex rounded-lg hover:bg-gray-100"
+                                        className="flex p-3 -m-3 rounded-lg hover:bg-gray-100"
                                       >
-                                        <div className="hidden sm:block flex-shrink-0">
-                                          <div className="w-32 h-20 object-cover rounded-md overflow-hidden">
+                                        <div className="flex-shrink-0 hidden sm:block">
+                                          <div className="object-cover w-32 h-20 overflow-hidden rounded-md">
                                             <Image
                                               width={300}
                                               height={200}
@@ -244,11 +244,11 @@ export default function Navbar() {
                                             />
                                           </div>
                                         </div>
-                                        <div className="w-0 flex-1 sm:ml-8">
-                                          <h2 className="text-coalCrescendo text-sm opacity-75">
+                                        <div className="flex-1 w-0 sm:ml-8">
+                                          <h2 className="text-sm opacity-75 text-coalCrescendo">
                                             {post.date}
                                           </h2>
-                                          <h2 className="text-xl font-semibold text-mossCrescendo truncate">
+                                          <h2 className="text-xl font-semibold truncate text-mossCrescendo">
                                             {post.name}
                                           </h2>
                                           <p className="mt-1 text-sm text-coalCrescendo">
@@ -263,7 +263,7 @@ export default function Navbar() {
                               <div className="mt-6 text-sm font-medium">
                                 <Popover.Button>
                                   <Link href="/programa" passHref>
-                                    <a className="text-greenCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out">
+                                    <a className="transition duration-200 ease-in-out text-greenCrescendo hover:text-coalCrescendo">
                                       {' '}
                                       {t('navbar:all_concerts')}{' '}
                                       <span aria-hidden="true">&rarr;</span>
@@ -280,23 +280,23 @@ export default function Navbar() {
                 </Popover>
 
                 <Link href="/artistas" passHref>
-                  <a className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                  <a className="text-base font-normal uppercase transition duration-200 ease-in-out text-mossCrescendo hover:text-coalCrescendo">
                     {t('navbar:link_artistas')}
                   </a>
                 </Link>
                 <Link href="/talentos" passHref>
-                  <a className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                  <a className="text-base font-normal uppercase transition duration-200 ease-in-out text-mossCrescendo hover:text-coalCrescendo">
                     {t('navbar:link_talentos')}
                   </a>
                 </Link>
                 <Link href="/contactar" passHref>
-                  <a className="text-base font-normal text-mossCrescendo hover:text-coalCrescendo uppercase transition duration-200 ease-in-out">
+                  <a className="text-base font-normal uppercase transition duration-200 ease-in-out text-mossCrescendo hover:text-coalCrescendo">
                     {t('navbar:link_contactar')}
                   </a>
                 </Link>
               </div>
             </Popover.Group>
-            <Language />
+            {asPath.includes('-') ? null : <Language />}
           </div>
         </div>
       </div>
@@ -313,19 +313,19 @@ export default function Navbar() {
       >
         <Popover.Panel
           focus
-          className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+          className="absolute inset-x-0 top-0 z-30 p-2 transition origin-top-right transform md:hidden"
         >
           <Popover.Button className="w-full">
-            <div className="rounded-none shadow-none ring-1 ring-blueCrescendo ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-              <div className="pt-5 pb-6 px-5 sm:pb-8">
+            <div className="bg-white divide-y-2 rounded-none shadow-none ring-1 ring-blueCrescendo ring-opacity-5 divide-gray-50">
+              <div className="px-5 pt-5 pb-6 sm:pb-8">
                 <div className="flex items-center justify-between">
                   <div>
                     <Link href="/" passHref>
                       <a className="flex">
                         <span className="sr-only">Málaga Clásica</span>
-                        <div className="h-1/2 md:h-8 w-auto sm:h-10">
+                        <div className="w-auto h-1/2 md:h-8 sm:h-10">
                           <Image
-                            className="h-1/2 md:h-8 w-auto sm:h-10"
+                            className="w-auto h-1/2 md:h-8 sm:h-10"
                             src="/static/logo-moss.svg"
                             alt="Málaga Clásica Logo"
                             layout="fixed"
@@ -337,25 +337,25 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-mossCrescendo hover:text-coalCrescendo hover:bg-greyCrescendo focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blueCrescendo transition duration-200 ease-in-out">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 transition duration-200 ease-in-out bg-white rounded-md text-mossCrescendo hover:text-coalCrescendo hover:bg-greyCrescendo focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blueCrescendo">
                       <span className="sr-only">Close menu</span>
-                      <XIcon className="h-6 w-6" aria-hidden="true" />
+                      <XIcon className="w-6 h-6" aria-hidden="true" />
                     </Popover.Button>
                   </div>
                 </div>
                 <div className="mt-6 sm:mt-8">
                   <nav>
-                    <div className="grid gap-3 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4 pb-6">
-                      <button className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md text-white text-xl">
+                    <div className="grid gap-3 pb-6 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
+                      <button className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-xl text-white rounded-md">
                           <p
-                            className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
+                            className="flex-shrink-0 w-6 h-6 text-blueCrescendo"
                             aria-hidden="true"
                           >
                             EN
                           </p>
                         </div>
-                        <div className="ml-4 text-base font-medium text-mossCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out">
+                        <div className="ml-4 text-base font-medium transition duration-200 ease-in-out text-mossCrescendo hover:text-coalCrescendo">
                           <Link
                             activeClassName={locale === 'en'}
                             href={asPath}
@@ -366,16 +366,16 @@ export default function Navbar() {
                         </div>
                       </button>
 
-                      <button className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md text-white text-xl">
+                      <button className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50">
+                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-xl text-white rounded-md">
                           <p
-                            className="flex-shrink-0 h-6 w-6 text-blueCrescendo"
+                            className="flex-shrink-0 w-6 h-6 text-blueCrescendo"
                             aria-hidden="true"
                           >
                             ES
                           </p>
                         </div>
-                        <div className="ml-4 text-base font-medium text-mossCrescendo hover:text-coalCrescendo transition duration-200 ease-in-out">
+                        <div className="ml-4 text-base font-medium transition duration-200 ease-in-out text-mossCrescendo hover:text-coalCrescendo">
                           <Link
                             activeClassName={locale === 'es'}
                             href={asPath}
@@ -391,11 +391,11 @@ export default function Navbar() {
               </div>
 
               <div className="text-left">
-                <div className="py-10 px-5 bg-gray-50">
+                <div className="px-5 py-10 bg-gray-50">
                   <div className="grid grid-cols-2 gap-6">
                     {mobileLinks.map((link, i) => (
                       <Link key={i} href={link.href} passHref>
-                        <a className="rounded-md text-base font-medium text-coalCrescendo hover:text-greenCrescendo transition duration-200 ease-in-out">
+                        <a className="text-base font-medium transition duration-200 ease-in-out rounded-md text-coalCrescendo hover:text-greenCrescendo">
                           {link.name}
                         </a>
                       </Link>

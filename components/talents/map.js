@@ -3,13 +3,31 @@ import React from 'react';
 function MapTalentos() {
   return (
     <>
-      <div className="bg-greyCrescendo">
+      <div className="bg-white">
+        <div className="bg-white">
+          <div className="px-4 pt-16 mx-auto max-w-7xl sm:pt-24 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h1 className="mt-1 text-4xl font-extrabold text-mossCrescendo sm:text-5xl sm:tracking-normal lg:text-6xl">
+                Galamian International Academy
+              </h1>
+              <p className="max-w-xl mx-auto mt-5 text-xl text-coalCrescendo">
+                Unicaja María Cristina Concert Hall
+              </p>
+              <div>
+                <dd className="mt-5 text-mossCrescendo">
+                  <p>Calle Marqués de Valdecañas, 2</p>
+                  <p>29008 Málaga</p>
+                </dd>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="px-4 py-12">
           <div className="lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] w-full mx-auto py-12 relative">
-            <div className="relative w-full rounded-lg overflow-hidden">
+            <div className="relative w-full overflow-hidden rounded-lg">
               <iframe
                 className="relative"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.046648610308!2d-4.421492448327992!3d36.72144087986667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7955ef2b4d5%3A0x9a94acd97d92b3a3!2sTeatro%20Echegaray!5e0!3m2!1sen!2sno!4v1652097737090!5m2!1sen!2sno"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.911215610666!2d-4.425277384850915!3d36.72469347996414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7be83f3cefd%3A0x9e61e826897f09a3!2sUnicaja%20Concert%20Hall%20Mar%C3%ADa%20Cristina!5e0!3m2!1sen!2sno!4v1649336135958!5m2!1sen!2sno"
                 width="100%"
                 height={600}
                 style={{ border: 0 }}
@@ -17,72 +35,6 @@ function MapTalentos() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-              <div></div>
-              <div className="absolute px-8 py-8 rounded-lg bg-mossCrescendo lg:top-28 lg:left-28 md:bottom-28 bottom-28 left-8 md:left-11 lg:max-w-[410px] md:max-w-[648px] max-w-[311px] w-full lg:max-h-[356px] set">
-                <h1 className="mb-4 text-3xl font-bold lg:leading-[48px] md:leading-[36px] leading-[30px] text-greyCrescendo md:text-4xl lg:text-5xl">
-                  Find us
-                </h1>
-                <p className="text-base text-greyCrescendo">
-                  Looking for our assistance?{' '}
-                  <span className="font-semibold text-white hover:text-blueCrescendo underline cursor-pointer">
-                    Contact Us
-                  </span>{' '}
-                </p>
-                <div className="flex mt-8 gap-x-4">
-                  <svg
-                    className="cursor-pointer  h-[21px] mt-1"
-                    width={25}
-                    height={24}
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.1406 10.5C12.9787 10.5 13.6581 9.82843 13.6581 9C13.6581 8.17157 12.9787 7.5 12.1406 7.5C11.3025 7.5 10.623 8.17157 10.623 9C10.623 9.82843 11.3025 10.5 12.1406 10.5Z"
-                      fill="#EBF0F2"
-                    />
-                    <path
-                      d="M12.1405 1.5C7.95677 1.5 4.55273 4.71797 4.55273 8.67188C4.55273 10.5548 5.42105 13.0589 7.13351 16.1147C8.50878 18.5681 10.0998 20.7867 10.9274 21.8906C11.0672 22.0792 11.25 22.2326 11.461 22.3384C11.6721 22.4441 11.9053 22.4992 12.1419 22.4992C12.3785 22.4992 12.6117 22.4441 12.8227 22.3384C13.0337 22.2326 13.2166 22.0792 13.3564 21.8906C14.1825 20.7867 15.775 18.5681 17.1502 16.1147C18.8599 13.0598 19.7282 10.5558 19.7282 8.67188C19.7282 4.71797 16.3241 1.5 12.1405 1.5ZM12.1405 12C11.5402 12 10.9534 11.8241 10.4542 11.4944C9.95513 11.1648 9.56612 10.6962 9.3364 10.1481C9.10668 9.59987 9.04657 8.99667 9.16368 8.41473C9.28079 7.83279 9.56986 7.29824 9.99432 6.87868C10.4188 6.45912 10.9596 6.1734 11.5483 6.05764C12.1371 5.94189 12.7473 6.0013 13.3019 6.22836C13.8565 6.45542 14.3305 6.83994 14.664 7.33329C14.9975 7.82664 15.1755 8.40666 15.1755 9C15.1747 9.79538 14.8546 10.5579 14.2856 11.1204C13.7166 11.6828 12.9451 11.9991 12.1405 12Z"
-                      fill="#EBF0F2"
-                    />
-                  </svg>
-                  <p className="text-base leading-normal text-greyCrescendo ">
-                    Luxe Modestoi 99, California Ave 3rd St, <br /> CA 5663 1237{' '}
-                  </p>
-                </div>
-                <div className="flex mt-8 gap-x-4">
-                  <svg
-                    className="cursor-pointer"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18.3284 22.5001C17.4134 22.5001 16.1281 22.1691 14.2034 21.0938C11.8629 19.7813 10.0526 18.5696 7.72481 16.2479C5.48044 14.0049 4.38825 12.5527 2.85965 9.77115C1.13278 6.63052 1.42715 4.98427 1.75622 4.28068C2.14809 3.43974 2.72653 2.93677 3.47419 2.43755C3.89885 2.15932 4.34825 1.92081 4.81669 1.72505C4.86356 1.7049 4.90715 1.68568 4.94606 1.66833C5.17809 1.5638 5.52965 1.40583 5.97497 1.57458C6.27215 1.68615 6.53747 1.91443 6.95278 2.32458C7.8045 3.16458 8.9684 5.03537 9.39778 5.95412C9.68606 6.57333 9.87684 6.98208 9.87731 7.44052C9.87731 7.97724 9.60731 8.39115 9.27965 8.83787C9.21825 8.92177 9.15731 9.00193 9.09825 9.07974C8.74153 9.54849 8.66325 9.68396 8.71481 9.92583C8.81934 10.4119 9.59887 11.859 10.88 13.1372C12.1611 14.4155 13.5664 15.1458 14.0543 15.2499C14.3065 15.3038 14.4448 15.2222 14.9286 14.8529C14.9979 14.7999 15.0692 14.7451 15.1437 14.6902C15.6434 14.3185 16.0381 14.0555 16.5622 14.0555H16.565C17.0211 14.0555 17.4115 14.2533 18.0584 14.5796C18.9022 15.0052 20.8292 16.1541 21.6743 17.0068C22.0854 17.4211 22.3147 17.6855 22.4267 17.9822C22.5954 18.429 22.4365 18.7791 22.3329 19.0135C22.3156 19.0524 22.2964 19.0951 22.2762 19.1424C22.0789 19.61 21.839 20.0585 21.5595 20.4821C21.0612 21.2274 20.5564 21.8044 19.7136 22.1968C19.2808 22.4015 18.8071 22.5052 18.3284 22.5001Z"
-                      fill="#EBF0F2"
-                    />
-                  </svg>
-                  <p className="text-base text-greyCrescendo">903-846-1749</p>
-                </div>
-                <div className="flex mt-8 gap-x-4">
-                  <svg
-                    className="cursor-pointer"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.875 3.75H4.125C3.42904 3.75074 2.76179 4.02755 2.26967 4.51967C1.77755 5.01179 1.50074 5.67904 1.5 6.375V17.625C1.50074 18.321 1.77755 18.9882 2.26967 19.4803C2.76179 19.9725 3.42904 20.2493 4.125 20.25H19.875C20.571 20.2493 21.2382 19.9725 21.7303 19.4803C22.2225 18.9882 22.4993 18.321 22.5 17.625V6.375C22.4993 5.67904 22.2225 5.01179 21.7303 4.51967C21.2382 4.02755 20.571 3.75074 19.875 3.75ZM19.2103 8.09203L12.4603 13.342C12.3287 13.4444 12.1667 13.4999 12 13.4999C11.8333 13.4999 11.6713 13.4444 11.5397 13.342L4.78969 8.09203C4.71038 8.03214 4.64377 7.95709 4.59372 7.87123C4.54367 7.78537 4.51118 7.69042 4.49815 7.5919C4.48511 7.49338 4.49179 7.39325 4.51778 7.29733C4.54378 7.20142 4.58858 7.11162 4.64958 7.03316C4.71058 6.95471 4.78656 6.88916 4.87312 6.84032C4.95967 6.79149 5.05506 6.76034 5.15376 6.74869C5.25245 6.73704 5.35248 6.74513 5.44802 6.77247C5.54357 6.79981 5.63272 6.84587 5.71031 6.90797L12 11.7998L18.2897 6.90797C18.447 6.7892 18.6447 6.73711 18.84 6.76296C19.0354 6.78881 19.2128 6.89053 19.3338 7.04612C19.4547 7.20171 19.5096 7.39866 19.4865 7.59439C19.4634 7.79011 19.3642 7.96888 19.2103 8.09203Z"
-                      fill="#EBF0F2"
-                    />
-                  </svg>
-                  <p className="text-base text-greyCrescendo">luxe@gmail.com</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -99,7 +51,6 @@ function MapTalentos() {
             width: 300px;
             left: 12px;
         }
-        
     }
     `}
         </style>

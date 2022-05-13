@@ -277,31 +277,35 @@ const artists = [
     image_position: `top`,
   },
 
-  // Artist 21
-  // {
-  //   locale: `es`,
-  //   name: ``,
-  //   slug_name: ``,
-  //   instrument: ``,
-  //   para_1: ``,
-  //   para_2: ``,
-  //   para_3: ``,
-  //   image: ``,
-  //   image_position: ``,
-  // },
+  // Tomàs Grau
+  {
+    locale: `es`,
+    name: `Tomàs Grau`,
+    slug_name: `Tomàs Grau ES`,
+    instrument: `director`,
+    para_1: `Director inspirado y de gran sensibilidad, Tomàs Grau se caracteriza por su gesto preciso y claro y por la sinceridad de sus lecturas musicales, que buscan transmitir de manera diáfana las verdaderas emociones que hay en cada una de las partituras, compartiendo con el público su amor por la música.`,
+    para_2: `Ha dirigido, entre otros, solistas de talla internacional como Anne-Sophie Mutter, Maria João Pires, Midori, Patricia Kopatchinskaja, Gautier Capuçon, Mischa Maisky, Sabine Meyer, Steven Isserlis, Paul Lewis, Stephen Kovacevich, Alexander Melnikov, Seong-Jin Cho, Mark Padmore y Alice Sara Ott en las principales salas de conciertos de España, como el Auditorio Nacional de Madrid, el Auditorio de Zaragoza, el Palau de la Música Catalana o l’Auditori de Barcelona, como también a nivel internacional en la Tonhalle de Zúrich.`,
+    para_3: `Actualmente es el director titular y artístico de la Franz Schubert Filharmonia, y lo invitan regularmente a dirigir otras formaciones, como la Beethoven Philharmonie, Stuttgarter Kammerorchester, Orquesta Nacional de España, Orquesta Sinfónica del Principado de Asturias, Orquesta Filarmónica de Málaga, Orquesta Sinfónica de la Región de Murcia, Orquesta de Córdoba y Orquesta Sinfónica de Burgos.`,
+    para_4: `Ha grabado para sellos como SONY Classical, ARS Produktion -sello del año en los International Classical Music Awards- o Discmedi. Entre sus compromisos más inmediatos destaca dirigir solistas como Ivo Pogorelich, Alexei Volodin, Javier Perianes y, de nuevo, Patricia Kopatchinskaja.`,
+    para_5: `Proveniente de Barcelona, Tomàs Grau obtuvo el Título Superior de Dirección de Orquesta en la Escuela Superior de Música de Cataluña, alcanzando las máximas calificaciones. Posteriormente, completó sus estudios en los Wiener Meisterkurse.`,
+    image: `/static/tomas-grau.webp`,
+    image_position: `center`,
+  },
 
-  // Artist 22
-  // {
-  //   locale: `es`,
-  //   name: ``,
-  //   slug_name: ``,
-  //   instrument: ``,
-  //   para_1: ``,
-  //   para_2: ``,
-  //   para_3: ``,
-  //   image: ``,
-  //   image_position: ``,
-  // },
+  // La Franz Schubert Filharmonia
+  {
+    locale: `es`,
+    name: `La Franz Schubert Filharmonia`,
+    slug_name: `La Franz Schubert Filharmonia ES`,
+    instrument: `filharmonia`,
+    para_1: `La Franz Schubert Filharmonia ha actuado en salas como el Palau de la Música Catalana, el Gran Teatro del Liceo, el Auditorio de Barcelona, el Auditorio Nacional de Música de Madrid, el Auditorio de Zaragoza, el Palacio Euskalduna de Bilbao y el Palau de les Arts de Valencia, y realizado giras en Alemania, Suiza y la República Checa.`,
+    para_2: `La formación despliega sus temporadas de abono en Barcelona, Tarragona, Lleida y Sant Cugat, y es desde el año 2009, la orquesta residente del Vendrell, ciudad natal del gran maestro Pau Casals.`,
+    para_3: `Formada por una nueva generación de los mejores músicos del país que actúan bajo la inspirada dirección de Tomàs Grau, la orquesta ha trabajado también con directores como Antoni Ros Marbà, Salvador Mas, Edmon Colomer, Josep Pons, Rinaldo Alessandrini, Paul Agnew, Gábor Takács-Nagy, Marzio Conti, Jordi Mora, Josep Caballé Domenech, Virginia Martínez y Salvador Brotons.`,
+    para_4: `La Franz Schubert Filharmonia ha colaborado con solistas como Anne-Sophie Mutter, Maria João Pires, Mischa Maisky, Midori, Stephen Kovacevich, Sabine Meyer, Rudolf Buchbinder, Steven Isserlis, Patricia Kopatchinskaja, Paul Lewis, Gautier Capuçon, Roberto Alagna, Mark Padmore, Alexander Melnikov, Seong-Jin Cho, Alice Sara Ott, Ainhoa Arteta, Asier Polo, Leticia Moreno, Pablo Ferrández, Judith Jáuregui o Iván Martín.`,
+    para_5: `La actividad discográfica de la formación cuenta con varios discos, como el Die Romantische Seele con la pianista Judith Jauregui, producido por el sello alemán ARS Produktion, ganador de los International Classical Music Awards y nominado a los Premios Opus Klassik, y Alba Eterna, ópera del compositor Albert Guinovart, producida por el sello Sony Classical.`,
+    image: `/static/franz.webp`,
+    image_position: `center`,
+  },
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   // English - Jesús Reina
@@ -581,6 +585,36 @@ const artists = [
     para_3: `Antonio has been a professor at the Conservatorio Profesional de Música “Manuel Carra” in Málaga. He later obtained the position of Cátedra de Fagot at the Conservatorio Superior in Málaga. He was also a guest professor at the Orquesta Joven de Andalucía and the Jove Orquestra de Catalunya. Since 1993, he has held the principal bassoon position at the Orquesta Filarmónica de Málaga.`,
     image: `/static/antonio-lozano.webp`,
     image_position: `top`,
+  },
+
+  // Tomàs Grau
+  {
+    locale: `en`,
+    name: `Tomàs Grau`,
+    slug_name: `Tomàs Grau EN`,
+    instrument: `conductor`,
+    para_1: `Tomàs Grau is an inspired and highly sensitive conductor, sharing his love for the music with the audience. His precise and clear gestures and the sincerity of his musical readings distinguish him as they seek to transmit each score's light and delicate emotions.`,
+    para_2: `He has conducted many international soloists, including Anne-Sophie Mutter, Maria João Pires, Midori, Patricia Kopatchinskaja, Gautier Capuçon, Mischa Maisky, Sabine Meyer, Steven Isserlis, Paul Lewis, Stephen Kovacevich, Alexander Melnikov, Seong-Jin Cho, Mark Padmore and Alice Sara Ott in all the leading concert halls in Spain. These include the National Auditorium in Madrid, the Auditorio in Zaragoza, the Palau de la Música Catalana and the Auditori in Barcelona, and internationally at the Tonhalle in Zurich.`,
+    para_3: `Nowadays, Tomàs is the Chief Conductor and Artistic Director of the Franz Schubert Filharmonia, and he is often invited to conduct other orchestras, such as the Beethoven Philharmonie, Stuttgarter Kammerorchester, Orquesta Nacional de España, Orquesta Sinfónica del Principado de Asturias, Orquesta Filarmónica de Málaga, Orquesta Sinfónica de la Región de Murcia, Orquesta de Córdoba and Orquesta Sinfónica de Burgos, among others.`,
+    para_4: `He has recorded for labels such as SONY Classical, ARS Produktion (the Label of the Year at the International Classical Music Awards) and Discmedi. Among his immediate commitments, he will be conducting such soloists as Ivo Pogorelich, Alexei Volodin, Javier Perianes and, once again, Patricia Kopatchinskaja.`,
+    para_5: `Tomàs Grau hails from Barcelona, where he graduated from the Superior School of Music of Catalonia with top ratings in Orchestral Conducting. He later completed his studies at the Wiener Meisterkurse.`,
+    image: `/static/tomas-grau.webp`,
+    image_position: `center`,
+  },
+
+  // La Franz Schubert Filharmonia
+  {
+    locale: `en`,
+    name: `The Franz Schubert Filharmonia`,
+    slug_name: `The Franz Schubert Filharmonia EN`,
+    instrument: `orchestra`,
+    para_1: `The Franz Schubert Filharmonia has performed in such venues as the Palau de la Música Catalana, Gran Teatre del Liceu, L’Auditori de Barcelona, Auditorio Nacional de Música de Madrid, Auditorio de Zaragoza, Palacio Euskalduna Bilbao and Palau de las Artes de Valencia, and has toured throughout Germany, Switzerland and the Czech Republic.`,
+    para_2: `The orchestra performs its subscription seasons in Barcelona, Tarragona, Lleida and Sant Cugat. Since 2009 it has been the resident orchestra of El Vendrell, the birthplace of the great maestro Pau Casals.`,
+    para_3: `Under the inspired direction of Tomàs Grau, a new generation of the best musicians in the country forms the orchestra. The group has also worked with such conductors as Antoni Ros Marbà, Salvador Mas, Edmon Colomer, Josep Pons, Rinaldo Alessandrini, Gábor Takács-Nagy, Marzio Conti, Jordi Mora, Josep Caballé Domenech, Virginia Martínez and Salvador Brotons, among others.`,
+    para_4: `The Franz Schubert Filharmonia has collaborated with such soloists as Anne-Sophie Mutter, Maria João Pires, Mischa Maisky, Midori, Stephen Kovacevich, Sabine Meyer, Rudolf Buchbinder, Steven Isserlis, Patricia Kopatchinskaja, Paul Lewis, Gautier Capuçon, Roberto Alagna, Mark Padmore, Alexander Melnikov, Seong-Jin Cho, Alice Sara Ott, Ainhoa Arteta, Asier Polo, Leticia Moreno, Pablo Ferrández, Judith Jáuregui and Iván Martín.`,
+    para_5: `The orchestra has recorded several albums, among which we can highlight Die Romantische Seele with the pianist Judith Jauregui. Produced by the German label ARS Produktion, winner of the International Classical Music Awards and nominated for the Opus Klassik Awards, and Alba Eterna, an opera by the composer Albert Guinovart and produced by the Sony Classical label.`,
+    image: `/static/franz.webp`,
+    image_position: `center`,
   },
 ];
 

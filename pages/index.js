@@ -11,10 +11,10 @@ export default function Home() {
     <Layout>
       <div>
         <div className="bg-greyCrescendo">
-          <div className="max-w-7xl mx-auto py-10 px-4 sm:py-16 sm:px-6 lg:px-8">
+          <div className="px-4 py-10 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
             <div className="text-center">
-              <div className="grid grid-cols-3 gap-0 lg:max-w-lg max-w-xs sm:max-w-sm mx-auto">
-                <div className="col-span-1 flex justify-self-end">
+              <div className="grid max-w-xs grid-cols-3 gap-0 mx-auto lg:max-w-lg sm:max-w-sm">
+                <div className="flex col-span-1 justify-self-end">
                   <div>
                     <Image
                       width={161}
@@ -24,21 +24,21 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="col-span-2 flex justify-center items-center">
+                <div className="flex items-center justify-center col-span-2">
                   <div>
-                    <p className="text-2xl sm:text-3xl lg:text-4xl font-normal text-coalCrescendo tracking-wider uppercase">
+                    <p className="text-2xl font-normal tracking-wider uppercase sm:text-3xl lg:text-4xl text-coalCrescendo">
                       Málaga Clásica
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="w-fit mx-auto border-y border-coalCrescendo">
-                <p className="py-1 px-2 text-xl font-light text-coalCrescendo sm:text-2xl lg:text-3xl">
+              <div className="mx-auto w-fit border-y border-coalCrescendo">
+                <p className="px-2 py-1 text-xl font-light text-coalCrescendo sm:text-2xl lg:text-3xl">
                   {t('home:title')}
                 </p>
               </div>
-              <h3 className="max-w-xl mt-5 mx-auto text-2xl sm:text-3xl lg:text-4xl text-mossCrescendo uppercase font-bold tracking-wider">
+              <h3 className="max-w-xl mx-auto mt-5 text-2xl font-bold tracking-wider uppercase sm:text-3xl lg:text-4xl text-mossCrescendo">
                 {t('home:subtitle')}
               </h3>
             </div>
