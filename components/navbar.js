@@ -96,16 +96,15 @@ export default function Navbar() {
       <div className="relative z-20">
         <div className="flex items-center justify-between px-2 py-5 mx-auto max-w-7xl sm:px-4 sm:py-4 lg:px-8 md:justify-start md:space-x-8">
           <Link href="/" passHref>
-            <a className="flex">
+            <a className="flex items-center">
               <span className="sr-only">Málaga Clásica</span>
-              <div className="w-auto h-1/2 md:h-8 sm:h-10">
+              <div className="flex">
                 <Image
-                  className="w-auto h-1/2 md:h-8 sm:h-10"
                   src="/static/logo-moss.svg"
                   alt="Málaga Clásica Logo"
                   layout="fixed"
-                  width={150}
-                  height={40}
+                  width={71}
+                  height={23}
                 />
               </div>
             </a>
