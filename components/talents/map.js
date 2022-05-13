@@ -23,7 +23,7 @@ function MapTalentos() {
             </div>
           </div>
         </div>
-        <div className="px-4 py-12">
+        <div className="px-4 pt-6 pb-12">
           <div className="lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] w-full mx-auto py-12 relative">
             <div className="relative w-full overflow-hidden rounded-lg">
               <iframe

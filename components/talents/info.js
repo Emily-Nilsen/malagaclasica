@@ -89,7 +89,7 @@ export default function InfoTalentos() {
                   <dt className="text-base font-medium text-coalCrescendo">
                     {stat.label}
                   </dt>
-                  <dd className="text-4xl font-semibold tracking-normal text-mossCrescendo">
+                  <dd className="text-3xl font-semibold tracking-normal text-mossCrescendo">
                     <h2>{stat.value}</h2>
                   </dd>
                 </div>

@@ -20,7 +20,7 @@ export default function AnnaJesus() {
       {/* Info Section Two */}
       <div className="relative bg-white">
         <div className="absolute inset-0">
-          <div className="w-full h-full object-cover">
+          <div className="object-cover w-full h-full">
             <Image
               src="/static/crescendo-footer.webp"
               alt="Málaga Clásica"
@@ -36,14 +36,14 @@ export default function AnnaJesus() {
             aria-hidden="true"
           />
         </div>
-        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8"></div>
+        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8"></div>
       </div>
       <div className="bg-white">
-        <div className="max-w-2xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="max-w-2xl px-4 pt-16 pb-24 mx-auto sm:pb-32 sm:pt-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
             <div>
-              <div className="border-b border-gray-200 pb-10">
-                <div className="text-coalCrescendo opacity-75">
+              <div className="pb-10 border-b border-gray-200">
+                <div className="opacity-75 text-coalCrescendo">
                   <p>{t('info:para_5')}</p>
                   <p className="mt-5">{t('info:para_6')}</p>
                   <p className="mt-5">{t('info:para_7')}</p>
@@ -65,8 +65,8 @@ export default function AnnaJesus() {
             </div>
 
             <div>
-              <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden">
-                <div className="w-full h-full object-center object-cover">
+              <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
+                <div className="object-cover object-center w-full h-full">
                   <Image
                     src="/static/crescendo-img-12-blue.webp"
                     alt="Málaga Clásica"
@@ -79,8 +79,8 @@ export default function AnnaJesus() {
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4 mt-4 sm:gap-6 sm:mt-6 lg:gap-8 lg:mt-8">
-                <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden">
-                  <div className="w-full h-full object-center object-cover">
+                <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
+                  <div className="object-cover object-center w-full h-full">
                     <Image
                       src="/static/jesus-blue.webp"
                       alt="Jesús Reina"
@@ -92,8 +92,8 @@ export default function AnnaJesus() {
                     />
                   </div>
                 </div>
-                <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden">
-                  <div className="w-full h-full object-center object-cover">
+                <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
+                  <div className="object-cover object-center w-full h-full">
                     <Image
                       src="/static/anna-blue.webp"
                       alt="Anna Nilsen"

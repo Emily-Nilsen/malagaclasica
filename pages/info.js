@@ -84,14 +84,14 @@ export default function Info() {
         </div>
       </div>
       <div className="overflow-hidden bg-greyCrescendo">
-        <div className="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="relative px-4 pt-16 pb-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="absolute top-0 bottom-0 hidden w-screen opacity-25 lg:block bg-blueCrescendo left-3/4" />
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
               <h2 className="text-base font-normal tracking-wide text-greenCrescendo">
                 Málaga Clásica
               </h2>
-              <h1 className="mt-2 text-4xl font-extrabold leading-8 md:text-6xl text-coalCrescendo sm:text-5xl">
+              <h1 className="mt-2 text-4xl font-extrabold leading-none md:text-6xl text-coalCrescendo sm:text-5xl">
                 {t('info:title')}
               </h1>
             </div>

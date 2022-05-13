@@ -11,7 +11,7 @@ export default function ContentTalentos() {
             <span className="block text-base font-semibold tracking-wide text-center uppercase text-greenCrescendo">
               {t('talents:subtitle_1')}
             </span>
-            <span className="block mt-2 text-5xl font-extrabold leading-8 tracking-normal text-center sm:text-6xl text-coalCrescendo">
+            <span className="block mt-2 text-5xl font-extrabold leading-none tracking-normal text-center sm:text-6xl text-coalCrescendo">
               {t('talents:title_1')}
             </span>
           </h1>

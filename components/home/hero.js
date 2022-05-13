@@ -93,11 +93,11 @@ export default function Hero() {
 
           {/* Logo cloud */}
           <div className="bg-greyCrescendo">
-            <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="px-4 py-10 mx-auto sm:py-16 max-w-7xl sm:px-6 lg:px-8">
               <p className="text-sm font-semibold tracking-wide text-center uppercase text-coalCrescendo">
                 {t('home:cloud_title')}
               </p>
-              <div className="grid grid-cols-2 gap-8 mt-6 md:grid-cols-3 lg:grid-cols-8">
+              <div className="grid grid-cols-2 gap-3 mt-6 sm:gap-8 md:grid-cols-3 lg:grid-cols-8">
                 <div className="flex justify-center col-span-1 md:col-span-1 lg:col-span-2">
                   <a
                     href="https://www.malaga.eu/"

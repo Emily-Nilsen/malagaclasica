@@ -36,7 +36,7 @@ export default function Features() {
       <section>
         {/* Feature section */}
         <div className="bg-white">
-          <div className="max-w-2xl px-4 py-24 mx-auto sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
+          <div className="max-w-2xl px-4 pt-10 pb-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="max-w-3xl">
               <h1 className="mt-2 text-4xl font-extrabold tracking-normal text-mossCrescendo sm:text-5xl">
                 {t('home:features_title')}
@@ -46,11 +46,11 @@ export default function Features() {
               </p>
             </div>
 
-            <div className="grid items-start grid-cols-1 mt-11 gap-y-16 gap-x-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
+            <div className="grid items-start grid-cols-1 mt-11 sm:gap-y-16 gap-y-10 gap-x-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
               {features.map((feature) => (
                 <Link key={feature.name} href={feature.href} passHref>
                   <div className="flex flex-col-reverse cursor-pointer group">
-                    <div className="mt-6">
+                    <div className="mt-4">
                       <h2 className="text-2xl font-medium text-coalCrescendo group-hover:text-greenCrescendo">
                         {feature.name}
                       </h2>

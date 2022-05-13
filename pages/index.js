@@ -11,7 +11,7 @@ export default function Home() {
     <Layout>
       <div>
         <div className="bg-greyCrescendo">
-          <div className="px-4 py-10 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
+          <div className="px-4 pt-4 pb-8 mx-auto max-w-7xl sm:py-10 sm:px-6 lg:px-8">
             <div className="text-center">
               <div className="grid max-w-xs grid-cols-3 gap-0 mx-auto lg:max-w-lg sm:max-w-sm">
                 <div className="flex col-span-1 justify-self-end">
