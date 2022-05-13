@@ -76,7 +76,7 @@ export default function Info() {
               variants={itemBottom}
               initial="hidden"
               animate="show"
-              className="max-w-3xl mt-6 text-2xl sm:text-3xl lg:text-4xl text-greyCrescendo"
+              className="max-w-3xl mt-3 text-xl sm:text-2xl text-greyCrescendo"
             >
               6__12/6/2022
             </motion.h2>
