@@ -13,7 +13,7 @@ export default function Contactar() {
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <div className="relative object-cover w-full h-64 lg:absolute lg:h-full">
             <Image
-              src="/static/hero-crescendo.webp"
+              src="/static/features/crescendo-blue.webp"
               alt=""
               width={2400}
               height={1500}
@@ -21,7 +21,7 @@ export default function Contactar() {
               objectFit="cover"
               objectPosition="bottom"
               priority
-              blurDataURL="/static/data-crescendo.webp"
+              blurDataURL="/static/features/data-crescendo.webp"
               placeholder="blur"
             />
           </div>

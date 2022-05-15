@@ -84,7 +84,7 @@ export default function Theatres() {
               <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
                 <div className="object-cover object-center w-full h-full">
                   <Image
-                    src="/static/crescendo-img-13-waves.webp"
+                    src="/static/features/cervantes.webp"
                     alt="Teatro Cervantes"
                     width={600}
                     height={600}
@@ -127,7 +127,7 @@ export default function Theatres() {
               <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
                 <div className="object-cover object-center w-full h-full">
                   <Image
-                    src="/static/crescendo-img-17-waves.webp"
+                    src="/static/features/echegaray.webp"
                     alt="Susanne Hals"
                     width={600}
                     height={600}

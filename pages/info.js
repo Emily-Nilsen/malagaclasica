@@ -40,7 +40,7 @@ export default function Info() {
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">
             <Image
-              src="/static/crescendo-header.webp"
+              src="/static/features/crescendo-blue.webp"
               alt="Málaga Clásica"
               width={1500}
               height={1000}
@@ -48,14 +48,10 @@ export default function Info() {
               objectFit="cover"
               objectPosition="top"
               priority
-              blurDataURL="/static/data-crescendo.webp"
+              blurDataURL="/static/features/data-crescendo.webp"
               placeholder="blur"
             />
           </div>
-          <div
-            className="absolute inset-0 bg-blueCrescendo mix-blend-multiply"
-            aria-hidden="true"
-          />
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
           <div>
@@ -114,17 +110,7 @@ export default function Info() {
                         placeholder="blur"
                       />
                     </div>
-                    <div className="absolute inset-0 overflow-hidden rounded-lg bg-blueCrescendo mix-blend-multiply" />
                   </div>
-                  {/* <figcaption className="flex mt-3 text-sm text-gray-500">
-                    <CameraIcon
-                      className="flex-none w-5 h-5 text-gray-400"
-                      aria-hidden="true"
-                    />
-                    <span className="ml-2 opacity-75 text-coalCrescendo">
-                      Photograph by Marcus O’Leary
-                    </span>
-                  </figcaption> */}
                 </figure>
               </div>
             </div>
@@ -139,7 +125,7 @@ export default function Info() {
                   <p>{t('info:para_2')}</p>
                   <p>{t('info:para_3')}</p>
                 </div>
-                <h3 className="text-coalCrescendo">{t('info:subtitle')}</h3>
+                {/* <h3 className="text-coalCrescendo">{t('info:subtitle')}</h3> */}
                 <div className="opacity-75 text-coalCrescendo">
                   <p>{t('info:para_4')}</p>
                 </div>

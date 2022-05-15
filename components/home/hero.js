@@ -53,14 +53,14 @@ export default function Hero() {
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
-                      src="/static/hero-crescendo.webp"
+                      src="/static/features/crescendo-blue.webp"
                       alt="Crescendo Festival"
                       priority
-                      blurDataURL="/static/data-crescendo.webp"
+                      blurDataURL="/static/features/data-crescendo.webp"
                       placeholder="blur"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-blueCrescendo mix-blend-multiply" />
+                  {/* <div className="absolute inset-0 bg-blueCrescendo mix-blend-multiply" /> */}
                 </div>
                 <div className="relative flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
                   <div>

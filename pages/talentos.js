@@ -45,7 +45,7 @@ const Talentos = () => {
             <Image
               width={2356}
               height={1564}
-              src="/static/crescendo-img-18-waves.webp"
+              src="/static/features/talentos.webp"
               alt="Talentos"
               layout="responsive"
               objectFit="cover"

@@ -67,7 +67,7 @@ export default function Navbar() {
       name: `${t('navbar:concert_01')}`,
       href: `${t('navbar:concert_01_href')}`,
       preview: `${t('navbar:concert_01_preview')}`,
-      imageUrl: '/static/crescendo-img-08-thumbnail.webp',
+      imageUrl: '/static/features/blog-1.webp',
     },
     {
       id: 2,
@@ -75,7 +75,7 @@ export default function Navbar() {
       name: `${t('navbar:concert_02')}`,
       href: `${t('navbar:concert_02_href')}`,
       preview: `${t('navbar:concert_02_preview')}`,
-      imageUrl: '/static/crescendo-img-07-thumbnail.webp',
+      imageUrl: '/static/features/blog-2.webp',
     },
   ];
   const mobileLinks = [
@@ -250,9 +250,9 @@ export default function Navbar() {
                                           <h2 className="text-xl font-semibold truncate text-coalCrescendo">
                                             {post.name}
                                           </h2>
-                                          <p className="mt-1 text-sm text-mossCrescendo">
+                                          {/* <p className="mt-1 text-sm text-mossCrescendo">
                                             {post.preview}
-                                          </p>
+                                          </p> */}
                                         </div>
                                       </a>
                                     </li>

@@ -46,8 +46,8 @@ const events = [
         artist_5: `JOSU DE SOLAUN piano`,
       },
     ],
-    image: '/static/crescendo-img-12-waves.webp',
-    image_position: `center`,
+    image: '/static/features/day-1.webp',
+    image_position: `top center`,
   },
 
   // Concert 07 June
@@ -91,8 +91,8 @@ const events = [
         artist_3: `ANTONIO ORTÍZ piano`,
       },
     ],
-    image: '/static/crescendo-img-01-waves.webp',
-    image_position: `top left`,
+    image: '/static/features/day-2.webp',
+    image_position: `top center`,
   },
 
   // Concert 08 June
@@ -124,8 +124,8 @@ const events = [
         artist_4: `JOSU DE SOLAUN piano`,
       },
     ],
-    image: '/static/crescendo-img-14-waves.webp',
-    image_position: `top left`,
+    image: '/static/features/day-3.webp',
+    image_position: `top right`,
   },
 
   // Concert 09 June
@@ -159,8 +159,8 @@ const events = [
         artist_6: `NATALIA MARGULIS cello`,
       },
     ],
-    image: '/static/crescendo-img-08-waves.webp',
-    image_position: `top center`,
+    image: '/static/features/day-4.webp',
+    image_position: `top right`,
   },
 
   // Concert 10 June
@@ -199,8 +199,8 @@ const events = [
         artist_8: `ADOLFO GUTIÉRREZ cello`,
       },
     ],
-    image: '/static/crescendo-img-07-waves.webp',
-    image_position: `top center`,
+    image: '/static/features/day-5.webp',
+    image_position: `center`,
   },
 
   // Concert 11 June
@@ -243,7 +243,7 @@ const events = [
         artist_10: `UXÍA MARTÍNEZ BOTANA bass`,
       },
     ],
-    image: '/static/crescendo-img-11-waves.webp',
+    image: '/static/features/day-6.webp',
     image_position: `top center`,
   },
 
@@ -269,7 +269,7 @@ const events = [
         artist_3: `FRANZ SCHUBERT FILHARMONIA`,
       },
     ],
-    image: '/static/crescendo-img-10-waves.webp',
+    image: '/static/features/day-7.webp',
     image_position: `center`,
   },
 
@@ -320,8 +320,8 @@ const events = [
         artist_5: `JOSU DE SOLAUN piano`,
       },
     ],
-    image: '/static/crescendo-img-12-waves.webp',
-    image_position: `center`,
+    image: '/static/features/day-1.webp',
+    image_position: `top center`,
   },
 
   // Conciert0 07 de junio
@@ -365,8 +365,8 @@ const events = [
         artist_3: `ANTONIO ORTÍZ piano`,
       },
     ],
-    image: '/static/crescendo-img-01-waves.webp',
-    image_position: `top left`,
+    image: '/static/features/day-2.webp',
+    image_position: `top center`,
   },
 
   // Conciert0 08 de junio
@@ -398,8 +398,8 @@ const events = [
         artist_4: `JOSU DE SOLAUN piano`,
       },
     ],
-    image: '/static/crescendo-img-14-waves.webp',
-    image_position: `top left`,
+    image: '/static/features/day-3.webp',
+    image_position: `top right`,
   },
 
   // Conciert0 09 de junio
@@ -433,8 +433,8 @@ const events = [
         artist_6: `NATALIA MARGULIS violoncelo`,
       },
     ],
-    image: '/static/crescendo-img-08-waves.webp',
-    image_position: `top center`,
+    image: '/static/features/day-3.webp',
+    image_position: `top right`,
   },
 
   // Conciert0 10 de junio
@@ -473,8 +473,8 @@ const events = [
         artist_8: `ADOLFO GUTIÉRREZ violonchelo`,
       },
     ],
-    image: '/static/crescendo-img-07-waves.webp',
-    image_position: `top center`,
+    image: '/static/features/day-5.webp',
+    image_position: `center`,
   },
 
   // Conciert0 11 de junio
@@ -517,7 +517,7 @@ const events = [
         artist_10: `UXÍA MARTÍNEZ BOTANA contrabajo`,
       },
     ],
-    image: '/static/crescendo-img-11-waves.webp',
+    image: '/static/features/day-6.webp',
     image_position: `top center`,
   },
 
@@ -543,7 +543,7 @@ const events = [
         artist_3: `FRANZ SCHUBERT FILHARMONIA`,
       },
     ],
-    image: '/static/crescendo-img-10-waves.webp',
+    image: '/static/features/day-7.webp',
     image_position: `center`,
   },
 ];

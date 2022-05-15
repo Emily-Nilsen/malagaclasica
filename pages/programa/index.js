@@ -19,19 +19,18 @@ export default function Programa(props) {
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">
             <Image
-              src="/static/crescendo-middle.webp"
+              src="/static/features/crescendo-blue.webp"
               alt="Málaga Clásica"
               width={1500}
               height={1000}
               layout="fill"
               objectFit="cover"
               objectPosition="top"
+              priority
+              blurDataURL="/static/features/data-crescendo.webp"
+              placeholder="blur"
             />
           </div>
-          <div
-            className="absolute inset-0 bg-blueCrescendo mix-blend-multiply"
-            aria-hidden="true"
-          />
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
           <h2 className="text-lg font-normal tracking-wide text-greyCrescendo">
@@ -72,9 +71,9 @@ export default function Programa(props) {
                     <p className="text-xl font-semibold text-coalCrescendo">
                       {event.title}
                     </p>
-                    <p className="mt-3 text-base text-mossCrescendo">
+                    {/* <p className="mt-3 text-base text-mossCrescendo">
                       {event.preview}
-                    </p>
+                    </p> */}
                   </div>
                   <div className="mt-3">
                     <Link href={`/programa/${slugify(event.title)}`} passHref>

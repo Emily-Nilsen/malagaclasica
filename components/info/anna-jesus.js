@@ -22,19 +22,15 @@ export default function AnnaJesus() {
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">
             <Image
-              src="/static/crescendo-footer.webp"
+              src="/static/features/crescendo-blue.webp"
               alt="Málaga Clásica"
               width={1500}
               height={1000}
               layout="fill"
               objectFit="cover"
-              objectPosition="top"
+              objectPosition="bottom"
             />
           </div>
-          <div
-            className="absolute inset-0 bg-blueCrescendo mix-blend-multiply"
-            aria-hidden="true"
-          />
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8"></div>
       </div>

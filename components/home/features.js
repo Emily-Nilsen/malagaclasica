@@ -9,25 +9,25 @@ export default function Features() {
     {
       name: `${t('home:feature_info')}`,
       href: '/info',
-      imageSrc: '/static/crescendo-img-01-waves.webp',
+      imageSrc: '/static/features/img-1.webp',
       imageAlt: 'Festival Málaga Clásica',
     },
     {
       name: `${t('home:feature_programa')}`,
       href: '/programa',
-      imageSrc: '/static/crescendo-img-04-waves.webp',
+      imageSrc: '/static/features/img-2.webp',
       imageAlt: 'Festival Málaga Clásica',
     },
     {
       name: `${t('home:feature_artistas')}`,
       href: '/artistas',
-      imageSrc: '/static/crescendo-img-03-waves.webp',
+      imageSrc: '/static/features/img-3.webp',
       imageAlt: 'Festival Málaga Clásica',
     },
     {
       name: `${t('home:feature_talentos')}`,
       href: 'talentos',
-      imageSrc: '/static/crescendo-img-06-waves.webp',
+      imageSrc: '/static/features/img-4.webp',
       imageAlt: 'Festival Málaga Clásica',
     },
   ];
