@@ -165,6 +165,7 @@ export default function Contactar() {
                     id="how-can-we-help"
                     name="how-can-we-help"
                     required
+                    maxLength="500"
                     aria-describedby="how-can-we-help-description"
                     rows={4}
                     className="block w-full border rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"

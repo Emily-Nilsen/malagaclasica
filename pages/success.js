@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../../components/layout';
 import { CheckIcon } from '@heroicons/react/outline';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Success() {
   const { t } = useTranslation();
   return (
-    <>
-      <div className="flex flex-col min-h-screen pt-16 pb-12 bg-greyCrescendo">
+    <Layout>
+      <div className="flex flex-col min-h-screen pt-6 sm:pt-16 sm:pb-12 bg-greyCrescendo">
         <main className="flex items-start justify-center flex-grow w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-col p-20 bg-white rounded-md shadow">
             <div className="flex justify-center flex-shrink-0">
@@ -41,6 +42,6 @@ export default function Success() {
           </div>
         </main>
       </div>
-    </>
+    </Layout>
   );
 }
