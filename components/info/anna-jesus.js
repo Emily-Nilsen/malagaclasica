@@ -61,19 +61,6 @@ export default function AnnaJesus() {
             </div>
 
             <div>
-              <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
-                <div className="object-cover object-center w-full h-full">
-                  <Image
-                    src="/static/crescendo-img-12-blue.webp"
-                    alt="Málaga Clásica"
-                    width={1000}
-                    height={1000}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="top"
-                  />
-                </div>
-              </div>
               <div className="grid grid-cols-2 gap-4 mt-4 sm:gap-6 sm:mt-6 lg:gap-8 lg:mt-8">
                 <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
                   <div className="object-cover object-center w-full h-full">

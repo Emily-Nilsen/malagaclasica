@@ -60,7 +60,6 @@ export default function Hero() {
                       placeholder="blur"
                     />
                   </div>
-                  {/* <div className="absolute inset-0 bg-blueCrescendo mix-blend-multiply" /> */}
                 </div>
                 <div className="relative flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
                   <div>

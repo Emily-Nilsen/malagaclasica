@@ -51,7 +51,7 @@ export default function Contactar() {
 
             {/* Contact form */}
             <form
-              action="#"
+              action="/exito"
               subject="Festival Málaga Clásica"
               name="Málaga Clásica"
               data-netlify="true"

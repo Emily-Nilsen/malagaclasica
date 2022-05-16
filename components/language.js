@@ -16,22 +16,22 @@ export default function Language() {
   }
 
   return (
-    <span className="relative z-0 inline-flex shadow-none rounded-md">
+    <span className="relative z-0 inline-flex rounded-md shadow-none">
       <button
         type="button"
-        className="relative inline-flex items-center px-4 py-2 rounded-l-md border border-blueCrescendo bg-greyCrescendo text-sm font-medium text-mossCrescendo hover:text-coalCrescendo hover:bg-white focus:z-10 focus:outline-none transition duration-300 ease-in-out border-y-0 border-l-0 focus:ring-0"
+        className="relative inline-flex items-center px-4 py-2 text-sm font-semibold transition duration-300 ease-in-out border border-l-0 opacity-75 rounded-l-md border-blueCrescendo bg-t text-mossCrescendo hover:text-greenCrescendo focus:z-10 focus:outline-none border-y-0 focus:ring-0 hover:opacity-1"
       >
         <Link activeClassName={locale === 'en'} href={asPath} locale="en">
-          ENG
+          <p>ENG</p>
         </Link>
       </button>
 
       <button
         type="button"
-        className="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-blueCrescendo bg-greyCrescendo text-sm font-medium text-mossCrescendo hover:text-coalCrescendo hover:bg-white focus:z-10 focus:outline-none focus:ring-0 transition duration-300 ease-in-out border-y-0 border-r-0"
+        className="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-semibold transition duration-300 ease-in-out border border-r-0 opacity-75 rounded-r-md border-blueCrescendo bg-t text-mossCrescendo hover:text-greenCrescendo focus:z-10 focus:outline-none focus:ring-0 border-y-0 hover:opacity-1"
       >
         <Link activeClassName={locale === 'es'} href={asPath} locale="es">
-          ESP
+          <p>ESP</p>
         </Link>
       </button>
     </span>

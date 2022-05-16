@@ -14,6 +14,10 @@ const common = {
   notfound_text: "It looks like the page you’re looking for doesn't exist.",
   button_back: `Go back`,
   back_artists: `Back to artists`,
+
+  // Message sent
+  sent: `Message received`,
+  thanks: `Thank you! We have received your message and will contact you as soon as possible.`,
 };
 
 export default common;
