@@ -76,6 +76,7 @@ export default function Contactar() {
                     type="text"
                     name="first-name"
                     id="first-name"
+                    required
                     autoComplete="given-name"
                     className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
                   />
@@ -93,6 +94,7 @@ export default function Contactar() {
                     type="text"
                     name="last-name"
                     id="last-name"
+                    required
                     autoComplete="family-name"
                     className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
                   />
@@ -109,6 +111,7 @@ export default function Contactar() {
                   <input
                     id="email"
                     name="email"
+                    required
                     type="email"
                     autoComplete="email"
                     className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
@@ -161,6 +164,7 @@ export default function Contactar() {
                   <textarea
                     id="how-can-we-help"
                     name="how-can-we-help"
+                    required
                     aria-describedby="how-can-we-help-description"
                     rows={4}
                     className="block w-full border rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
