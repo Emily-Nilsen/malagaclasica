@@ -21,6 +21,9 @@ const home = {
   source_2: `La Opinion de Málaga`,
   quote_3: `Por el momento, no hay un festivol de cámara en España de este tipo.`,
   source_3: `Europress`,
+
+  // Coming Soon
+  coming_soon: `Próximamente`,
 };
 
 export default home;

@@ -38,7 +38,11 @@ const Talentos = () => {
   const talentos = ['T', 'a', 'l', 'e', 'n', 't', 'o', 's'];
 
   return (
-    <Layout>
+    <Layout
+      title={t('common:talentos_title')}
+      description={t('common:talentos_description')}
+      keywords={t('common:talentos_keywords')}
+    >
       <div className="overflow-y-hidden">
         <div className="relative flex items-center justify-center">
           <div className="w-full">
@@ -51,7 +55,7 @@ const Talentos = () => {
               objectFit="cover"
               objectPosition="center"
               priority
-              blurDataURL="/static/crescendo-img-18-blur.webp"
+              blurDataURL="/static/features/talentos_blur.webp"
               placeholder="blur"
             />
           </div>

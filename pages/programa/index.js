@@ -14,7 +14,11 @@ export default function Programa(props) {
   const { locale, locales, asPath } = useRouter();
 
   return (
-    <Layout>
+    <Layout
+      title={t('common:programa_title')}
+      description={t('common:programa_description')}
+      keywords={t('common:programa_keywords')}
+    >
       <div className="relative bg-white">
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">

@@ -21,6 +21,9 @@ const home = {
   source_2: `La Opinion de Málaga`,
   quote_3: `There is no chamber music festival like it in Spain so far.`,
   source_3: `Europress`,
+
+  // Coming Soon
+  coming_soon: `Coming Soon`,
 };
 
 export default home;

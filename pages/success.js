@@ -7,7 +7,11 @@ import useTranslation from 'next-translate/useTranslation';
 export default function Success() {
   const { t } = useTranslation();
   return (
-    <Layout>
+    <Layout
+      title={t('common:success_title')}
+      description={t('common:success_description')}
+      keywords={t('common:success_keywords')}
+    >
       <div className="flex flex-col min-h-screen pt-6 sm:pt-16 sm:pb-12 bg-greyCrescendo">
         <main className="flex items-start justify-center flex-grow w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-col p-20 bg-white rounded-md shadow">

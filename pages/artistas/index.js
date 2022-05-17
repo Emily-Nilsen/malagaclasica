@@ -13,7 +13,11 @@ export default function Artistas(props) {
   const { locale, locales, asPath } = useRouter();
 
   return (
-    <Layout>
+    <Layout
+      title={t('common:artistas_title')}
+      description={t('common:artistas_description')}
+      keywords={t('common:artistas_keywords')}
+    >
       <div className="relative bg-white">
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">
@@ -30,10 +34,6 @@ export default function Artistas(props) {
               placeholder="blur"
             />
           </div>
-          {/* <div
-            className="absolute inset-0 bg-blueCrescendo mix-blend-multiply"
-            aria-hidden="true"
-          /> */}
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-extrabold text-greyCrescendo sm:text-6xl lg:text-7xl">

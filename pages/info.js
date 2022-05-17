@@ -35,7 +35,11 @@ export default function Info() {
   const crescendo = ['c', 'r', 'e', 's', 'c', 'e', 'n', 'd', 'o'];
 
   return (
-    <Layout>
+    <Layout
+      title={t('common:info_title')}
+      description={t('common:info_description')}
+      keywords={t('common:info_keywords')}
+    >
       <div className="relative bg-white">
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">

@@ -48,6 +48,7 @@ const events = [
     ],
     image: '/static/features/day-1.webp',
     image_position: `top center`,
+    blur_image: `/static/features/day-1_blur.webp`,
   },
 
   // Concert 07 June
@@ -93,6 +94,7 @@ const events = [
     ],
     image: '/static/features/day-2.webp',
     image_position: `top center`,
+    blur_image: `/static/features/day-2_blur.webp`,
   },
 
   // Concert 08 June
@@ -126,6 +128,7 @@ const events = [
     ],
     image: '/static/features/day-3.webp',
     image_position: `top right`,
+    blur_image: `/static/features/day-3_blur.webp`,
   },
 
   // Concert 09 June
@@ -161,6 +164,7 @@ const events = [
     ],
     image: '/static/features/day-4.webp',
     image_position: `top right`,
+    blur_image: `/static/features/day-4_blur.webp`,
   },
 
   // Concert 10 June
@@ -201,6 +205,7 @@ const events = [
     ],
     image: '/static/features/day-5.webp',
     image_position: `center`,
+    blur_image: `/static/features/day-5_blur.webp`,
   },
 
   // Concert 11 June
@@ -245,6 +250,7 @@ const events = [
     ],
     image: '/static/features/day-6.webp',
     image_position: `top center`,
+    blur_image: `/static/features/day-6_blur.webp`,
   },
 
   // Concert 12 June
@@ -271,6 +277,7 @@ const events = [
     ],
     image: '/static/features/day-7.webp',
     image_position: `center`,
+    blur_image: `/static/features/day-7_blur.webp`,
   },
 
   // Conciert0 06 de junio
@@ -322,6 +329,7 @@ const events = [
     ],
     image: '/static/features/day-1.webp',
     image_position: `top center`,
+    blur_image: `/static/features/day-1_blur.webp`,
   },
 
   // Conciert0 07 de junio
@@ -367,6 +375,7 @@ const events = [
     ],
     image: '/static/features/day-2.webp',
     image_position: `top center`,
+    blur_image: `/static/features/day-2_blur.webp`,
   },
 
   // Conciert0 08 de junio
@@ -400,6 +409,7 @@ const events = [
     ],
     image: '/static/features/day-3.webp',
     image_position: `top right`,
+    blur_image: `/static/features/day-3_blur.webp`,
   },
 
   // Conciert0 09 de junio
@@ -433,8 +443,9 @@ const events = [
         artist_6: `NATALIA MARGULIS violoncelo`,
       },
     ],
-    image: '/static/features/day-3.webp',
+    image: '/static/features/day-4.webp',
     image_position: `top right`,
+    blur_image: `/static/features/day-4_blur.webp`,
   },
 
   // Conciert0 10 de junio
@@ -475,6 +486,7 @@ const events = [
     ],
     image: '/static/features/day-5.webp',
     image_position: `center`,
+    blur_image: `/static/features/day-5_blur.webp`,
   },
 
   // Conciert0 11 de junio
@@ -519,6 +531,7 @@ const events = [
     ],
     image: '/static/features/day-6.webp',
     image_position: `top center`,
+    blur_image: `/static/features/day-6_blur.webp`,
   },
 
   // Conciert0 12 de junio
@@ -545,6 +558,7 @@ const events = [
     ],
     image: '/static/features/day-7.webp',
     image_position: `center`,
+    blur_image: `/static/features/day-7_blur.webp`,
   },
 ];
 
