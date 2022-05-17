@@ -33,16 +33,16 @@ const common = {
   programa_keywords: `Teatro Cervantes, Teatro Echegaray, Guillaume Lekeu, Ludwig van Beethoven, Manuel M. Ponce, Agustín Lara, Antonín Dvořák, Alexander Borodin, Robert Schumann, Felix Mendelssohn, Max Bruch, Johann Sebastian Bach, Francis Poulenc, Gabriel Fauré, Reynaldo Hahn, Johannes Brahms, Gaspar Cassadó, Piotr Ilich Tchaikovsky, Louis Spohr, Théodore Dubois`,
 
   notfound_title: `Página no encontrada | Festival Málaga Clásica`,
-  notfound_description: ``,
-  notfound_keywords: ``,
+  notfound_description: `Página no encontrada`,
+  notfound_keywords: `Página no encontrada`,
 
   contactar_title: `Contactar | Festival Málaga Clásica`,
   contactar_description: `Contáctanos para más información sobre el Festival Internacional de Música de Cámara Málaga Clásica anual.´`,
   contactar_keywords: `malagaclasica@gmail.com, www.teatrocervantes.es, www.teatroechegaray.es`,
 
   success_title: `Mensaje recibido | Festival Málaga Clásica`,
-  success_description: ``,
-  success_keywords: ``,
+  success_description: `Mensaje recibido`,
+  success_keywords: `Mensaje recibido`,
 
   info_title: `Info | Festival Málaga Clásica`,
   info_description: `Lea sobre el Festival Internacional de Música de Cámara Málaga Clásica de este año.`,
