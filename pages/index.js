@@ -15,7 +15,7 @@ export default function Home() {
     >
       <div>
         {/* Temporary Coming Soon Page */}
-        <div className="flex flex-col min-h-full pt-16 pb-12 bg-white">
+        {/* <div className="flex flex-col min-h-full pt-16 pb-12 bg-white">
           <main className="flex flex-col justify-center flex-grow w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="px-4 pt-4 pb-8 mx-auto max-w-7xl sm:py-10 sm:px-6 lg:px-8">
               <div className="text-center">
@@ -57,15 +57,13 @@ export default function Home() {
                 <h1 className="mt-2 text-4xl font-extrabold tracking-normal text-coalCrescendo sm:text-5xl">
                   {t('home:coming_soon')}
                 </h1>
-                {/* <p className="mt-2 text-base text-gray-500">
-                  Sorry, we couldn’t find the page you’re looking for.
-                </p> */}
+                
               </div>
             </div>
           </main>
-        </div>
+        </div> */}
 
-        {/* <div className="bg-greyCrescendo">
+        <div className="bg-greyCrescendo">
           <div className="px-4 pt-4 pb-8 mx-auto max-w-7xl sm:py-10 sm:px-6 lg:px-8">
             <div className="text-center">
               <div className="grid max-w-xs grid-cols-3 gap-0 mx-auto lg:max-w-lg sm:max-w-sm">
@@ -98,10 +96,10 @@ export default function Home() {
               </h3>
             </div>
           </div>
-        </div> */}
-        {/* <Hero /> */}
-        {/* <Features /> */}
-        {/* <Testimonials /> */}
+        </div>
+        <Hero />
+        <Features />
+        <Testimonials />
       </div>
     </Layout>
   );
