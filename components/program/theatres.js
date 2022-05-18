@@ -67,16 +67,22 @@ export default function Theatres() {
                 ))}
               </dl>
               <div className="mt-10">
-                <button
-                  type="button"
-                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none hover:text-mossCrescendo bg-mossCrescendo hover:bg-greyCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
+                <a
+                  href="https://teatrocervantes.com/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <TicketIcon
-                    className="w-5 h-5 mr-2 -ml-1"
-                    aria-hidden="true"
-                  />
-                  {t('program:buy_tickets')}
-                </button>
+                  <button
+                    type="button"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none hover:text-mossCrescendo bg-mossCrescendo hover:bg-greyCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
+                  >
+                    <TicketIcon
+                      className="w-5 h-5 mr-2 -ml-1"
+                      aria-hidden="true"
+                    />
+                    {t('program:buy_tickets')}
+                  </button>
+                </a>
               </div>
             </div>
 
@@ -181,16 +187,22 @@ export default function Theatres() {
                 ))}
               </dl>
               <div className="mt-10">
-                <button
-                  type="button"
-                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none hover:text-mossCrescendo bg-mossCrescendo hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
+                <a
+                  href="https://teatroechegaray.com/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <TicketIcon
-                    className="w-5 h-5 mr-2 -ml-1"
-                    aria-hidden="true"
-                  />
-                  {t('program:buy_tickets')}
-                </button>
+                  <button
+                    type="button"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none hover:text-mossCrescendo bg-mossCrescendo hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
+                  >
+                    <TicketIcon
+                      className="w-5 h-5 mr-2 -ml-1"
+                      aria-hidden="true"
+                    />
+                    {t('program:buy_tickets')}
+                  </button>
+                </a>
               </div>
             </div>
           </div>
