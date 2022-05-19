@@ -49,14 +49,14 @@ const logos = [
     alt: `Teatro Cervantes`,
     link: `https://www.teatrocervantes.com/`,
     height: 50,
-    width: 200,
+    width: 120,
   },
   {
     image: `/static/echegaray.svg`,
     alt: `Teatro Echegaray`,
     link: `https://www.teatroechegaray.com/es/`,
     height: 50,
-    width: 100,
+    width: 120,
   },
   {
     image: `/static/aig.svg`,
@@ -156,7 +156,7 @@ export default function Hero() {
                 {t('home:cloud_title')}
               </p>
               {/* Mobile screen cloud */}
-              <div className="grid grid-cols-4 gap-1 mt-6 sm:hidden">
+              <div className="grid grid-cols-4 gap-3 mt-6 sm:hidden">
                 {logos.map((logo) => (
                   <div
                     key={logo.name}
