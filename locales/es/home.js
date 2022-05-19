@@ -1,7 +1,7 @@
 const home = {
   title: `Festival Internacional de Música de Cámara`,
   subtitle: `X Aniversario`,
-  cloud_title: `Organizan y Colobora`,
+  cloud_title: `Organizan y Colaboran`,
 
   // Features
   features_title: `Info del festival`,

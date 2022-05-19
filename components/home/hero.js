@@ -29,6 +29,65 @@ const itemBottom = {
   },
 };
 
+const logos = [
+  {
+    image: `/static/ayuntamiento.svg`,
+    alt: `Ayuntamiento de Málaga`,
+    link: `https://www.malaga.eu/`,
+    height: 50,
+    width: 200,
+  },
+  {
+    image: `/static/malaga-procultura.svg`,
+    alt: `Málaga Procultura`,
+    link: `https://www.malagaprocultura.com/`,
+    height: 50,
+    width: 130,
+  },
+  {
+    image: `/static/cervantes.svg`,
+    alt: `Teatro Cervantes`,
+    link: `https://www.teatrocervantes.com/`,
+    height: 50,
+    width: 200,
+  },
+  {
+    image: `/static/echegaray.svg`,
+    alt: `Teatro Echegaray`,
+    link: `https://www.teatroechegaray.com/es/`,
+    height: 50,
+    width: 100,
+  },
+  {
+    image: `/static/aig.svg`,
+    alt: `Acadamia Internacional Galamian`,
+    link: `https://www.academiagalamian.com/`,
+    height: 50,
+    width: 200,
+  },
+  {
+    image: `/static/reina-nilsen.svg`,
+    alt: `Fundación Reina Nilsen`,
+    link: `https://www.academiagalamian.com/`,
+    height: 50,
+    width: 200,
+  },
+  {
+    image: `/static/la-caixa.svg`,
+    alt: `Fundación La Caixa`,
+    link: `https://fundacionlacaixa.org/`,
+    height: 65,
+    width: 200,
+  },
+  {
+    image: `/static/pintor.svg`,
+    alt: `Hotel del Pintor`,
+    link: `https://www.hoteldelpintor.com/`,
+    height: 65,
+    width: 200,
+  },
+];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -96,119 +155,43 @@ export default function Hero() {
               <p className="text-sm font-semibold tracking-wide text-center uppercase text-coalCrescendo">
                 {t('home:cloud_title')}
               </p>
-              <div className="grid grid-cols-2 gap-3 mt-6 sm:gap-8 md:grid-cols-3 lg:grid-cols-8">
-                <div className="flex justify-center col-span-1 md:col-span-1 lg:col-span-2">
-                  <a
-                    href="https://www.malaga.eu/"
-                    target="_blank"
-                    rel="noreferrer"
+              {/* Mobile screen cloud */}
+              <div className="grid grid-cols-4 gap-1 mt-6 sm:hidden">
+                {logos.map((logo) => (
+                  <div
+                    key={logo.name}
+                    className="flex items-center justify-center"
                   >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
+                    <div className="transition duration-200 ease-in-out hover:brightness-125">
                       <Image
-                        width={200}
-                        height={50}
-                        src="/static/ayuntamiento.svg"
-                        alt="Ayuntamiento de Málaga"
+                        width={logo.width}
+                        height={logo.height}
+                        src={logo.image}
+                        alt={logo.alt}
                       />
                     </div>
-                  </a>
-                </div>
-                <div className="flex justify-center col-span-1 md:col-span-1 lg:col-span-2">
-                  <a
-                    href="https://www.malagaprocultura.com/"
-                    target="_blank"
-                    rel="noreferrer"
+                  </div>
+                ))}
+              </div>
+              {/* iPad and larger screen cloud */}
+              <div className="hidden grid-cols-4 gap-3 mt-6 sm:grid">
+                {logos.map((logo) => (
+                  <div
+                    key={logo.name}
+                    className="flex items-center justify-center"
                   >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
-                      <Image
-                        width={200}
-                        height={50}
-                        src="/static/malaga-procultura.svg"
-                        alt="Málaga Procultura"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex justify-center col-span-1 md:col-span-1 lg:col-span-2">
-                  <a
-                    href="https://www.teatrocervantes.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
-                      <Image
-                        width={200}
-                        height={50}
-                        src="/static/cervantes.svg"
-                        alt="Teatro Cervantes"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex justify-center col-span-1 md:col-span-1 md:col-start-1 lg:col-span-2">
-                  <a
-                    href="https://www.teatroechegaray.com/es/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
-                      <Image
-                        width={200}
-                        height={50}
-                        src="/static/echegaray.svg"
-                        alt="Teatro Echegaray"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex justify-center col-span-1 md:col-span-1 lg:col-span-2 lg:col-start-2">
-                  <a
-                    href="https://www.academiagalamian.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
-                      <Image
-                        width={200}
-                        height={50}
-                        src="/static/aig.svg"
-                        alt="Acadamia Internacional Galamian"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex justify-center col-span-1 md:col-span-1 lg:col-span-2">
-                  <a
-                    href="https://www.academiagalamian.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
-                      <Image
-                        width={200}
-                        height={50}
-                        src="/static/reina-nilsen.svg"
-                        alt="Fundación Reina Nilsen"
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex justify-center col-span-2 md:col-span-1 md:col-start-2 lg:col-span-2">
-                  <a
-                    href="https://fundacionlacaixa.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="h-12 transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
-                      <Image
-                        width={200}
-                        height={50}
-                        src="/static/la-caixa.svg"
-                        alt="Fundación La Caixa"
-                      />
-                    </div>
-                  </a>
-                </div>
+                    <a href={logo.link} target="_blank" rel="noreferrer">
+                      <div className="transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
+                        <Image
+                          width={logo.width}
+                          height={logo.height}
+                          src={logo.image}
+                          alt={logo.alt}
+                        />
+                      </div>
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
