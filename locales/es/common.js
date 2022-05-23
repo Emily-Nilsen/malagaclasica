@@ -5,6 +5,7 @@ const common = {
   program: `Programa`,
   tickets: `Entradas`,
   tickets_text: `Una lista de los precios de las entradas según las zonas de aforo del Teatro Cervantes.`,
+  zone: `Zona`,
   pricing: `Precios`,
   single_ticket: `Billete Sencillo`,
   ticket_cost_es: `€`,

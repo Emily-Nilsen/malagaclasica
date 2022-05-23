@@ -6,7 +6,6 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-/* This example requires Tailwind CSS v2.0+ */
 const tiers = [
   {
     name: '',
@@ -19,6 +18,16 @@ const tiers = [
 
 export default function PricingLastConcert() {
   const { t } = useTranslation();
+
+  const tiers = [
+    {
+      name: `${t('common:pricing')}`,
+      tier_1: '30',
+      tier_2: '22',
+      tier_3: '16',
+      tier_4: '11',
+    },
+  ];
 
   return (
     <div className="pt-10">
@@ -42,7 +51,7 @@ export default function PricingLastConcert() {
                     scope="col"
                     className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-coalCrescendo sm:pl-6 md:pl-0"
                   >
-                    {t('common:pricing')}
+                    {t('common:zone')}
                   </th>
                   <th
                     scope="col"

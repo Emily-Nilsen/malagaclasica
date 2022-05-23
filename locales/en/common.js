@@ -5,6 +5,7 @@ const common = {
   program: `Program`,
   tickets: `Tickets`,
   tickets_text: `A list of ticket prices according to the seating zones at the Cervantes Theatre.`,
+  zone: `Zone`,
   pricing: `Prices`,
   single_ticket: `Single Ticket`,
   ticket_cost_es: ``,
