@@ -82,7 +82,7 @@ export default function PricingLastConcert() {
               <tbody className="divide-y divide-gray-200">
                 {tiers.map((tier, i) => (
                   <tr key={i}>
-                    <td className="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 whitespace-nowrap sm:pl-6 md:pl-0">
+                    <td className="py-4 pl-4 pr-3 text-sm font-medium text-coalCrescendo opacity-90 whitespace-nowrap sm:pl-6 md:pl-0">
                       {tier.name}
                     </td>
                     <td className="px-3 py-4 text-sm text-gray-500 whitespace-nowrap">
