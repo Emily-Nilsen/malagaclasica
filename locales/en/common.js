@@ -3,10 +3,15 @@ const common = {
   buy_tickets: `Buy tickets`,
   go_back: `Go back`,
   program: `Program`,
-
-  single_ticket: `Single ticket`,
-  ticket_cost: `€15`,
-  no_discounts: `(no discounts)`,
+  tickets: `Tickets`,
+  tickets_text: `A list of ticket prices according to the seating zones at the Cervantes Theatre.`,
+  pricing: `Prices`,
+  single_ticket: `Single Ticket`,
+  ticket_cost_es: ``,
+  ticket_cost_en: `€`,
+  no_discounts: `(usual discounts do not apply)`,
+  discount: `Discount`,
+  discount_text: `discount for the purchase of all 7 concerts of the cycle.`,
 
   // 404 Page Not Found
   notfound_title_1: 'Uh oh!',

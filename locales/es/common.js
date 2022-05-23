@@ -3,10 +3,15 @@ const common = {
   buy_tickets: `Compra entradas`,
   go_back: `Volver`,
   program: `Programa`,
-
-  single_ticket: `Billete sencillo`,
-  ticket_cost: `15€`,
-  no_discounts: `(no descuentos)`,
+  tickets: `Entradas`,
+  tickets_text: `Una lista de los precios de las entradas según las zonas de aforo del Teatro Cervantes.`,
+  pricing: `Precios`,
+  single_ticket: `Billete Sencillo`,
+  ticket_cost_es: `€`,
+  ticket_cost_en: ``,
+  no_discounts: `(no aplicables descuentos habituales)`,
+  discount: `Descuento`,
+  discount_text: `descuento por la compra de los 7 conciertos del ciclo.`,
 
   // 404 Page Not Found
   notfound_title_1: '¡Oh oh!',

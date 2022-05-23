@@ -2,6 +2,9 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import events from '../../assets/events';
+import Discount from '../../components/program/discount';
+import PricingRegular from '../../components/program/pricing-regular';
+import PricingLastConcert from '../../components/program/pricing-last-concert';
 import { motion } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
 import { ExternalLinkIcon, TicketIcon } from '@heroicons/react/solid';
@@ -117,18 +120,16 @@ const Concert = ({ event }) => {
               <p className="mt-4 text-coalCrescendo opacity-80">
                 {event.sent_03}
               </p>
-              <h3 className="mt-10 text-lg font-bold tracking-normal uppercase text-coalCrescendo">
-                <span className="font-medium tracking-wide text-mossCrescendo">
-                  {t('common:single_ticket')}{' '}
-                </span>
-                {t('common:ticket_cost')}{' '}
-                <span className="font-medium tracking-normal lowercase text-mossCrescendo">
-                  {t('common:no_discounts')}
-                </span>
-              </h3>
+
+              {event.date.includes('12') ? (
+                <PricingLastConcert />
+              ) : (
+                <PricingRegular />
+              )}
+              <Discount />
               <div className="flex mt-10">
                 <a
-                  href="https://teatrocervantes.com/"
+                  href="https://teatrocervantes.com/es/genero/musica/x-malaga-clasica-crescendo/"
                   target="_blank"
                   rel="noreferrer"
                 >

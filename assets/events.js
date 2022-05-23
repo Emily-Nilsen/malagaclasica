@@ -1,9 +1,10 @@
 const events = [
   // Concert 06 June
   {
+    id: 1,
     locale: 'en',
     date: `06 June, 2022`,
-    datetime: '2022-06-06',
+    price: `regular`,
     title: `ANACRUSA - Opening concert`,
     location: `Echegaray Theatre, 8 p.m.`,
     preview: `Just as you find the impulse and energy giving rise to the upbeat of a composition, you will also find elements in the upbeat of this festival that form part of its totality.`,
@@ -53,9 +54,10 @@ const events = [
 
   // Concert 07 June
   {
+    id: 2,
     locale: 'en',
     date: `07 June, 2022`,
-    datetime: '2022-06-07',
+    price: `regular`,
     title: `One, two and three - CRESCENDO`,
     location: `Echegaray Theatre, 8 p.m.`,
     preview: `In the musical structure, the crescendo is considered a new door, the beginning of a long journey, and the deepest part and lowest point of a phrase from which everything expands.`,
@@ -99,9 +101,10 @@ const events = [
 
   // Concert 08 June
   {
+    id: 3,
     locale: 'en',
     date: `08 June, 2022`,
-    datetime: '2022-06-08',
+    price: `regular`,
     title: `Four - EQUILIBRIO`,
     location: `Echegaray Theatre, 8 p.m.`,
     preview: `This piece is composed by the founding father of the string quartet as we know it, Joseph Haydn. It demonstrates the perfect balance in composition due to the richness of range, sound diversity and unity through instrumental timbre.`,
@@ -133,9 +136,10 @@ const events = [
 
   // Concert 09 June
   {
+    id: 4,
     locale: 'en',
     date: `09 June, 2022`,
-    datetime: '2022-06-09',
+    price: `regular`,
     title: `Five and six - DIVERSIÓN`,
     location: `Echegaray Theatre, 8 p.m.`,
     preview: `Adding instruments to the ensembles gives room for the composers to brilliantly change the texture and give more density to the harmony.`,
@@ -169,9 +173,10 @@ const events = [
 
   // Concert 10 June
   {
+    id: 5,
     locale: 'en',
     date: `10 June, 2022`,
-    datetime: '2022-06-10',
+    price: `regular`,
     title: `Seven and eight - SIMBIOSIS`,
     location: `Echegaray Theatre, 8 p.m.`,
     preview: `What is more straightforward in smaller ensembles is far more complex in a septet regarding the successful intertwining of instrumental lines.`,
@@ -210,9 +215,10 @@ const events = [
 
   // Concert 11 June
   {
+    id: 6,
     locale: 'en',
     date: `11 June, 2022`,
-    datetime: '2022-06-11',
+    price: `regular`,
     title: `Nine and ten - VIRTUOSISMO`,
     location: `Echegaray Theatre, 8 p.m.`,
     preview: `Louis Spohr's nonet was so popular that its instrumentation became the standard for other composers wishing to write for the ensemble.`,
@@ -255,11 +261,12 @@ const events = [
 
   // Concert 12 June
   {
+    id: 7,
     locale: 'en',
     date: `12 June, 2022`,
-    datetime: '2022-06-12',
+    price: `premium`,
     title: `FORTÍSIMO - Closing concert`,
-    location: `Echegaray Theatre, 8 p.m.`,
+    location: `Cervantes Theatre, 7 p.m.`,
     preview: `The orchestra is the full extension of a chamber group on a grand scale.`,
     sent_01: `The distance between the musicians makes it harder to hear and see each other. The conductor, therefore, leads the group, consisting of up to over 100 members, and guides the players through masterful hand and body language to portray one unified interpretation of the work presented.`,
     sent_02: `Max Bruch’s violin concerto is dedicated to and premiered by Joseph Joachim. It showcases the violin with its dazzling, virtuosic passages and singing lines and the grandeur and sheer power of the orchestra each time it breaks out in another wonderful tutti. Audiences especially love the piece for its heart-breaking melodies and energetic character.`,
@@ -282,9 +289,10 @@ const events = [
 
   // Conciert0 06 de junio
   {
+    id: 1,
     locale: 'es',
     date: `06 de junio, 2022`,
-    datetime: '2022-06-06',
+    price: `regular`,
     title: `ANACRUSA - Concierto de apertura`,
     location: `Teatro Echegaray, 20:00 h.`,
     preview: `Tal como en la anacrusa de una obra se encuentra el impulso y energía que da lugar a ella, así en la anacrusa de este festival, se encuentran los elementos que van a formar parte de su totalidad.`,
@@ -334,9 +342,10 @@ const events = [
 
   // Conciert0 07 de junio
   {
+    id: 2,
     locale: 'es',
     date: `07 de junio, 2022`,
-    datetime: '2022-06-07',
+    price: `regular`,
     title: `Uno, dos y tres - CRESCENDO`,
     location: `Teatro Echegaray, 20:00 h.`,
     preview: `En la estructura musical se considera al crescendo como una nueva puerta, como el inicio de un largo viaje, como la parte más honda y punto más bajo de una frase a partir del cual todo se expande.`,
@@ -380,9 +389,10 @@ const events = [
 
   // Conciert0 08 de junio
   {
+    id: 3,
     locale: 'es',
     date: `08 de junio, 2022`,
-    datetime: '2022-06-08',
+    price: `regular`,
     title: `Cuatro - EQUILIBRIO`,
     location: `Teatro Echegaray, 20:00 h.`,
     preview: `Desde el padre fundador del cuarteto de cuerda tal y como lo conocemos, Joseph Haydn, se concibe tal formación como el equilibrio perfecto en la composición, por la riqueza de rango, diversidad sonora y unidad a través del timbre instrumental.`,
@@ -414,9 +424,10 @@ const events = [
 
   // Conciert0 09 de junio
   {
+    id: 4,
     locale: 'es',
     date: `09 de junio, 2022`,
-    datetime: '2022-06-09',
+    price: `regular`,
     title: `Cinco y séis - DIVERSIÓN`,
     location: `Teatro Echegaray, 20:00 h.`,
     preview: `Agregar instrumentos a los ensembles da lugar a que los compositores cambien brillantemente la textura, además de dar más densidad a la armonía.`,
@@ -450,9 +461,10 @@ const events = [
 
   // Conciert0 10 de junio
   {
+    id: 5,
     locale: 'es',
     date: `10 de junio, 2022`,
-    datetime: '2022-06-10',
+    price: `regular`,
     title: `Siete y ocho - SIMBIOSIS`,
     location: `Teatro Echegaray, 20:00 h.`,
     preview: `Lo que es más simple en ensembles más pequeños es mucho más complejo en un septeto en términos de entrelazar exitosamente las líneas instrumentales.`,
@@ -491,9 +503,10 @@ const events = [
 
   // Conciert0 11 de junio
   {
+    id: 6,
     locale: 'es',
     date: `11 de junio, 2022`,
-    datetime: '2022-06-11',
+    price: `regular`,
     title: `Nueve y diez - VIRTUOSISMO`,
     location: `Teatro Echegaray, 20:00 h.`,
     preview: `El noneto de Louis Spohr fue tan popular que su instrumentación se convirtió en el estándar para otros compositores que deseaban escribir para esta formación.`,
@@ -536,11 +549,12 @@ const events = [
 
   // Conciert0 12 de junio
   {
+    id: 7,
     locale: 'es',
     date: `12 de junio, 2022`,
-    datetime: '2022-06-12',
+    price: `premium`,
     title: `FORTÍSIMO - Concierto de clausura`,
-    location: `Teatro Echegaray, 20:00 h.`,
+    location: `Teatro Cervantes, 19:00 h.`,
     preview: `La orquesta es a gran escala la extensión completa de un grupo de cámara.`,
     sent_01: `Dado que la distancia entre los músicos hace que sea más difícil escucharse y verse, el director lidera el grupo, que puede estar formado por más de 100 miembros, y guía a los músicos a través de un lenguaje manual y corporal magistral para retratar una interpretación unificada de la obra presentada.`,
     sent_02: `El concierto para violín de Max Bruch, dedicado a y estrenado por Joseph Joachim, muestra no solo el violín, con sus pasajes deslumbrantes y virtuosos y sus líneas de canto, sino también la grandeza y el poder puro de la orquesta cada vez que estalla en otro maravilloso tutti. La pieza es especialmente amada por sus melodías desgarradoras y carácter enérgico.`,
