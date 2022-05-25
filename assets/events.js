@@ -154,6 +154,7 @@ const events = [
         artist_2: `ALISSA MARGULIS violin`,
         artist_3: `TOMOKO AKASAKA viola`,
         artist_4: `ADOLFO GUTIÉRREZ cello`,
+        artist_5: `ANTONIO ORTÍZ piano`,
       },
       {
         composer: `Piotr Ilich Tchaikovsky (1840-1893)`,
@@ -442,6 +443,7 @@ const events = [
         artist_2: `ALISSA MARGULIS violín`,
         artist_3: `TOMOKO AKASAKA viola`,
         artist_4: `ADOLFO GUTIÉRREZ violonchelo`,
+        artist_5: `ANTONIO ORTÍZ piano`,
       },
       {
         composer: `Piotr Ilich Tchaikovsky (1840-1893)`,
