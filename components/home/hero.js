@@ -9,7 +9,7 @@ const container = {
   show: {
     opacity: 1,
     transition: {
-      delay: 0.5,
+      delay: 0.6,
       staggerChildren: 0.2,
     },
   },
@@ -105,20 +105,25 @@ export default function Hero() {
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="relative shadow-none sm:overflow-hidden h-[50vh]">
                 <div className="absolute inset-0">
-                  <div className="object-cover w-full h-full">
+                  <motion.div
+                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    transition={{
+                      duration: 0.8,
+                      type: 'fade',
+                    }}
+                    className="object-cover w-full h-full"
+                  >
                     <Image
-                      width={2400}
-                      height={1500}
+                      unoptimized={true}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
-                      src="/static/features/crescendo-blue.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
                       alt="Crescendo Festival"
                       priority
-                      blurDataURL="/static/features/data-crescendo.webp"
-                      placeholder="blur"
                     />
-                  </div>
+                  </motion.div>
                 </div>
                 <div className="relative flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
                   <div>
