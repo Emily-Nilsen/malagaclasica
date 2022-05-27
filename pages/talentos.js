@@ -13,7 +13,7 @@ const container = {
   show: {
     opacity: 1,
     transition: {
-      delay: 0.5,
+      delay: 0.6,
       staggerChildren: 0.2,
     },
   },
@@ -45,20 +45,27 @@ const Talentos = () => {
     >
       <div className="overflow-y-hidden">
         <div className="relative flex items-center justify-center">
-          <div className="w-full">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.8,
+              type: 'fade',
+            }}
+            className="w-full"
+          >
             <Image
               width={2356}
               height={1564}
-              src="/static/features/talentos.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686312/M%C3%A1laga%20Cl%C3%A1sica/talentos_q5cok3.webp"
               alt="Talentos"
               layout="responsive"
               objectFit="cover"
               objectPosition="center"
               priority
-              blurDataURL="/static/features/talentos_blur.webp"
-              placeholder="blur"
+              unoptimized={true}
             />
-          </div>
+          </motion.div>
           <div className="absolute flex flex-col items-center justify-start w-40 py-8 mx-4 md:w-48 lg:w-72 md:flex-row sm:py-10 md:py-10 xl:py-20 md:mx-8 lg:mx-20 xl:mx-20">
             {/* Talentos */}
             <div className="relative flex items-center justify-center h-full pt-20 sm:pt-60">

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
+import { motion } from 'framer-motion';
 
 export default function InfoTalentos() {
   const { t } = useTranslation();
@@ -29,17 +30,26 @@ export default function InfoTalentos() {
           <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
             <div className="relative pt-64 pb-10 overflow-hidden shadow-none rounded-2xl">
-              <div className="absolute inset-0 object-cover w-full h-full">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.8,
+                  type: 'fade',
+                }}
+                className="absolute inset-0 object-cover w-full h-full"
+              >
                 <Image
-                  src="/static/aig.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/aig_locfn8.webp"
                   alt="Teatro Echegaray"
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
+                  unoptimized={true}
                 />
-              </div>
-              <div className="absolute inset-0 bg-blueCrescendo mix-blend-multiply" />
-              <div className="absolute inset-0 bg-gradient-to-t from-mossCrescendo via-mossCrescendo opacity-90" />
+              </motion.div>
+              {/* <div className="absolute inset-0 bg-blueCrescendo mix-blend-multiply" /> */}
+              <div className="absolute inset-0 bg-gradient-to-t from-coalCrescendo via-coalCrescendo opacity-70" />
               <div className="relative px-8">
                 <blockquote className="mt-8">
                   <footer className="mt-4">
