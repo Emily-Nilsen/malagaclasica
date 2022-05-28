@@ -26,7 +26,7 @@ const common = {
   thanks: `¡Gracias! Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.`,
 
   // Layout text
-  index_title: `Home | Málaga Clásica Festival`,
+  index_title: `Inicio | Málaga Clásica Festival`,
   index_description: `Web del Festival Internacional de Música de Cámara de Málaga Clásica.`,
   index_keywords: `música de cámara, festival, Málaga, Málaga Clásica Festival`,
 
