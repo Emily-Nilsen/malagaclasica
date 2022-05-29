@@ -49,7 +49,7 @@ const Concert = ({ event }) => {
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{
-              duration: 0.8,
+              duration: 0.6,
               type: 'fade',
               ease: 'easeIn',
             }}

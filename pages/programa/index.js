@@ -23,7 +23,7 @@ export default function Programa(props) {
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         transition={{
-          duration: 0.8,
+          duration: 0.6,
           type: 'fade',
           ease: 'easeIn',
         }}
@@ -68,30 +68,37 @@ export default function Programa(props) {
               </p>
             </div>
           </div>
-          <div className="grid gap-16 pt-10 mt-6 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+          <div className="grid gap-6 pt-10 mt-6 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-8">
             {events
               .filter((p) => p.locale === locale)
               .map((event, i) => (
-                <div key={i}>
-                  <p className="text-sm text-mossCrescendo">
-                    <time dateTime={event.datetime}>{event.date}</time>
-                  </p>
-                  <div className="block mt-2">
-                    <p className="text-xl font-semibold text-coalCrescendo">
-                      {event.title}
+                <Link
+                  key={i}
+                  href={`/programa/${slugify(event.title)}`}
+                  passHref
+                >
+                  <div
+                    className="p-6 transition duration-300 ease-in-out bg-white rounded-md cursor-pointer group hover:bg-mossCrescendo"
+                    key={i}
+                  >
+                    <p className="text-sm text-mossCrescendo group-hover:text-gray-100">
+                      <time dateTime={event.datetime}>{event.date}</time>
                     </p>
-                    {/* <p className="mt-3 text-base text-mossCrescendo">
+                    <div className="block mt-2">
+                      <p className="text-xl font-semibold text-coalCrescendo group-hover:text-white">
+                        {event.title}
+                      </p>
+                      {/* <p className="mt-3 text-base text-mossCrescendo">
                       {event.preview}
                     </p> */}
-                  </div>
-                  <div className="mt-3">
-                    <Link href={`/programa/${slugify(event.title)}`} passHref>
-                      <a className="text-base font-semibold transition duration-200 ease-in-out cursor-pointer text-greenCrescendo hover:text-coalCrescendo">
+                    </div>
+                    <div className="mt-3">
+                      <a className="text-base font-semibold text-greenCrescendo group-hover:text-teal-100">
                         <h2>{t('program:read_more')}</h2>
                       </a>
-                    </Link>
+                    </div>
                   </div>
-                </div>
+                </Link>
               ))}
           </div>
         </div>
