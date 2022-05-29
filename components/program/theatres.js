@@ -87,38 +87,66 @@ export default function Theatres() {
             </div>
 
             <div>
-              <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  delay: 0.3,
+                  duration: 0.5,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1"
+              >
                 <div className="object-cover object-center w-full h-full">
                   <Image
-                    src="/static/features/cervantes.webp"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/cervantes_mv87mp.webp"
                     alt="Teatro Cervantes"
-                    width={600}
-                    height={600}
+                    unoptimized={true}
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center"
                   />
                 </div>
-              </div>
+              </motion.div>
               <div className="grid grid-cols-2 gap-4 mt-4 sm:gap-6 sm:mt-6 lg:gap-8 lg:mt-8">
-                <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
+                <motion.div
+                  whileInView={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 0.5,
+                    type: 'fade',
+                    ease: 'easeIn',
+                  }}
+                  className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1"
+                >
                   <div className="object-cover object-center w-full h-full">
                     <Image
-                      src="/static/cervantes.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686228/M%C3%A1laga%20Cl%C3%A1sica/cervantes_ikqf3i.webp"
                       alt="Teatro Cervantes"
-                      width={600}
-                      height={600}
+                      unoptimized={true}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
                     />
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Google Map */}
-                <div className="relative h-0 overflow-hidden rounded-lg shadow-none aspect-w-1 aspect-h-1">
+                <motion.div
+                  whileInView={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    delay: 0.7,
+                    duration: 0.5,
+                    type: 'fade',
+                    ease: 'easeIn',
+                  }}
+                  className="relative h-0 overflow-hidden rounded-lg shadow-none aspect-w-1 aspect-h-1"
+                >
                   <CervantesMap />
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -130,37 +158,65 @@ export default function Theatres() {
         <div className="max-w-2xl px-4 py-24 mx-auto sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
             <div>
-              <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  delay: 0.3,
+                  duration: 0.5,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1"
+              >
                 <div className="object-cover object-center w-full h-full">
                   <Image
-                    src="/static/features/echegaray.webp"
-                    alt="Susanne Hals"
-                    width={600}
-                    height={600}
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686312/M%C3%A1laga%20Cl%C3%A1sica/echegaray_bfaqwq.webp"
+                    alt="Teatro Echegaray"
+                    unoptimized={true}
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center"
                   />
                 </div>
-              </div>
+              </motion.div>
               <div className="grid grid-cols-2 gap-4 mt-4 sm:gap-6 sm:mt-6 lg:gap-8 lg:mt-8">
                 {/* Google Map */}
-                <div className="relative h-0 overflow-hidden rounded-lg shadow-none aspect-w-1 aspect-h-1">
+                <motion.div
+                  whileInView={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 0.5,
+                    type: 'fade',
+                    ease: 'easeIn',
+                  }}
+                  className="relative h-0 overflow-hidden rounded-lg shadow-none aspect-w-1 aspect-h-1"
+                >
                   <EchegarayMap />
-                </div>
-                <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
+                </motion.div>
+                <motion.div
+                  whileInView={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  transition={{
+                    delay: 0.7,
+                    duration: 0.5,
+                    type: 'fade',
+                    ease: 'easeIn',
+                  }}
+                  className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1"
+                >
                   <div className="object-cover object-center w-full h-full">
                     <Image
-                      src="/static/echegaray.jpeg"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686229/M%C3%A1laga%20Cl%C3%A1sica/echegaray_fcc1ko.jpg"
                       alt="Teatro Echegaray"
-                      width={600}
-                      height={600}
+                      unoptimized={true}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
 

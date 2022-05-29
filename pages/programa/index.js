@@ -19,20 +19,25 @@ export default function Programa(props) {
       description={t('common:programa_description')}
       keywords={t('common:programa_keywords')}
     >
-      <div className="relative bg-white">
+      <motion.div
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{
+          duration: 0.8,
+          type: 'fade',
+          ease: 'easeIn',
+        }}
+        className="relative bg-white"
+      >
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">
             <Image
-              src="/static/features/crescendo-blue.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
               alt="Málaga Clásica"
-              width={1500}
-              height={1000}
+              unoptimized={true}
               layout="fill"
               objectFit="cover"
               objectPosition="top"
-              priority
-              blurDataURL="/static/features/data-crescendo.webp"
-              placeholder="blur"
             />
           </div>
         </div>
@@ -50,7 +55,7 @@ export default function Programa(props) {
             {t('program:hero_text_3')}
           </p>
         </div>
-      </div>
+      </motion.div>
       <div className="px-4 pt-16 pb-20 bg-greyCrescendo sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
           <div>

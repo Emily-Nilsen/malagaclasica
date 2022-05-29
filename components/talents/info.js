@@ -36,6 +36,7 @@ export default function InfoTalentos() {
                 transition={{
                   duration: 0.8,
                   type: 'fade',
+                  ease: 'easeIn',
                 }}
                 className="absolute inset-0 object-cover w-full h-full"
               >

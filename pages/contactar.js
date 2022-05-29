@@ -14,24 +14,29 @@ export default function Contactar() {
       keywords={t('common:contactar_keywords')}
     >
       <div className="relative bg-greyCrescendo">
-        <div className="lg:absolute lg:inset-0">
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 0.8,
+            type: 'fade',
+            ease: 'easeIn',
+          }}
+          className="lg:absolute lg:inset-0"
+        >
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
             <div className="relative object-cover w-full h-64 lg:absolute lg:h-full">
               <Image
-                src="/static/features/crescendo-blue.webp"
-                alt=""
-                width={2400}
-                height={1500}
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
+                alt="Crescendo waves"
+                unoptimized={true}
                 layout="fill"
                 objectFit="cover"
                 objectPosition="bottom"
-                priority
-                blurDataURL="/static/features/data-crescendo.webp"
-                placeholder="blur"
               />
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
           <div className="lg:pr-8">
             <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">

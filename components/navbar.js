@@ -67,7 +67,8 @@ export default function Navbar() {
       name: `${t('navbar:concert_01')}`,
       href: `${t('navbar:concert_01_href')}`,
       preview: `${t('navbar:concert_01_preview')}`,
-      imageUrl: '/static/features/blog-1.webp',
+      imageUrl:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/blog-1_mqkvlt.webp',
     },
     {
       id: 2,
@@ -75,7 +76,8 @@ export default function Navbar() {
       name: `${t('navbar:concert_02')}`,
       href: `${t('navbar:concert_02_href')}`,
       preview: `${t('navbar:concert_02_preview')}`,
-      imageUrl: '/static/features/blog-2.webp',
+      imageUrl:
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/blog-2_d8miok.webp',
     },
   ];
   const mobileLinks = [
@@ -239,7 +241,8 @@ export default function Navbar() {
                                               width={300}
                                               height={200}
                                               src={post.imageUrl}
-                                              alt=""
+                                              alt="Crescendo"
+                                              unoptimized={true}
                                             />
                                           </div>
                                         </div>
@@ -315,7 +318,7 @@ export default function Navbar() {
           className="absolute inset-x-0 top-0 z-30 p-2 transition origin-top-right transform md:hidden"
         >
           <Popover.Button className="w-full">
-            <div className="bg-white divide-y-2 rounded-none shadow-none ring-1 ring-blueCrescendo ring-opacity-5 divide-gray-50">
+            <div className="bg-white divide-y-2 rounded-none shadow ring-1 ring-blueCrescendo ring-opacity-5 divide-gray-50">
               <div className="px-5 pt-5 pb-6 sm:pb-8">
                 <div className="flex items-center justify-between">
                   <div>

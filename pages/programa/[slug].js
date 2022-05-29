@@ -5,7 +5,7 @@ import events from '../../assets/events';
 import Discount from '../../components/program/discount';
 import PricingRegular from '../../components/program/pricing-regular';
 import PricingLastConcert from '../../components/program/pricing-last-concert';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
 import { ExternalLinkIcon, TicketIcon } from '@heroicons/react/solid';
 
@@ -42,22 +42,31 @@ const Concert = ({ event }) => {
   return (
     <div className="bg-greyCrescendo">
       <section aria-labelledby="details-heading" className="relative">
-        <div className="overflow-hidden aspect-w-3 aspect-h-2 sm:aspect-w-5 2xl:aspect-none 2xl:absolute 2xl:w-1/2 2xl:h-full 2xl:pr-4 xl:pr-16">
-          <div className="object-cover object-center w-full h-full 2xl:h-full 2xl:w-full">
-            <Image
-              src={event.image}
-              alt={event.title}
-              width={1500}
-              height={1000}
-              layout="fill"
-              objectFit="cover"
-              objectPosition={event.image_position}
-              priority
-              blurDataURL={event.blur_image}
-              placeholder="blur"
-            />
-          </div>
-        </div>
+        {/* Need to use AnimatePresence on a slug */}
+        <AnimatePresence exitBeforeEnter>
+          <motion.div
+            key={router.asPath}
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.8,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="overflow-hidden aspect-w-3 aspect-h-2 sm:aspect-w-5 2xl:aspect-none 2xl:absolute 2xl:w-1/2 2xl:h-full 2xl:pr-4 xl:pr-16"
+          >
+            <div className="object-cover object-center w-full h-full 2xl:h-full 2xl:w-full">
+              <Image
+                src={event.image}
+                alt={event.title}
+                unoptimized={true}
+                layout="fill"
+                objectFit="cover"
+                objectPosition={event.image_position}
+              />
+            </div>
+          </motion.div>
+        </AnimatePresence>
 
         <div className="max-w-2xl px-4 pt-16 pb-24 mx-auto sm:pb-32 sm:px-6 2xl:max-w-7xl 2xl:pt-32 2xl:px-8 2xl:grid 2xl:grid-cols-2 2xl:gap-x-8">
           <div className="2xl:col-start-2">
