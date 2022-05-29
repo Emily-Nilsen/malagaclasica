@@ -50,7 +50,7 @@ export default function Features() {
               </p>
             </div>
 
-            <div className="grid items-start grid-cols-1 mt-11 sm:gap-y-16 gap-y-10 gap-x-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
+            <div className="grid items-start grid-cols-2 mt-11 sm:gap-y-16 gap-y-10 gap-x-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
               {features.map((feature, i) => (
                 <Link key={i} href={feature.href} passHref>
                   <motion.div
@@ -71,6 +71,7 @@ export default function Features() {
                     <motion.div
                       whileInView={{ opacity: 1 }}
                       initial={{ opacity: 0 }}
+                      viewport={{ once: true }}
                       transition={{
                         duration: 0.8,
                         delay: i * 0.3,

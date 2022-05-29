@@ -25,7 +25,7 @@ const itemBottom = {
   show: {
     opacity: [0, 0.2, 0.5, 0.8, 1],
     y: 0,
-    transition: { type: 'spring', stiffness: 30, duration: 1.3, delay: 1.6 },
+    transition: { type: 'spring', stiffness: 30, duration: 1.3, delay: 1.5 },
   },
 };
 
@@ -111,6 +111,7 @@ export default function Hero() {
                     transition={{
                       duration: 0.8,
                       type: 'fade',
+                      ease: 'easeIn',
                     }}
                     className="object-cover w-full h-full"
                   >
@@ -121,7 +122,6 @@ export default function Hero() {
                       objectPosition="center"
                       src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
                       alt="Crescendo Festival"
-                      priority
                     />
                   </motion.div>
                 </div>

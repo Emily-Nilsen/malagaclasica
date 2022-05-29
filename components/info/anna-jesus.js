@@ -20,17 +20,25 @@ export default function AnnaJesus() {
       {/* Info Section Two */}
       <div className="relative bg-white">
         <div className="absolute inset-0">
-          <div className="object-cover w-full h-full">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.8,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="object-cover w-full h-full"
+          >
             <Image
-              src="/static/features/crescendo-blue.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
               alt="Málaga Clásica"
-              width={1500}
-              height={1000}
+              unoptimized={true}
               layout="fill"
               objectFit="cover"
               objectPosition="bottom"
             />
-          </div>
+          </motion.div>
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8"></div>
       </div>
@@ -62,32 +70,56 @@ export default function AnnaJesus() {
 
             <div>
               <div className="grid grid-cols-2 gap-4 mt-4 sm:gap-6 sm:mt-6 lg:gap-8 lg:mt-8">
-                <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    x: -50,
+                  }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 1,
+                    ease: 'easeOut',
+                  }}
+                  className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1"
+                >
                   <div className="object-cover object-center w-full h-full">
                     <Image
-                      src="/static/jesus-blue.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/jesus-blue_mmvvbe.webp"
                       alt="Jesús Reina"
-                      width={1000}
-                      height={1000}
+                      unoptimized={true}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
                     />
                   </div>
-                </div>
-                <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
+                </motion.div>
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    x: 50,
+                  }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 1,
+                    ease: 'easeOut',
+                  }}
+                  className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1"
+                >
                   <div className="object-cover object-center w-full h-full">
                     <Image
-                      src="/static/anna-blue.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/anna-blue_zhdfjb.webp"
                       alt="Anna Nilsen"
-                      width={1000}
-                      height={1000}
+                      unoptimized={true}
                       layout="fill"
                       objectFit="cover"
                       objectPosition="center"
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>

@@ -26,7 +26,7 @@ const itemBottom = {
   show: {
     opacity: [0, 0.2, 0.5, 0.8, 1],
     y: 0,
-    transition: { type: 'spring', stiffness: 30, duration: 1.3, delay: 1.6 },
+    transition: { type: 'spring', stiffness: 30, duration: 1.3, delay: 1.5 },
   },
 };
 
@@ -42,20 +42,25 @@ export default function Info() {
     >
       <div className="relative bg-white">
         <div className="absolute inset-0">
-          <div className="object-cover w-full h-full">
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.8,
+              type: 'fade',
+              ease: 'easeIn',
+            }}
+            className="object-cover w-full h-full"
+          >
             <Image
-              src="/static/features/crescendo-blue.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
               alt="Málaga Clásica"
-              width={1500}
-              height={1000}
+              unoptimized={true}
               layout="fill"
               objectFit="cover"
               objectPosition="top"
-              priority
-              blurDataURL="/static/features/data-crescendo.webp"
-              placeholder="blur"
             />
-          </div>
+          </motion.div>
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
           <div>
@@ -101,19 +106,28 @@ export default function Info() {
               <div className="relative mx-auto text-base max-w-prose lg:max-w-none">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                    <div className="object-cover object-center overflow-hidden rounded-lg shadow-none">
+                    <motion.div
+                      whileInView={{ opacity: 1 }}
+                      initial={{ opacity: 0 }}
+                      transition={{
+                        delay: 0.6,
+                        duration: 0.8,
+                        type: 'fade',
+                        ease: 'easeIn',
+                      }}
+                      className="object-cover object-center overflow-hidden rounded-lg shadow-none"
+                    >
                       <Image
-                        src="/static/crescendo-img-19-blue.webp"
+                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686228/M%C3%A1laga%20Cl%C3%A1sica/crescendo-img-19-blue_vlbgc3.webp"
                         alt="Málaga Clásica"
                         width={2228}
                         height={1300}
                         layout="responsive"
                         objectFit="cover"
                         objectPosition="bottom"
-                        blurDataURL="/static/data-crescendo.webp"
-                        placeholder="blur"
+                        unoptimized={true}
                       />
-                    </div>
+                    </motion.div>
                   </div>
                 </figure>
               </div>
