@@ -73,14 +73,14 @@ export default function AnnaJesus() {
                 <motion.div
                   initial={{
                     opacity: 0,
-                    x: -50,
+                    y: 100,
                   }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{
-                    duration: 0.7,
-                    delay: 1,
-                    ease: 'easeOut',
+                    duration: 0.8,
+                    delay: 0,
+                    ease: 'easeIn',
                   }}
                   className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1"
                 >
@@ -98,14 +98,14 @@ export default function AnnaJesus() {
                 <motion.div
                   initial={{
                     opacity: 0,
-                    x: 50,
+                    y: 100,
                   }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{
-                    duration: 0.7,
-                    delay: 1,
-                    ease: 'easeOut',
+                    duration: 0.8,
+                    delay: 0.3,
+                    ease: 'easeIn',
                   }}
                   className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1"
                 >
