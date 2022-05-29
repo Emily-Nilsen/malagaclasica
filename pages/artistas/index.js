@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../../components/layout';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
 import artists from '../../assets/artists';
 import slugify from 'slugify';
@@ -18,20 +18,25 @@ export default function Artistas(props) {
       description={t('common:artistas_description')}
       keywords={t('common:artistas_keywords')}
     >
-      <div className="relative bg-white">
+      <motion.div
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{
+          duration: 0.4,
+          type: 'fade',
+          ease: 'easeIn',
+        }}
+        className="relative bg-white"
+      >
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">
             <Image
-              src="/static/features/crescendo-blue.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
               alt="Málaga Clásica"
-              width={1500}
-              height={1000}
+              unoptimized={true}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-              priority
-              blurDataURL="/static/features/data-crescendo.webp"
-              placeholder="blur"
             />
           </div>
         </div>
@@ -43,7 +48,7 @@ export default function Artistas(props) {
             {t('artists:hero_subtitle')}
           </p>
         </div>
-      </div>
+      </motion.div>
 
       <div className="bg-greyCrescendo">
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-24">
@@ -58,7 +63,7 @@ export default function Artistas(props) {
             </div>
             <ul
               role="list"
-              className="space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8 group"
+              className="pb-10 space-y-0 sm:pb-12 md:pb-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-6 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8 group"
             >
               {artists
                 .filter((p) => p.locale === locale)
@@ -68,7 +73,20 @@ export default function Artistas(props) {
                       href={`/artistas/${slugify(artist.slug_name)}`}
                       passHref
                     >
-                      <div className="p-6 space-y-4 transition duration-300 ease-in-out rounded-lg cursor-pointer group hover:bg-gray-50">
+                      <motion.div
+                        initial={{
+                          opacity: 0,
+                          y: 50,
+                        }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                          duration: 0.4,
+                          delay: i * 0.15,
+                          ease: 'easeInOut',
+                        }}
+                        className="p-6 space-y-4 rounded-lg cursor-pointer group hover:bg-gray-50"
+                      >
                         <div className="aspect-w-3 aspect-h-2">
                           <div className="object-cover overflow-hidden rounded-lg shadow-none">
                             <Image
@@ -77,8 +95,7 @@ export default function Artistas(props) {
                               objectPosition={artist.image_position}
                               src={artist.image}
                               alt={artist.name}
-                              width={600}
-                              height={400}
+                              unoptimized={true}
                             />
                           </div>
                         </div>
@@ -93,7 +110,7 @@ export default function Artistas(props) {
                             </p>
                           </div>
                         </div>
-                      </div>
+                      </motion.div>
                     </Link>
                   </li>
                 ))}

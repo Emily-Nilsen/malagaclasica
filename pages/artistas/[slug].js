@@ -36,20 +36,29 @@ const Artist = ({ artist }) => {
   const router = useRouter();
   const { t } = useTranslation();
   return (
-    <div className="relative bg-greyCrescendo py-16 sm:py-24">
+    <div className="relative py-16 bg-greyCrescendo sm:py-24">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div className="relative sm:py-16 lg:py-0">
           <div
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 right-1/2 w-full bg-blueCrescendo opacity-25 rounded-r-3xl lg:right-72" />
+            <div className="absolute inset-y-0 w-full opacity-25 right-1/2 bg-blueCrescendo rounded-r-3xl lg:right-72" />
           </div>
-          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+          <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Artist*/}
             <figure>
-              <div className="aspect-w-12 aspect-h-10 lg:aspect-none overflow-hidden">
-                <div className="rounded-lg shadow-none object-cover object-center overflow-hidden">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.6,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="overflow-hidden aspect-w-12 aspect-h-10 lg:aspect-none"
+              >
+                <div className="object-cover object-center overflow-hidden rounded-lg shadow-none">
                   <Image
                     layout="responsive"
                     objectFit="cover"
@@ -58,10 +67,11 @@ const Artist = ({ artist }) => {
                     alt={artist.name || ''}
                     width={800}
                     height={666}
+                    unoptimized={true}
                   />
                 </div>
-              </div>
-              <figcaption className="mt-3 flex text-base text-gray-500">
+              </motion.div>
+              <figcaption className="flex mt-3 text-base text-gray-500">
                 <CameraIcon
                   className="flex-none w-5 h-5 text-gray-400"
                   aria-hidden="true"
@@ -74,16 +84,16 @@ const Artist = ({ artist }) => {
           </div>
         </div>
 
-        <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+        <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h1 className="text-4xl text-coalCrescendo font-extrabold tracking-normal sm:text-5xl">
+            <h1 className="text-4xl font-extrabold tracking-normal text-coalCrescendo sm:text-5xl">
               {artist.name}
             </h1>
-            <h2 className="mt-2 text-lg text-coalCrescendo capitalize">
+            <h2 className="mt-2 text-lg capitalize text-coalCrescendo">
               {artist.instrument}
             </h2>
-            <div className="mt-6 text-mossCrescendo space-y-6">
+            <div className="mt-6 space-y-6 text-mossCrescendo">
               <p className="text-lg">{artist.para_1}</p>
               <p className="text-base leading-7">{artist.para_2}</p>
               <p className="text-base leading-7">{artist.para_3}</p>
@@ -98,7 +108,7 @@ const Artist = ({ artist }) => {
           <div className="mt-10">
             <div className="mt-10">
               <Link href="/artistas" passHref>
-                <a className="text-base font-medium text-coalCrescendo hover:text-mossCrescendo transition duration-200 ease-in-out">
+                <a className="text-base font-medium transition duration-200 ease-in-out text-coalCrescendo hover:text-mossCrescendo">
                   {' '}
                   {t('common:back_artists')}{' '}
                   <span aria-hidden="true">&rarr;</span>{' '}
