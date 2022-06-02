@@ -7,6 +7,7 @@ import InfoTalentos from '../components/talents/info';
 import MapTalentos from '../components/talents/map';
 import { motion } from 'framer-motion';
 import useTranslation from 'next-translate/useTranslation';
+import ProgramTalentos from '../components/talents/program';
 
 const container = {
   hidden: { opacity: 0 },
@@ -99,6 +100,7 @@ const Talentos = () => {
 
       <ContentTalentos />
       <InfoTalentos />
+      <ProgramTalentos />
       <MapTalentos />
     </Layout>
   );

@@ -4,8 +4,8 @@ function MapTalentos() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="bg-white">
-        <div className="bg-white">
+      <div className="bg-greyCrescendo">
+        <div className="bg-greyCrescendo">
           <div className="px-4 pt-16 mx-auto max-w-7xl sm:pt-24 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="mt-1 text-4xl font-extrabold text-mossCrescendo sm:text-5xl sm:tracking-normal lg:text-6xl">

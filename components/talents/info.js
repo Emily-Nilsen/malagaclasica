@@ -83,9 +83,11 @@ export default function InfoTalentos() {
                     {t('talents:para_7_link')}
                   </span>
                 </a>
+
                 {t('talents:para_7_end')}
               </p>
-              <p className="text-base leading-7">{t('talents:para_8')}</p>
+              {/* Detailed information about the program and the chosen groups will be published one week before the shows */}
+              {/* <p className="text-base leading-7">{t('talents:para_8')}</p> */}
             </div>
           </div>
 
