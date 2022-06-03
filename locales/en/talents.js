@@ -33,7 +33,7 @@ const talents = {
   // Talent Program announcement
   announcement_short: `Málaga Talents Program`,
   announcement_long: `Update! Find detailed information about the talent program
-  and the chosen groups for 6 to 8 June 2022.`,
+  and the chosen groups.`,
   button_program: `Program`,
 
   // Talentos program

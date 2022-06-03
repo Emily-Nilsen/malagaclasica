@@ -32,7 +32,7 @@ const talents = {
 
   // Talent Program announcement
   announcement_short: `El programa de Málaga Talentos`,
-  announcement_long: `¡Anuncios! Encuentra información detallada sobre el programa de talentos y los grupos elegidos del 6-8 de junio.`,
+  announcement_long: `¡Anuncios! Encuentra información detallada sobre el programa de talentos y los grupos elegidos.`,
   button_program: `Programa`,
 
   // Talentos program

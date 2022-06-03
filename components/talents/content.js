@@ -57,6 +57,18 @@ export default function ContentTalentos() {
                     </a>
                   </Link>
                 </div>
+                <div className="flex-shrink-0 order-2 sm:order-3 sm:ml-2">
+                  <button
+                    type="button"
+                    className="flex p-2 -mr-1 rounded-md cursor-default hover:bg-t focus:outline-none focus:ring-0 focus:ring-t"
+                  >
+                    <span className="sr-only">Dismiss</span>
+                    <XIcon
+                      className="w-6 h-6 text-mossCrescendo"
+                      aria-hidden="true"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
