@@ -66,7 +66,7 @@ export default function ProgramTalentos() {
     },
   ];
   return (
-    <div className="bg-white">
+    <div id="talentosProgram" className="bg-white">
       <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
         <div className="text-center">
           <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-lg bg-cyan-100 font-semibold tracking-wide uppercase text-cyan-800">

@@ -30,6 +30,11 @@ const talents = {
   map_address_top: `Calle Marqués de Valdecañas, 2`,
   map_address_bottom: `29008 Málaga`,
 
+  // Talent Program announcement
+  announcement_short: `El programa de Málaga Talentos`,
+  announcement_long: `¡Anuncios! Encuentra información detallada sobre el programa de talentos y los grupos elegidos del 6-8 de junio.`,
+  button_program: `Programa`,
+
   // Talentos program
   noticias: `noticias`,
   program_title: `Programa de Málaga Talentos`,
