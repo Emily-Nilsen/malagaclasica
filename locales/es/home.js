@@ -23,7 +23,8 @@ const home = {
   source_3: `Europress`,
 
   // Coming Soon
-  coming_soon: `Próximamente`,
+  coming_soon: `¡Estate atento!`,
+  dates_coming: `Próximamente se publicarán las fechas del festival Málaga Clásica 2023.`,
 };
 
 export default home;

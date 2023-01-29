@@ -23,7 +23,8 @@ const home = {
   source_3: `Europress`,
 
   // Coming Soon
-  coming_soon: `Coming Soon`,
+  coming_soon: `Stay tuned!`,
+  dates_coming: `The 2023 Málaga Clásica festival dates will be published soon.`,
 };
 
 export default home;
