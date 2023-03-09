@@ -1,50 +1,54 @@
 const events = [
-  // Concert 06 June
+  // Concert 31 May
   {
     id: 1,
     locale: 'en',
-    date: `06 June, 2022`,
+    date: `31 May, 2023`,
     price: `regular`,
-    title: `ANACRUSA - Opening concert`,
+    title: `NEW PATHS - Opening concert`,
     location: `Echegaray Theatre, 8 p.m.`,
-    preview: `Just as you find the impulse and energy giving rise to the upbeat of a composition, you will also find elements in the upbeat of this festival that form part of its totality.`,
-    sent_01: `This opening concert presents duo composition intimacy by emphasizing the melody of the voice and representative works of the chamber music repertoire. These works have left no one indifferent since their creation.`,
-    sent_02: `Following the sweet songs of Lekeu and Ponce and the well-known 'Granada' by Lara, we will enter the world of a musical revolution in the quasi dissonant 'Grosse Fuge' by Beethoven before diving into one of music lovers' favourites, Dvořák's Piano Quintet No. 2. The latter is a masterpiece that mesmerizes the audience with its combination of expressive lyricism and elements of Czech folk music.`,
-    details: [
+    sentence: [
+      `Expressive desire has always been a cause for the development of techniques in the arts. The wish for the representation of natural elements through different mediums, such as painting, sculpture or musical composition has shaped the way in which the mediums are used.`,
+      `Such is the case of the composer Biber, who recreates animal-like sounds through the language of the violin and piano (harpsichord originally). P.D.Q. Bach, exploits a caricaturesque way of using the viola, crossing the boundaries from music to humor, and Cowell transforms the piano into a different instrument, extending the techniques used to play it.`,
+      `Paganini at once limits a four-stringed instrument to one string, and opens a whole world of expressive possibilities with just that one string, while John Cage calls for contemplation in silence, a revolution in and of itself. Berio explores texture in sounds and rhythm as a painter does with structure, and Bartok incorporates elements of folklore in creative ways, giving room to the work of Kodaly, which melts folklore and sophisticated compositional techniques, creating a whole new organism in the universe of music. `,
+    ],
+    detailsOne: [
       {
-        composer: `Guillaume Lekeu (1870 - 1894)`,
-        info: `‘Nocturne’ from Trois Poemas for voice, strings and piano`,
-        artist_1: `NILS NILSEN tenor`,
-        artist_2: `JESÚS REINA violin`,
-        artist_3: `ANNA MARGRETHE NILSEN violin`,
-        artist_4: `RUMEN CVETKOV viola`,
-        artist_5: `GABRIEL UREÑA cello`,
-        artist_6: `JOSU DE SOLAUN piano`,
+        composer: [`Heinrich Ignaz Franz von Biber (1644-1704)`],
+        info: `Sonata representativa in A major, for violin and piano`,
+        artists: [`Robert Kowalski violin`, `Julien Quentin piano`],
       },
       {
-        composer: `Manuel M. Ponce (1882 - 1948)`,
-        info: `‘Estrellita’`,
-        composer_2: `Agustín Lara (1897 - 1970)`,
-        info_2: `‘Granada’`,
-        artist_1: `NILS NILSEN tenor`,
-        artist_2: `JOSU DE SOLAUN piano`,
+        composer: [`P.D.Q. Bach (Peter Schickele) (1742-1807)`],
+        info: `Sonata for viola 4 hands and piano`,
+        artists: [`Rumen Cvetkov viola`, `Tomoko Akasaka viola`],
       },
       {
-        composer: `Ludwig van Beethoven (1770 - 1827)`,
-        info: `Grosse Fuge in B flat major, Op. 133`,
-        artist_1: `JESÚS REINA violin`,
-        artist_2: `ANNA MARGRETHE NILSEN violin`,
-        artist_3: `RUMEN CVETKOV viola`,
-        artist_4: `GABRIEL UREÑA cello`,
+        composer: [`Henry Cowell (1897-1965)`],
+        info: `‘Aeolian Harp’, for piano solo`,
+        artists: [`Julien Quentin piano`],
       },
       {
-        composer: `Antonín Dvořák (1841 - 1904)`,
-        info: `Piano Quintet No. 2 in A major, Op. 81`,
-        artist_1: `ANNA MARGRETHE NILSEN violin`,
-        artist_2: `JESÚS REINA violin`,
-        artist_3: `RUMEN CVETKOV viola`,
-        artist_4: `GABRIEL UREÑA cello`,
-        artist_5: `JOSU DE SOLAUN piano`,
+        composer: [`Niccolò Paganini (1782-1840)`],
+        info: `‘Moses Fantasie’ on the G string, MS 23, arr. for viola and piano`,
+        artists: [`Rumen Cvetkov viola`, `Natalia Kuchaeva piano`],
+      },
+      {
+        composer: [`John Cage (1912-1992)`],
+        info: `‘4:33’, for piano solo`,
+        artists: [`Julien Quentin piano`],
+      },
+    ],
+    detailsTwo: [
+      {
+        composer: [`Béla Bartók (1882-1945)`, `Luciano Berio (1925-2003)`],
+        info: `Selection of duos for two violins`,
+        artists: [`Joanna Wronko violin`, `Anna Margrethe Nilsen violin`],
+      },
+      {
+        composer: [`Zoltán Kodály (1882-1967)`],
+        info: `Duo for violin and cello, Op.7`,
+        artists: [`Jesus Reina violin`, `Adolfo Gutiérrez cello`],
       },
     ],
     image:
@@ -52,46 +56,69 @@ const events = [
     image_position: `top center`,
   },
 
-  // Concert 07 June
+  // Concert 01 June
   {
     id: 2,
     locale: 'en',
-    date: `07 June, 2022`,
+    date: `01 June, 2023`,
     price: `regular`,
-    title: `One, two and three - CRESCENDO`,
+    title: `REVOLUTION OF THE PEOPLE`,
     location: `Echegaray Theatre, 8 p.m.`,
-    preview: `In the musical structure, the crescendo is considered a new door, the beginning of a long journey, and the deepest part and lowest point of a phrase from which everything expands.`,
-    sent_01: `That is why this crescendo begins with a single instrument. Although in a chamber group of more components, one is the extension of the other, a register is the extension of the previous one when it comes to a single instrument.`,
-    sent_02: `The speech takes the form of dialogue in the iconic Sonata No. 3 by Brahms, reflective and passionate. It unfolds in the second part of the concert with the mysterious songs of Poulenc, Fauré and Hahn.`,
-    sent_03: `Finally, the piano trio, which maintains the essence of each instrument, also manages to merge them into a fiery work that highlights Cassadó's mastery.`,
-    details: [
+    sentence: [
+      `According to the painter Kandinsky “every work of art is the offspring of its time”. Taking this as truth, it makes every work of art unique and unrepeatable, as is any given moment. This statement does not tie a work of art however to a given time, as the contents which shape the work are timeless.`,
+      `Often enough, the resulting work is not only misunderstood at the time of its inception, but also grossly rejected. Each piece presented in this concert caused an uproar in their respective premieres, their sole existence was conceived as a scandal by the public. The vast time period covered in this concert is very telling that it is not a exception that this occurs, but that this phenomenon is present throughout history.`,
+    ],
+    detailsOne: [
       {
-        composer: `Johann Sebastian Bach (1685 - 1750)`,
-        info: `‘Adagio’ from Sonata No. 1 in G minor for solo violin, BWV 1001`,
-        artist_1: `JESÚS REINA violin`,
+        composer: [`Frederic Rzewski (1938-2021)`],
+        info: `Theme from ‘The People United Will Never Be Defeated’, for piano solo`,
+        artists: [`Natalia Kuchaeva piano`],
       },
       {
-        composer: `Johannes Brahms (1833 - 1897)`,
-        info: `Sonata No. 3 in D minor for violin and piano, Op. 108`,
-        artist_1: `JESÚS REINA violin`,
-        artist_2: `JOSU DE SOLAUN piano`,
+        composer: [`Daniel Auber (1782-1871)`],
+        info: `‘Du pauvre seul ami fidèle’ from the opera La muda de Portici, for tenor and piano`,
+        artists: [`Nils Georg Nilsen tenor`, `Natalia Kuchaeva piano`],
       },
       {
-        composer: `Francis Poulenc (1899 - 1963)`,
-        info: `‘Montparnasse’, FP 127, No. 1, ‘Hyde Park’ from Deux Mélodies de Guillaume Apollinaire, FP 128, ‘Bluet’, FP 102`,
-        composer_2: `Gabriel Fauré (1845 - 1924)`,
-        info_2: `‘Au bord de l’eau’, Op. 8 No.1`,
-        composer_3: `Reynaldo Hahn (1874 - 1947)`,
-        info_3: `‘Si mes vers avaient des ailes’, ‘L’Heure exquise’ from 7 Chansons grises`,
-        artist_1: `NILS NILSEN tenor`,
-        artist_2: `JOSU DE SOLAUN piano`,
+        composer: [`Francis Poulenc (1899-1963)`],
+        info: `‘Ave Maria’ from the opera Diálogos de carmelitas, for soprano and piano`,
+        artists: [`Susanne Hvinden Hals soprano`, `Natalia Kuchaeva piano`],
       },
       {
-        composer: `Gaspar Cassadó (1897 - 1966)`,
-        info: `Piano trio in C major`,
-        artist_1: `ANNA MARGRETHE NILSEN violin`,
-        artist_2: `GABRIEL UREÑA cello`,
-        artist_3: `ANTONIO ORTÍZ piano`,
+        composer: [`Francis Poulenc (1899-1963)`],
+        info: `Sonata for violin and piano, FP119`,
+        artists: [`Robert Kowalski violin`, `Julien Quentin piano`],
+      },
+      {
+        composer: [`Henri Vieuxtemps (1820-1881)`],
+        info: `‘Souvenir d’Amerique’, Variations on ‘Yankee Doodle’, for violin and piano`,
+        artists: [`Joanna Wronko violin`, `Natalia Kuchaeva piano`],
+      },
+    ],
+    detailsTwo: [
+      {
+        composer: [`Dmitri Shostakovich (1906-1975)`],
+        info: `String quartet No. 8 in C minor, Op.110`,
+        artists: [
+          `Robert Kowalski violin`,
+          `Joanna Wronko violin`,
+          `Rumen Cvetkov viola`,
+          `Øyvind Gimse cello`,
+        ],
+      },
+      {
+        composer: [`Claude-Michel Schönberg (1944-)`, `Alain Boublil (1941-)`],
+        info: `Selection of songs from the musical Los miserables:`,
+        songs: [
+          `‘I Dreamed a Dream’, for soprano and piano`,
+          `‘Bring Him Home’, for tenor and piano`,
+          `‘Do You Hear the People Sing?’, ensemble and piano`,
+        ],
+        artists: [
+          `Susanne Hvinden Hals soprano`,
+          `Nils Georg Nilsen tenor`,
+          `Julien Quentin piano`,
+        ],
       },
     ],
     image:
@@ -99,34 +126,59 @@ const events = [
     image_position: `top center`,
   },
 
-  // Concert 08 June
+  // Concert 02 June
   {
     id: 3,
     locale: 'en',
-    date: `08 June, 2022`,
+    date: `02 June, 2023`,
     price: `regular`,
-    title: `Four - EQUILIBRIO`,
+    title: `SCANDAL!`,
     location: `Echegaray Theatre, 8 p.m.`,
-    preview: `This piece is composed by the founding father of the string quartet as we know it, Joseph Haydn. It demonstrates the perfect balance in composition due to the richness of range, sound diversity and unity through instrumental timbre.`,
-    sent_01: `In the case of Quartet No. 2 by Borodin, we find a work full of loving affection, the dedicatée being his wife, Ekaterina Protopova.`,
-    sent_02: `After studying the string quartets of Haydn, Mozart and Beethoven closely during a period of depression, Schumann created his quartet with the piano as part of the ensemble, giving more body to the sound.`,
-    sent_03: `We see the composer's genius creativity through keeping the group as a unified ensemble and conceiving moments of great intimacy and delicacy.`,
-    details: [
+    sentence: [
+      `A work of art originates from such a powerful place, that its force and drive can truly move mountains. The way that artwork resonates with people can ignite the spark of a revolution which has long been growing within their hearts.`,
+      `Auber’s work did just that, being the only known opera to have directly caused such a social riot, leading to the Belgian revolution.`,
+      `The rest of the program presents the unity that music can bring, and the way that different people and nations have expressed idealism, change and triumph through the power of music. `,
+    ],
+    detailsOne: [
       {
-        composer: `Alexander Borodin (1833 - 1887)`,
-        info: `String Quartet No. 2 in D major`,
-        artist_1: `ANNA MARGRETHE NILSEN violin`,
-        artist_2: `JESÚS REINA violin`,
-        artist_3: `RUMEN CVETKOV viola`,
-        artist_4: `ADOLFO GUTIÉRREZ cello`,
+        composer: [`Ígor Stravinski (1882-1971)`],
+        info: `‘The Rite of Spring’, selection of movements, for piano 4 hands`,
+        artists: [`Natalia Kuchaeva piano`, `Julien Quentin piano`],
       },
       {
-        composer: `Robert Schumann (1810 - 1856)`,
-        info: `Piano Quartet in E flat major, Op. 47`,
-        artist_1: `JESÚS REINA violin`,
-        artist_2: `RASVAN POPOVICI viola`,
-        artist_3: `NATALIA MARGULIS cello`,
-        artist_4: `JOSU DE SOLAUN piano`,
+        composer: [`Georges Bizet (1838-1875)`],
+        info: `‘Je dis que rien’, from the opera Carmen, for soprano and piano, ‘La fleur que tu m´avais jetée’, from the opera Carmen, for tenor and piano`,
+      },
+      {
+        composer: [`Guiseppe Verdi (1813-1901)`],
+        info: `‘Parigi, o cara’ from the opera La traviata, duo for soprano and tenor, with piano`,
+        artists: [
+          `Susanne Hvinden Hals soprano`,
+          `Nils Georg Nilsen tenor`,
+          `Natalia Kuchaeva piano`,
+        ],
+      },
+    ],
+    detailsTwo: [
+      {
+        composer: [`George Rochberg (1918-2005)`],
+        info: `String quartet No. 3`,
+        artists: [
+          `Joanna Wronko violin`,
+          `Robert Kowalski violin`,
+          `Léa Hennino viola`,
+          `Øyvind Gimse cello`,
+        ],
+      },
+      {
+        composer: [`Giacomo Puccini (1858-1924)`],
+        info: `‘Addio, fiorito asil’ from the opera Madame Butterfly, for tenor and piano`,
+        artists: [`Nils Georg Nilsen tenor`, `Natalia Kuchaeva piano`],
+      },
+      {
+        composer: [`Gioachino Rossini (1792-1868)`],
+        info: `‘Una voce poco fa’ from the opera The Barber of Sevilla, for soprano and piano`,
+        artists: [`Susanne Hvinden Hals soprano`, `Natalia Kuchaeva piano`],
       },
     ],
     image:
@@ -134,37 +186,54 @@ const events = [
     image_position: `top right`,
   },
 
-  // Concert 09 June
+  // Concert 03 June
   {
     id: 4,
     locale: 'en',
-    date: `09 June, 2022`,
+    date: `03 June, 2023`,
     price: `regular`,
-    title: `Five and six - DIVERSIÓN`,
+    title: `PIONEERS`,
     location: `Echegaray Theatre, 8 p.m.`,
-    preview: `Adding instruments to the ensembles gives room for the composers to brilliantly change the texture and give more density to the harmony.`,
-    sent_01: `When a quartet is joined by the piano, forming a quintet, like the renowned Brahms Piano Quintet in F minor, the piano and strings confront each other as distinct musical forces. But when enlaced together, they have enormous power while still maintaining flexibility.`,
-    sent_02: `The sextet has similar qualities as the quintet. Still, it perhaps leaves each instrument a tad “alleviated” as more instruments are now sharing the workload. A piece like the romantic Souvenir de Florence by Tchaikovsky is as enjoyable and joyous for the players as it is for the listeners.`,
-    sent_03: ``,
-    details: [
+    sentence: [
+      `Arnold Schönberg created a new compositional system in which a work is built from a predetermined set of twelve tones, the twelve notes that form the chromatic scale. This program presents this revolutionary system in the making, through the work of his pupils, Berg and Webern. It then culminates in Schönberg’s more dissonant Phantasy.`,
+      `It is interesting to then listen immediately afterwards to Schönberg’s Verklarte Nacht, an earlier work which stretches the limits of tonality. The causes and consequences of this revolutionary writing are complex.`,
+      `The shocking aesthetics of the works are the result of a profound artistic search in the midst of a critical time in history, surrounded by violence, war, and the exaltation of a set of values that were corrupting the human soul.`,
+    ],
+    detailsOne: [
       {
-        composer: `Johannes Brahms (1833 - 1897)`,
-        info: `Piano Quintet in F minor, Op. 34`,
-        artist_1: `ALEXANDER SITKOVETSKY violin`,
-        artist_2: `ALISSA MARGULIS violin`,
-        artist_3: `TOMOKO AKASAKA viola`,
-        artist_4: `ADOLFO GUTIÉRREZ cello`,
-        artist_5: `ANTONIO ORTÍZ piano`,
+        composer: [`Alban Berg (1885-1935)`],
+        info: `Selection of songs from ‘7 Early Songs’, for soprano and piano`,
+        artists: [`Susanne Hvinden Hals soprano`, `Julien Quentin piano`],
       },
       {
-        composer: `Piotr Ilich Tchaikovsky (1840-1893)`,
-        info: `String Sextet in D minor 'Souvenir de Florence', Op. 70`,
-        artist_1: `ALISSA MARGULIS violin`,
-        artist_2: `ANNA MARGRETHE NILSEN violin`,
-        artist_3: `RASVAN POPOVICI viola`,
-        artist_4: `TOMOKO AKASAKA viola`,
-        artist_5: `ADOLFO GUTIÉRREZ cello`,
-        artist_6: `NATALIA MARGULIS cello`,
+        composer: [`Arnold Schoenberg (1874-1951)`],
+        info: `‘Erwartung’ from 4 Lieder, Op 2. No.1, para tenor y piano
+        `,
+        artists: [`Nils Georg Nilsen tenor`, `Julien Quentin piano`],
+      },
+      {
+        composer: [`Anton Webern (1883-1945)`],
+        info: `Four pieces for violin and piano, Op. 7`,
+        artists: [`Joanna Wronko violin`, `Natalia Kuchaeva piano`],
+      },
+      {
+        composer: [`Arnold Schoenberg (1874-1951)`],
+        info: `‘Phantasy’, Op.47, for violin and piano`,
+        artists: [`Jesus Reina violin`, ` Julien Quentin piano`],
+      },
+    ],
+    detailsTwo: [
+      {
+        composer: [`Arnold Schoenberg (1874-1951)`],
+        info: `‘Verklärte Nacht’, Op.4, for string sextet`,
+        artists: [
+          `Anna Margrethe Nilsen violin`,
+          `Jesus Reina violin`,
+          `Léa Hennino viola`,
+          `Tomoko Akasaka viola`,
+          `Adolfo Gutiérrez cello`,
+          `Øyvind Gimse cello`,
+        ],
       },
     ],
     image:
@@ -172,41 +241,43 @@ const events = [
     image_position: `top right`,
   },
 
-  // Concert 10 June
+  // Concert 04 June
   {
     id: 5,
     locale: 'en',
-    date: `10 June, 2022`,
+    date: `04 June, 2023`,
     price: `regular`,
-    title: `Seven and eight - SIMBIOSIS`,
-    location: `Echegaray Theatre, 8 p.m.`,
-    preview: `What is more straightforward in smaller ensembles is far more complex in a septet regarding the successful intertwining of instrumental lines.`,
-    sent_01: `This piece is of a light spirit and great entertainment through several short movements. Its popularity greatly upset Beethoven, as he would rather have had his more “serious” works getting that kind of attention. Furthermore, the combination of winds and strings in Beethoven’s septet is innovative and exciting since these instruments have very different timbres.`,
-    sent_02: `The string octet can, in most cases, be looked upon as a double quartet, being that there are four principal and four secondary voices of each instrument. In the ensemble, two or more instruments often join together to play the accompaniment and melodies, bordering on the feeling of being a small chamber orchestra.`,
-    sent_03: `Despite being only 16, Mendelssohn masterfully used the eight instruments in his string octet, which is one of the most played and appreciated pieces of the chamber music repertoire.`,
-    details: [
+    title: `THE GREATNESS OF BEETHOVEN`,
+    location: `Cervantes Theatre, 8 p.m.`,
+    sentence: [
+      `Beethoven’s extensive body of work enriched and influenced the symphonic, chamber and instrumental repertoire. The works presented in this program did just that. They also cover two interesting moments in Beethoven’s compositional development. The trio op. 70 takes place in the midst of his middle period, while the quintet op. 29 can be considered the end of his early period.`,
+      `Beethoven’s musical life was a revolution in its whole. The world has retained a few of Beethoven staples to showcase the cliche of a creative genius, who with a reckless stroke of the pen, broke all known musical form.`,
+      `The process however, was slowly thawed, resembling more the evolution of composition rather than the revolution. 
+      Once the combustive creative process of Beethoven caught fire, it took the effect of an expansive wave across time, becoming an inspirational source for the arts for centuries to come.
+      `,
+    ],
+    detailsOne: [
       {
-        composer: `Ludwig van Beethoven (1770 - 1827)`,
-        info: `Septet in E flat major, Op. 20`,
-        artist_1: `JUAN CRISÓSTOMO SUBIELA DURÁ clarinet`,
-        artist_2: `ALEXANDER MOUSTACHIEV horn`,
-        artist_3: `ANTONIO LOZANO bassoon`,
-        artist_4: `ALEXANDER SITKOVETSKY violin`,
-        artist_5: `TOMOKO AKASAKA viola`,
-        artist_6: `ADOLFO GUTIÉRREZ cello`,
-        artist_7: `UXÍA MARTÍNEZ BOTANA bass`,
+        composer: [`Ludwig van Beethoven (1770-1827)`],
+        info: `Piano trio in D major ‘Fantasma’, Op.70, No.1, for violin, cello and piano`,
+        artists: [
+          `Anna Margrethe Nilsen violin`,
+          `Adolfo Gutiérrez cello`,
+          `Natalia Kuchaeva piano`,
+        ],
       },
+    ],
+    detailsTwo: [
       {
-        composer: `Felix Mendelssohn (1809 - 1847)`,
-        info: `String Octet in E flat major, Op. 20`,
-        artist_1: `ALEXANDER SITKOVETSKY violin`,
-        artist_2: `ALISSA MARGULIS violin`,
-        artist_3: `MARÍA DEL MAR JURADO JIMÉNEZ violin`,
-        artist_4: `ANNA MARGRETHE NILSEN violin`,
-        artist_5: `RASVAN POPOVICI viola`,
-        artist_6: `RUMEN CVETKOV viola`,
-        artist_7: `NATALIA MARGULIS cello`,
-        artist_8: `ADOLFO GUTIÉRREZ cello`,
+        composer: [`Ludwig van Beethoven (1770-1827)`],
+        info: `String quintet in C major ‘The Storm’, Op. 29`,
+        artists: [
+          `Jesus Reina violin`,
+          `Anna Margrethe Nilsen violin`,
+          `Tomoko Akasaka viola`,
+          `Léa Hennino viola`,
+          `Øyvind Gimse cello`,
+        ],
       },
     ],
     image:
@@ -214,126 +285,56 @@ const events = [
     image_position: `center`,
   },
 
-  // Concert 11 June
-  {
-    id: 6,
-    locale: 'en',
-    date: `11 June, 2022`,
-    price: `regular`,
-    title: `Nine and ten - VIRTUOSISMO`,
-    location: `Echegaray Theatre, 8 p.m.`,
-    preview: `Louis Spohr's nonet was so popular that its instrumentation became the standard for other composers wishing to write for the ensemble.`,
-    sent_01: `It consists of a wind quintet (flute, oboe, clarinet, horn and bassoon) and a string quartet (violin, viola, cello, double bass). The nonet captures the personality of each instrument by displaying a wide variety of colours and the extraordinary imagination of the composer.`,
-    sent_02: `With the simple addition of the second violin to the group, we obtain a decet. Unlike many of his contemporaries, the French composer Theodore Dubois kept to the more traditional romantic style that overshadowed his fame.`,
-    sent_03: `He also wrote a significant amount of sacred music and is one of the few composers that composed pieces for this specific combination of ten instruments.`,
-    details: [
-      {
-        composer: `Louis Spohr (1784 - 1859)`,
-        info: `Nonet in F major, Op. 31`,
-        artist_1: `JUAN ANTONIO LÓPEZ CABUEZUELOS flute`,
-        artist_2: `JOSÉ ANTONIO GONZAGA oboe`,
-        artist_3: `JUAN CRISÓSTOMO SUBIELA DURÁ clarinet`,
-        artist_4: `ALEXANDER MOUSTACHIEV horn`,
-        artist_5: `ANTONIO LOZANO bassoon`,
-        artist_6: `ALEXANDER SITKOVETSKY violin`,
-        artist_7: `RAZVAN POPOVICI viola`,
-        artist_8: `NATALIA MARGULIS cello`,
-        artist_9: `UXÍA MARTÍNEZ BOTANA bass`,
-      },
-      {
-        composer: `Théodore Dubois (1837 - 1924)`,
-        info: `Dixtuor in D major`,
-        artist_1: `JUAN ANTONIO LÓPEZ CABUEZUELOS flute`,
-        artist_2: `JOSÉ ANTONIO GONZAGA oboe`,
-        artist_3: `JUAN CRISÓSTOMO SUBIELA DURÁ clarinet`,
-        artist_4: `ALEXANDER MOUSTACHIEV horn`,
-        artist_5: `ANTONIO LOZANO bassoon`,
-        artist_6: `ALISSA MARGULIS violin`,
-        artist_7: `ANNA MARGRETHE NILSEN violin`,
-        artist_8: `TOMOKO AKASAKA viola`,
-        artist_9: `NATALIA MARGULIS cello`,
-        artist_10: `UXÍA MARTÍNEZ BOTANA bass`,
-      },
-    ],
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686311/M%C3%A1laga%20Cl%C3%A1sica/day-6_mhrki0.webp',
-    image_position: `top center`,
-  },
-
-  // Concert 12 June
-  {
-    id: 7,
-    locale: 'en',
-    date: `12 June, 2022`,
-    price: `premium`,
-    title: `FORTÍSIMO - Closing concert`,
-    location: `Cervantes Theatre, 7 p.m.`,
-    preview: `The orchestra is the full extension of a chamber group on a grand scale.`,
-    sent_01: `The distance between the musicians makes it harder to hear and see each other. The conductor, therefore, leads the group, consisting of up to over 100 members, and guides the players through masterful hand and body language to portray one unified interpretation of the work presented.`,
-    sent_02: `Max Bruch’s violin concerto is dedicated to and premiered by Joseph Joachim. It showcases the violin with its dazzling, virtuosic passages and singing lines and the grandeur and sheer power of the orchestra each time it breaks out in another wonderful tutti. Audiences especially love the piece for its heart-breaking melodies and energetic character.`,
-    sent_03: `In Mendelssohn’s Symphony No. 4, titled “The Italian”, we hear the composer’s evoked inspiration from a tour in Italy. With joyful freshness, the four movements represent impressions of the Mediterranean country, also in the form of folk music, the last movement being a fast Neapolitan saltarello.`,
-    details: [
-      {
-        composer: `Max Bruch (1838 - 1920)`,
-        info: `Violin concerto No. 1 in G minor, Op. 26`,
-        composer_2: `Felix Mendelssohn (1809 - 1847)`,
-        info_2: `Symphony No. 4 ‘The Italian’ in A major, Op. 90`,
-        artist_1: `JESÚS REINA violin`,
-        artist_2: `TOMÁS GRAU conductor`,
-        artist_3: `FRANZ SCHUBERT FILHARMONIA`,
-      },
-    ],
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686311/M%C3%A1laga%20Cl%C3%A1sica/day-7_rosyeh.webp',
-    image_position: `center`,
-  },
-
-  // Conciert0 06 de junio
+  // Conciert0 31 de mayo
   {
     id: 8,
     locale: 'es',
-    date: `06 de junio, 2022`,
+    date: `31 de mayo, 2023`,
     price: `regular`,
-    title: `ANACRUSA - Concierto de apertura`,
+    title: `NUEVOS CAMINOS - Concierto de apertura`,
     location: `Teatro Echegaray, 20:00 h.`,
-    preview: `Tal como en la anacrusa de una obra se encuentra el impulso y energía que da lugar a ella, así en la anacrusa de este festival, se encuentran los elementos que van a formar parte de su totalidad.`,
-    sent_01: `Este concierto de apertura presenta tanto el intimismo de obras a duo, que ponen el acento sobre la melodía de la voz, como sendas obras representativas del repertorio de música de cámara que no han dejado a nadie indiferente desde su creación.`,
-    sent_02: `Así, tras las dulces canciones de Lekeu y Ponce, y la archiconocida ‘Granada’ de Lara, nos adentraremos en el mundo de la revolución musical y quasi disonante en la ‘Grosse Fuge’ de Beethoven,  y uno de los favoritos de los amantes de la música, el quinteto con piano de Dvorak no.2, siendo este último una obra maestra que hipnotiza al público con su combinación de lirismo espresivo y elementos de música folclórica checa.`,
-    details: [
+    sentence: [
+      `El deseo de expresión ha sido una causa importante en el desarrollo de las técnicas en las artes. El deseo de representar elementos naturales a través de diferentes medios, como la pintura, la escultura o la composición musical ha dado forma a cómo se usan dichos medios.`,
+      `Eso ocurre con el compositor Biber que recrea sonidos de animales a través del lenguaje del violin y el piano (clavicordio originalmente). P.D.Q. Bach usa la viola de manera caricaturesca, disolviendo los límites entre música y humor, y Cowell transforma el piano en otro instrumento, extendiendo las técnicas usadas para interpretar sobre él.`,
+      `Paganini limita el instrumento (la viola en este caso) a una cuerda, y a la vez, abre un mundo de posibilidades expresivas con sólo esa cuerda, mientras que John Cage llama a la contemplación en silencio, siendo este simple hecho una revolución en sí mismo. Berio explora texturas con sonido y ritmo, como un pintor lo haría con la estructura y Bartok incorpora elementos el folclore en modos creativos, dando lugar a la obra de Kodaly, que funde el folclore con técnicas compositivas sofisticadas, creando un nuevo organismo en el mundo de la música. `,
+    ],
+    detailsOne: [
       {
-        composer: `Guillaume Lekeu (1870 - 1894)`,
-        info: `‘Nocturne’ de Trois Poemas para voz, cuerda y piano`,
-        artist_1: `NILS NILSEN tenor`,
-        artist_2: `JESÚS REINA violín`,
-        artist_3: `ANNA MARGRETHE NILSEN violín`,
-        artist_4: `RUMEN CVETKOV viola`,
-        artist_5: `GABRIEL UREÑA violonchelo`,
-        artist_6: `JOSU DE SOLAUN piano`,
+        composer: [`Heinrich Ignaz Franz von Biber (1644-1704)`],
+        info: `Sonata representativa en La mayor, para violín y piano`,
+        artists: [`Robert Kowalski violín`, `Julien Quentin piano`],
       },
       {
-        composer: `Manuel M. Ponce (1882 - 1948)`,
-        info: `‘Estrellita’`,
-        composer_2: `Agustín Lara (1897 - 1970)`,
-        info_2: `‘Granada’`,
-        artist_1: `NILS NILSEN tenor`,
-        artist_2: `JOSU DE SOLAUN piano`,
+        composer: [`P.D.Q. Bach (Peter Schickele) (1742-1807)`],
+        info: `Sonata para viola a 4 manos y piano`,
+        artists: [`Rumen Cvetkov viola`, `Tomoko Akasaka viola`],
       },
       {
-        composer: `Ludwig van Beethoven (1770 - 1827)`,
-        info: `Grosse Fuge en Si bemol mayor, Op. 133`,
-        artist_1: `JESÚS REINA violín`,
-        artist_2: `ANNA MARGRETHE NILSEN violín`,
-        artist_3: `RUMEN CVETKOV viola`,
-        artist_4: `GABRIEL UREÑA violonchelo`,
+        composer: [`Henry Cowell (1897-1965)`],
+        info: `‘Aeolian Harp’, para piano solo`,
+        artists: [`Julien Quentin piano`],
       },
       {
-        composer: `Antonín Dvořák (1841 - 1904)`,
-        info: `Quinteto con piano No. 2 en La mayor, Op. 81`,
-        artist_1: `ANNA MARGRETHE NILSEN violín`,
-        artist_2: `JESÚS REINA violín`,
-        artist_3: `RUMEN CVETKOV viola`,
-        artist_4: `GABRIEL UREÑA violonchelo`,
-        artist_5: `JOSU DE SOLAUN piano`,
+        composer: [`Niccolò Paganini (1782-1840)`],
+        info: `‘Fantasia de Moises’ en la cuerda Sol, MS 23, arr. para viola y piano`,
+        artists: [`Rumen Cvetkov viola`, `Natalia Kuchaeva piano`],
+      },
+      {
+        composer: [`John Cage (1912-1992)`],
+        info: `‘4:33’, para piano solo`,
+        artists: [`Julien Quentin piano`],
+      },
+    ],
+    detailsTwo: [
+      {
+        composer: [`Béla Bartók (1882-1945)`, `Luciano Berio (1925-2003)`],
+        info: `Selección de dúos para dos violines`,
+        artists: [`Joanna Wronko violín`, `Anna Margrethe Nilsen violín`],
+      },
+      {
+        composer: [`Zoltán Kodály (1882-1967)`],
+        info: `Dúo para violín y violonchelo, Op.7`,
+        artists: [`Jesus Reina violín`, `Adolfo Gutiérrez violonchelo`],
       },
     ],
     image:
@@ -341,46 +342,69 @@ const events = [
     image_position: `top center`,
   },
 
-  // Conciert0 07 de junio
+  // Conciert0 01 de junio
   {
     id: 9,
     locale: 'es',
-    date: `07 de junio, 2022`,
+    date: `01 de junio, 2023`,
     price: `regular`,
-    title: `Uno, dos y tres - CRESCENDO`,
+    title: `REVOLUCION POPULAR`,
     location: `Teatro Echegaray, 20:00 h.`,
-    preview: `En la estructura musical se considera al crescendo como una nueva puerta, como el inicio de un largo viaje, como la parte más honda y punto más bajo de una frase a partir del cual todo se expande.`,
-    sent_01: `Es por ello que este crescendo comienza con un sólo instrumento. Si bien en un grupo camerístico de más componentes, uno es la extensión del otro, cuando se trata de un sólo instrumento, un registro es la extensión del anterior.`,
-    sent_02: `El discurso toma forma de diálogo en la icónica Sonata no. 3 de Brahms, reflexivo y apasionado, y se desarrolla en la segunda parte del concierto con las misteriosas canciones de Poulenc, Fauré y Hahn.`,
-    sent_03: `Finalmente, el trío con piano, el cual manteniendo la esencia de cada instrumento, también logra fusionarlos en una fogosa obra que pone de manifiesto la maestría de Cassadó.`,
-    details: [
+    sentence: [
+      `Según el pintor Kandinsky ‘cada obra de arte es hijo de su tiempo’. Dar esta afirmación por verdad hace de cada obra de arte algo único e irrepetible, como lo es cada momento. Esto no quiere decir que la obra de arte esté atada a un tiempo, ya que el contenido que le da forma es atemporal.`,
+      `A menudo, la obra resultante no es sólo malentendida en el tiempo de su creación, sino brutalmente rechazada. Cada pieza presentada en este concierto causó revueltas en sus estrenos, siendo su existencia percibida como un escándalo para el público. El amplio espacio temporal cubierto en este programa muestra con no es una excepción que esto ocurra, sino más bien un fenómeno que está presente a lo largo de la historia.`,
+    ],
+    detailsOne: [
       {
-        composer: `Johann Sebastian Bach (1685 - 1750)`,
-        info: `‘Adagio’ de la Sonata No. 1 in Sol menor para violín solo, BWV 1001`,
-        artist_1: `JESÚS REINA violín`,
+        composer: [`Frederic Rzewski (1938-2021)`],
+        info: `Tema de ‘The People United Will Never Be Defeated’, para piano solo`,
+        artists: [`Natalia Kuchaeva piano`],
       },
       {
-        composer: `Johannes Brahms (1833 - 1897)`,
-        info: `Sonata No. 3 en Re menor para violín y piano, Op. 108`,
-        artist_1: `JESÚS REINA violín`,
-        artist_2: `JOSU DE SOLAUN piano`,
+        composer: [`Daniel Auber (1782-1871)`],
+        info: `‘Du pauvre seul ami fidèle’ de la opera La muda de Portici, para tenor y piano`,
+        artists: [`Nils Georg Nilsen tenor`, `Natalia Kuchaeva piano`],
       },
       {
-        composer: `Francis Poulenc (1899 - 1963)`,
-        info: `‘Montparnasse’, FP 127, No. 1, ‘Hyde Park’ de Deux Mélodies de Guillaume Apollinaire, FP 128, ‘Bluet’, FP 102`,
-        composer_2: `Gabriel Fauré (1845 - 1924)`,
-        info_2: `‘Au bord de l’eau’, Op. 8 No.1`,
-        composer_3: `Reynaldo Hahn (1874 - 1947)`,
-        info_3: `‘Si mes vers avaient des ailes’, ‘L’Heure exquise’ de 7 Chansons grises`,
-        artist_1: `NILS NILSEN tenor`,
-        artist_2: `JOSU DE SOLAUN piano`,
+        composer: [`Francis Poulenc (1899-1963)`],
+        info: `‘Ave Maria’ de la opera Diálogos de carmelitas, para soprano y piano`,
+        artists: [`Susanne Hvinden Hals soprano`, `Natalia Kuchaeva piano`],
       },
       {
-        composer: `Gaspar Cassadó (1897 - 1966)`,
-        info: `Trio con piano en Do mayor`,
-        artist_1: `ANNA MARGRETHE NILSEN violín`,
-        artist_2: `GABRIEL UREÑA violonchelo`,
-        artist_3: `ANTONIO ORTÍZ piano`,
+        composer: [`Francis Poulenc (1899-1963)`],
+        info: `Sonata para violín and piano, FP119`,
+        artists: [`Robert Kowalski violín`, `Julien Quentin piano`],
+      },
+      {
+        composer: [`Henri Vieuxtemps (1820-1881)`],
+        info: `‘Souvenir d’Amerique’, Variaciones sobre ‘Yankee Doodle’, para violín y piano`,
+        artists: [`Joanna Wronko violín`, `Natalia Kuchaeva piano`],
+      },
+    ],
+    detailsTwo: [
+      {
+        composer: [`Dmitri Shostakovich (1906-1975)`],
+        info: `Quarteto de cuerda No. 8 en Do menor, Op.110`,
+        artists: [
+          `Robert Kowalski violín`,
+          `Joanna Wronko violín`,
+          `Rumen Cvetkov viola`,
+          `Øyvind Gimse violonchelo`,
+        ],
+      },
+      {
+        composer: [`Claude-Michel Schönberg (1944-)`, `Alain Boublil (1941-)`],
+        info: `Selección de canciones del musical Los miserables:`,
+        songs: [
+          `‘I Dreamed a Dream’, para soprano y piano`,
+          `‘Bring Him Home’, para tenor y piano`,
+          `‘Do You Hear the People Sing?’, ensemble y piano`,
+        ],
+        artists: [
+          `Susanne Hvinden Hals soprano`,
+          `Nils Georg Nilsen tenor`,
+          `Julien Quentin piano`,
+        ],
       },
     ],
     image:
@@ -388,34 +412,59 @@ const events = [
     image_position: `top center`,
   },
 
-  // Conciert0 08 de junio
+  // Conciert0 02 de junio
   {
     id: 10,
     locale: 'es',
-    date: `08 de junio, 2022`,
+    date: `02 de junio, 2023`,
     price: `regular`,
-    title: `Cuatro - EQUILIBRIO`,
+    title: `¡ESCÁNDALO!`,
     location: `Teatro Echegaray, 20:00 h.`,
-    preview: `Desde el padre fundador del cuarteto de cuerda tal y como lo conocemos, Joseph Haydn, se concibe tal formación como el equilibrio perfecto en la composición, por la riqueza de rango, diversidad sonora y unidad a través del timbre instrumental.`,
-    sent_01: `En el caso del cuarteto no. 2 de Borodin, nos encontramos con una obra llena de afecto amoroso, que el compositor dedicó a su esposa Ekaterina Protopova.`,
-    sent_02: `Tras estudiar en detalle los cuartetos de cuerda de Haydn, Mozart y Beethoven en un período de depresión, Schumann creó su propio cuarteto, con el piano como parte del conjunto, dando más cuerpo al sonido.`,
-    sent_03: `La genialidad creativa del compositor se demuestra al ser capaz de mantener al grupo como un conjunto unificado y concebir momentos de gran intimidad y delicadeza.`,
-    details: [
+    sentence: [
+      `Una obra de arte procede de un lugar tan poderoso, que su fuerza y empuje puede verdaderamente mover montañas. La manera en la que las obras de arte resuenan con la gente puede encender la chispa de una revolución que haya estado creciendo en el corazón de las personas.`,
+      `La obra de Auber hizo justo eso, siendo la única ópera (que se sepa) que haya causado directamente una revuelta social, dando pie a la revolución belga.`,
+      `El resto del programa presenta la unión que puede traer la música, y la manera en la que diferentes pueblos y naciones han expresado su idealismo, cambio y triunfo a través del poder de la música. `,
+    ],
+    detailsOne: [
       {
-        composer: `Alexander Borodin (1833 - 1887)`,
-        info: `Cuarteto de cuerda No. 2 en Re mayor`,
-        artist_1: `ANNA MARGRETHE NILSEN violín`,
-        artist_2: `JESÚS REINA violín`,
-        artist_3: `RUMEN CVETKOV viola`,
-        artist_4: `ADOLFO GUTIÉRREZ violoncelo`,
+        composer: [`Ígor Stravinski (1882-1971)`],
+        info: `La Consagración de la Primavera’, selección de movimientos, para piano a 4 manos`,
+        artists: [`Natalia Kuchaeva piano`, `Julien Quentin piano`],
       },
       {
-        composer: `Robert Schumann (1810 - 1856)`,
-        info: `Cuarteto con piano en Mi bemol mayor, Op. 47`,
-        artist_1: `JESÚS REINA violín`,
-        artist_2: `RASVAN POPOVICI viola`,
-        artist_3: `NATALIA MARGULIS violoncelo`,
-        artist_4: `JOSU DE SOLAUN piano`,
+        composer: [`Georges Bizet (1838-1875)`],
+        info: `‘Je dis que rien’, de la opera Carmen, para soprano y piano, ‘La fleur que tu m´avais jetée’, de la opera Carmen, para tenor y piano`,
+      },
+      {
+        composer: [`Guiseppe Verdi (1813-1901)`],
+        info: `‘Parigi, o cara’ de la opera La traviata, dúo para soprano y tenor, con piano`,
+        artists: [
+          `Susanne Hvinden Hals soprano`,
+          `Nils Georg Nilsen tenor`,
+          `Natalia Kuchaeva piano`,
+        ],
+      },
+    ],
+    detailsTwo: [
+      {
+        composer: [`George Rochberg (1918-2005)`],
+        info: `Cuarteto de cuerda No. 3`,
+        artists: [
+          `Joanna Wronko violín`,
+          `Robert Kowalski violín`,
+          `Léa Hennino viola`,
+          `Øyvind Gimse violonchelo`,
+        ],
+      },
+      {
+        composer: [`Giacomo Puccini (1858-1924)`],
+        info: `‘Addio, fiorito asil’ de la opera Madama Butterfly, para tenor y piano`,
+        artists: [`Nils Georg Nilsen tenor`, `Natalia Kuchaeva piano`],
+      },
+      {
+        composer: [`Gioachino Rossini (1792-1868)`],
+        info: `‘Una voce poco fa’ de la opera El barbero de Sevilla, para soprano y piano`,
+        artists: [`Susanne Hvinden Hals soprano`, `Natalia Kuchaeva piano`],
       },
     ],
     image:
@@ -423,37 +472,53 @@ const events = [
     image_position: `top right`,
   },
 
-  // Conciert0 09 de junio
+  // Conciert0 03 de junio
   {
     id: 11,
     locale: 'es',
-    date: `09 de junio, 2022`,
+    date: `03 de junio, 2023`,
     price: `regular`,
-    title: `Cinco y séis - DIVERSIÓN`,
+    title: `PIONEROS`,
     location: `Teatro Echegaray, 20:00 h.`,
-    preview: `Agregar instrumentos a los ensembles da lugar a que los compositores cambien brillantemente la textura, además de dar más densidad a la armonía.`,
-    sent_01: `Cuando el piano se une a un cuarteto, formando un quinteto, como el renombrado quinteto de piano en fa menor de Brahms, el piano y las cuerdas se enfrentan a veces como fuerzas musicales distintas, pero cuando se unen tienen un poder enorme, como también lo es su flexibilidad.`,
-    sent_02: `El sexteto tiene cualidades similares a las del quinteto, pero tal vez deje a cada instrumento un poco "aliviado" ya que ahora hay más instrumentos compartiendo la carga de trabajo. Una obra como el romántico Souvenir de Florence de Tchaikovsky se puede disfrutar tanto como intérpreter o como oyente.`,
-    sent_03: ``,
-    details: [
+    sentence: [
+      `Arnold Schönberg creó un nuevo sistema de composición en el que una obra se desarrolla a partir de doce tonos predeterminados, las doce notas que forman la escala cromática. Este programa muestra al revolucionario sistema gestándose, a través de la obra de los pupilos de Schönberg, Berg y Webern. Culmina esta gestación con la disonante Phantasy de Schönberg.`,
+      `Es interesante escuchar inmediatamente después Noche transfigurada, una obra más temprana que estira los límites de la tonalidad. Las causas y consecuencias de este modo de componer son complejas.`,
+      `La estética chocante de las obras son el resultado de una búsqueda artística profunda en medio de unos momentos críticos en la historia, rodeado de violencia, guerra, y la exaltación de valores que corrompían el alma humana.`,
+    ],
+    detailsOne: [
       {
-        composer: `Johannes Brahms (1833 - 1897)`,
-        info: `Quinteto con piano en Fa menor, Op. 34`,
-        artist_1: `ALEXANDER SITKOVETSKY violín`,
-        artist_2: `ALISSA MARGULIS violín`,
-        artist_3: `TOMOKO AKASAKA viola`,
-        artist_4: `ADOLFO GUTIÉRREZ violonchelo`,
-        artist_5: `ANTONIO ORTÍZ piano`,
+        composer: [`Alban Berg (1885-1935)`],
+        info: `Selección de canciones de ‘7 canciones tempranas’, para soprano y piano`,
+        artists: [`Susanne Hvinden Hals soprano`, `Julien Quentin piano`],
       },
       {
-        composer: `Piotr Ilich Tchaikovsky (1840-1893)`,
-        info: `Sexteto de cuerda en Re menor ‘Souvenir de Florence’, Op. 70`,
-        artist_1: `ALISSA MARGULIS violín`,
-        artist_2: `ANNA MARGRETHE NILSEN violín`,
-        artist_3: `RASVAN POPOVICI viola`,
-        artist_4: `TOMOKO AKASAKA viola`,
-        artist_5: `ADOLFO GUTIÉRREZ violonchelo`,
-        artist_6: `NATALIA MARGULIS violoncelo`,
+        composer: [`Arnold Schoenberg (1874-1951)`],
+        info: `‘Erwartung’ de 4 Canciones, Op 2. No.1, para tenor y piano`,
+        artists: [`Nils Georg Nilsen tenor`, `Julien Quentin piano`],
+      },
+      {
+        composer: [`Anton Webern (1883-1945)`],
+        info: `Cuatro obras para violín y piano, Op. 7`,
+        artists: [`Joanna Wronko violín`, `Natalia Kuchaeva piano`],
+      },
+      {
+        composer: [`Arnold Schoenberg (1874-1951)`],
+        info: `‘Fantasía’, Op.47, para violín y piano`,
+        artists: [`Jesus Reina violín`, ` Julien Quentin piano`],
+      },
+    ],
+    detailsTwo: [
+      {
+        composer: [`Arnold Schoenberg (1874-1951)`],
+        info: `‘Noche transfigurada’, Op.4, para sexteto de cuerda`,
+        artists: [
+          `Anna Margrethe Nilsen violín`,
+          `Jesus Reina violín`,
+          `Léa Hennino viola`,
+          `Tomoko Akasaka viola`,
+          `Adolfo Gutiérrez violonchelo`,
+          `Øyvind Gimse violonchelo`,
+        ],
       },
     ],
     image:
@@ -461,119 +526,46 @@ const events = [
     image_position: `top right`,
   },
 
-  // Conciert0 10 de junio
+  // Conciert0 04 de junio
   {
     id: 12,
     locale: 'es',
-    date: `10 de junio, 2022`,
+    date: `04 de junio, 2023`,
     price: `regular`,
-    title: `Siete y ocho - SIMBIOSIS`,
-    location: `Teatro Echegaray, 20:00 h.`,
-    preview: `Lo que es más simple en ensembles más pequeños es mucho más complejo en un septeto en términos de entrelazar exitosamente las líneas instrumentales.`,
-    sent_01: `Además, la combinación de vientos y cuerdas en el septeto de Beethoven es innovadora y emocionante ya que estos instrumentos tienen timbres muy diferentes. A través de varios movimientos cortos esta obra es de un espíritu ligero y de gran entretenimiento. Su popularidad molestó mucho a Beethoven, que hubiera preferido que sus obras más "serias" recibieran ese tipo de atención.`,
-    sent_02: `En la mayoría de los casos, el octeto de cuerda puede considerarse como un cuarteto doble, teniendo cuatro voces principales y cuatro secundarias de cada instrumento. En el conjunto dos o más instrumentos a menudo se unen para tocar el acompañamiento o las melodías, acercándose a la sensación de ser una pequeña orquesta de cámara.`,
-    sent_03: `Mendelssohn, con tan solo 16 años de edad, usó magistralmente los ocho instrumentos en su octeto de cuerda, que es una de las obras más interpretadas y apreciadas del repertorio de la música de cámara.`,
-    details: [
+    title: `LA GRANDEZA DE BEETHOVEN`,
+    location: `Teatro Cervantes, 20:00 h.`,
+    sentence: [
+      `El extenso catálogo de la obra de Beethoven ha enriquecido e influido el repertorio sinfónico, camerístico e instrumental. Las obras presentadas en este programa además, vienen de dos momentos interesantes en el desarrollo compositivo de Beethoven. El trio op. 70 está ubicado en el periodo medio mientras que el quinteto op. 29 es la última obra de su primer periodo. `,
+      `La vida musical de Beethoven fue una revolución vista desde su plenitud. El mundo ha mantenido vigente algunos éxitos de Beethoven a través de los cuales se muestra la imagen cliché de un genio creativo, quien de un plumazo rompió toda forma musical existente.`,
+      `El proceso sin embargo fue cocinado a fuego lento, más parecido a una evolución que una revolución, hasta que su llama creativa se avivo y causó una onda expansiva a través del tiempo, convirtiéndose en una fuente de inspiración para las artes durante los siglos venideros.
+      `,
+    ],
+    detailsOne: [
       {
-        composer: `Ludwig van Beethoven (1770 - 1827)`,
-        info: `Septeto en Mi bemol mayor, Op. 20`,
-        artist_1: `JUAN CRISÓSTOMO SUBIELA DURÁ clarinete`,
-        artist_2: `ALEXANDER MOUSTACHIEV trompa`,
-        artist_3: `ANTONIO LOZANO fagot`,
-        artist_4: `ALEXANDER SITKOVETSKY violín`,
-        artist_5: `TOMOKO AKASAKA viola`,
-        artist_6: `ADOLFO GUTIÉRREZ violonchelo`,
-        artist_7: `UXÍA MARTÍNEZ BOTANA contrabajo`,
+        composer: [`Ludwig van Beethoven (1770-1827)`],
+        info: `Trío en Re mayor ‘Fantasma’, Op.70, No.1, para violín, violonchelo y piano`,
+        artists: [
+          `Anna Margrethe Nilsen violín`,
+          `Adolfo Gutiérrez violonchelo`,
+          `Natalia Kuchaeva piano`,
+        ],
       },
+    ],
+    detailsTwo: [
       {
-        composer: `Felix Mendelssohn (1809 - 1847)`,
-        info: `Octeto de cuerda en Mi bemol mayor, Op. 20`,
-        artist_1: `ALEXANDER SITKOVETSKY violín`,
-        artist_2: `ALISSA MARGULIS violín`,
-        artist_3: `MARIA DEL MAR JURADO JIMÉNEZ violín`,
-        artist_4: `ANNA MARGRETHE NILSEN violín`,
-        artist_5: `RASVAN POPOVICI viola`,
-        artist_6: `RUMEN CVETKOV viola`,
-        artist_7: `NATALIA MARGULIS violonchelo`,
-        artist_8: `ADOLFO GUTIÉRREZ violonchelo`,
+        composer: [`Ludwig van Beethoven (1770-1827)`],
+        info: `Quinteto de cuerda en Do mayor ‘La tormenta’, Op. 29`,
+        artists: [
+          `Jesus Reina violín`,
+          `Anna Margrethe Nilsen violín`,
+          `Tomoko Akasaka viola`,
+          `Léa Hennino viola`,
+          `Øyvind Gimse violonchelo`,
+        ],
       },
     ],
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686311/M%C3%A1laga%20Cl%C3%A1sica/day-5_uqvxm1.webp',
-    image_position: `center`,
-  },
-
-  // Conciert0 11 de junio
-  {
-    id: 13,
-    locale: 'es',
-    date: `11 de junio, 2022`,
-    price: `regular`,
-    title: `Nueve y diez - VIRTUOSISMO`,
-    location: `Teatro Echegaray, 20:00 h.`,
-    preview: `El noneto de Louis Spohr fue tan popular que su instrumentación se convirtió en el estándar para otros compositores que deseaban escribir para esta formación.`,
-    sent_01: `Consiste en la combinación de un quinteto de viento (flauta, oboe, clarinete, trompa y fagot) y un cuarteto de cuerda (violín, viola, violonchelo, contrabajo). Verdaderamente capatando la personalidad de cada instrumento, esta obra muestra una amplia variedad de colores y la gran imaginación del compositor.`,
-    sent_02: `Con la simple adición del segundo violín al grupo obtenemos un deceto. El compositor francés Theodore Dubois se mantuvo en el estilo romántico más tradicional, a diferencia de muchos de sus contemporáneos que eclipsaron su fama.`,
-    sent_03: `También escribió una buena cantidad de música sacra y es uno de los pocos compositores que ha escrito para esta combinación específica de diez instrumentos.`,
-    details: [
-      {
-        composer: `Louis Spohr (1784 - 1859)`,
-        info: `Noneto en Fa mayor, Op. 31`,
-        artist_1: `JUAN ANTONIO LÓPEZ CABUEZUELOS flauta`,
-        artist_2: `JOSÉ ANTONIO GONZAGA oboe`,
-        artist_3: `JUAN CRISÓSTOMO SUBIELA DURÁ clarinete`,
-        artist_4: `ALEXANDER MOUSTACHIEV trompa`,
-        artist_5: `ANTONIO LOZANO fagot`,
-        artist_6: `ALEXANDER SITKOVETSKY violín`,
-        artist_7: `RAZVAN POPOVICI viola`,
-        artist_8: `NATALIA MARGULIS violonchelo`,
-        artist_9: `UXÍA MARTÍNEZ BOTANA contrabajo`,
-      },
-      {
-        composer: `Théodore Dubois (1837 - 1924)`,
-        info: `Dixtuor en Re mayor`,
-        artist_1: `JUAN ANTONIO LÓPEZ CABUEZUELOS flauta`,
-        artist_2: `JOSÉ ANTONIO GONZAGA oboe`,
-        artist_3: `JUAN CRISÓSTOMO SUBIELA DURÁ clarinete`,
-        artist_4: `ALEXANDER MOUSTACHIEV trompa`,
-        artist_5: `ANTONIO LOZANO fagot`,
-        artist_6: `ALISSA MARGULIS violín`,
-        artist_7: `ANNA MARGRETHE NILSEN violín`,
-        artist_8: `TOMOKO AKASAKA viola`,
-        artist_9: `NATALIA MARGULIS violonchelo`,
-        artist_10: `UXÍA MARTÍNEZ BOTANA contrabajo`,
-      },
-    ],
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686311/M%C3%A1laga%20Cl%C3%A1sica/day-6_mhrki0.webp',
-    image_position: `top center`,
-  },
-
-  // Conciert0 12 de junio
-  {
-    id: 14,
-    locale: 'es',
-    date: `12 de junio, 2022`,
-    price: `premium`,
-    title: `FORTÍSIMO - Concierto de clausura`,
-    location: `Teatro Cervantes, 19:00 h.`,
-    preview: `La orquesta es a gran escala la extensión completa de un grupo de cámara.`,
-    sent_01: `Dado que la distancia entre los músicos hace que sea más difícil escucharse y verse, el director lidera el grupo, que puede estar formado por más de 100 miembros, y guía a los músicos a través de un lenguaje manual y corporal magistral para retratar una interpretación unificada de la obra presentada.`,
-    sent_02: `El concierto para violín de Max Bruch, dedicado a y estrenado por Joseph Joachim, muestra no solo el violín, con sus pasajes deslumbrantes y virtuosos y sus líneas de canto, sino también la grandeza y el poder puro de la orquesta cada vez que estalla en otro maravilloso tutti. La pieza es especialmente amada por sus melodías desgarradoras y carácter enérgico.`,
-    sent_03: `En la Sinfonía n.° 4 de Mendelssohn, titulada “La Italiana”, escuchamos la inspiración evocada por el compositor de una gira por Italia. Con alegre frescura, los cuatro movimientos representan impresiones del país mediterráneo, también en forma de música folclórica, siendo el último movimiento un saltarello napolitano rápido.`,
-    details: [
-      {
-        composer: `Max Bruch (1838 - 1920)`,
-        info: `Concierto para violín No. 1 en Sol menor, Op. 26`,
-        composer_2: `Felix Mendelssohn (1809 - 1847)`,
-        info_2: `Sinfonía No. 4 ‘La Italiana’ en La mayor, Op. 90`,
-        artist_1: `JESÚS REINA violín`,
-        artist_2: `TOMÁS GRAU director`,
-        artist_3: `FRANZ SCHUBERT FILHARMONIA`,
-      },
-    ],
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686311/M%C3%A1laga%20Cl%C3%A1sica/day-7_rosyeh.webp',
     image_position: `center`,
   },
 ];

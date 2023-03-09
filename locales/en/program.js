@@ -1,10 +1,10 @@
 const program = {
-  date_title: `06 - 12 June, `,
+  date_title: `31 May - 04 June, `,
   hero_text_1: `The concerts will take place from `,
-  hero_text_2: `June 6 to 12`,
+  hero_text_2: `May 31 to June 4`,
   hero_text_3: ` at the Echegaray Theatre in Malaga. Tickets can be obtained online or at the ticket offices of the Cervantes Theatre and Echegaray Theatre.`,
   title: `Themed concerts`,
-  subtitle: `10th anniversary concert program for the Málaga Clásica International Chamber Music Festival.`,
+  subtitle: `11th anniversary concert program for the Málaga Clásica International Chamber Music Festival.`,
 
   read_more: `Read full details`,
   buy_tickets: `Buy tickets`,

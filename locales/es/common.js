@@ -1,4 +1,7 @@
 const common = {
+  //title
+  title: 'Revoluciones',
+
   // buttons
   buy_tickets: `Compra entradas`,
   go_back: `Volver`,

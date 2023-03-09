@@ -44,10 +44,10 @@ export default function Programa(props) {
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
           <h2 className="text-lg font-normal tracking-wide text-greyCrescendo">
             {t('program:date_title')}
-            2022
+            2023
           </h2>
           <h1 className="text-5xl font-extrabold text-greyCrescendo sm:text-6xl lg:text-7xl">
-            crescendo
+            {t('common:title')}
           </h1>
           <p className="max-w-3xl mt-6 text-xl text-greyCrescendo">
             {t('program:hero_text_1')}

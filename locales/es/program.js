@@ -1,10 +1,10 @@
 const program = {
-  date_title: `junio 06 - 12, `,
+  date_title: `mayo 31 - junio 04, `,
   hero_text_1: `Los conciertos tendrán lugar del `,
-  hero_text_2: `6 al 12 de junio`,
+  hero_text_2: `31 de mayo al 04 de junio`,
   hero_text_3: ` en el Teatro Echegaray en Málaga. Las entradas se pueden obtener online o en las taquillas de los Teatros Cervantes y Teatro Echegaray.`,
   title: `Conciertos temáticos`,
-  subtitle: `Programa de conciertos del X aniversario del Festival Internacional de Música de Cámara de Málaga Clásica.`,
+  subtitle: `Programa de conciertos del XI aniversario del Festival Internacional de Música de Cámara de Málaga Clásica.`,
 
   read_more: `Leer detalles completos`,
   buy_tickets: `Compra entradas`,

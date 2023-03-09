@@ -79,56 +79,72 @@ const Concert = ({ event }) => {
             <p className="mt-4 text-coalCrescendo opacity-80">
               {event.location}
             </p>
-
+            {/* Act 1 */}
             <dl className="grid grid-cols-1 mt-10 text-base gap-y-10 gap-x-8 sm:grid-cols-2">
-              {event.details.map((detail) => (
-                <div key={detail.composer}>
-                  <dt className="font-semibold text-coalCrescendo">
-                    {detail.composer}
-                  </dt>
+              {event.detailsOne.map((detail, i) => (
+                <div key={i}>
+                  {detail.composer.map((composer) => (
+                    <dt className="font-semibold text-coalCrescendo">
+                      {composer}
+                    </dt>
+                  ))}
+
                   <dd className="mt-2 text-coalCrescendo opacity-90">
                     {detail.info}
                   </dd>
-                  <dt className="mt-4 font-semibold text-coalCrescendo">
-                    {detail.composer_2}
-                  </dt>
-                  <dd className="mt-2 text-coalCrescendo opacity-90">
-                    {detail.info_2}
-                  </dd>
-                  <dt className="mt-4 font-semibold text-coalCrescendo">
-                    {detail.composer_3}
-                  </dt>
-                  <dd className="mt-2 text-coalCrescendo opacity-90">
-                    {detail.info_3}
-                  </dd>
-                  <dd className="mt-4 text-mossCrescendo">{detail.artist_1}</dd>
-                  <dd className="mt-2 text-mossCrescendo">{detail.artist_2}</dd>
-                  <dd className="mt-2 text-mossCrescendo">{detail.artist_3}</dd>
-                  <dd className="mt-2 text-mossCrescendo">{detail.artist_4}</dd>
-                  <dd className="mt-2 text-mossCrescendo">{detail.artist_5}</dd>
-                  <dd className="mt-2 text-mossCrescendo">{detail.artist_6}</dd>
-                  <dd className="mt-2 text-mossCrescendo">{detail.artist_7}</dd>
-                  <dd className="mt-2 text-mossCrescendo">{detail.artist_8}</dd>
-                  <dd className="mt-2 text-mossCrescendo">{detail.artist_9}</dd>
-                  <dd className="mt-2 text-mossCrescendo">
-                    {detail.artist_10}
-                  </dd>
+                  {detail.artists
+                    ? detail.artists.map((artist) => (
+                        <dd className="mt-4 font-semibold text-mossCrescendo">
+                          {artist.split(' ').slice(0, -1).join(' ')}{' '}
+                          <span className="font-normal">
+                            {artist.split(' ').pop()}
+                          </span>
+                        </dd>
+                      ))
+                    : null}
                 </div>
               ))}
             </dl>
-            <div className="pb-10 mt-10 border-t border-gray-200">
-              <p className="mt-10 text-coalCrescendo opacity-80">
-                {event.preview}
-              </p>
-              <p className="mt-4 text-coalCrescendo opacity-80">
-                {event.sent_01}
-              </p>
-              <p className="mt-4 text-coalCrescendo opacity-80">
-                {event.sent_02}
-              </p>
-              <p className="mt-4 text-coalCrescendo opacity-80">
-                {event.sent_03}
-              </p>
+            <hr className="mt-12" />
+            {/* Act 2 */}
+            <dl className="grid grid-cols-1 mt-10 text-base gap-y-10 gap-x-8 sm:grid-cols-2">
+              {event.detailsTwo.map((detail, i) => (
+                <div key={i}>
+                  {detail.composer.map((composer, i) => (
+                    <dt key={i} className="font-semibold text-coalCrescendo">
+                      {composer}
+                    </dt>
+                  ))}
+
+                  <dd className="mt-2 text-coalCrescendo opacity-90">
+                    {detail.info}
+                  </dd>
+                  {detail.songs ? <div className="py-2" /> : null}
+                  {detail.songs &&
+                    detail.songs.map((song, i) => (
+                      <figure className="border-l border-mossCrescendo/50 pl-9">
+                        <blockquote className="italic font-medium text-coalCrescendo">
+                          <p className="py-2">{song}</p>
+                        </blockquote>
+                      </figure>
+                    ))}
+                  {detail.artists.map((artist) => (
+                    <dd className="mt-4 font-semibold text-mossCrescendo">
+                      {artist.split(' ').slice(0, -1).join(' ')}{' '}
+                      <span className="font-normal">
+                        {artist.split(' ').pop()}
+                      </span>
+                    </dd>
+                  ))}
+                </div>
+              ))}
+            </dl>
+            <div className="py-10 mt-10 border-t border-gray-200">
+              {event.sentence.map((sentence, i) => (
+                <p key={i} className="mt-4 text-coalCrescendo opacity-80">
+                  {sentence}
+                </p>
+              ))}
 
               {event.date.includes('12') ? (
                 <PricingLastConcert />
