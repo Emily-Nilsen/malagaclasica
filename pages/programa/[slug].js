@@ -83,8 +83,8 @@ const Concert = ({ event }) => {
             <dl className="grid grid-cols-1 mt-10 text-base gap-y-10 gap-x-8 sm:grid-cols-2">
               {event.detailsOne.map((detail, i) => (
                 <div key={i}>
-                  {detail.composer.map((composer) => (
-                    <dt className="font-semibold text-coalCrescendo">
+                  {detail.composer.map((composer, i) => (
+                    <dt key={i} className="font-semibold text-coalCrescendo">
                       {composer}
                     </dt>
                   ))}
@@ -93,8 +93,11 @@ const Concert = ({ event }) => {
                     {detail.info}
                   </dd>
                   {detail.artists
-                    ? detail.artists.map((artist) => (
-                        <dd className="mt-4 font-semibold text-mossCrescendo">
+                    ? detail.artists.map((artist, i) => (
+                        <dd
+                          key={i}
+                          className="mt-4 font-semibold text-mossCrescendo"
+                        >
                           {artist.split(' ').slice(0, -1).join(' ')}{' '}
                           <span className="font-normal">
                             {artist.split(' ').pop()}
@@ -122,14 +125,20 @@ const Concert = ({ event }) => {
                   {detail.songs ? <div className="py-2" /> : null}
                   {detail.songs &&
                     detail.songs.map((song, i) => (
-                      <figure className="border-l border-mossCrescendo/50 pl-9">
+                      <figure
+                        key={i}
+                        className="border-l border-mossCrescendo/50 pl-9"
+                      >
                         <blockquote className="italic font-medium text-coalCrescendo">
                           <p className="py-2">{song}</p>
                         </blockquote>
                       </figure>
                     ))}
-                  {detail.artists.map((artist) => (
-                    <dd className="mt-4 font-semibold text-mossCrescendo">
+                  {detail.artists.map((artist, i) => (
+                    <dd
+                      key={i}
+                      className="mt-4 font-semibold text-mossCrescendo"
+                    >
                       {artist.split(' ').slice(0, -1).join(' ')}{' '}
                       <span className="font-normal">
                         {artist.split(' ').pop()}
