@@ -62,7 +62,7 @@ const Artist = ({ artist }) => {
                   <Image
                     layout="responsive"
                     objectFit="cover"
-                    objectPosition={artist.image_position}
+                    objectPosition="center"
                     src={artist.image || '/static/cervantes.webp'}
                     alt={artist.name || ''}
                     width={800}
@@ -95,13 +95,9 @@ const Artist = ({ artist }) => {
             </h2>
             <div className="mt-6 space-y-6 text-mossCrescendo">
               <p className="text-lg">{artist.para_1}</p>
-              <p className="text-base leading-7">{artist.para_2}</p>
-              <p className="text-base leading-7">{artist.para_3}</p>
-              <p className="text-base leading-7">{artist.para_4}</p>
-              <p className="text-base leading-7">{artist.para_5}</p>
-              <p className="text-base leading-7">{artist.para_6}</p>
-              <p className="text-base leading-7">{artist.para_7}</p>
-              <p className="text-base leading-7">{artist.para_8}</p>
+              {artist.sentences.map((sentence) => (
+                <p className="text-base leading-7">{sentence}</p>
+              ))}
             </div>
           </div>
 

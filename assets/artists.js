@@ -5,16 +5,31 @@ const artists = [
     name: `Jesús Reina`,
     slug_name: `Jesús Reina ES`,
     instrument: `Dirección Artística, violín`,
-    para_1: `Más allá de su virtuosismo y su total dominio del instrumento, el violinista malagueño Jesús Reina es ensalzado por la crítica gracias a su “personalidad radiante y llena de alma” —John Rockwell, su “frescura y espontaneidad desbordante”, y la “belleza de su sonido caracterizado por una verdadera musicalidad, temperamento y carisma” —El País, con el que conquistó al público desde su infancia.`,
-    para_2: `Jesús se inició en el violín de la mano de su abuelo José Reina en el ámbito de la música folclórica y su talento llamó muy pronto la atención de grandes maestros. A los 8 años fue invitado a estudiar con Yehudi Menuhin y Natasha Boyarskaya en la Yehudi Menuhin School. A los 10 años ingresó en la Escuela Reina Sofía bajo la tutela de José Luis García Asensio. Dos años más tarde fue becado en la Indiana University para estudiar con Mauricio Fuks y a los 15 años entró en la Manhattan School of Music de Nueva York como alumno de Patinka Kopec y Pinchas Zukerman.`,
-    para_3: `Se ha presentado en grandes salas como el Wigmore Hall y el Royal Festival Hall de Londres, el Carnegie Hall de Nueva York, el National Arts Centre de Ottawa, la Filarmónica de San Petersburgo, el Auditorio Nacional de Madrid o el Palau de la Música de Barcelona y en festivales internacionales como el Miami Piano Festival o el Music@Menlo de California, así como en algunas de las programaciones más importantes españolas como el Auditorio de Zaragoza, el Festival del Escorial, el Festival Musika-Música de Bilbao y la Sociedad de Conciertos de Alicante.`,
-    para_4: `Entre las orquestas con las que ha compartido escenario se encuentran la Orquesta Filarmónica del Teatro Mariinsky, la Orquesta de Cámara de Munich, la Orquesta de Baja California, la Orquesta Sinfónica de Yucatán, la Sinfónica de Barcelona, la Filarmónica de Málaga, la Sinfónica de Murcia o la Sinfónica del Principado de Asturias, invitado por directores como Valery Gergiev, Pinchas Zukerman, Manuel Hernández Silva, Virginia Martínez, Juan Carlos Lomónaco, Sebastian Hamman, Eiji Oue o Ari Rasilainen.`,
-    para_5: `Su entusiasmo por la música de cámara le ha llevado a unirse a otros músicos como el violinista Guy Braunstein, el violista Paul Neubauer, los pianistas Judith Jáuregui y Josu de Solaun o los violonchelistas Øyvind Gimse, Amanda Forsyth y Kyril Slotnikov.`,
-    para_6: `Recientemente destacan invitaciones de la Orquesta Filarmónica de Málaga, la Orquesta de Córdoba y la Orquesta Sinfónica del Principado de Asturias, con la que actuó en la celebración de los Premios Princesa de Asturias rindiendo homenaje a los galardonados Ennio Morricone y John Williams. También participó en la Sociedad Filarmónica de Valencia y la Quincena Musical de San Sebastián, en un recital con gran acogida de público y crítica. Próximamente tiene compromisos en la temporada de cámara de Getxo, el concierto 15 aniversario de la Camerata Gala, la temporada de cámara de la Filarmónica de Málaga y la grabación de los conciertos de Bruch y Mendelssohn con la Filarmónica de Malta y el director Oliver Díaz para el sello Aria Classics.`,
-    para_7: `Artista inquieto y de energía emprendedora, Jesús regresó para establecerse en su ciudad natal y cofundar el Festival Málaga Clásica, junto a la violinista Anna Nilsen. Como codirector artístico, acaba de realizar su novena edición, reuniendo a algunos de los mejores músicos internacionales en encuentros camerísticos. Paralelamente es cofundador de la Academia Galamian, un centro de alta especialización musical. Su labor y compromiso con la ciudad le han valido la Medalla de Honor de Málaga y el Premio Puerta de Andalucía, reconocimiento otorgado a personas, entidades e instituciones que resaltan los valores andaluces por el mundo.`,
-    para_8: `Aparece semanalmente en el exito televisivo de Canal Sur, “Tierra de Talento”, conducido por el humorista Manu Sánchez. Además de ejercer la labor de jurado del programa, también ha colaborado con grandes artistas de diversos géneros musicales, como José Mercé, María Villalón, Mariola Cantarero, India Martínez, Pasión Vega, El Kanka y Ale Romero.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/jesus-reina_sz8otk.webp`,
-    image_position: `top`,
+    para_1: `Más allá de su virtuosismo y dominio del instrumento, el violinista malagueño Jesús Reina es ensalzado por la crítica gracias a su “personalidad radiante y llena de alma” -John Rockwell y la “belleza de su sonido caracterizado por una verdadera musicalidad, temperamento y carisma” -El País.`,
+    sentences: [
+      `Se ha presentado en grandes salas como el Wigmore Hall y el Royal Festival Hall de Londres, el Carnegie Hall de Nueva York, el National Arts Centre de Ottawa, la Filarmónica de San Petersburgo, el Auditorio Nacional de Madrid o el Palau de la Música de Barcelona y en festivales internacionales como el Miami Piano Festival o el Music@Menlo de California, así como en algunas de las programaciones más importantes españolas como el Auditorio de Zaragoza, el Festival del Escorial, el Festival Musika-Música de Bilbao, la Sociedad de Conciertos de Alicante, la Sociedad Filarmónica de Valencia, Sociedad Filarmónica de Málaga o la Quincena Musical de San Sebastián.`,
+      `Ha actuado con la Orquesta Filarmónica del Teatro Mariinsky, la Orquesta de Cámara de Munich, la Orquesta de Baja California, la Orquesta Sinfónica de Yucatán, la Sinfónica de Barcelona o la Sinfónica del Principado de Asturias, invitado por directores como Valery Gergiev, Pinchas Zukerman, Manuel Hernández Silva, Oliver Díaz, Virginia Martínez, Juan Carlos Lomónaco, Sebastian Hamman, Tomàs Grau, Francisco Valero, Eiji Oue o Ari Rasilainen.`,
+      `Su entusiasmo por la música de cámara le ha llevado a unirse a otros músicos como el violinista Guy Braunstein, el violista Paul Neubauer, los pianistas Judith Jáuregui y Josu de Solaun o los violonchelistas Øyvind Gimse, Amanda Forsyth y Kyril Slotnikov, y es miembro fundador del Cuarteto Picasso. Entre sus próximos compromisos destacan conciertos con la Orquesta de Timisoara en Rumanía, con la Sinfónica de la Región de Murcia, la Filarmónica de Málaga y la Franz Schubert Fiharmonía con el director Tomàs Grau, realiando una gira por España.`,
+      `Adicionalmente, grabará la integral de Enescu para violín producido por el sello Aria Classics. Jesús es cofundador de Málaga Clásica, junto a la violinista Anna Nilsen, y de la Academia Galamian, un centro de alta especialización musical. Su labor y compromiso con la ciudad le han valido la Medalla de Honor de Málaga y el Premio Puerta de Andalucía, reconocimiento otorgado a personas, entidades e instituciones que resaltan los valores andaluces por el mundo.`,
+      `Jesús se inicio al violín con su abuelo José Reina en el ámbito del folclore. Entre sus maestros posteriores se encuentran Vincenzo Puma, Ara Vartanian, Mauricio Fuks, Natasha Boyarsky, Yehudi Menuhin, José Luis García Asensio y Mauricio Fuks. Obtuvo un máster en la Manhattan School of Music con Patinka Kopec y Pinchas Zukerman. Aparece semanalmente en el exito televisivo de Canal Sur, “Tierra de Talento”, conducido por el humorista Manu Sánchez. Además de ejercer de jurado, ha colaborado con grandes artistas de diversos géneros musicales, como José Mercé, India Martínez, Mariola Cantarero, Pasión Vega, el Kanka y Ale Romero.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Jes%C3%BAs%20Reina/general/image-03-small_ccpydm.jpg`,
+  },
+  // English - Jesús Reina
+  {
+    locale: `en`,
+    name: `Jesús Reina`,
+    slug_name: `Jesús Reina EN`,
+    instrument: `Artistic Director, violin`,
+    para_1: `Beyond his virtuosity and mastery of the instrument, the violinist Jesús Reina, from Malaga, is praised by critics for his "radiant and soulful personality" -John Rockwell and the "beauty of his sound characterized by a true musicality, temperament and charisma " -El País.`,
+    sentences: [
+      `He has appeared in great venues such as Wigmore Hall and the Royal Festival Hall in London, Carnegie Hall in New York, the National Arts Center in Ottawa, the Saint Petersburg Philharmonic, the National Auditorium in Madrid and the Palau de la Música in Barcelona and international festivals such as the Miami Piano Festival and Music@Menlo in California, as well as in some of the most important Spanish programs such as the Zaragoza Auditorium, the Escorial Festival, the Bilbao Musika-Música Festival, the Alicante Concert Society, the Valencia Philharmonic Society, the Malaga Philharmonic Society or the Quincena Musical in San Sebastian.`,
+      `He has performed with the Mariinsky Theater Philharmonic Orchestra, the Munich Chamber Orchestra, the Baja California Orchestra, the Yucatan Symphony Orchestra , the Barcelona Symphony and the Principality of Asturias Symphony, invited by conductors such as Valery Gergiev, Pinchas Zukerman, Manuel Hernández Silva, Oliver Díaz, Virginia Martínez, Juan Carlos Lomónaco, Sebastian Hamman, Tomàs Grau, Francisco Valero, Eiji Oue and Ari Rasilainen.`,
+      `His enthusiasm for chamber music has led him to join other musicians such as the violinist Guy Braunstein, the violist Paul Neubauer, the pianists Judith Jáuregui and Josu de Solaun, the cellists Øyvind Gimse, Amanda Forsyth and Kyril Slotnikov, and he is a founding member of the Picasso Quartet. Upcoming highlights include concerts with the Timisoara Orchestra in Romania, with the Murcia Region Symphony, the Malaga Philharmonic and the Franz Schubert Fiharmonía with conductor Tomàs Grau, touring Spain. `,
+      `Additionally, he will record the entirety of Enescu’s repertoire for violin produced by the Aria Classics label. Jesús is co-founder of Málaga Clásica, together with the violinist Anna Nilsen, and of the Galamian Academy, a highly specialized musical center. His work and commitment to the city have earned him the Malaga Medal of Honor and the Puerta de Andalucía Prize, a recognition given to people, entities and institutions that highlight Andalusian values ​​throughout the world.`,
+      `Jesús began playing the violin with his grandfather José Reina in the realm of folklore. His teachers include Vincenzo Puma, Ara Vartanian, Mauricio Fuks, Natasha Boyarsky, Yehudi Menuhin, José Luis García Asensio, and Mauricio Fuks. He earned a master's degree from the Manhattan School of Music with Patinka Kopec and Pinchas Zukerman. Jesús appears weekly on Canal Sur's hit television show, “Tierra de Talento”, hosted by comedian Manu Sánchez. In addition to serving as a jury member, he has collaborated with great artists from various musical genres, such as José Mercé, India Martínez, Mariola Cantarero, Pasión Vega, el Kanka and Ale Romero.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Jes%C3%BAs%20Reina/general/image-03-small_ccpydm.jpg`,
   },
 
   // Anna Nilsen
@@ -24,178 +39,326 @@ const artists = [
     slug_name: `Anna Nilsen ES`,
     instrument: `Dirección Artística, violín`,
     para_1: `Anna Margrethe Nilsen ha sido elogiada por su “virtuosismo, expresividad y una acertadísima convergencia de líneas interpretativas sensibles junto a un exquisito trato melódico” (Revista “Ritmo”).`,
-    para_2: `A la edad de nueve años hizo su debut como solista con la Orquesta de Radiotelevisión de Noruega, y luego fue invitada a actuar como solista con la Orquesta Filarmónica de Bergen, la Orquesta de Cámara de Kaliningrado, la Orquesta Sinfónica de Murcia, la Orquesta Sinfónica de Trondheim, la Orquesta Sinfónica de Kristiansand, las Orquestas Sinfónicas de Asker y Bærum, Orquesta de Cámara de Novgorod, Orquesta de Ópera de Noruega, Orquesta de Cámara de Galicia, la Orquesta Filarmónica Manhattan School of Music, Orquesta Sinfónica Estatal de San Petersburgo y Orquesta de Cámara Estatal de Bielorrusia.`,
-    para_3: `Ha actuado por toda Europa, en Asia, Norteamérica y Sudamérica, en prestigiosos escenarios como Wiener Konzerthaus, Oslo Concert Hall, Carnegie Hall, Grieg Hall de Bergen, Teatro Cervantes de Málaga, Leon Auditorio, St. Petersburg Philharmonic Glinka Hall y Teatro de las Condes en Santiago (Chile).`,
-    para_4: `Como ávida músico de cámara ha tenido el placer de tocar junto a artistas distinguidos como Lars Anders Tomter, Guy Braunstein, Liza Fershtman, Henri Demarquette, Øyvind Gimse, el American String Quartet, Paul Neubauer, Amanda Forsyth y Pinchas Zukerman, y es una de los violinistas del recién formado Cuarteto Picasso.`,
-    para_5: `Como concertino invitada de la Orquesta Santa Cecilia, realizó una gira por España actuando en el Auditorio Nacional de Madrid, Auditorio de Zaragoza y Palau de Valencia, con el director y violinista Julian Rachlin.`,
-    para_6: `Comenzó a tocar el violín a la edad de 4 años y ha estudiado con el profesor Isaac Schuldman, obtuvo una Bachelor y Master de Música en la Manhattan School of Music en Nueva York, estudiando con Patinka Kopec y Pinchas Zukerman, como parte del “The Pinchas Zukerman Performance Program”.`,
-    para_7: `Nilsen es ganadora de los concursos Sparre Olsen (Noruega), Eisenberg-Fried (Nueva York), Lillian Fuchs (Nueva York) y Nacional de Violín para Jóvenes Noruegos, y ha recibido el Premio Dobloug, el Premio Hugo Kortschak y la Medalla de Honor de Málaga. Destacados recientes y futuros incluyen actuaciones como solista con la Orquesta de la Universidad Nacional de Santiago (Chile), la Orquesta Sinfónica de Murcia, la Orquesta Juvenil de León, la Orquesta de la Academia Galamian y la Orquesta de Cámara Barratt Due, interpretando conciertos para violín de Tchaikovsky, Brahms, Mendelssohn, Mozart y Vivaldi, recitales y conciertos de música de cámara con Pinchas Zukerman en Nueva York, en el Festival Internacional de Piano de Miami en Florida, el Festival de Música MurciArt en Murcia (España), el festival Podium en Haugesund (Noruega), y grabaciones en CD para el sello Aria Classics, de las sonatas completas de Busoni y Brahms, junto a los pianistas Josu de Solaun y Oscar Martín.`,
-    para_8: `Es cofundadora y profesora de violín en la Academia Internacional Galamian y cofundadora y directora del festival Málaga Clásica.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/anna-nilsen_kolwch.webp`,
-    image_position: `center`,
+    sentences: [
+      `A la edad de nueve años hizo su debut como solista con la Orquesta de Radiotelevisión de Noruega, y luego fue invitada a actuar como solista con la Orquesta Filarmónica de Bergen, la Orquesta de Cámara de Kaliningrado, la Orquesta Sinfónica de Murcia, la Orquesta Sinfónica de Trondheim, la Orquesta Sinfónica de Kristiansand, las Orquestas Sinfónicas de Asker y Bærum, Orquesta de Cámara de Novgorod, Orquesta de Ópera de Noruega, Orquesta de Cámara de Galicia, la Orquesta Filarmónica Manhattan School of Music, Orquesta Sinfónica Estatal de San Petersburgo y Orquesta de Cámara Estatal de Bielorrusia.`,
+      `Ha actuado por toda Europa, en Asia, Norteamérica y Sudamérica, en prestigiosos escenarios como Wiener Konzerthaus, Oslo Concert Hall, Carnegie Hall, Grieg Hall de Bergen, Teatro Cervantes de Málaga, Leon Auditorio, St. Petersburg Philharmonic Glinka Hall y Teatro de las Condes en Santiago (Chile). Como ávida músico de cámara ha tenido el placer de tocar junto a artistas distinguidos como Lars Anders Tomter, Guy Braunstein, Liza Fershtman, Henri Demarquette, Øyvind Gimse, el American String Quartet, Paul Neubauer, Amanda Forsyth y Pinchas Zukerman, y es una de los violinistas del recién formado Cuarteto Picasso. Como concertino invitada de la Orquesta Santa Cecilia, realizó una gira por España actuando en el Auditorio Nacional de Madrid, Auditorio de Zaragoza y Palau de Valencia, con el director y violinista Julian Rachlin.`,
+      `Comenzó a tocar el violín a la edad de 4 años y ha estudiado con el profesor Isaac Schuldman, obtuvo una Bachelor y Master de Música en la Manhattan School of Music en Nueva York, estudiando con Patinka Kopec y Pinchas Zukerman, como parte del “The Pinchas Zukerman Performance Program”. Nilsen es ganadora de los concursos Sparre Olsen (Noruega), Eisenberg-Fried (Nueva York), Lillian Fuchs (Nueva York) y Nacional de Violín para Jóvenes Noruegos, y ha recibido el Premio Dobloug, el Premio Hugo Kortschak y la Medalla de Honor de Málaga.`,
+      `Destacados recientes y futuros incluyen actuaciones como solista con la Orquesta de la Universidad Nacional de Santiago (Chile), la Orquesta Sinfónica de Murcia, la Orquesta Juvenil de León, la Orquesta de la Academia Galamian y la Orquesta de Cámara Barratt Due, interpretando conciertos para violín de Tchaikovsky, Brahms, Mendelssohn, Mozart y Vivaldi, recitales y conciertos de música de cámara con Pinchas Zukerman en Nueva York, en el Festival Internacional de Piano de Miami en Florida, el Festival de Música MurciArt en Murcia (España), el festival Podium en Haugesund (Noruega), concertino invitado para la ADDA Sinfonica de Alicante, y grabaciones en CD para el sello Aria Classics, de las sonatas completas de Busoni y Brahms, junto a los pianistas Josu de Solaun y Oscar Martín.`,
+      `Es cofundadora y profesora de violín en la Academia Internacional Galamian y cofundadora y directora del festival Málaga Clásica.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/anna-nilsen_kolwch.webp`,
+  },
+  // English - Anna Nilsen
+  {
+    locale: `en`,
+    name: `Anna Nilsen`,
+    slug_name: `Anna Nilsen EN`,
+    instrument: `Artistic Director, violin`,
+    para_1: `Anna Margrethe Nilsen has been praised for her “virtuosity, expressiveness and a very wise convergence of sensitive interpretative lines together with an exquisite melodic treatment” (“Ritmo” Magazine).`,
+    sentences: [
+      `At the age of nine, she made her solo debut with the Norwegian Broadcasting Orchestra, and has following been invited to perform as a soloist with the Bergen Philharmonic Orchestra, Kaliningrad Chamber Orchestra, Murcia Symphony Orchestra, Trondheim Symphony Orchestra, Kristiansand Symphony Orchestra, Bærum and Asker Symphony Orchestras, Novgorod Chamber Orchestra, Norwegian Opera Orchestra, Galician Chamber Orchestra, Manhattan School of Music Philharmonia, St. Petersburg State Symphony Orchestra and Belarussian State Chamber Orchestra.`,
+      `She has performed all over Europe, in Asia, North America and South America, in prestigious venues such as the Wiener Konzerthaus, Oslo Concert Hall, Carnegie Hall, Grieg Hall of Bergen, Teatro Cervantes in Málaga, Leon Auditorio, St. Petersburg Philharmonic Glinka Hall and Teatro de las Condes in Santiago (Chile). An avid chamber musician she has had the pleasure of performing alongside distinguished artists, including Lars Anders Tomter, Guy Braunstein, Liza Fershtman, Henri Demarquette, Øyvind Gimse, the American String Quartet, Paul Neubauer, Amanda Forsyth and Pinchas Zukerman, and is one of the violinists in the newly formed Picasso String Quartet. Invited as a guest concertmaster of the Santa Cecilia Orchestra, she toured Spain, performing in Madrid’s National Auditorium, Auditorium of Zaragoza and Palau de Valencia, with conductor and violinist Julian Rachlin.`,
+      `Music at the Manhattan School of Music, studying with Patinka Kopec and Pinchas Zukerman in “The Pinchas Zukerman Performance Program”. Nilsen is a winner of the competitions Sparre Olsen (Norway) , Eisenberg-Fried (New York), Lillian Fuchs (New York) and National Violin Competition for Youth (Norway), and has received the Dobloug Award, Hugo Kortschak Award and the Medal of Honor of Málaga.`,
+      `Recent and upcoming highlights include performances as a soloist with the Santiago National University Orchestra (Chile), Murcia Symphony Orchestra, Leon Youth Orchestra, Galamian Academy Orchestra and Barratt Due Chamber Orchestra, performing violin concertos by Tchaikovsky, Brahms, Mendelssohn, Mozart and Vivaldi, recitals and chamber music appearances with Pinchas Zukerman in New York, at the Miami International Piano Festival in Florida, the MurciArt Music Festival in Murcia (Spain), the Podium festival in Haugesund (Norway), invited concertmaster for the ADDA Symphony Orchestra of Alicante, and cd-recordings for the Aria Classics Label of the complete sonatas by Busoni and Brahms together with pianists Josu de Solaun and Oscar Martín.`,
+      `She is the co-founder and professor of violin at the Galamian International Academy (Málaga), and co-founder and director of Málaga Clásica festival.
+      `,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/anna-nilsen_kolwch.webp`,
   },
 
-  // Alissa Margulis
+  // Robert Kowalski
   {
     locale: `es`,
-    name: `Alissa Margulis`,
-    slug_name: `Alissa Margulis ES`,
+    name: `Robert Kowalski`,
+    slug_name: `Robert Kowalski ES`,
     instrument: `violín`,
-    para_1: `Alissa Margulis es apreciada por sus actuaciones emotivas y expresivas. Nació en Alemania en una familia rusa de músicos y estudió con Zakhar Bron, Augustin Dumay y Pavel Vernikov. Ha tocado con numerosas orquestas reconocidas, incluida la English Chamber Orchestra, Orchestre National d'Ile de France, New Russia Orchestra y Orchestra Sinfonica di Milano Giuseppe Verdi.`,
-    para_2: `Actúa frecuentemente en salas de conciertos importantes como la Filarmónica de Berlín, el Carnegie Hall, el Palacio de Bellas Artes en la Ciudad de México y la Filarmónica de San Petersburgo. Ha ganado numerosos premios en concursos internacionales de violín y fue galardonada con el premio "Pro Europa" de la Fundación Cultural Europea.`,
-    para_3: `Además de su carrera como solista, es una entusiasta de música de cámara y ha colaborado con artistas como Martha Argerich, Yuri Bashmet, Ivry Gitlis, Gidon Kremer y Mischa Maisky. La virtuosa ha lanzado más de una docena de CD con sellos de renombre como EMI Classics, Novalis y Avanti Classic.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/alissa-margulis_ysbzfy.webp`,
-    image_position: `center`,
+    para_1: `El primer concertino de la Orchestra della Svizzera italiana cautiva al público con un sonido único e intenso y una musicalidad que es a la vez vivaz y elegante.`,
+    sentences: [
+      `Comenzó a estudiar el violín con siete años y solo cuatro años después interpretó el concierto para violín de Mendelssohn con la Orquesta Filarmónica del Báltico. Aparece regularmente como solista y músico de cámara en festivales de música en Europa, Estados Unidos y Asia, actuando en prestigiosas salas de conciertos como el Wiener Musikverein, el Mozarteum de Salzburgo, el Laeiszhalle (Hamburgo) y el Carnegie Hall (Nueva York).`,
+      `Ha ganado premios en concursos internacionales, incluido el Concurso Internacional de Personalidades Musicales Aleksander Tansman en Polonia, el Premio a Artistas Jóvenes del Ministerio de Cultura de Polonia y el Premio a Creadores Jóvenes del alcalde de su ciudad natal de Gdansk. `,
+      `Robert estudió en Alemania y Suiza con Waleri Gradow, y más tarde con Kolja Blacher y Ana Chumachenco. Su desarrollo musical también estuvo profundamente influenciado por Bernard Greenhouse, Ivry Gitlis e Ida Haendel y ha trabajado con notables musicos como Vladimir Ashkenazy, Reinhard Goebel, Martha Argerich y Julian Rachlin.`,
+      `Su grabación del concierto para violín de Richard Strauss con la Orchestra della Svizzera Italiana y Markus Poschner, lanzada en 2018 por el sello CPO, obtuvo elogios de la crítica en toda Europa y la nominación a los International Classical Music Awards 2019. En 2016 se unió a la mundialmente reconocida Cuarteto Karol Szymanowski. Toca un violín J. B. Vuillaume de 1860, cedido generosamente por la Fondazione per l'Arte e Socialità.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Robert_Kowalski_g93mwg.webp`,
   },
 
-  // Alexander Sitkovetsky
+  // English - Robert Kowalski
+  {
+    locale: `en`,
+    name: `Robert Kowalski`,
+    slug_name: `Robert Kowalski EN`,
+    instrument: `violin`,
+    para_1: `The first concertmaster of the Orchestra della Svizzera italiana captivates audiences with a unique, intense sound and a musicality that is at once lively and elegant.`,
+    sentences: [
+      `He began studying the violin aged seven, and only four years later performed Mendelssohn’s Violin Concerto with the Baltic Philharmonic Orchestra. He appears regularly as a soloist and chamber musician at music festivals in Europe, the USA and Asia, performing in prestigious concert venues such as the Wiener Musikverein, Mozarteum Salzburg, Laeiszhalle (Hamburg) and Carnegie Hall (New York).`,
+      `He has won prizes in international competitions, including the Aleksander Tansman International Competition of Musical Personalities in Poland, Young Artists Award of the Polish Ministry of Culture, and Young Creators Award from the mayor of his native city of Gdansk.`,
+      `Robert studied in Germany and Switzerland with Waleri Gradow, and later on with Kolja Blacher and Ana Chumachenco. His musical development was also profoundly influenced by Bernard Greenhouse, Ivry Gitlis and Ida Haendel and he has worked with remarkable musicians such as Vladimir Ashkenazy, Reinhard Goebel, Martha Argerich and Julian Rachlin.`,
+      `His recording of the violin concerto by Richard Strauss with the Orchestra della Svizzera Italiana and Markus Poschner, released in 2018 by the CPO label, earned critical acclaim throughout Europe and the nomination for International Classical Music Awards 2019. In 2016 he joined the world-renowned Karol Szymanowski Quartet. He plays a J. B. Vuillaume violin from 1860, on generous loan from the Fondazione per l'Arte e Socialità.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Robert_Kowalski_g93mwg.webp`,
+  },
+
+  // Joanna Wronko
   {
     locale: `es`,
-    name: `Alexander Sitkovetsky`,
-    slug_name: `Alexander Sitkovetsky ES`,
+    name: `Joanna Wronko`,
+    slug_name: `Joanna Wronko ES`,
     instrument: `violín`,
-    para_1: `El violinista Alexander Sitkovetsky, nacido en Moscú, hizo su debut a la edad de ocho años y luego se mudó al Reino Unido para estudiar en la Escuela Menuhin. La temporada pasada debutó en el Musikverein de Viena con la Tonkünstler Orchestre, volvió a visitar Anima Musicae Budapest y Russian Philharmonic Novosibirsk y se presentó con el Sitkovetsky Trio en festivales de España, Finlandia, Dinamarca, Suiza y Alemania.`,
-    para_2: `Recientemente actuó con la Sinfónica de Yomiuri Nippon, la Sinfónica de Tokio, la Filarmónica Real, la Konzerthaus Orchester de Berlín, la Sinfónica Escocesa de la BBC, la Filarmónica de los Países Bajos, la Sinfónica de Tokio, la Sinfónica de Moscú y San Petersburgo, la Orquesta Filarmónica de Bolivia, la Orquesta Nacional de Gales de la BBC, la Filarmónica de Londres y la Orquesta Filarmónica. Dirige y actúa como solista regularmente con orquestas de cámara, incluidas la Australian Chamber Orchestra, Norwegian Chamber Orchestra, Amsterdam Sinfonietta, London Mozart Players, New York Chamber Players, Camerata Zurich y Romanian Sinfonietta.`,
-    para_3: `Es miembro fundador del Sitkovetsky Trio, que se presenta regularmente en Europa, Asia y las Américas. El cuarto disco del trío para BIS Records, Ravel's Piano Trio y Saint-Saëns's Second Trio, fue lanzado con gran éxito de crítica en julio de 2021. Sitkovetsky es alumno del Programa Bowers de CMS y toca el violín 'Parera' Antonio Stradivari de 1679, amablemente prestado a él a través de la Sociedad Internacional de Violín de Beare por un generoso patrocinador.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/alexander-sitkovetsky_ivaogx.webp`,
-    image_position: `center`,
+    para_1: `La violinista polaca Joanna Wronko es una músico polivalente con una amplia experiencia en el mundo de orquesta y música de cámara.`,
+    sentences: [
+      `Estudió en Friburgo con la prof. Magdalena Rezler, completando su Diploma de Solista en Hamburgo con la prof. Kolja Blacher. Durante el Festival Holland Music Sessions fue nominada al premio New Masters on Tour con un recital de debut en el Concertgebouw en 2007. En 2008 grabó un CD a dúo con Frank van de Laar, que ha sido retransmitido por la radio holandesa y polaca. Joanna ha aparecido en festivales como el Festival de Música de Colmar (Francia), Keshet Eilon (Israel), Gustav Mahler Academy (Italia), Festival en el Centro Europeo Penderecki (Polonia) y Grachtenfestival en Amsterdam.`,
+      `Ha trabajado con Radio Philharmonisch Orkest, Nederlands Kammerorkest Orkest, Royal Concertgebouw Orchestra, Mahler Chamber Orchestra y Orchestra Mozart, como principal de segundos con Royal Opera House Covent Garden, London Philharmonic Orchestra, Scottish Chamber Orchestra, Philharmonia Orchestra, y colaborado con directores como Claudio Abbado, Bernard Haitink, Andris Nelsons, Daniel Harding y Sir John Eliot Gardiner.`,
+      `Ha realizado giras con Academy of St.Martin in the Fields dirigida por Joshua Bell en Europa, Asia y EE. UU. De 2019 a 2021 ocupó el cargo de primera concertino en la Noord Nederlands Orkest, y ha sido concertino invitada de Balletorkest, Antwerp Symphony, Trondheim Symphony, Odense Symphony, Stavanger Symphony, Orquesta Sinfónica de Galicia y Orquesta Ciudad de Granada con quien se presentó recientemente en el Festival Musika-Música de Bilbao.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Joanna_Wronko_sq_ipgycw.webp`,
   },
 
-  // María del Mar Jurado Jiménez
+  // English - Joanna Wronko
   {
-    locale: `es`,
-    name: `María del Mar Jurado Jiménez`,
-    slug_name: `María del Mar Jurado Jiménez ES`,
-    instrument: `violín`,
-    para_1: `Nacida en La Carolina (Jaén) inició en el violín a la edad de siete años. Debutó como solista en el Teatro Nuevo Apolo de Madrid con la Orquesta Camerata Musicalis y el director Edgar Martín y, posteriormente, actuó en el Auditorio Nacional de Madrid con la Orquesta Metropolitana de la capital.`,
-    para_2: `Ha participado en festivales como el Festival de Música de la Mancha, Festival MUSEG en Segovia o el festival Nits de Classics, y recibido clases magistrales con violinistas y músicos de renombre como Mariana Todorova, David Marco, Sergey Teslia, Christoph Schickedanz, Anna Baget, Leticia Moreno, Kirill Zlotnikov, Grigory Kalinovsky, Aitor Hevia, Miguel Colom, Alissa Margulis y Sarah Chang.`,
-    para_3: `Ha ganado el Primer Premio Música de Cámara "Visitación Magarzo", Primer Premio II Concurso Jóvenes Intérpretes de Jaén, Segundo Premio de Música de Cámara “Lorenzo Palomo “, Primer Premio y Premio Especial a la mejor Intérprete de Cuerda en el 16º Premio "Intercentros Melómano " y Primer Premio Jóvenes Intérpretes Málaga Crea 2021, y sido finalista en el concurso de TV “Tierra de Talento”.`,
-    para_4: `Es actualmente alumna activa de la Academia de Estudios Orquestales Baremboim Said, compatibilizando estos estudios con su formación en la Academia Internacional Galamian y el Conservatorio Superior de Música de Málaga.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/maria-jimenez_hxcmnf.webp`,
-    image_position: `top`,
+    locale: `en`,
+    name: `Joanna Wronko`,
+    slug_name: `Joanna Wronko EN`,
+    instrument: `violin`,
+    para_1: `The Polish violinist Joanna Wronko is a versatile musician with a broad experience in the world of orchestra and chamber music.`,
+    sentences: [
+      `She studied in Freiburg with prof. Magdalena Rezler, completing her Solo Diploma in Hamburg with prof. Kolja Blacher. During the Festival Holland Music Sessions she got nominated for the New Masters on Tour prize with a debut recital in the Concertgebouw in 2007. In 2008 she recorded a duo CD with Frank van de Laar, which has been broadcasted by Dutch and Polish radio. Joanna has appeared in festivals such as the Music Festival in Colmar (France), Keshet Eilon (Israel), Gustav Mahler Academy (Italy), Festival in the European Penderecki Center (Poland) and Grachtenfestival in Amsterdam.`,
+      `She has worked with the Radio Philharmonisch Orkest, Nederlands Kammerorkest Orkest, Royal Concertgebouw Orchestra, Mahler Chamber Orchestra and Orchestra Mozart, as principal 2nd with Royal Opera House Covent Garden, London Philharmonic Orchestra, Scottish Chamber Orchestra, Philharmonia Orchestra, and collaborated with conductors like Claudio Abbado, Bernard Haitink, Andris Nelsons, Daniel Harding, Sir John and Eliot Gardiner.`,
+      `She has toured with Academy of St.Martin in the Fields led by Joshua Bell in Europe, Asia and USA. From 2019 to 2021 she held a position as the first concertmaster at the Noord Nederlands Orkest, and been guest concert master of Balletorkest, Antwerp Symphony, Trondheim Symphony, Odense Symphony, Stavanger Symphony, Orquesta Sinfónica de Galicia and Orquesta Ciudad de Granada with whom she appeared recently at the Festival Musika-Música in Bilbao.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Joanna_Wronko_sq_ipgycw.webp`,
   },
-
   // Rumen Cvetkov
   {
     locale: `es`,
     name: `Rumen Cvetkov`,
     slug_name: `Rumen Cvetkov ES`,
     instrument: `viola`,
-    para_1: `Ha actuado en importantes escenarios como el Berliner Filharmoniker Hall, Carnegie Hall, Wigmore Hall, Walt Disney Hall, Palacio de Bellas Artes de Ciudad de México, y ha colaborado con músicos como Ida Haendel, Ber- nard Greenhouse, Mihail Muntian, sir Harold Martina, José Feghali, Christian Tetzlaff o Vladimir Mendelssohn, y los miembros de los cuartetos Borromeo, Kronos, Aviv, Jerusalem y Verdi.`,
-    para_2: `En 2012, el maestro Zubin Mehta le invitó a ser el nuevo solista de viola del Palau de Les Arts Reina Sofia de Valencia. En 2019 editó su primer CD con sonatas de Brahms junto con el pianista Ludmil Angelov.`,
-    para_3: `Es profesor de Viola en el Conservatorio de Tilburg (Países Bajos) y en la New Bulgarian University (Sofía, Bulgaria), fundador del ensemble Solistas Mediterráneos, y es cofundador y codirector artístico del MurciArt Music Festival.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686256/M%C3%A1laga%20Cl%C3%A1sica/rumen-cvetkov_mopwol.webp`,
-    image_position: `center`,
+    para_1: `Ha actuado en importantes escenarios como el Berliner Filharmoniker Hall, Carnegie Hall, Wigmore Hall, Walt Disney Hall, Pallacio de Bellas Artes de Ciudad de México, y ha colaborado con músicos como Ida Haendel, Bernard Greenhouse, Mihail Muntian, sir Harold Martina, José Feghali, Christian Tetzlaff o Vladimir Mendelssohn, y los miembros de los cuartetos Borromeo, Kronos, Aviv, Jerusalem y Verdi.`,
+    sentences: [
+      `En 2012, el maestro Zubin Mehta le invitó a ser el nuevo solista de viola del Palau de Les Arts Reina Sofia de Valencia. En 2019 editó su primer CD con sonatas de Brahms junto con el pianista Ludmil Angelov.`,
+      `Es profesor de Viola en el Conservatorio de Tilburg (Países Bajos) y en la New Bulgarian University (Sofía, Bulgaria), fundador del ensemble Solistas Mediterráneos, y es cofundador y codirector artístico del MurciArt Music Festival.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/rumen-cvetkov_mopwol.webp`,
   },
 
+  // English - Rumen Cvetkov
+  {
+    locale: `en`,
+    name: `Rumen Cvetkov`,
+    slug_name: `Rumen Cvetkov EN`,
+    instrument: `viola`,
+    para_1: `He has performed in important venues worldwide such as Berliner Filharmoniker Hall, Carnegie Hall, Wigmore Hall, Walt Disney Hall, Pallacio de Bellas Artes of Mexico City and has collaborated with musicians such as Ida Haendel, Bernard Greenhouse, Mihail Muntian, Sir Harold Martina, Jose Feghali, Christian Tetzlaff, Vladimir Mendelssohn.`,
+    sentences: [
+      `In 2012 he was invited by Maestro Zubin Mehta to become the solo violist of the Royal Spanish Opera House “Queen Sofia” in Valencia. His debut solo CD “Brahms Alliance” with pianist Ludmil Angelov.`,
+      `Currently, he is a Professor of viola at Tilburg Conservatory (Holland) and New Bulgarian University (Sofia, Bulgaria), the founder and Artistic Leader of Chamber Orchestra “Mediterranean Soloists”, and founder and Artistic Director of MurciArt Music Festival.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/rumen-cvetkov_mopwol.webp`,
+  },
+  // Léa Hennino
+  {
+    locale: `es`,
+    name: `Léa Hennino`,
+    slug_name: `Léa Hennino ES`,
+    instrument: `viola`,
+    para_1: `Músico versátil y ganadora de premios internacionales, Léa ha actuado con artistas de renombre como Modigliani Quartet, Christophe Coin, Jean-Guihen Queyras, Eric Le Sage, Emmanuel Pahud, Paul Meyer, Nicolas Dautricourt, Adam Laloum, Francois Salque, Clara-Yumi Kang, David Kadoush, Pierre Fouchenneret, Marie et Guillaume Chilemme, Victor Julien-Lafferière, Barnabas Kelemen, David Grimal, Edgar Moreau, Alina Pogotskina, Alena Baeva, Boris Brovtsyn, Daishin Kashimoto, Guy Braunstein, Nicholas Angelich, Gauthier Capuçon, Sarah Nemtanu, Yan Levionnois, Nelson Goerner, Marc Coppey, Anne Queffelec, Itamar Golan, Denis Pascal, Augustin Dumay, Renaud Capucon, Gérard Caussé y Clemens Hagen.`,
+    sentences: [
+      `Ha tocado con la Orquesta de Cámara de Toulouse, Orchestre de Picardie y regularmente como viola principal de la Orquesta de París y Les Dissonances, bajo la dirección del violinista David Grimal, y participado en festivales como Krzyzowa Music for Europe, Kronberg "Cello Plus" , Ravinia Steans Music Institute, Verbier Festival Academy, IMS Prussia Cove, Aurora Chamber Music y Encuentro de Santander.`,
+      `Léa colabora con la violonchelista Héloïse Luzzati en su proyecto La boite à pépites y Festival Un temps pour elles, cuya ambición es promover a mujeres compositoras. Artista asociado del Ensemble I Giardini, grabaron el álbum Nuits au côté Véronique Gens y un álbum dedicado a la música de Caroline Shaw. En 2022 crea, con el violonchelista Yan Levionnois, un proyecto basado en el Don Quijote de Strauss con narrador e ilustraciones, estrenado en el Théâtre des Champs-Élysées.`,
+      `Lea estudió en el Conservatorio de París y con Nobuko Imai y Lawrence Power en Suiza. Toca una viola de Charles Coquet y un arco de Sylvain Bigot.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Lei%CC%80a_Hennino_sq_tbythk.webp`,
+  },
+
+  // English - Léa Hennino
+  {
+    locale: `en`,
+    name: `Léa Hennino`,
+    slug_name: `Léa Hennino EN`,
+    instrument: `viola`,
+    para_1: `A versatile musician and international prizewinner, Léa has performed with renowned artists such as the Modigliani Quartet, Christophe Coin, Jean-Guihen Queyras, Eric Le Sage, Emmanuel Pahud, Paul Meyer, Nicolas Dautricourt, Adam Laloum, Francois Salque, Clara-Yumi Kang, David Kadoush, Pierre Fouchenneret, Marie et Guillaume Chilemme, Victor Julien-Lafferière, Barnabas Kelemen, David Grimal, Edgar Moreau, Alina Pogotskina, Alena Baeva, Boris Brovtsyn, Daishin Kashimoto, Guy Braunstein, Nicholas Angelich, Gauthier Capuçon, Sarah Nemtanu, Yan Levionnois, Nelson Goerner, Marc Coppey, Anne Queffelec, Itamar Golan, Denis Pascal, Augustin Dumay, Renaud Capucon, Gérard Caussé and Clemens Hagen.`,
+    sentences: [
+      `She has played with the Toulouse Chamber Orchestra, Orchestre de Picardie and regularly as principal viola of the Paris Orchestra and Les Dissonances, under the direction of violinist David Grimal, and taken part in festivals such as Krzyzowa Music for Europe, Kronberg "Cello Plus", Ravinia Steans Music Institute, Verbier Festival Academy, IMS Prussia Cove, Aurora Chamber Music and Encuentro de Santander.`,
+      `Léa collaborates with cellist Héloïse Luzzati in her project La boite à pépites and Festival Un temps pour elles, whose ambition is to promote female composers. Associate artist of the Ensemble I Giardini, they recorded the album Nuits au côté Véronique Gens and an album dedicated to the music of Caroline Shaw. In 2022 she created, with cellist Yan Levionnois, a project based on Strauss’s Don Quixote with narrator and illustrations, premiered in Théâtre des Champs-Élysées.`,
+      `Lea studied at the Paris’ Conservatory, and with Nobuko Imai and Lawrence Power in Switzerland. She plays a viola by Charles Coquet and a bow by Sylvain Bigot.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Lei%CC%80a_Hennino_sq_tbythk.webp`,
+  },
   // Tomoko Akasaka
   {
     locale: `es`,
     name: `Tomoko Akasaka`,
     slug_name: `Tomoko Akasaka ES`,
     instrument: `viola`,
-    para_1: `Tomoko Akasaka es valorada por su extraordinario carisma y presencia escénica. Ganó el “Concurso de Música Clásica de Japón y tercer premio en el Concurso Internacional ARD, apareciendo como solista con orquestas como Sinfónica de la Radio de Bavaria, de Cámara de Munich, Kremerata Báltica, Chambre Genève, Ensemble Contrechamps, FIlarmonica Banatul Timisoara, Sinfónica de Venezuela y de Cámara de Japón con directores como ara, Venezuelan Symphony Orchestra and Japan Chamber Orchestra under conductors such as Seiji Ozawa, Johannes Kalitzke, Rüdiger Bohn, Gheorghe Costin, Olivier Cuendet, Roman Kofman y Günther Herbig.`,
-    para_2: `Entre los músicos con quienes colabora Tomoko se encuentran Gidon Kremer, Yuri Bashmet, Daniel Hope, Juliane Banse, Heinz Holliger, Menahem Pressler, Julian Steckel, Andreas Ottensamer, Daishin Kashimoto y el Kuss Quartet , realizando conciertos en Lockenhaus, Salzburg Festival, Pablo Casals Festival, Verbier, Lucerne, Kissinger Sommer, San Francisco Musical Days, Olivier Messiaen Festival, Zagreb Chamber Music Festival, Kronberg Cello Festival, Alba Music Festival y Schubertiade.`,
-    para_3: `Tomoko Akasaka también ha actuado en el Concertgebouw Amsterdam, Tonhalle Zurich, Mozarteum Salzburg, Victoria Hall London, Grand Theater Geneva, Konzerthaus y Philharmonie Berlin, Elmau Castle, Suntory Hall Tokyo y Nymphenburg Castle Munich.`,
-    para_4: `Empezó a tocar el violín con cinco años y atendió la escuela especial de la Universidad de Música de Toho. Tras graduarse, estudió en la Academia Liszt de Budapest. Al poco tiempo cambió a la viola estudió en la Universidad de Toho Tokyo, continuando después en el Conservatorio de Ginebra con Nobuko Imai, siendo además su asistente. También fue profesora invitada en el Conservatorio de Neuchatel. Tomoko se unió al Cuarteto Amaryllis en 2016.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686257/M%C3%A1laga%20Cl%C3%A1sica/tomoko_ndhzaw.webp`,
-    image_position: `center`,
+    para_1: `Tomoko Akasaka es valorada por su extraordinario carisma y presencia escénica.`,
+    sentences: [
+      `Ganó el “Concurso de Música Clásica de Japón y tercer premio en el Concurso Internacional ARD, apareciendo como solista con orquestas como Sinfónica de la Radio de Bavaria, de Cámara de Munich, Kremerata Báltica, Chambre Genève, Ensemble Contrechamps, FIlarmonica Banatul Timisoara, Sinfónica de Venezuela y de Cámara de Japón con directores como ara, Venezuelan Symphony Orchestra and Japan Chamber Orchestra under conductors such as Seiji Ozawa, Johannes Kalitzke, Rüdiger Bohn, Gheorghe Costin, Olivier Cuendet, Roman Kofman y Günther Herbig.`,
+      `Entre los músicos con quienes colabora Tomoko se encuentran Gidon Kremer, Yuri Bashmet, Daniel Hope, Juliane Banse, Heinz Holliger, Menahem Pressler, Julian Steckel, Andreas Ottensamer, Daishin Kashimoto y el Kuss Quartet , realizando conciertos en Lockenhaus, Salzburg Festival, Pablo Casals Festival, Verbier, Lucerne, Kissinger Sommer, San Francisco Musical Days, Olivier Messiaen Festival, Zagreb Chamber Music Festival, Kronberg Cello Festival, Alba Music Festival y Schubertiade.`,
+      `Tomoko Akasaka también ha actuado en el Concertgebouw Amsterdam, Tonhalle Zurich, Mozarteum Salzburg, Victoria Hall London, Grand Theater Geneva, Konzerthaus y Philharmonie Berlin, Elmau Castle, Suntory Hall Tokyo y Nymphenburg Castle Munich. Empezó a tocar el violín con cinco años y atendió la escuela especial de la Universidad de Música de Toho.`,
+      `Tras graduarse, estudió en la Academia Liszt de Budapest. Al poco tiempo cambió a la viola estudió en la Universidad de Toho Tokyo, continuando después en el Conservatorio de Ginebra con Nobuko Imai, siendo además su asistente. También fue profesora invitada en el Conservatorio de Neuchatel. Tomoko se unió al Cuarteto Amaryllis en 2016.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/tomoko_ndhzaw.webp`,
   },
 
-  // Razvan Popovici
+  // English - Tomoko Akasaka
   {
-    locale: `es`,
-    name: `Razvan Popovici`,
-    slug_name: `Razvan Popovici ES`,
+    locale: `en`,
+    name: `Tomoko Akasaka`,
+    slug_name: `Tomoko Akasaka EN`,
     instrument: `viola`,
-    para_1: `El violista rumano Razvan Popovici ha actuado en escenarios prestigiosos, como Théatre-dés-Champs-Elysées (París), Filarmónica de Colonia, Carnegie Hall (Nueva York), Concertgebouw (Ámsterdam), Wigmore Hall (Londres), Suntory Hall (Tokio), Gasteig (Munich), Kennedy Center (Washington) y el Vienna Konzerthaus y Musikverein, Atheneum (Bucarest), Prinzregententheater (Munich), De Singel (Antwerpen), BOZAR (Bruselas), y con orquestas como la Orquesta de Cámara de Colonia, Kamerata Kronstadt, Kobe Chamber Orchestra, Lohja City Orchestra, Transylvania Symphony Orchestra Cluj, Sibiu State Philharmonic, Romanian National Radio Orchestra y George Enescu Philharmonic Bucharest.`,
-    para_2: `Como músico de cámara ha colaborado con Natalia Gutman, Shlomo Mintz, Enrico Pace, Giovanni Sollima, Konstantin Lifschitz, Lawrence Power, así como con los cuartetos Szymanowski, Vertavo, Casal, Danel, Kelémen, Glinka o Schumann, miembros del quarteto Amadeus y Ensemble Wien-Berlin, y ha lanzado ocho CDs con el Ensemble Raro, que realiza giras frecuentes por Europa, Japón y América del Norte.`,
-    para_3: `Es el Fundador y Director Ejecutivo del Festival Chiemgauer Musikfrühling en Alemania, del Festival SoNoRo en Bucarest y del Festival SoNoRo Arezzo en Toscana, así como Director Artístico de la Serie de Música de Cámara DA CAPO en Bucarest. Enseña regularmente en Villa Musica y es profesor invitado en el Conservatorio Real de Amberes.`,
-    para_4: ``,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686256/M%C3%A1laga%20Cl%C3%A1sica/razvan-popovici_xq4gj1.webp`,
-    image_position: `top`,
+    para_1: `Tomoko Akasaka is appreciated for her extraordinary charisma and stage presence.`,
+    sentences: [
+      `She won the "Japan Classical Music Competition" and 3rd prize at the International Music Competition of ARD and appeared as soloist with the Bavarian Radio Symphony Orchestra, Munich Chamber Orchestra, Kremerata Baltica, Orchestre de Chambre Genève, Ensemble Contrechamps, Filarmonica Banatul Timisoara, Venezuelan Symphony Orchestra and Japan Chamber Orchestra under conductors such as Seiji Ozawa, Johannes Kalitzke, Rüdiger Bohn, Gheorghe Costin, Olivier Cuendet, Roman Kofman and Günther Herbig.`,
+      `Tomoko's chamber music partners include Gidon Kremer, Yuri Bashmet, Daniel Hope, Juliane Banse, Heinz Holliger, Menahem Pressler, Julian Steckel, Andreas Ottensamer, Daishin Kashimoto and the Kuss Quartet , performing at Lockenhaus, Salzburg Festival, Pablo Casals Festival, Verbier, Lucerne, Kissinger Sommer, San Francisco Musical Days, Olivier Messiaen Festival, Zagreb Chamber Music Festival, Kronberg Cello Festival, Alba Music Festival and Schubertiade.`,
+      `Tomoko Akasaka has played at the Concertgebouw Amsterdam, Tonhalle Zurich, Mozarteum Salzburg, Victoria Hall London, Grand Theater in Geneva, Konzerthaus and Philharmonie Berlin, Elmau Castle, Suntory Hall Tokyo and Nymphenburg Castle Munich. Tomoko first started playing the violin at the age of five and went to the special school of the Toho Music University.`,
+      `After graduation, she studied at the Liszt Academy in Budapest, Hungary. Shortly after, she switched to the viola and studied at the Toho Tokyo University, continuing her studies at the Geneva Conservatory with Nobuko Imai, while being her assistant. She was also a guest professor at the Conservatory of Neuchatel. Tomoko joined the Amaryllis Quartet in 2016.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/tomoko_ndhzaw.webp`,
   },
-
-  // Gabriel Ureña
+  // Øyvind Gimse
   {
     locale: `es`,
-    name: `Gabriel Ureña`,
-    slug_name: `Gabriel Ureña ES`,
-    instrument: `violoncelo`,
-    para_1: `Gabriel Ureña ha tocado como solista con la London City Orchestra, Oviedo Filarmonía o Arteus Orquesta y en salas internacionales prestigiosas como el Musikverein (Viena), Teatro de los Campos Elíseos (París), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) o el Teatro de la Maestranza (Sevilla).`,
-    para_2: `Ha compartido escenario con artistas como Leo Nucci, Edita Gruberová, Ainhoa Arteta, Ruggero Raimondi, Anna Netrebko, Ilya Gringolts, Benjamin Schmid, las hermanas Labèque, Natalia Gutman o Midori, y ha ganado el Primer Premio del Concurso de Cello de Arquillos (Jaén) y del Concurso Internacional de Música de Cámara "Ciudad de Manresa”.`,
-    para_3: `Entre los hitos más recientes de su carrera figuran la publicación de su primer CD, con el sello Aria Classics, con obras de Prokofiev, Shostakovich y Rachmaninov, junto al pianista Patxi Aizpiri, su concierto como solista con la Orquesta Filarmónica de Málaga o su debut con la Orquesta Nacional de Colombia en el Teatro Colón de Bogotá.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/gabriel-urena_qb6zn8.webp`,
-    image_position: `center`,
+    name: `Øyvind Gimse`,
+    slug_name: `Øyvind Gimse ES`,
+    instrument: `violonchelo`,
+    para_1: `Øyvind Gimse, que ocupó el cargo de director artístico de Trondheim Soloists en 2002-2017, convirtió a la orquesta en uno de los ensembles más distinguidos de Escandinavia y ganó reconocimiento internacional por su sonido orquestal claramente abierto y claro, descrito por la revista musical británica " Classic FM" como "The Trondheim Sound".`,
+    sentences: [
+      `Sus grabaciones con los Trondheim Soloists han recibido siete nominaciones al GRAMMY y ganado tres premios Grammy noruegos, y con el ensemble ha realizado giras desde Japón hasta América del Sur. Como solista o líder orquestal invitado, Gimse ha visitó Finlandia, Italia, los Países Bajos y en particular España. Gimse visita regularmente todos los festivales de música de cámara de Noruega y ha actuado con músicos como Leif Ove Andsnes, Anthony Marwood, Nobuko Imai y Bobby McFerrin.`,
+      `Su dedicación a la música contemporánea le ha permitido él para cooperar con compositores como Sofia Gubaidolina, George Crumb y Bent Sorensen. Gimse es también internacionalmente reconocido como profesor, siendo profesor invitado en la Academia Galamian en Málaga y realizando talleres y masterclasses por toda Europa. El desarrollo del talento musical y el fomento de un ambiente musical duradero en Noruega constituye una parte vital de su trabajo.`,
+      `Es miembro del programa de mentores «Konstknekt», una cooperación entre la Orquesta Filarmónica de Berlín y el festival de música de cámara «Vinterfestspill» en Røros, donde ocupa el cargo de director artístico. Gimse toca un Francesco Goffriller (1730) propiedad de Sparebankstiftelsen/Dextra Musica en Oslo, un magnífico instrumento que antes tocaba la legendaria violonchelista Jacqueline du Pré.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/%C3%98yvind_Gimse_sq_iaqsrn.webp`,
   },
 
+  // English - Øyvind Gimse
+  {
+    locale: `en`,
+    name: `Øyvind Gimse`,
+    slug_name: `Øyvind Gimse EN`,
+    instrument: `cello`,
+    para_1: `Holding the position as Artistic Director of the Trondheim Soloists in 2002-2017, Øyvind Gimse developed the orchestra into being one of the most distinguished ensembles in Scandinavia and won international recognition for it’s distinctively open and clear orchestral sound, described by the British music magazine "Classic FM" as “The Trondheim Sound".`,
+    sentences: [
+      `His recordings with the Trondheim Soloists have received seven GRAMMY nominations and won three Norwegian Grammys, and he has toured from Japan to South America with the ensemble. As a soloist or orchestral guest leader, Gimse has visited Finland, Italy, the Netherlands and in particular Spain. Gimse is regularly visiting all of the Norwegian chamber music festivals and has performed with musicians such as Leif Ove Andsnes, Anthony Marwood, Nobuko Imai and Bobby McFerrin.`,
+      `His dedication to contemporary music has allowed him to co-operate with composers like Sofia Gubaidolina, George Crumb and Bent Sorensen. Gimse is also an internationally recognized professor, holding a guest professorship at «Academia Galamian» in Malaga and taking workshops and masterclasses throughout Europe. The development of musical talent and the fostering of an enduring musical environment in Norway constitutes a vital part of his work.`,
+      `He is a member of the mentor program «Konstknekt», a cooperation between the Berlin Philharmonic orchestra and the chamber music festival «Vinterfestspill» in Røros, where he holds the position as the artistic director. Gimse plays a Francesco Goffriller(1730) owned by the Sparebankstiftelsen/Dextra Musica in Oslo, a magnificent instrument formerly played by the legendary cellist Jacqueline du Pré.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/%C3%98yvind_Gimse_sq_iaqsrn.webp`,
+  },
   // Adolfo Gutiérrez
   {
     locale: `es`,
     name: `Adolfo Gutiérrez`,
     slug_name: `Adolfo Gutiérrez ES`,
-    instrument: `violoncelo`,
-    para_1: `Adolfo Gutiérrez, ganador del premio Ravel 2012, debutó con la London Symphony Orchestra en el prestigioso ciclo Ibermusica, en Madrid, interpretando el Concierto para violonchelo de Elgar y enseguida fue invitado a actuar con la Royal Philharmonic Orchestra (Charles Dutoit), Orquesta Nacional de España (Ton Koopman) y en el Festival Mendelssohn en la Gewandhaus de Leipzig.`,
-    para_2: `Entre sus compromisos caben a destacar actuaciones como solista con la Orquesta Filarmónica de Londres (Vladimir Jurowski), la Orquesta Nacional de España (Krzysztof Penderecki), la Sinfónica de Fort Worth bajo la dirección de Miguel Harth-Bedoya, la Orquesta Sinfónica Nacional de Colombia y actuaciones en el Festival de Ravinia y el Festival de Verano de la Sinfónica de Montreal.`,
-    para_3: `Adolfo ha actuado en escenarios importantes como el Concertgebouw de Ámsterdam, el Auditorio Nacional de Música de Madrid, el Ford Theatre de Los Ángeles, l'Auditori y Palau de la Música de Barcelona, ​​la Sala Bulgaria de Sofía o el Palacio Euskalduna de Bilbao, y ha colaborado con directores como como Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali y Antoni Ros-Marbà.`,
-    para_4: `Adolfo ha grabado Barber, Rachmaninov, Piazzolla y el ciclo completo de las suites para violonchelo de J.S. Bach con el sello Verso. Su grabación reciente de las sonatas completas de Beethoven con el pianista Christopher Park ha recibido excelentes críticas. Adolfo toca un Francesco Ruggieri, hecho a mano en Cremona en 1673.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
-    image_position: `center`,
-  },
-
-  // Natalia Margulis
-  {
-    locale: `es`,
-    name: `Natalia Margulis`,
-    slug_name: `Natalia Margulis ES`,
     instrument: `violonchelo`,
-    para_1: `Como solista activa y músico de cámara, Natalia Margulis ha actuado en Europa, Estados Unidos y Asia. Ha realizado conciertos en el Auditorio Nacional de Madrid, el Megaron Hall en Thessaloniki, Grecia, el Walton Arts Center en Arkansas, USA, el Schoenberg Hall en Los Ángeles, el Palais des Beaux-Arts, Bélgica y el Chamber Music Hall de la Filarmónica de San Petersburgo.`,
-    para_2: `Ha actuado con artistas como Martha Argerich, Ivry Gitlis, Gabriela Montero, Dora Schwarzberg y Misha Maisky. Ha aparecido como solista con la Orquesta Nacional Griega, la Orquesta Sinfónica del Norte de Arkansas y la Orquesta Juvenil de Colonia. Ha realizado giras y grabaciones con la sueca Camerata Nordica. Su actuación con el Trío Margulis del Triple Concierto de Beethoven fue transmitida por televisión y radio en los Estados Unidos.`,
-    para_3: `Frecuentemente graba para la Radio Española. Ha participado en festivales internacionales de música como el Festival de Santander y la Academia Verbier, el Festival de Música de Cámara de Eilat, los Conciertos Schloss Elmau, el festival SoNoRo de Bucarest, el Festival de la Semana Internacional del Conservatorio de San Petersburgo y el Progetto Argerich de Lugano donde participó.`,
-    para_4: `También forma parte de la grabación en CD ‘Argerich and friends’ con su Margulis Trio. Desde 2007 ocupa el cargo de Ayuda de solista de Violoncello en el Teatro Real de Madrid.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/natalia-margulis_uuedfe.webp`,
-    image_position: `center`,
+    para_1: `Adolfo Gutiérrez, ganador del premio Ravel 2012, debutó con la London Symphony Orchestra en el prestigioso ciclo Ibermusica, en Madrid, interpretando el Concierto para violonchelo de Elgar y enseguida fue invitado a actuar con la Royal Philharmonic Orchestra (Charles Dutoit) , Orquesta Nacional de España (Ton Koopman) y en el Festival Mendelssohn en la Gewandhaus de Leipzig.`,
+    sentences: [
+      `Entre sus compromisos caben a destacar actuaciones como solista con la Orquesta Filarmónica de Londres (Vladimir Jurowski), la Orquesta Nacional de España (Krzysztof Penderecki), la Sinfónica de Fort Worth bajo la dirección de Miguel Harth-Bedoya, la Orquesta Sinfónica Nacional de Colombia y actuaciones en el Festival de Ravinia y el Festival de Verano de la Sinfónica de Montreal.`,
+      `Adolfo ha actuado en escenarios importantes como el Concertgebouw de Ámsterdam, el Auditorio Nacional de Música de Madrid, el Ford Theatre de Los Ángeles, l'Auditori y Palau de la Música de Barcelona, ​​la Sala Bulgaria de Sofía o el Palacio Euskalduna de Bilbao, y ha colaborado con directores como como Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali y Antoni Ros-Marbà.`,
+      `Adolfo ha grabado Barber, Rachmaninov, Piazzolla y el ciclo completo de las suites para violonchelo de J.S. Bach con el sello Verso. Su grabación reciente de las sonatas completas de Beethoven con el pianista Christopher Park ha recibido excelentes críticas. Adolfo toca un Francesco Ruggieri, hecho a mano en Cremona en 1673.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
   },
 
-  // Uxía Martínez Botana
+  // English - Adolfo Gutiérrez
   {
-    locale: `es`,
-    name: `Uxía Martínez Botana`,
-    slug_name: `Uxía Martínez Botana ES`,
-    instrument: `contrabajo`,
-    para_1: `Seleccionada por la revista americana de contrabajo “No treble” como una de las 10 mejores bajistas del mundo, Uxía Martínez Botana consiguió su primer contrato profesional con la Orquesta Sinfónica de Galicia a los 16 años.`,
-    para_2: `Posteriormente ha trabajado en orquestas como la Real Concertgebouw, Netherlands Philharmonisch Orkest y Amsterdam Sinfonietta, como contrabajo principal invitado en la Philharmonie Zuid-Nederland, cámara escocesa, Orchestre D'Auvergne, Royal Scottish National Orchestra, Oxford Philharmonic, la Philharmonica De Gran Canaria y Antwerp Symphony, y como doble principal Bajo de la Weinberger Kammerorchester (Zurich) y la Filarmónica de Bruselas.`,
-    para_3: `Como solista ha actuado con el New European Ensemble, la Orquesta de Cámara de Stellenbosch en Sudáfrica, la Orquesta Sinfónica de Galicia (director Dima Slobodeniouk), la Orquesta Filarmónica de Cámara Checa (violinista Josef Spacek) y la Orquesta de Cámara Franz Liszt (director Robert Farkas), y como músico de cámara con músicos como Julia Fischer, Anna Chumachenko, Yuri Bashmet, Natalia Gutman, Andras Schiff, Christian Tetzlaff, Lars Vogt, Nobuko Imai, Tabea Zimmermann, Polina Leschenko, Natascha Kruditskaya, Philippe Graffin, Gary Hoffman, David Cohen, Kian Soltani, Ante Weithaas, Alissa Margulis, Mischa Maisky, Sol Gabetta, Alina Ibragimova, Lawrence Power y Tatiana Masurenko.`,
-    para_4: `Es profesora en la ESMUC Escuela Superior de Música de Cataluña en Barcelona y en la Academia Barenboim-Said.`,
-    para_5: `Tocó el contrabajo “The English Lady” (1800 c.a) de la colección “Willem Vogelaar”, patrocinado por The National Dutch Musical Instrument Foundation, y el “Ludwig Neuner” (1854) cedido por un patrocinador privado.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686257/M%C3%A1laga%20Cl%C3%A1sica/uxia-botana_ypwr0h.webp`,
-    image_position: `center`,
+    locale: `en`,
+    name: `Adolfo Gutiérrez`,
+    slug_name: `Adolfo Gutiérrez EN`,
+    instrument: `cello`,
+    para_1: `Adolfo Gutiérrez, the winner of the Ravel prize 2012, made his debut with the London Symphony Orchestra in the prestigious Ibermusica series, in Madrid, performing Elgar’s Cello Concerto and following was invited to perform with the Royal Philharmonic Orchestra (Charles Dutoit), Orquesta Nacional de España (Ton Koopman) and at the Mendelssohn Festival at Leipzig’s Gewandhaus.`,
+    sentences: [
+      `Current highlights include performances as a soloist with the London Philharmonic Orchestra (Vladimir Jurowski), Orquesta Nacional de España (Krzysztof Penderecki), Fort Worth Symphony under Miguel Harth-Bedoya, Orquesta Sinfónica Nacional de Colombia and performances at the Ravinia Festival and Montreal Symphony’s Summer Festival.`,
+      `Adolfo has performed at major venues such as Amsterdam’s Concertgebouw, Auditorio Nacional de Música in Madrid, Ford Theatre in Los Angeles, l’Auditori and Palau de la Música in Barcelona, Bulgaria Hall in Sofia and Palacio Euskalduna in Bilbao, and collaborated with conductors such as Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali and Antoni Ros-Marbà.`,
+      `Adolfo has recorded Barber, Rachmaninov, Piazzolla and the complete cycle of the cello suites by J.S. Bach on the Verso label. His recent recording of the complete Beethoven Sonatas with pianist Christopher Park received great critical acclaim. Adolfo plays a Francesco Ruggieri, handcrafted in Cremona in 1673. `,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
   },
 
-  // Antonio Ortíz
+  // Natalia Kucháeva
   {
     locale: `es`,
-    name: `Antonio Ortíz`,
-    slug_name: `Antonio Ortíz ES`,
+    name: `Natalia Kucháeva`,
+    slug_name: `Natalia Kucháeva ES`,
     instrument: `piano`,
-    para_1: `Participa frecuentemente en el Festival Internacional de Música y Danza de Granada, Festival “Rafael Orozco” de Córdoba, Encuentro de Música y Academia de Santander, y en prestigiosas salas como el Auditorio Nacional de Música de Madrid, Teatro Real y Palau de la Música de Barcelona, entre muchas otras.`,
-    para_2: `Además de España ha actuado en Francia, Italia, Bélgica, Rusia, Portugal, Puerto Rico, Colombia y Estados Unidos. Ha realizado conciertos con las principales orquestas españolas como la Orquesta Sinfónica de Radio Televisión Española, Joven Orquesta Nacional de España y Orquesta Filarmónica de Málaga, bajo la dirección de Aldo Ceccato, Bruno Aprea, Fusao Kajima, Pablo Mielgo, Manuel Hernández-Silva, Roselín Pabón y Blanca Trabalón.`,
-    para_3: `Ha obtenido premios en los concursos "Manuel de Falla” y "José Roca” y  efectuado diferentes grabaciones para TVE y Radio Clásica de RNE. Recientemente ha grabado para la Fundación Málaga la integral de la “Suite Iberia” de Isaac Albéniz. Estudió con Dimitri Bashkirov en la Escuela Reina Sofía de Madrid y actualmente compagina su actividad concertística con la docencia en el Conservatorio Superior de Música de Málaga.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/antonio-ortiz_iawd9s.webp`,
-    image_position: `center`,
+    para_1: `Destacada por la crítica por “una técnica formidable, delicadeza y una sensibilidad exquisita” la pianista Natalia Kucháeva ha ganado premios en concursos como el Anton Rubinstein de París, el José Iturbi (Valencia), el Alexandr Scriabin de Grosetto (Italia), y el Ettlingen y el Pianale (Alemania), se formó en la Escuela de Música afiliada al Conservatorio Estatal P. I. Tchaikovsky de Moscú, en la Academia Gnessin y en la Escuela Superior de Música de Lucerna (Suiza), con los maestros Vladimir Tropp y Konstantin Lifschitz.`,
+    sentences: [
+      `Recientemente ha terminado el Máster de Lied “Victoria de los Ángeles” en la ESMUC de Barcelona recibiendo Matrícula de Honor. Durante 10 años ha sido maestra repetidora de la ópera en el Teatro de la Maestranza de Sevilla, y ha actuado en festivales y conciertos en Bienal de Flamenco 2020 (Sevilla) Festival Rafael Orozco (Córdoba), Festival Otoño Clásico (Lisboa), Casa Bösendorfer (Suiza), Casa Steingräber (Alemania), Teatro Petruzelli (Italia), Teatro de la Maestranza de Sevilla, Auditorio de Tenerife, Sala Bolshoi (Conservatorio Tchaikovsky de Moscú) y Act City Concert Hall (Japón), y forma un dúo pianístico con Jorge Lechado.`,
+      `Entre sus actuaciones destaca el concierto en la entrega del Premio Internacional de Poesía Federico García Lorca, en el Auditorio Manuel de Falla de Granada, con la presencia de los Príncipes de Asturias. Es profesora invitada en la Academia Internacional Galamian en Málaga, donde imparte clases del Método Brainin: “Desarrollo de intelecto musical“.`,
+      `Desde el año 2022 es profesora de repertorio de la Cátedra de Canto "Alfredo Kraus" de la Escuela Superior de Música Reina Sofía de Madrid.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Natalia_Kuchaeva_sq_xhbtyf.webp`,
   },
 
-  // Josu De Solaun
+  // English - Natalia Kucháeva
+  {
+    locale: `en`,
+    name: `Natalia Kucháeva`,
+    slug_name: `Natalia Kucháeva EN`,
+    instrument: `piano`,
+    para_1: `Noted by critics for "a formidable technique, delicacy and exquisite sensitivity", pianist Natalia Kucháeva has won prizes in competitions, such as the Anton Rubinstein in Paris, the José Iturbi (Valencia), the Alexandr Scriabin in Grosetto (Italy) and the Ettlingen and Pianale (Germany). She studied at the School of Music affiliated with the P.I. Tchaikovsky State Conservatory (Moscow), at the Gnessin Academy and School of Music of Lucerne (Switzerland), with Vladimir Tropp and Konstantin Lifschitz.`,
+    sentences: [
+      `Recently she finished the Master of Lied "Victoria de los Ángeles" at the ESMUC in Barcelona graduation with an honorary degree. For 10 years she was a piano répétiteur of opera at the Teatro de la Maestranza in Seville, and has participated in festivals and performed in Bienal de Flamenco 2020 (Seville), Rafael Orozco Festival (Cordoba), Classic Autumn Festival (Lisbon), Bösendorfer House (Switzerland), Steingraber House (Germany), Petruzelli Theater (Italy), Teatro de la Maestranza (Seville), Tenerife Auditorium, Bolshoi Hall (Moscow Tchaikovsky Conservatory) and Act City Concert Hall (Japan), and she forms a piano duo with Jorge Lechado.`,
+      `Recent highlights include performances at the Federico García Lorca International Poetry Prize ceremony, in the Manuel de Falla Auditorium in Granada, with the presence of the Prince and Princess of Asturias. She is a visiting professor at the Galamian International Academy in Malaga, where she teaches the Brainin Method: "Development of musical intellect".`,
+      `Since 2022 she has been a repertoire teacher at the "Alfredo Kraus" Singing Chair at the Reina Sofía Superior School of Music in Madrid.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Natalia_Kuchaeva_sq_xhbtyf.webp`,
+  },
+
+  // Julien Quentin
   {
     locale: `es`,
-    name: `Josu De Solaun`,
-    slug_name: `Josu De Solaun ES`,
+    name: `Julien Quentin`,
+    slug_name: `Julien Quentin ES`,
     instrument: `piano`,
-    para_1: `El pianista hispanoamericano Josu De Solaun es el ganador del Primer Premio del XIII Concurso Internacional de Piano George Enescu, Bucarest, el XV Concurso Internacional de Piano José Iturbi y el Primer Concurso de Piano de la Unión Europea.`,
-    para_2: `Ha sido invitado a actuar en distinguidas salas de conciertos de todo el mundo, incluyendo al Ateneo Rumano de Bucarest, el Teatro La Fenice de Venecia, el Teatro Mariinsky de San Petersburgo, el Kennedy Center de Washington, Carnegie Hall y Metropolitan Opera de Nueva York, Southbank Centre de Londres, Salle Cortot de París, Schumann Haus de Leipzig, Novel Hall en Taipei, la Sala Silvestre Revueltas de la Ciudad de México, el Palacio Nostitz de Praga, la Academia de España en Roma, el Festival Internacional de Música de Menton y todas las principales ciudades de España.`,
-    para_3: `La temporada 2020-2021 contó con su concierto–debut de improvisación libre al piano, panDEMiCity, en el Auditorio Ciudad de León, así como actuaciones como solista con orquestas en España, República Checa y Rumanía. En 2021, también recibió el prestigioso premio ICMA (International Classical Music Awards) por su grabación de Sonatas para violín y piano francesas con la violinista Franziska Pietsch («Fantasque«). Su último álbum en solitario de obras de Brahms y Schumann para el sello IBS Classical – «Digressions» – ha cosechado excelentes críticas.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/josu-de-solaun_p0gzz8.webp`,
-    image_position: `center`,
+    para_1: `El pianista francés Julien Quentin ha actuado en el Concertgebouw (Amsterdam), Wigmore Hall (Londres), Louvre (París), Baden-Baden Festspielhaus, Filarmónica de Berlín, Gewandhaus (Leipzig), Konzerthaus (Viena), Teatro Mariinsky (San Petersburgo), en Avery Fisher, Alice Tully y Carnegie Hall en Nueva York.`,
+    sentences: [
+      `Ha grabado para EMI, Channel Classics, Sony RCA, Hungaroton y Decca. Julien Quentin comenzó sus estudios en el Conservatorio de Ginebra con Alexis Golovine, recibió su Diploma de Artista bajo la tutela de Emile Naoumoff en la Universidad de Indiana y el Diploma de Posgrado de la Juilliard School, estudiando con György Sándor.`,
+      `Con "Musica Litoralis" en el Piano Salon Christophori en Berlín, ha creado una exitosa serie de conciertos que recuerda a los salones de los locos años veinte. Con artistas visuales, explora nuevas visiones artísticas que unen varias formas de arte.`,
+      `Persigue su interés por otros géneros musicales colaborando con los pianistas Kelvin Sholar, Kaan Bulak y Francesco Tristano, o los productores Adrien de Maublanc y Cesar Merveille en proyectos que van desde la improvisación hasta la producción de música electrónica, sobre todo dentro de sus nuevos proyectos Midiminuit & Les Coeurs Brisés.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Julien_Quentin_cemtl1.webp`,
+  },
+
+  // English - Julien Quentin
+  {
+    locale: `en`,
+    name: `Julien Quentin`,
+    slug_name: `Julien Quentin EN`,
+    instrument: `piano`,
+    para_1: `French pianist Julien Quentin has appeared at the Concertgebouw (Amsterdam), Wigmore Hall (London), Louvre (Paris), Baden-Baden Festspielhaus, Berlin Philharmonie, Gewandhaus (Leipzig), Konzerthaus (Vienna), Mariinsky Theatre (Saint Petersburg), in Avery Fisher, Alice Tully and Carnegie Hall in New York.`,
+    sentences: [
+      `He has recorded for EMI, Channel Classics, Sony RCA, Hungaroton and Decca. Julien Quentin started his studies at the Geneva Conservatory with Alexis Golovine, received his Artist Diploma under the tutelage of Emile Naoumoff at Indiana University, and Graduate Diploma from the Juilliard School, studying with György Sándor.`,
+      `With ‘Musica Litoralis’ at the Piano Salon Christophori in Berlin, he has created a successful concert series reminiscent of the salons of the Roaring Twenties. With visual artists, he explores new artistic visions bringing various art forms together.`,
+      `He pursues his interest in other genres of music collaborating with pianists Kelvin Sholar, Kaan Bulak and Francesco Tristano, or producers Adrien de Maublanc and Cesar Merveille in projects ranging from improvisation to producing electronic music, most notably within their new projects Midiminuit & Les Coeurs Brisés.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Julien_Quentin_cemtl1.webp`,
+  },
+
+  // Susanne Hvinden Hals
+  {
+    locale: `es`,
+    name: `Susanne Hvinden Hals`,
+    slug_name: `Susanne Hvinden Hals ES`,
+    instrument: `soprano`,
+    para_1: `La joven soprano noruega, Susanne Hvinden Hals, proviene de Oslo, Noruega. Recibió su Master de Música, voz y ópera en la Real Academia Danesa de Música en Copenhague.`,
+    sentences: [
+      `Debutó en la Ópera de Montpellier en Francia en 2003 con el Coro Infantil Femenino Noruego, y posteriormente ha interpretado papeles como Susanna en «Le nozze di Figaro»  de Mozart, Adele en «Die Fledermaus»  de J. Strauss, Pamina en «Die Zauberflöte» de Mozart, y Lucia en «La violación de Lucrecia» de Benjamin Britten.`,
+      `Susanne es una soprano muy solicitada en Noruega, y ha colaborado con varias orquestas en oratorios y actúa en varios festivales y conciertos tanto en Noruega como en el extranjero. Junto con su hermana y violinista Kathrine Hvinden Hals, forma el dúo Søstrene Hals.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Susanne_Hvinden_Hals_sq_nizgnv.webp`,
+  },
+
+  // English - Susanne Hvinden Hals
+  {
+    locale: `en`,
+    name: `Susanne Hvinden Hals`,
+    slug_name: `Susanne Hvinden Hals EN`,
+    instrument: `soprano`,
+    para_1: `The young Norwegian soprano, Susanne Hvinden Hals, hails from Oslo, Norway. She received her Master of Music, voice and opera at The Royal Danish Academy of Music in Copenhagen.`,
+    sentences: [
+      `She made her debut at the Opera Montpellier in France in 2003 with the Norwegian Girls Choir, and has later on sung roles such as Susanna in Mozart´s «Le nozze di Figaro», Adele in «Die Fledermaus», J. Strauss, Pamina in «Die Zauberflöte», and Lucia in «The rape of Lucretia» by Benjamin Britten.`,
+      `Susanne is a highly sought-after soprano in Norway, and has collaborated with various orchestras in oratorios, and performs at several festivals and concerts both in Norway and abroad. Together with her sister and violinist Kathrine Hvinden Hals, she forms the duo Søstrene Hals.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Susanne_Hvinden_Hals_sq_nizgnv.webp`,
   },
 
   // Nils Nilsen
@@ -204,416 +367,26 @@ const artists = [
     name: `Nils Nilsen`,
     slug_name: `Nils Nilsen ES`,
     instrument: `tenor`,
-    para_1: `El tenor Nils Georg Nilsen debutó en el Lincoln Center de Nueva York  tras recibir su Master de Música de la Manhattan School of Music en 2012. Desde entonces, ha cantado como solista con la Orquesta Sinfónica de Chicago, en la Ópera de Israel, la Ópera National de Noruega y Opera Tampa en Florida, y ha actuado en varios festivales y conciertos internacionales en Europa y los Estados Unidos.`,
-    para_2: `Nils Georg ha sido el ganador del Premio Solveig en el Concurso Edvard Grieg, el Premio del Público durante el festival LidalNorth en numerosas ocasiones y el Concurso de Música para Jóvenes en Noruega.`,
-    para_3: `Recientemente ha cantado el Mozart Requiem con la Orquesta de Radio Noruega, Rossinis Stabat Mater y Handels Messiah con la Orquesta Sinfónica Drammen y en el Festival Ravinia en los Estados Unidos, y es Profesor de Voz en la Academia Internacional Galamian en Málaga. Desde 2021 forma parte del grupo vocal Nordic Tenors, junto a los tenores Jan-Tore Saltnes and Roald Haarr.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686255/M%C3%A1laga%20Cl%C3%A1sica/nils-nilsen_iot5s1.webp`,
-    image_position: `top`,
+    para_1: `El tenor Nils Georg Nilsen debutó en el Lincoln Center de Nueva York tras recibir su Master de Música de la Manhattan School of Music en 2012.`,
+    sentences: [
+      `Desde entonces, ha cantado como solista con la Orquesta Sinfónica de Chicago, en la Ópera de Israel, la Ópera National de Noruega y Opera Tampa en Florida, y ha actuado en varios festivales y conciertos internacionales en Europa y los Estados Unidos. Nils Georg ha sido el ganador del Premio Solveig en el Concurso Edvard Grieg, el Premio del Público durante el festival LidalNorth en numerosas ocasiones y el Concurso de Música para Jóvenes en Noruega.`,
+      `Recientemente ha cantado el Mozart Requiem con la Orquesta de Radio Noruega, Rossinis Stabat Mater y Handels Messiah con la Orquesta Sinfónica Drammen y en el Festival Ravinia en los Estados Unidos, y es Profesor de Voz en la Academia Internacional Galamian en Málaga. Desde 2021 forma parte del grupo vocal Nordic Tenors, junto a los tenores Jan-Tore Saltnes and Roald Haarr.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Nils_Nilsen_sq_bdcfss.webp`,
   },
 
-  // Juan Antonio López Cabezuelos
-  {
-    locale: `es`,
-    name: `Juan Antonio López Cabezuelos`,
-    slug_name: `Juan Antonio López Cabezuelos ES`,
-    instrument: `flauta`,
-    para_1: `Juan Antonio López Cabezuelos nace en Meschede ( Alemania), realiza sus estudios en musicales en el Conservatorio Superior “Oscar Esplà” de Alicante con los profesores Rafael Casasempere, Jose Mª Ferrìz, acabando sus estudios de Grado Superior con el profesor Josè Domínguez, obteniendo el “Premio Extraordinario fin de Carrera”. `,
-    para_2: `Realiza estudios de perfeccionamiento con Antonio Arias, solista de la “Orquesta Nacional de España”, Sheridan Stokes, reconocido flautista Estadounidense y en la especialidad de flautín con la solista de la “BBC Orchestra” Pat Morris.`,
-    para_3: `Comienza sus actividad pedagógica en el Conservatorio Municipal de Benidorm, a partir de 1991 ocupa la plaza de profesor de flauta en el Conservatorio de música y danza municipal de Albacete donde realiza su actividad hasta que en 1993 aprueba por concurso oposición la plaza de Profesor Músico De Flauta/Flautín en la Orquesta Filarmónica de Málaga, con la cual ha colaborado con solistas nacionales e internacionales, como Montserrat Caballè, Alfredo Kraus, Ray Charles y Joan Manuel Serrat entre otros, además de trabajar bajo algunas de las más destacadas batutas como Jesús Lòpez Cobos, Rafael Frubeck de Burgos y Aldo Ceccato.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/juan-lopez_ccxk04.webp`,
-    image_position: `center`,
-  },
-
-  // José Antonio Gonzaga
-  {
-    locale: `es`,
-    name: `José Antonio Gonzaga`,
-    slug_name: `José Antonio Gonzaga ES`,
-    instrument: `oboe`,
-    para_1: `José Antonio Gonzaga colabora regularmente con diversas agrupaciones de cámara destacando la labor que realiza con instrumentos originales en el grupo “In Modo Antiquo”.`,
-    para_2: `Ha actuado con diversas orquestas interpretando, entre otros, el Concierto de oboe de R. Vaughan Williams, el Concierto para violín y oboe en do m. de J.S. Bach, la Sinfonía Concertante de J. Haydn, Concierto en Do Mayor de Mozart, así como el Concierto para dos oboes de amor de Telemann.`,
-    para_3: `Realizó sus estudios en el Conservatorio Superior “Oscar Esplá” de Alicante obteniendo el Premio Extraordinario de final de carrera así como el Premio de Interpretación de la Sociedad de Conciertos de Alicante. `,
-    para_4: `En el campo de la docencia ha impartido cursos en los Conservatorios Superiores de Alicante, Málaga y Granada, asistiendo como profesor de oboe y música de cámara a la Joven Orquesta Nacional de España y a la Orquesta Joven de Andalucía. Desde 1991 es oboe solista de la Orquesta Filarmónica de Málaga.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/jose-gonzaga_ggobnm.webp`,
-    image_position: `top`,
-  },
-
-  // Juan Crisóstomo Subiela Durá
-  {
-    locale: `es`,
-    name: `Juan Crisóstomo Subiela Durá`,
-    slug_name: `Juan Crisóstomo Subiela Durá ES`,
-    instrument: `clarinete`,
-    para_1: `Clarinetista Juan Crisóstomo Subiela Durá finaliza los estudios superiores de clarinete en el Real Conservatorio Superior de Música de Madrid y perfecciona su formación principalmente en el Conservatorio de Amberes con el clarinetista de renombre internacional Walter Boeykens.`,
-    para_2: `Ha sido profesor de clarinete en el Conservatorio Profesional de Ávila y en el Real Conservatorio Superior de Música de Madrid. Desde 1993 es solista de clarinete de la Orquesta Filarmónica de Málaga.`,
-    para_3: `Ha actuado en conciertos, tanto de música de cámara como de concertista, recibiendo excelentes críticas por su interpretación. Ha impartido cursos en la Joven Orquesta Nacional de Cataluña y en diferentes agrupaciones musicales de la Comunidad Valenciana.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/juan-dura_uixena.webp`,
-    image_position: `center`,
-  },
-
-  // Alexander Moustachiev
-  {
-    locale: `es`,
-    name: `Alexander Moustachiev`,
-    slug_name: `Alexander Moustachiev ES`,
-    instrument: `trompa`,
-    para_1: `El trompista Alexander Moustachiev, nacido en Sofía, Bulgaria, comienza sus estudios musicales de Trompa con el prestigioso profesor checo Carel Stari.`,
-    para_2: `Tras licenciarse en la escuela estatal musical, ingresa en el Conservatorio Superior de Sofía continuando su formación con Vladislav Grigorov. Su actividad como trompista profesional comenzará con la Orquesta de la Radiotelevisión Búlgara donde ocupará el puesto de ayuda de solista y continuará con la Orquesta Filarmónica de Málaga donde sigue siendo solista en la actualidad.`,
-    para_3: `Durante su actividad profesional citar que ha sido miembro de La Orquesta de Cámara “Orfeus” de Pernick, miembro invitado de la Orquesta Camerata de Bonn y solista en numerosos programas de Música de Cámara con distintas formaciones y amplio repertorio.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/alexander-moustachiev_tl4ntv.webp`,
-    image_position: `top`,
-  },
-
-  // Antonio Lozano
-  {
-    locale: `es`,
-    name: `Antonio Lozano`,
-    slug_name: `Antonio Lozano ES`,
-    instrument: `fagot`,
-    para_1: `Antonio Lozano ha sido invitado como solista de fagot en las orquestas Teatre del Liceu, Deutsche Kammer Philarmonie de Bremen, R.T.V.E., Orquesta de Cámara de Andalucía, Ciudad de Granada, Sinfónica de La Coruña, Sinfónica de Sevilla y de Valencia. También ha colaborado con las orquestas de la Comunidad Valenciana, Les Arts, Comunidad de Madrid, Hochschule de Stuttgart y Palma de Mallorca.`,
-    para_2: `Tras iniciar sus estudios musicales en Alicante con Aurelio Bernabeu, el Conservatorio “Oscar Esplá” con los profesores Juan Torres y Juan Iznardo y el Real Conservatorio Superior de Música de Madrid con el profesor Francisco Más obtuvo el Premio Fin de Carrera y amplió sus estudios en la Musikhochschule de Stuttgart con el profesor Sergio Azzolini. Además realiza cursos de perfeccionamiento con los profesores Dag Jensen, Herman Jung, Vicente Merenciano, Otto Hartman, Klaus Thunemann y Marco Postinger.`,
-    para_3: `Ha ejercido de profesor en el Conservatorio Profesional de Música “Manuel Carra” de Málaga, obteniendo posteriormente la Cátedra de Fagot del Conservatorio Superior de Málaga y siendo profesor invitado de la Orquesta de Andalucía y de la Jove Orquestra de Catalunya. Desde 1993, ocupa el puesto de fagot solista en la Orquesta Filarmónica de Málaga.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/antonio-lozano_dwdgwi.webp`,
-    image_position: `top`,
-  },
-
-  // Tomàs Grau
-  {
-    locale: `es`,
-    name: `Tomàs Grau`,
-    slug_name: `Tomàs Grau ES`,
-    instrument: `director`,
-    para_1: `Director inspirado y de gran sensibilidad, Tomàs Grau se caracteriza por su gesto preciso y claro y por la sinceridad de sus lecturas musicales, que buscan transmitir de manera diáfana las verdaderas emociones que hay en cada una de las partituras, compartiendo con el público su amor por la música.`,
-    para_2: `Ha dirigido, entre otros, solistas de talla internacional como Anne-Sophie Mutter, Maria João Pires, Midori, Patricia Kopatchinskaja, Gautier Capuçon, Mischa Maisky, Sabine Meyer, Steven Isserlis, Paul Lewis, Stephen Kovacevich, Alexander Melnikov, Seong-Jin Cho, Mark Padmore y Alice Sara Ott en las principales salas de conciertos de España, como el Auditorio Nacional de Madrid, el Auditorio de Zaragoza, el Palau de la Música Catalana o l’Auditori de Barcelona, como también a nivel internacional en la Tonhalle de Zúrich.`,
-    para_3: `Actualmente es el director titular y artístico de la Franz Schubert Filharmonia, y lo invitan regularmente a dirigir otras formaciones, como la Beethoven Philharmonie, Stuttgarter Kammerorchester, Orquesta Nacional de España, Orquesta Sinfónica del Principado de Asturias, Orquesta Filarmónica de Málaga, Orquesta Sinfónica de la Región de Murcia, Orquesta de Córdoba y Orquesta Sinfónica de Burgos.`,
-    para_4: `Ha grabado para sellos como SONY Classical, ARS Produktion -sello del año en los International Classical Music Awards- o Discmedi. Entre sus compromisos más inmediatos destaca dirigir solistas como Ivo Pogorelich, Alexei Volodin, Javier Perianes y, de nuevo, Patricia Kopatchinskaja.`,
-    para_5: `Proveniente de Barcelona, Tomàs Grau obtuvo el Título Superior de Dirección de Orquesta en la Escuela Superior de Música de Cataluña, alcanzando las máximas calificaciones. Posteriormente, completó sus estudios en los Wiener Meisterkurse.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686256/M%C3%A1laga%20Cl%C3%A1sica/tomas-grau_rj8gcu.webp`,
-    image_position: `center`,
-  },
-
-  // La Franz Schubert Filharmonia
-  {
-    locale: `es`,
-    name: `La Franz Schubert Filharmonia`,
-    slug_name: `La Franz Schubert Filharmonia ES`,
-    instrument: `filharmonia`,
-    para_1: `La Franz Schubert Filharmonia ha actuado en salas como el Palau de la Música Catalana, el Gran Teatro del Liceo, el Auditorio de Barcelona, el Auditorio Nacional de Música de Madrid, el Auditorio de Zaragoza, el Palacio Euskalduna de Bilbao y el Palau de les Arts de Valencia, y realizado giras en Alemania, Suiza y la República Checa.`,
-    para_2: `La formación despliega sus temporadas de abono en Barcelona, Tarragona, Lleida y Sant Cugat, y es desde el año 2009, la orquesta residente del Vendrell, ciudad natal del gran maestro Pau Casals.`,
-    para_3: `Formada por una nueva generación de los mejores músicos del país que actúan bajo la inspirada dirección de Tomàs Grau, la orquesta ha trabajado también con directores como Antoni Ros Marbà, Salvador Mas, Edmon Colomer, Josep Pons, Rinaldo Alessandrini, Paul Agnew, Gábor Takács-Nagy, Marzio Conti, Jordi Mora, Josep Caballé Domenech, Virginia Martínez y Salvador Brotons.`,
-    para_4: `La Franz Schubert Filharmonia ha colaborado con solistas como Anne-Sophie Mutter, Maria João Pires, Mischa Maisky, Midori, Stephen Kovacevich, Sabine Meyer, Rudolf Buchbinder, Steven Isserlis, Patricia Kopatchinskaja, Paul Lewis, Gautier Capuçon, Roberto Alagna, Mark Padmore, Alexander Melnikov, Seong-Jin Cho, Alice Sara Ott, Ainhoa Arteta, Asier Polo, Leticia Moreno, Pablo Ferrández, Judith Jáuregui o Iván Martín.`,
-    para_5: `La actividad discográfica de la formación cuenta con varios discos, como el Die Romantische Seele con la pianista Judith Jauregui, producido por el sello alemán ARS Produktion, ganador de los International Classical Music Awards y nominado a los Premios Opus Klassik, y Alba Eterna, ópera del compositor Albert Guinovart, producida por el sello Sony Classical.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/franz_npslf3.webp`,
-    image_position: `center`,
-  },
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  // English - Jesús Reina
-  {
-    locale: `en`,
-    name: `Jesús Reina`,
-    slug_name: `Jesús Reina EN`,
-    instrument: `Artistic Director, violin`,
-    para_1: `Beyond his virtuosity on the instrument, critics praise the Spanish violinist Jesús Reina for his “sunny and soulful personality” —John Rockwell, for his “freshness and boundless spontaneity”, and for the “beauty of his sound, characterized by true musicality, temperament and charisma” —El País.`,
-    para_2: `Jesús' grandfather, José Reina, introduced him to the violin through folk music and his talent soon called the attention of great masters. When he was eight years old, Yehudi Menuhin and Natasha Boyarskaya invited Jesús to study at the Yehudi Menuhin School. At 10 years of age he was accepted to the Reina Sofía School under the tutelage of José Luis García Asensio. Two years later, Jesús entered Indiana University to study with Mauricio Fuks. Then, at age 15, he attended the Manhattan School of Music in New York with Patinka Kopec and Pinchas Zukerman.`,
-    para_3: `Jesús has been presented at various renowned venues, such as Wigmore Hall and Royal Festival Hall in London, Weill Hall at Carnegie Hall in New York, the National Arts Centre in Ottawa, Saint Petersburg’s Philharmonic Glinka Hall, the National Auditorium in Madrid, and Palau de la Música in Barcelona. Furthermore, Jesús has performed at international festivals such as the Miami International Piano Festival and Music@Menlo in California, as well as in some of the most predominant music series in Spain, including Auditorio de Zaragoza, Festival del Escorial, Festival Musika-Música in Bilbao and Sociedad de Conciertos de Alicante.`,
-    para_4: `Among the orchestras which Jesús has concertized with are Mariinski Philharmonic, Munich Chamber Orchestra, Orchestra of Lower California, Yucatán Symphony, Barcelona Symphony, Málaga Philharmonic, Murcia Symphony or Asturias Symphony, being invited by conductors such as Valery Gergiev, Pinchas Zukerman, Manuel Hernández Silva, Francisco Valero, Tomás Grau, Virginia Martínez, Juan Carlos Lomónaco, Sebastian Hamman, Eiji Oue and Ari Rasilainen.`,
-    para_5: `Jesús’ enthusiasm for chamber music has led to collaborations with musicians such as violinist Guy Braunstein, violist Paul Neubauer, pianists Judith Jáuregui and Josu de Solaun, and cellists Øyvind Gimse, Amanda Forsyth, and Kyril Slotnikov.`,
-    para_6: `Recent highlights include performances with Málaga Philharmonic, Cordoba Symphony and Asturias Symphony. Jesús performed at Premios Princesa de Asturias to prize recipients Ennio Morricone and John Williams. He also participated in the New Year and 20th-anniversary concert of the City of Almería Orchestra, and the 30th anniversary of the Cervantes Institute celebrated at Sofia’s Philharmonic Hall (Bulgaria). Soon, Jesús will record the Bruch and Mendelssohn violin concertos with the Malta Philharmonic and conductor Óliver Díaz for the Aria Classics label.`,
-    para_7: `An artist of entrepreneurial energy, Jesús returned to establish himself in his birth city and co-founded the Málaga Clásica Festival with violinist Anna Nilsen. Jesús has since been part of nine successful editions as artistic director of the festival, uniting some of the best international musicians in chamber music encounters. At the same time, he led the creation of the Galamian Academy, a centre for musical specialization. His endeavours have earned him the Medal of Honor of Málaga and the Doors of Andalucía Award, an acknowledgement given to people, entities and institutions that highlight the values of Andalucía throughout the world.`,
-    para_8: `Jesús appears on the weekly Canal Sur’s hit television show, “Tierra de Talento”, hosted by comedian Manu Sánchez. In addition to exercising jury work in the show, he has also collaborated with great artists from various musical genres, such as José Mercé, María Villalón, Mariola Cantarero, India Martínez, Pasión Vega, El Kanka and Ale Romero.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/jesus-reina_sz8otk.webp`,
-    image_position: `top`,
-  },
-
-  // English - Anna Nilsen
-  {
-    locale: `en`,
-    name: `Anna Nilsen`,
-    slug_name: `Anna Nilsen EN`,
-    instrument: `Artistic Director, violin`,
-    para_1: `Critics have praised Anna for her “virtuosity, expression, very wise convergence of sensitive interpretative lines, together with her exquisite melodic treatment” (“Ritmo” Magazine).`,
-    para_2: `Anna Margrethe Nilsen made her solo debut with the Norwegian Broadcasting Orchestra at age nine. She later soloed with the Bergen Philharmonic, Kaliningrad Chamber, Trondheim Symphony, Kristiansand Symphony, Bærum and Asker Symphony, Novgorod Chamber, Norwegian Opera, Galician Chamber, Manhattan School of Music Philharmonia, St. Petersburg State Symphony and the Belarussian State Chamber Orchestra.`,
-    para_3: `At age four, Anna Nilsen began playing the violin and started her studies with Professor Isaac Schuldman. She obtained a Master of Music at the Manhattan School of Music, studying with Patinka Kopec and Pinchas Zukerman in “The Pinchas Zukerman Performance Program”. Anna Nilsen is a winner of the competitions Sparre Olsen (Norway), Eisenberg-Fried (New York), Lillian Fuchs (New York) and the National Violin Competition for Youth (Norway). She has also received the Medal of Honor of Málaga.`,
-    para_4: `She has performed all over Europe, Asia, North America and South America in prestigious venues such as the Wiener Konzerthaus, Oslo Concert Hall, Carnegie Hall, Grieg Hall of Bergen, Teatro Cervantes in Málaga, Leon Auditorio, St. Petersburg Philharmonic Glinka Hall and Teatro de Las Condes in Santiago (Chile).`,
-    para_5: `Anna Nilsen is an avid chamber musician and has performed alongside distinguished artists, such as Lars Anders Tomter, Guy Braunstein, Liza Fershtman, Henri Demarquette, Øyvind Gimse, the American String Quartet, Paul Neubauer, Amanda Forsyth and Pinchas Zukerman. Moreover, she is one of the violinists in the newly formed Picasso String Quartet.`,
-    para_6: `Anna Nilsen toured Spain as a guest concertmaster of the Santa Cecilia Orchestra. She performed in Madrid’s National Auditorium, Auditorium of Zaragoza and Palau de Valencia with conductor and violinist Julian Rachlin. Furthermore, she has recorded works by Szymanowski, Bartók and Grieg for the Centaur Records label.`,
-    para_7: `Recent and upcoming highlights include performances as a soloist with the Santiago National University Orchestra (Chile), Murcia Symphony Orchestra, Leon Youth Orchestra, Galamian Academy Orchestra, and the Barratt Due Chamber Orchestra. Performances include violin concertos by Tchaikovsky, Brahms, Mendelssohn, Mozart and Vivaldi, recitals and chamber music appearances with Pinchas Zukerman (New York) at the Miami International Piano Festival (Florida), MurciArt Music Festival in Murcia and the Podium Festival in Haugesund (Norway).`,
-    para_8: `Additionally, Anna Nilsen has performed CD recordings for the Aria Classics Label of the complete sonatas by Busoni and Brahms together with pianists Josu de Solaun and Oscar Martín. She is currently the co-founder and professor of violin at the Galamian International Academy (Málaga) and co-founder and director of the Málaga Clásica festival.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/anna-nilsen_kolwch.webp`,
-    image_position: `center`,
-  },
-
-  // Alissa Margulis
-  {
-    locale: `en`,
-    name: `Alissa Margulis`,
-    slug_name: `Alissa Margulis EN`,
-    instrument: `violin`,
-    para_1: `Critics appreciate Alissa Margulis for her emotional and expressive performances. She was born into a Russian family of musicians in Germany and studied with Zakhar Bron, Augustin Dumay and Pavel Vernikov. She has since played with numerous renowned orchestras, including the English Chamber Orchestra, Orchestre National d'Ile de France, New Russia Orchestra, and the Orchestra Sinfonica di Milano Giuseppe Verdi.`,
-    para_2: `Alissa Margulis regularly performs in famous concert halls such as the Berlin Philharmony, Carnegie Hall, Palacio de Bellas Artes in Mexico City, and St. Petersburg Philharmonic Hall. She has won numerous prizes at international violin competitions and received the "Pro Europa" prize from the European Cultural Foundation.`,
-    para_3: `In addition to her solo career, she is an enthusiastic chamber musician. She has collaborated with artists like Martha Argerich, Yuri Bashmet, Ivry Gitlis, Gidon Kremer and Mischa Maisky. The virtuoso has released more than a dozen CDs on renowned labels such as EMI Classics, Novalis, and Avanti Classic.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/alissa-margulis_ysbzfy.webp`,
-    image_position: `center`,
-  },
-
-  // Alexander Sitkovetsky
-  {
-    locale: `en`,
-    name: `Alexander Sitkovetsky`,
-    slug_name: `Alexander Sitkovetsky EN`,
-    instrument: `violin`,
-    para_1: `Violinist Alexander Sitkovetsky, born in Moscow, made his concerto debut at age eight and later moved to the UK to study at the Menuhin School. Last season he debuted at Vienna’s Musikverein with the Tonkünstler Orchester, visited Anima Musicae Budapest and Russian Philharmonic Novosibirsk and appeared with the Sitkovetsky Trio at festivals throughout Spain, Finland, Denmark, Switzerland, and Germany.`,
-    para_2: `He recently performed with the Yomiuri Nippon Symphony, Tokyo Symphony, Royal Philharmonic, Konzerthaus Orchester Berlin, BBC Scottish Symphony, Netherlands Philharmonic, Tokyo Symphony, Moscow and St Petersburg Symphony, Orquesta Filarmónica de Bolivia, BBC National Orchestra of Wales, London Philharmonic and the Philharmonia Orchestra. He regularly directs and performs as a soloist with chamber orchestras, including the Australian Chamber Orchestra, Norwegian Chamber Orchestra, Amsterdam Sinfonietta, London Mozart Players, New York Chamber Players, Camerata Zurich, and Romanian Sinfonietta.`,
-    para_3: `Alexander Sitkovetsky is a founding member of the Sitkovetsky Trio, and they regularly perform throughout Europe, Asia, and the Americas. The trio’s fourth disc for BIS Records, Ravel’s Piano Trio and Saint-Saëns’s Second Trio, was released to great critical acclaim in July 2021. Sitkovetsky is an alum of CMS’s Bowers Program. He plays the 1679 ‘Parera’ Antonio Stradivari violin, kindly loaned to him through the Beare’s International Violin Society by a generous sponsor.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/alexander-sitkovetsky_ivaogx.webp`,
-    image_position: `center`,
-  },
-
-  // María del Mar Jurado Jiménez
-  {
-    locale: `en`,
-    name: `María del Mar Jurado Jiménez`,
-    slug_name: `María del Mar Jurado Jiménez EN`,
-    instrument: `violin`,
-    para_1: `Born in La Carolina (Jaén), María del Mar Jurado Jiménez began playing the violin at age seven. She debuted as a soloist at the Teatro Nuevo Apolo in Madrid with the Camerata Musicalis Orchestra and the director Edgar Martín. She later performed at the National Auditorium in Madrid with the capital’s Metropolitan Orchestra.`,
-    para_2: `She has participated in the La Mancha Music Festival, MUSEG Festival in Segovia and the Nits de Classics festival. María Jiménez received masterclasses from musicians such as Mariana Todorova, David Marco, Sergey Teslia, Christoph Schickedanz, Anna Baget, Leticia Moreno, Kirill Zlotnikov, Grigory Kalinovsky, Aitor Hevia, Miguel Colom, Alissa Margulis, and Sarah Chang.`,
-    para_3: `María Jiménez has won first prize at the “Visitación Magarzo” Chamber Music Competition and the Contest for Young Performers of Jaén. She has also won second prize at the “Lorenzo Palomo” Chamber Music Competition, first prize and the Special Prize for the best String Performer at the 16th Prize “Intercentros Music Lover”. In addition, she has won first prize for Young Performers Málaga Crea 2021 and was a finalist in the TV contest “Tierra de Talento”.`,
-    para_4: `She is currently an active student at the Baremboing Said Academy of Orchestral Studies. She combines these studies with her training at the Galamian International Academy and the Malaga Conservatory of Music.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/maria-jimenez_hxcmnf.webp`,
-    image_position: `top`,
-  },
-
-  // Rumen Cvetkov
-  {
-    locale: `en`,
-    name: `Rumen Cvetkov`,
-    slug_name: `Rumen Cvetkov EN`,
-    instrument: `viola`,
-    para_1: `Rumen Cvetkov has performed in important venues worldwide, such as the Berliner Philharmoniker Hall, Carnegie Hall, Wigmore Hall, Walt Disney Hall, and Palacio de Bellas Artes of Mexico City. He has also collaborated with musicians such as Ida Haendel, Bernard Greenhouse, Mihail Muntian, Sir Harold Martina, Jose Feghali, Christian Tetzlaff, and Vladimir Mendelssohn.`,
-    para_2: `In 2012 he was invited by Maestro Zubin Mehta to become the solo violist of the Royal Spanish Opera House “Queen Sofia” in Valencia. His debut solo CD is “Brahms Alliance” with pianist Ludmil Angelov.`,
-    para_3: `Currently, he is a Professor of Viola at Tilburg Conservatory (Holland) and New Bulgarian University (Sofia, Bulgaria). Furthermore, Rumen Cvetkov is the founder and Artistic Leader of Chamber Orchestra “Mediterranean Soloists” and founder and Artistic Director of MurciArt Music Festival.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686256/M%C3%A1laga%20Cl%C3%A1sica/rumen-cvetkov_mopwol.webp`,
-    image_position: `center`,
-  },
-
-  // Tomoko Akasaka
-  {
-    locale: `en`,
-    name: `Tomoko Akasaka`,
-    slug_name: `Tomoko Akasaka EN`,
-    instrument: `viola`,
-    para_1: `Critics appreciate Tomoko Akasaka for her extraordinary charisma and stage presence. She won the "Japan Classical Music Competition" and third prize at the International Music Competition of ARD. She also appeared as a soloist with the Bavarian Radio Symphony Orchestra, Munich Chamber Orchestra, Kremerata Baltica, Orchestre de Chambre Genève, Ensemble Contrechamps, Filarmonica Banatul Timisoara, Venezuelan Symphony Orchestra and Japan Chamber Orchestra under conductors such as Seiji Ozawa, Johannes Kalitzke, Rüdiger Bohn, Gheorghe Costin, Olivier Cuendet, Roman Kofman and Günther Herbig.`,
-    para_2: `Tomoko's chamber music partners include Gidon Kremer, Yuri Bashmet, Daniel Hope, Juliane Banse, Heinz Holliger, Menahem Pressler, Julian Steckel, Andreas Ottensamer, Daishin Kashimoto and the Kuss Quartet, performing at Lockenhaus, Salzburg Festival, Pablo Casals Festival, Verbier, Lucerne, Kissinger Sommer, San Francisco Musical Days, Olivier Messiaen Festival, Zagreb Chamber Music Festival, Kronberg Cello Festival, Alba Music Festival and Schubertiade.`,
-    para_3: `Tomoko Akasaka has played at the Concertgebouw Amsterdam, Tonhalle Zurich, Mozarteum Salzburg, Victoria Hall London, Grand Theater in Geneva, Konzerthaus and Philharmonie Berlin, Elmau Castle, Suntory Hall Tokyo and Nymphenburg Castle Munich.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686257/M%C3%A1laga%20Cl%C3%A1sica/tomoko_ndhzaw.webp`,
-    image_position: `center`,
-  },
-
-  // Razvan Popovici
-  {
-    locale: `en`,
-    name: `Razvan Popovici`,
-    slug_name: `Razvan Popovici EN`,
-    instrument: `viola`,
-    para_1: `The Romanian violist Razvan Popovici has performed in prestigious venues, including Théatre-dés-Champs-Elysées (Paris), Cologne Philharmony, Carnegie Hall (New York), Concertgebouw (Amsterdam), Wigmore Hall (London), Suntory Hall (Tokyo), Gasteig (Munich), Kennedy Center (Washington) and the Vienna Konzerthaus and Musikverein, Atheneum (Bucharest), Prinzregententheater (Munich), De Singel (Antwerpen), BOZAR (Brussels).`,
-    para_2: `He has also performed with orchestras such as the Cologne Chamber Orchestra, Kamerata Kronstadt, Kobe Chamber Orchestra, Lohja City Orchestra, Transylvania Symphony Orchestra Cluj, Sibiu State Philharmonic, Romanian National Radio Orchestra and George Enescu Philharmonic Bucharest.`,
-    para_3: `Razvan Popovici has collaborated with Natalia Gutman, Shlomo Mintz, Enrico Pace, Giovanni Sollima, Konstantin Lifschitz, and Lawrence Power as a chamber musician. He has also played alongside the Szymanowski, Vertavo, Casal, Danel, Kelémen, Glinka and Schumann Quartets and Amadeus Quartet and Ensemble Wien-Berlin members. He has released eight CDs with the Ensemble Raro, which frequently tours Europe, Japan and North America.`,
-    para_4: `Popovici is the Founder and Executive Director of the Chiemgauer Musikfrühling Festival in Germany, the SoNoRo Festival in Bucharest and the SoNoRo Arezzo Festival in Tuscany. Furthermore, he is the Artistic Director of the DA CAPO Chamber Music Series in Bucharest. He regularly teaches at the Villa Musica and is a visiting professor at the Royal Conservatory in Antwerp.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686256/M%C3%A1laga%20Cl%C3%A1sica/razvan-popovici_xq4gj1.webp`,
-    image_position: `top`,
-  },
-
-  // Gabriel Ureña
-  {
-    locale: `en`,
-    name: `Gabriel Ureña`,
-    slug_name: `Gabriel Ureña EN`,
-    instrument: `cello`,
-    para_1: `Gabriel Ureña has performed as a soloist with the London City Orchestra, Oviedo Philharmonic and the Artemus Orquesta and in prestigious international venues, such as the Musikverein (Vienna), Theater of the Champs Elysees (Paris), Seoul Arts Center, National Auditorium of Music (Madrid), Palau de la Música (Barcelona) and the Teatro de la Maestranza (Seville).`,
-    para_2: `He has shared the stage with artists such as Leo Nucci, Edita Gruberová, Ainhoa ​​Arteta, Ruggero Raimondi, Anna Netrebko, Ilya Gringolts, Benjamin Schmid, the Labèque sisters, Natalia Gutman and Midori. Gabriel Ureña is the First Prize Winner of the Cello Competition of Arquillos (Jaén) and the International Chamber Music Competition "The City of Manresa".`,
-    para_3: `Among the most recent milestones of his career is the publication of his first CD for the label Aria Classics, with works by Prokofiev, Shostakovich and Rachmaninov, together with the pianist Patxi Aizpiri, his solo appearance with the Malaga Philharmonic Orchestra and his debut with the Colombian National Orchestra at the Teatro Colón in Bogotá.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/gabriel-urena_qb6zn8.webp`,
-    image_position: `center`,
-  },
-
-  // Adolfo Gutiérrez
-  {
-    locale: `en`,
-    name: `Adolfo Gutiérrez`,
-    slug_name: `Adolfo Gutiérrez EN`,
-    instrument: `cello`,
-    para_1: `Adolfo Gutiérrez won the Ravel Prize in 2012. He debuted with the London Symphony Orchestra in the prestigious Ibermusica series in Madrid, performing Elgar's Cello Concerto. He was then invited to perform with the Royal Philharmonic Orchestra (Charles Dutoit), Orquesta Nacional de España (Ton Koopman) and at the Mendelssohn Festival at Leipzig’s Gewandhaus.`,
-    para_2: `Current highlights include performances as a soloist with the London Philharmonic Orchestra (Vladimir Jurowski), Orquesta Nacional de España (Krzysztof Penderecki), Fort Worth Symphony under Miguel Harth-Bedoya, Orquesta Sinfónica Nacional de Colombia and performances at the Ravinia Festival and Montreal Symphony's Summer Festival.`,
-    para_3: `Adolfo has performed at major venues such as Amsterdam’s Concertgebouw, Auditorio Nacional de Música in Madrid, Ford Theatre in Los Angeles, l’Auditori and Palau de la Música in Barcelona, Bulgaria Hall in Sofia and Palacio Euskalduna in Bilbao, and collaborated with conductors such as Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali and Antoni Ros-Marbà.`,
-    para_4: `Adolfo has recorded Barber, Rachmaninov, Piazzolla and the complete cycle of J.S. Bach's cello suites on the Verso label. His recent recording of the complete Beethoven Sonatas with pianist Christopher Park received great critical acclaim. Adolfo plays a Francesco Ruggieri, handcrafted in Cremona in 1673.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
-    image_position: `center`,
-  },
-
-  // Natalia Margulis
-  {
-    locale: `en`,
-    name: `Natalia Margulis`,
-    slug_name: `Natalia Margulis EN`,
-    instrument: `cello`,
-    para_1: `As an active soloist and chamber musician, Natalia Margulis has performed in Europe, the United States and Asia. She has performed concerts at the National Auditorium in Madrid, the Megaron Hall in Thessaloniki, Greece, the Walton Arts Center in Arkansas, USA, the Schoenberg Hall in Los Angeles, and the Palais des Beaux-Arts, Belgium and the Chamber Music Hall of the Philharmonic from Saint Petersburg.`,
-    para_2: `Natalia has performed with artists such as Martha Argerich, Ivry Gitlis, Gabriela Montero, Dora Schwarzberg, and Misha Maisky. She has appeared as a soloist with the Greek National Orchestra, the North Arkansas Symphony Orchestra, and the Cologne Youth Orchestra. She has toured and recorded with the Swedish Camerata Nordica. United States television and radio broadcasted her performance with the Margulis Trio of Beethoven's Triple Concerto.`,
-    para_3: `Natalia frequently records for Spanish Radio. She has participated in international music festivals such as the Santander Festival and the Verbier Academy, the Eilat Chamber Music Festival, the Schloss Elmau Concerts, the Bucharest SoNoRo festival, and the Saint Petersburg Conservatory International Week Festival. In addition, Natalia performed in the Progetto Argerich of Lugano.`,
-    para_4: `Natalia Margulis is also part of the CD recording 'Argerich and friends' with his Margulis Trio. Since 2007 she has held the position of Co-Principal Cellist at the Teatro Real in Madrid.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/natalia-margulis_uuedfe.webp`,
-    image_position: `center`,
-  },
-
-  // Uxía Martínez Botana
-  {
-    locale: `en`,
-    name: `Uxía Martínez Botana`,
-    slug_name: `Uxía Martínez Botana EN`,
-    instrument: `bass`,
-    para_1: `Uxía Martínez Botana received her first professional contract with the Symphony Orchestra of Galicia at age sixteen. She was selected by the American bass magazine “No Treble” as one of the world’s top ten bass players.`,
-    para_2: `Uxía has worked in orchestras such as the Royal Concertgebouw, Netherlands Philharmonisch Orkest and Amsterdam Sinfonietta. She performed as Guest Principal Double Bass at the Philharmonie Zuid-Nederland, Scottish Chamber, Orchestre D’Auvergne, Royal Scottish National Orchestra, Oxford Philharmonic, la Philharmonica De Gran Canaria and Antwerp Symphony, and as Principal Double Bass of the Weinberger Kammerorchester (Zurich) and Brussels Philharmonic.`,
-    para_3: `As a soloist, she has performed with the New European Ensemble, Stellenbosch Chamber Orchestra in South Africa, Symphony Orchestra of Galicia (conductor Dima Slobodeniouk), Czech Philharmonic Chamber Orchestra (violinist Josef Spacek) and Franz Liszt Chamber Orchestra (conductor Robert Farkas).`,
-    para_4: `Uxía has also performed as a chamber musician with musicians such as Julia Fischer, Anna Chumachenko, Yuri Bashmet, Natalia Gutman, Andras Schiff, Christian Tetzlaff, Lars Vogt, Nobuko Imai, Tabea Zimmermann, Polina Leschenko, Natascha Kruditskaya, Philippe Graffin, Gary Hoffman, David Cohen, Kian Soltani, Ante Weithaas, Alissa Margulis, Mischa Maisky, Sol Gabetta, Alina Ibragimova, Lawrence Power and Tatiana Masurenko.`,
-    para_5: `Uxía is currently a professor at the ESMUC College of Music of Catalonia in Barcelona and the Barenboim-Said Academy. She played on the double bass “The English Lady” (1800 c.a) of the “Willem Vogelaar” collection, sponsored by The National Dutch Musical Instrument Foundation, and on the “Ludwig Neuner” (1854) loaned by a private sponsor.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686257/M%C3%A1laga%20Cl%C3%A1sica/uxia-botana_ypwr0h.webp`,
-    image_position: `center`,
-  },
-
-  // Antonio Ortíz
-  {
-    locale: `en`,
-    name: `Antonio Ortíz`,
-    slug_name: `Antonio Ortíz EN`,
-    instrument: `piano`,
-    para_1: `Antonio Ortíz frequently performs at the Granada International Music and Dance Festival, Cordoba’s “Rafael Orozco” Festival, and Musical Encounters and Academy in Santander. He is also often invited to prestigious halls such as National Auditorium in Madrid, Teatro Real and Palau de la Música de Barcelona, among many others.`,
-    para_2: `Besides Spain, Antonio has performed in France, Italy, Belgium, Russia, Portugal, Puerto Rico, Colombia and the USA. He has also performed with some of the leading Spanish orchestras, such as the Radio Television Symphony, National Youth Symphony of Spain and Malaga Philharmonic, under the direction of Aldo Ceccato, Bruno Aprea, Fusao Kajima, Pablo Mielgo, Manuel Hernández-Silva, Roselín Pabón and Blanca Trabalón.`,
-    para_3: `He received the “Manuel de Falla” and “José Roca” awards. Moreover, Antonio Ortíz made recordings for National Spanish Television and National Spanish Radio. Recently, he recorded Isaac Albeniz’s “Suite Iberia” for Fundación Málaga. He studied with Dimitri Bashkirov at Queen Sofía Music College in Madrid and currently combines his concert career with a teaching position at Málaga’s Superior Conservatory of Music.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/antonio-ortiz_iawd9s.webp`,
-    image_position: `center`,
-  },
-
-  // Josu De Solaun
-  {
-    locale: `en`,
-    name: `Josu De Solaun`,
-    slug_name: `Josu De Solaun EN`,
-    instrument: `piano`,
-    para_1: `Spanish-American pianist Josu De Solaun won first prize in the XIII George Enescu International Piano Competition, Bucharest, the XV José Iturbi International Piano Competition and the First Piano Competition of the European Union.`,
-    para_2: `He has performed in distinguished concert halls around the world, including the Romanian Athenaeum in Bucharest, the La Fenice Theater in Venice, the Mariinsky Theater in St. Petersburg, the Kennedy Center in Washington, Carnegie Hall and the Metropolitan Opera in New York, the Southbank Center in London, the Salle Cortot in Paris, the Schumann Haus in Leipzig, the Novel Hall in Taipei, the Sala Silvestre Revueltas in Mexico City, the Nostitz Palace in Prague, the Spanish Academy in Rome, the International Music Festival of Menton and in all main cities of Spain.`,
-    para_3: `The 2020-2021 season featured his free improvisation concert debut on piano, panDEMiCity, at the León Auditorium. He also held solo performances with orchestras in Spain, the Czech Republic and Romania. In 2021, he received the prestigious ICMA (International Classical Music Awards) award for his recording of French Violin and Piano Sonatas with violinist Franziska Pietsch (“Fantasque”). His latest solo album of works by Brahms and Schumann for the IBS Classical label – “Digressions” – has garnered excellent reviews.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/josu-de-solaun_p0gzz8.webp`,
-    image_position: `center`,
-  },
-
-  // Nils Nilsen
+  // English - Nils Nilsen
   {
     locale: `en`,
     name: `Nils Nilsen`,
     slug_name: `Nils Nilsen EN`,
     instrument: `tenor`,
-    para_1: `Tenor Nils Georg Nilsen debuted at the Lincoln Center in New York after receiving his Master’s degree in Music from the Manhattan School of Music in 2012. Since then, he has appeared as a soloist with the Chicago Symphony Orchestra, at the Israeli Opera, the Norwegian Opera House and Opera Tampa in Florida, and performed in several international festivals and concerts in Europe and the US.`,
-    para_2: `In addition to being a Professor of Voice at the Galamian International Academy in Malaga, Nils Georg is a sought-after tenor. Nils Georg has won the Solveig’s Award in the Edvard Grieg Competition. He has also won the Audience Award during the festival LidalNorth and the Youth Music Competition in Norway.`,
-    para_3: `Recent highlights include Mozart Requiem with the Norwegian Radio Orchestra, Rossini’s Stabat Mater and Handels Messiah with Drammen Symphony Orchestra and performances at the Ravinia Festival in the US. Since 2021 Nils Nilsen has been part of the vocal group Nordic Tenors, together with tenors Jan-Tore Saltnes and Roald Haarr.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686255/M%C3%A1laga%20Cl%C3%A1sica/nils-nilsen_iot5s1.webp`,
-    image_position: `top`,
-  },
-
-  // Juan Antonio López Cabezuelos
-  {
-    locale: `en`,
-    name: `Juan Antonio López Cabezuelos`,
-    slug_name: `Juan Antonio López Cabezuelos ES`,
-    instrument: `flute`,
-    para_1: `Juan Antonio López Cabezuelos was born in Meschede, Germany. He studied at the “Oscar Esplà” Superior Conservatory in Alicante with professors Rafael Casasempere and Jose Mª Ferrìz. He finished his Bachelor’s Degree with professor Josè Domínguez, obtaining the “Extraordinary End of Career Award”.`,
-    para_2: `He later studied the flute with Antonio Arias, soloist of the “Orquesta Nacional de España”, and Sheridan Stokes, renowned American flautist. In addition, he studied the piccolo with the soloist of the “BBC Orchestra” Pat Morris.`,
-    para_3: `He began his pedagogical activity at the Municipal Conservatory of Benidorm. From 1991 he held the position of flute teacher at the Municipal Music and Dance Conservatory of Albacete. In 1993 he was granted the role of Musical Professor of Flute/Piccolo at the Malaga Philharmonic Orchestra.`,
-    para_4: `He has collaborated with national and international soloists, such as Montserrat Caballè, Alfredo Kraus, Ray Charles, and Joan Manuel Serrat. He has also worked under some of the most outstanding batons, such as Jesús Lòpez Cobos, Rafael Frubeck de Burgos and Aldo Ceccato.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/juan-lopez_ccxk04.webp`,
-    image_position: `center`,
-  },
-
-  // José Antonio Gonzaga
-  {
-    locale: `en`,
-    name: `José Antonio Gonzaga`,
-    slug_name: `José Antonio Gonzaga EN`,
-    instrument: `oboe`,
-    para_1: `José Antonio Gonzaga regularly collaborates with various chamber groups, highlighting his work with original instruments in the “In Modo Antiquo” group.`,
-    para_2: `José has performed with various orchestras performing, among others, the Oboe Concerto by R. Vaughan Williams, the Concerto for violin and oboe in C Major by J.S. Bach, J. Haydn’s Symphony Concertante, Mozart’s Concerto in C Major, as well as Telemann’s Love Concerto for two oboes.`,
-    para_3: `He studied at the Conservatorio Superior “Oscar Esplá” in Alicante, receiving the Premio Extraordinario (the highest recognition) upon graduation and the Performance Prize at the Sociedad de Conciertos in Alicante.`,
-    para_4: `José Antonio has taught at courses at the superior conservatories of Alicante, Málaga and Granada, and has been Guest Professor of Oboe and Chamber Music at the Joven Orquesta Nacional de España and Orquesta Joven de Andalucía. Since 1991, he has held the Principal Oboe position at the Orquesta Filarmónica de Málaga.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/jose-gonzaga_ggobnm.webp`,
-    image_position: `top`,
-  },
-
-  // Juan Crisóstomo Subiela Durá
-  {
-    locale: `en`,
-    name: `Juan Crisóstomo Subiela Durá`,
-    slug_name: `Juan Crisóstomo Subiela Durá EN`,
-    instrument: `clarinet`,
-    para_1: `Clarinettist Juan Crisóstomo Subiela Durá completed his Bachelor's Degree at the Madrid Royal Conservatory of Music. He then perfected most of his training at the Antwerp Conservatory with the internationally renowned clarinettist Walter Boeykens.`,
-    para_2: `He has been a clarinet professor at the Ávila Professional Conservatory and the Madrid Royal Conservatory of Music. Since 1993 he has held the position of Clarinet Soloist of the Malaga Philharmonic Orchestra.`,
-    para_3: `Juan has performed in concerts, both chamber music and soloist, receiving excellent reviews for his interpretation. He has also taught courses at the National Youth Orchestra of Catalonia and in different musical groups in the Valencian Community.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686254/M%C3%A1laga%20Cl%C3%A1sica/juan-dura_uixena.webp`,
-    image_position: `center`,
-  },
-
-  // Alexander Moustachiev
-  {
-    locale: `en`,
-    name: `Alexander Moustachiev`,
-    slug_name: `Alexander Moustachiev EN`,
-    instrument: `Horn`,
-    para_1: `Horn player Alexander Moustachiev, born in Sofia, Bulgaria, began his musical studies of horn with the prestigious Czech professor Carel Stari.`,
-    para_2: `After graduating from the State Music School, he entered the Conservatory of Sofia, continuing his training with Vladislav Grigorov. His career as a professional horn player began with the Bulgarian Radio and Television Orchestra holding the position of an Assistant Soloist. He continued his career with the Malaga Philharmonic Orchestra, where he presently has the role of Horn Soloist.`,
-    para_3: `Alexander Moustachiev has notably been a member of the Pernick “Orfeus” Chamber Orchestra during his professional activity. He has also been a guest member of the Bonn Camerata Orchestra and a soloist in numerous Chamber Music programs with different formations and a vast repertoire.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/alexander-moustachiev_tl4ntv.webp`,
-    image_position: `top`,
-  },
-
-  // Antonio Lozano
-  {
-    locale: `en`,
-    name: `Antonio Lozano`,
-    slug_name: `Antonio Lozano EN`,
-    instrument: `bassoon`,
-    para_1: `Antonio Lozano has been a guest bassoon principal in the orchestras of Teatre del Liceo, Deutsche Kammer Philarmonie in Bremen, Spanish Radio-television, Chamber Orchestra of Andalucia, Granada Symphony, Coruña Symphony, Sevilla Symphony and Valencia Symphony. He has also collaborated with the orchestras of the Valencia Autonomy, Les Arts, Madrid, Stuttgart Hochschule and Palma de Mallorca.`,
-    para_2: `Following his initial studies in Alicante with Aurelio Bernabeu, at the Conservatorio “Oscar Esplá” with Juan Torres and Juan Iznardo and the Real Conservatorio Superior de Música de Madrid with Francisco Más, he obtained the End of Degree Award (highest recognition in the degree). He furthered his studies in the Musikhochschule in Stuttgart with Professor Sergio Azzolini. In addition, he received masterclasses with Dag Jensen, Herman Jung, Vicente Merenciano, Otto Hartman, Klaus Thunemann and Marco Postinger.`,
-    para_3: `Antonio has been a professor at the Conservatorio Profesional de Música “Manuel Carra” in Málaga. He later obtained the position of Cátedra de Fagot at the Conservatorio Superior in Málaga. He was also a guest professor at the Orquesta Joven de Andalucía and the Jove Orquestra de Catalunya. Since 1993, he has held the principal bassoon position at the Orquesta Filarmónica de Málaga.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/antonio-lozano_dwdgwi.webp`,
-    image_position: `top`,
-  },
-
-  // Tomàs Grau
-  {
-    locale: `en`,
-    name: `Tomàs Grau`,
-    slug_name: `Tomàs Grau EN`,
-    instrument: `conductor`,
-    para_1: `Tomàs Grau is an inspired and highly sensitive conductor, sharing his love for the music with the audience. His precise and clear gestures and the sincerity of his musical readings distinguish him as they seek to transmit each score's light and delicate emotions.`,
-    para_2: `He has conducted many international soloists, including Anne-Sophie Mutter, Maria João Pires, Midori, Patricia Kopatchinskaja, Gautier Capuçon, Mischa Maisky, Sabine Meyer, Steven Isserlis, Paul Lewis, Stephen Kovacevich, Alexander Melnikov, Seong-Jin Cho, Mark Padmore and Alice Sara Ott in all the leading concert halls in Spain. These include the National Auditorium in Madrid, the Auditorio in Zaragoza, the Palau de la Música Catalana and the Auditori in Barcelona, and internationally at the Tonhalle in Zurich.`,
-    para_3: `Nowadays, Tomàs is the Chief Conductor and Artistic Director of the Franz Schubert Filharmonia, and he is often invited to conduct other orchestras, such as the Beethoven Philharmonie, Stuttgarter Kammerorchester, Orquesta Nacional de España, Orquesta Sinfónica del Principado de Asturias, Orquesta Filarmónica de Málaga, Orquesta Sinfónica de la Región de Murcia, Orquesta de Córdoba and Orquesta Sinfónica de Burgos, among others.`,
-    para_4: `He has recorded for labels such as SONY Classical, ARS Produktion (the Label of the Year at the International Classical Music Awards) and Discmedi. Among his immediate commitments, he will be conducting such soloists as Ivo Pogorelich, Alexei Volodin, Javier Perianes and, once again, Patricia Kopatchinskaja.`,
-    para_5: `Tomàs Grau hails from Barcelona, where he graduated from the Superior School of Music of Catalonia with top ratings in Orchestral Conducting. He later completed his studies at the Wiener Meisterkurse.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686256/M%C3%A1laga%20Cl%C3%A1sica/tomas-grau_rj8gcu.webp`,
-    image_position: `center`,
-  },
-
-  // La Franz Schubert Filharmonia
-  {
-    locale: `en`,
-    name: `The Franz Schubert Filharmonia`,
-    slug_name: `The Franz Schubert Filharmonia EN`,
-    instrument: `orchestra`,
-    para_1: `The Franz Schubert Filharmonia has performed in such venues as the Palau de la Música Catalana, Gran Teatre del Liceu, L’Auditori de Barcelona, Auditorio Nacional de Música de Madrid, Auditorio de Zaragoza, Palacio Euskalduna Bilbao and Palau de las Artes de Valencia, and has toured throughout Germany, Switzerland and the Czech Republic.`,
-    para_2: `The orchestra performs its subscription seasons in Barcelona, Tarragona, Lleida and Sant Cugat. Since 2009 it has been the resident orchestra of El Vendrell, the birthplace of the great maestro Pau Casals.`,
-    para_3: `Under the inspired direction of Tomàs Grau, a new generation of the best musicians in the country forms the orchestra. The group has also worked with such conductors as Antoni Ros Marbà, Salvador Mas, Edmon Colomer, Josep Pons, Rinaldo Alessandrini, Gábor Takács-Nagy, Marzio Conti, Jordi Mora, Josep Caballé Domenech, Virginia Martínez and Salvador Brotons, among others.`,
-    para_4: `The Franz Schubert Filharmonia has collaborated with such soloists as Anne-Sophie Mutter, Maria João Pires, Mischa Maisky, Midori, Stephen Kovacevich, Sabine Meyer, Rudolf Buchbinder, Steven Isserlis, Patricia Kopatchinskaja, Paul Lewis, Gautier Capuçon, Roberto Alagna, Mark Padmore, Alexander Melnikov, Seong-Jin Cho, Alice Sara Ott, Ainhoa Arteta, Asier Polo, Leticia Moreno, Pablo Ferrández, Judith Jáuregui and Iván Martín.`,
-    para_5: `The orchestra has recorded several albums, among which we can highlight Die Romantische Seele with the pianist Judith Jauregui. Produced by the German label ARS Produktion, winner of the International Classical Music Awards and nominated for the Opus Klassik Awards, and Alba Eterna, an opera by the composer Albert Guinovart and produced by the Sony Classical label.`,
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/franz_npslf3.webp`,
-    image_position: `center`,
+    para_1: `Tenor Nils Georg Nilsen debuted at the Lincoln Center in New York after receiving his Master of Music from Manhattan School of Music in 2012.`,
+    sentences: [
+      `Since then he has appeared as a soloist with the Chicago Symphony Orchestra, at the Israeli Opera, the Norwegian Opera House and Opera Tampa in Florida, and performed in several international festivals and concerts in Europe and the US. Nils Georg has won the Solveig’s Award in the Edvard Grieg Competition, the Audience Award during the festival LidalNorth on numerous occasions, and the Youth Music Competition in Norway.`,
+      `In addition to being professor of Voice at the Galamian International Accademy in Malaga, Nils Georg is a sought-after tenor, and recent highlights include Mozart Requiem with the Norwegian Radio Orchestra, Rossinis Stabat Mater and Handels Messiah with Drammen Symphony Orchestra and performances at the Ravinia Festival in the US. Since 2021 he is part of the vocal group Nordic Tenors, together with the tenors Jan-Tore Saltnes and Roald Haarr.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Nils_Nilsen_sq_bdcfss.webp`,
   },
 ];
 
