@@ -95,8 +95,10 @@ const Artist = ({ artist }) => {
             </h2>
             <div className="mt-6 space-y-6 text-mossCrescendo">
               <p className="text-lg">{artist.para_1}</p>
-              {artist.sentences.map((sentence) => (
-                <p className="text-base leading-7">{sentence}</p>
+              {artist.sentences.map((sentence, i) => (
+                <p key={i} className="text-base leading-7">
+                  {sentence}
+                </p>
               ))}
             </div>
           </div>
