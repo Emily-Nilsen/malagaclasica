@@ -32,7 +32,20 @@ const itemBottom = {
 
 export default function Info() {
   const { t } = useTranslation();
-  const crescendo = ['c', 'r', 'e', 's', 'c', 'e', 'n', 'd', 'o'];
+  const crescendo = [
+    'R',
+    'e',
+    'v',
+    'o',
+    'l',
+    'u',
+    'c',
+    'i',
+    'o',
+    'n',
+    'e',
+    's',
+  ];
 
   return (
     <Layout
@@ -40,7 +53,7 @@ export default function Info() {
       description={t('common:info_description')}
       keywords={t('common:info_keywords')}
     >
-      <div className="relative bg-white">
+      <div className="relative px-10 sm:px-12 bg-beigeRevolution">
         <div className="absolute inset-0">
           <motion.div
             whileInView={{ opacity: 1 }}
@@ -52,23 +65,25 @@ export default function Info() {
             }}
             className="object-cover w-full h-full"
           >
-            <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
-              alt="Málaga Clásica"
-              unoptimized={true}
-              layout="fill"
-              objectFit="cover"
-              objectPosition="top"
-            />
+            <div className="absolute right-0 w-full h-full">
+              <Image
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
+                alt="Málaga Clásica"
+                unoptimized={true}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="top"
+              />
+            </div>
           </motion.div>
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
-          <div>
+          <div className="p-10 -m-10 bg-white w-fit">
             <motion.h1
               variants={container}
               initial="hidden"
               animate="show"
-              className="block text-5xl font-extrabold tracking-normal text-left text-greyCrescendo sm:text-6xl lg:text-7xl"
+              className="block text-5xl font-extrabold tracking-tight text-left text-orangeRevolution sm:text-6xl lg:text-7xl"
             >
               {crescendo.map((letter, i) => (
                 <motion.span key={i} variants={item}>
@@ -81,22 +96,23 @@ export default function Info() {
               variants={itemBottom}
               initial="hidden"
               animate="show"
-              className="max-w-3xl mt-3 text-xl sm:text-2xl text-greyCrescendo"
+              className="max-w-3xl mt-3 text-xl sm:text-2xl text-blueRevolution"
             >
-              6__12/6/2022
+              29/05 – 04/06 <br />
+              <span className="text-orangeRevolution">2023</span>
             </motion.h2>
           </div>
         </div>
       </div>
-      <div className="overflow-hidden bg-greyCrescendo">
+      <div className="overflow-hidden bg-white">
         <div className="relative px-4 pt-16 pb-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="absolute top-0 bottom-0 hidden w-screen opacity-25 lg:block bg-blueCrescendo left-3/4" />
+          <div className="absolute top-0 bottom-0 hidden w-screen opacity-25 lg:block bg-beigeRevolution left-3/4" />
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
-              <h2 className="text-base font-normal tracking-wide text-greenCrescendo">
+              <h2 className="text-base font-normal tracking-normal text-orangeRevolution">
                 Málaga Clásica
               </h2>
-              <h1 className="mt-2 text-4xl font-extrabold leading-none md:text-6xl text-coalCrescendo sm:text-5xl">
+              <h1 className="mt-2 text-4xl font-extrabold leading-none tracking-tight md:text-6xl text-blueRevolution sm:text-5xl">
                 {t('info:title')}
               </h1>
             </div>
@@ -118,14 +134,15 @@ export default function Info() {
                       className="object-cover object-center overflow-hidden rounded-lg shadow-none"
                     >
                       <Image
-                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686228/M%C3%A1laga%20Cl%C3%A1sica/crescendo-img-19-blue_vlbgc3.webp"
+                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/crescendo_awrvdz.webp"
                         alt="Málaga Clásica"
                         width={2228}
                         height={1300}
                         layout="responsive"
                         objectFit="cover"
-                        objectPosition="bottom"
+                        objectPosition="center"
                         unoptimized={true}
+                        className="bg-beigeRevolution"
                       />
                     </motion.div>
                   </div>
@@ -134,17 +151,15 @@ export default function Info() {
             </div>
             <div className="mt-8 lg:mt-0">
               <div className="mx-auto text-base max-w-prose lg:max-w-none">
-                <p className="text-lg opacity-75 text-coalCrescendo">
-                  {t('info:para_1')}
-                </p>
+                <p className="text-lg text-gray-600">{t('info:para_1')}</p>
               </div>
               <div className="mx-auto mt-5 prose prose-cyan lg:max-w-none lg:row-start-1 lg:col-start-1">
-                <div className="opacity-75 text-coalCrescendo">
+                <div className="text-gray-600">
                   <p>{t('info:para_2')}</p>
                   <p>{t('info:para_3')}</p>
                 </div>
-                {/* <h3 className="text-coalCrescendo">{t('info:subtitle')}</h3> */}
-                <div className="opacity-75 text-coalCrescendo">
+                {/* <h3 className="text-gray-500">{t('info:subtitle')}</h3> */}
+                <div className="text-gray-600">
                   <p>{t('info:para_4')}</p>
                 </div>
               </div>

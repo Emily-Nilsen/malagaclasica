@@ -11,6 +11,9 @@ module.exports = {
         greenCrescendo: '#03A688',
         coalCrescendo: '#3E5951',
         mossCrescendo: '#658C81',
+        blueRevolution: '#2c409a',
+        orangeRevolution: '#f37649',
+        beigeRevolution: '#c2b3a6',
       },
       backgroundImage: {
         notfound: `url('/static/404.png')`,

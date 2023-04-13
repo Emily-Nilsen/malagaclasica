@@ -5,14 +5,14 @@ export default function PricingRegular() {
   const { t } = useTranslation();
   return (
     <div className="bg-t">
-      <h3 className="mt-10 text-lg font-bold tracking-normal text-coalCrescendo">
-        <span className="font-medium tracking-normal text-mossCrescendo">
+      <h3 className="mt-10 text-lg font-bold tracking-normal text-orangeRevolution">
+        <span className="font-medium tracking-normal text-blueRevolution">
           {t('common:single_ticket')}{' '}
         </span>
         {t('common:ticket_cost_en')}
         15
         {t('common:ticket_cost_es')}{' '}
-        <span className="font-normal tracking-normal lowercase text-mossCrescendo">
+        <span className="font-normal tracking-normal text-gray-500 lowercase">
           {t('common:no_discounts')}
         </span>
       </h3>

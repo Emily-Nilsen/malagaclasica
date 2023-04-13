@@ -28,16 +28,19 @@ export default function AnnaJesus() {
               type: 'fade',
               ease: 'easeIn',
             }}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full bg-beigeRevolution"
           >
-            <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
-              alt="Málaga Clásica"
-              unoptimized={true}
-              layout="fill"
-              objectFit="cover"
-              objectPosition="bottom"
-            />
+            <div className="absolute right-0 w-3/4 h-full">
+              <Image
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1681299766/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
+                alt="Málaga Clásica"
+                unoptimized={true}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="bottom"
+                className=""
+              />
+            </div>
           </motion.div>
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8"></div>
@@ -46,8 +49,8 @@ export default function AnnaJesus() {
         <div className="max-w-2xl px-4 pt-16 pb-24 mx-auto sm:pb-32 sm:pt-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
             <div>
-              <div className="pb-10 border-b border-gray-200">
-                <div className="opacity-75 text-coalCrescendo">
+              <div className="pb-10 border-b border-orangeRevolution/20">
+                <div className="text-gray-600 ">
                   <p>{t('info:para_5')}</p>
                   <p className="mt-5">{t('info:para_6')}</p>
                   <p className="mt-5">{t('info:para_7')}</p>
@@ -57,10 +60,10 @@ export default function AnnaJesus() {
               <dl className="mt-10 space-y-10">
                 {directors.map((feature) => (
                   <div key={feature.name}>
-                    <dt className="text-base font-medium text-mossCrescendo">
+                    <dt className="text-base font-medium text-blueRevolution">
                       {feature.name}
                     </dt>
-                    <dd className="mt-3 text-base font-medium text-coalCrescendo">
+                    <dd className="mt-3 text-base font-normal text-gray-600">
                       {feature.description}
                     </dd>
                   </div>
@@ -86,7 +89,7 @@ export default function AnnaJesus() {
                 >
                   <div className="object-cover object-center w-full h-full">
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686253/M%C3%A1laga%20Cl%C3%A1sica/jesus-blue_mmvvbe.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Jes%C3%BAs%20Reina/general/image-03-small_ccpydm.jpg"
                       alt="Jesús Reina"
                       unoptimized={true}
                       layout="fill"
@@ -111,7 +114,7 @@ export default function AnnaJesus() {
                 >
                   <div className="object-cover object-center w-full h-full">
                     <Image
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686227/M%C3%A1laga%20Cl%C3%A1sica/anna-blue_zhdfjb.webp"
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/anna-nilsen_kolwch.webp"
                       alt="Anna Nilsen"
                       unoptimized={true}
                       layout="fill"

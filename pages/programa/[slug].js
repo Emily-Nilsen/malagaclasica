@@ -40,7 +40,7 @@ const Concert = ({ event }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-greyCrescendo">
+    <div className="bg-beigeRevolution/10">
       <section aria-labelledby="details-heading" className="relative">
         {/* Need to use AnimatePresence on a slug */}
         <AnimatePresence exitBeforeEnter>
@@ -70,33 +70,32 @@ const Concert = ({ event }) => {
 
         <div className="max-w-2xl px-4 pt-16 pb-24 mx-auto sm:pb-32 sm:px-6 2xl:max-w-7xl 2xl:pt-32 2xl:px-8 2xl:grid 2xl:grid-cols-2 2xl:gap-x-8">
           <div className="2xl:col-start-2">
-            <h2 id="details-heading" className="font-medium text-mossCrescendo">
+            <h2
+              id="details-heading"
+              className="font-medium text-orangeRevolution"
+            >
               {event.date}
             </h2>
-            <h1 className="mt-4 text-4xl font-extrabold tracking-normal text-coalCrescendo">
+            <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-blueRevolution">
               {event.title}
             </h1>
-            <p className="mt-4 text-coalCrescendo opacity-80">
-              {event.location}
-            </p>
+            <p className="mt-4 text-gray-500">{event.location}</p>
             {/* Act 1 */}
             <dl className="grid grid-cols-1 mt-10 text-base gap-y-10 gap-x-8 sm:grid-cols-2">
               {event.detailsOne.map((detail, i) => (
                 <div key={i}>
                   {detail.composer.map((composer, i) => (
-                    <dt key={i} className="font-semibold text-coalCrescendo">
+                    <dt key={i} className="font-semibold text-gray-800">
                       {composer}
                     </dt>
                   ))}
 
-                  <dd className="mt-2 text-coalCrescendo opacity-90">
-                    {detail.info}
-                  </dd>
+                  <dd className="mt-2 text-gray-500">{detail.info}</dd>
                   {detail.artists
                     ? detail.artists.map((artist, i) => (
                         <dd
                           key={i}
-                          className="mt-4 font-semibold text-mossCrescendo"
+                          className="mt-4 font-semibold text-gray-600"
                         >
                           {artist.split(' ').slice(0, -1).join(' ')}{' '}
                           <span className="font-normal">
@@ -114,20 +113,18 @@ const Concert = ({ event }) => {
               {event.detailsTwo.map((detail, i) => (
                 <div key={i}>
                   {detail.composer.map((composer, i) => (
-                    <dt key={i} className="font-semibold text-coalCrescendo">
+                    <dt key={i} className="font-semibold text-gray-800">
                       {composer}
                     </dt>
                   ))}
 
-                  <dd className="mt-2 text-coalCrescendo opacity-90">
-                    {detail.info}
-                  </dd>
+                  <dd className="mt-2 text-gray-500">{detail.info}</dd>
                   {detail.songs ? <div className="py-2" /> : null}
                   {detail.songs &&
                     detail.songs.map((song, i) => (
                       <figure
                         key={i}
-                        className="border-l border-mossCrescendo/50 pl-9"
+                        className="border-l border-orangeRevolution/50 pl-9"
                       >
                         <blockquote className="italic font-medium text-coalCrescendo">
                           <p className="py-2">{song}</p>
@@ -135,10 +132,7 @@ const Concert = ({ event }) => {
                       </figure>
                     ))}
                   {detail.artists.map((artist, i) => (
-                    <dd
-                      key={i}
-                      className="mt-4 font-semibold text-mossCrescendo"
-                    >
+                    <dd key={i} className="mt-4 font-semibold text-gray-700">
                       {artist.split(' ').slice(0, -1).join(' ')}{' '}
                       <span className="font-normal">
                         {artist.split(' ').pop()}
@@ -150,7 +144,7 @@ const Concert = ({ event }) => {
             </dl>
             <div className="py-10 mt-10 border-t border-gray-200">
               {event.sentence.map((sentence, i) => (
-                <p key={i} className="mt-4 text-coalCrescendo opacity-80">
+                <p key={i} className="mt-4 text-gray-500">
                   {sentence}
                 </p>
               ))}
@@ -160,7 +154,7 @@ const Concert = ({ event }) => {
               ) : (
                 <PricingRegular />
               )}
-              <Discount />
+              {/* <Discount /> */}
               <div className="flex mt-10">
                 <a
                   href="https://teatrocervantes.com/es/genero/musica/x-malaga-clasica-crescendo/"
@@ -169,7 +163,7 @@ const Concert = ({ event }) => {
                 >
                   <button
                     type="button"
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none hover:text-coalCrescendo bg-mossCrescendo hover:bg-blueCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none bg-orangeRevolution hover:bg-blueRevolution focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution"
                   >
                     <TicketIcon
                       className="w-5 h-5 mr-2 -ml-1"
@@ -179,7 +173,7 @@ const Concert = ({ event }) => {
                   </button>
                 </a>
                 <Link href="/programa" passHref>
-                  <button className="inline-flex justify-center px-4 py-2 ml-6 text-sm font-medium transition duration-200 ease-in-out bg-white border border-transparent rounded-md shadow-none text-coalCrescendo hover:bg-blueCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo">
+                  <button className="inline-flex justify-center px-4 py-2 ml-6 text-sm font-medium text-gray-600 transition duration-200 ease-in-out bg-white border border-transparent rounded-md shadow-none hover:text-blueRevolution hover:bg-beigeRevolution/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution">
                     {t('common:program')}
                   </button>
                 </Link>

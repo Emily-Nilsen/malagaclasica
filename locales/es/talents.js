@@ -1,9 +1,9 @@
 const talents = {
   // Content Section
-  subtitle_1: `X Festival Málaga Clásica`,
+  subtitle_1: `XI Festival Málaga Clásica`,
   title_1: `Conciertos de talentos`,
   para_1: `Como festival de música de cámara y siguiendo una de las filosofías principales del género, entendemos que Málaga Clásica ha de ser un acontecimiento estrechamente unido al público y a la ciudad en la que se celebra, con una relación recíproca en la que todas las partes se sientan implicadas en el disfrute de la música.`,
-  para_3: `Es por esto que en esta X edición queremos que los jóvenes talentos puedan ser partícipes del festival brindándoles la oportunidad de tocar y de compartir experiencias con músicos invitados de prestigio internacional, organizado en colaboracion con la Academia Internacional Galamian.`,
+  para_3: `Es por esto que en esta XI edición queremos que los jóvenes talentos puedan ser partícipes del festival brindándoles la oportunidad de tocar y de compartir experiencias con músicos invitados de prestigio internacional, organizado en colaboracion con la Academia Internacional Galamian.`,
   para_4: `Los grupos de jóvenes talentos, elegidos mediante un proceso de selección por nuestros directores artísticos, serán los encargados de actuar en los conciertos de este ciclo y los afortunados de recibir las clases magistrales programadas en el transcurso del festival.`,
   title_2: `Clases magistrales`,
   para_5: `Entrada libre para las clases magistrales y conciertos hasta completar el aforo.`,

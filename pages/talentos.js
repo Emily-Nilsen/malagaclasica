@@ -75,7 +75,7 @@ const Talentos = () => {
                   variants={container}
                   initial="hidden"
                   animate="show"
-                  className="block text-6xl font-extrabold tracking-normal text-left text-greyCrescendo sm:text-7xl lg:text-8xl"
+                  className="block text-6xl font-extrabold tracking-tight text-left text-white sm:text-7xl lg:text-8xl"
                 >
                   {talentos.map((letter, i) => (
                     <motion.span key={i} variants={item}>
@@ -88,9 +88,9 @@ const Talentos = () => {
                   variants={itemBottom}
                   initial="hidden"
                   animate="show"
-                  className="max-w-lg mx-auto mt-1 text-xl text-center sm:text-2xl lg:text-3xl text-greyCrescendo sm:max-w-3xl"
+                  className="max-w-lg mx-auto mt-1 text-xl tracking-wide text-center text-white sm:text-2xl lg:text-3xl sm:max-w-3xl"
                 >
-                  6__8/6/2022
+                  29-30/05/2023
                 </motion.h2>
               </div>
             </div>
@@ -100,7 +100,7 @@ const Talentos = () => {
 
       <ContentTalentos />
       <InfoTalentos />
-      <ProgramTalentos />
+      {/* <ProgramTalentos /> */}
       <MapTalentos />
     </Layout>
   );

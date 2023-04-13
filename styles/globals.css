@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Helvetica Neue';
+  /* src: url('../assets/fonts/HelveticaNeueLTStd-Bd.otf'); */
+  src: url('../assets/fonts/HelveticaNeueLTStd-BdCn.otf');
+  /* src: url('../assets/fonts/HelveticaNeueLTStd-Blk.otf');
+  src: url('../assets/fonts/HelveticaNeueLTStd-Cn.otf');
+  src: url('../assets/fonts/HelveticaNeueLTStd-CnO.otf');
+  src: url('../assets/fonts/HelveticaNeueLTStd-Roman.otf'); */
+}
+
 html,
 body {
   padding: 0;
@@ -21,11 +31,11 @@ a {
 }
 
 h1 {
-  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 h2 {
-  font-family: acumin-pro-extra-condensed, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 h3 {

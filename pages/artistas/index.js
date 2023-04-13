@@ -26,38 +26,42 @@ export default function Artistas(props) {
           type: 'fade',
           ease: 'easeIn',
         }}
-        className="relative bg-white"
+        className="relative px-10 bg-white sm:px-12"
       >
-        <div className="absolute inset-0">
-          <div className="object-cover w-full h-full">
-            <Image
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
-              alt="Málaga Clásica"
-              unoptimized={true}
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-            />
+        <div className="absolute inset-0 bg-beigeRevolution">
+          <div className="object-cover h-full">
+            <div className="absolute right-0 w-2/3 h-full">
+              <Image
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1681299766/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
+                alt="Málaga Clásica"
+                unoptimized={true}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="top"
+              />
+            </div>
           </div>
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-5xl font-extrabold text-greyCrescendo sm:text-6xl lg:text-7xl">
-            {t('artists:hero_title')}
-          </h1>
-          <p className="max-w-sm mt-6 text-xl text-greyCrescendo">
-            {t('artists:hero_subtitle')}
-          </p>
+          <div className="p-10 -m-10 bg-white w-fit">
+            <h1 className="text-5xl font-extrabold tracking-tight text-orangeRevolution sm:text-6xl lg:text-7xl">
+              {t('artists:hero_title')}
+            </h1>
+            <p className="max-w-sm mt-6 text-xl text-gray-600">
+              {t('artists:hero_subtitle')}
+            </p>
+          </div>
         </div>
       </motion.div>
 
-      <div className="bg-greyCrescendo">
+      <div className="bg-white">
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-6 sm:space-y-12">
             <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-              <h1 className="max-w-sm text-4xl font-extrabold leading-none md:text-6xl text-coalCrescendo sm:text-5xl sm:max-w-lg">
+              <h1 className="max-w-sm text-4xl font-extrabold leading-none tracking-tight md:text-6xl text-blueRevolution sm:text-5xl sm:max-w-lg">
                 {t('artists:title')}
               </h1>
-              <p className="max-w-sm text-xl text-mossCrescendo sm:max-w-md">
+              <p className="max-w-sm text-xl text-gray-600 sm:max-w-md">
                 {t('artists:subtitle')}
               </p>
             </div>
@@ -85,7 +89,7 @@ export default function Artistas(props) {
                           delay: i * 0.15,
                           ease: 'easeInOut',
                         }}
-                        className="p-6 space-y-4 rounded-lg cursor-pointer group hover:bg-gray-50"
+                        className="p-6 space-y-4 transition duration-300 ease-in-out delay-75 rounded-lg cursor-pointer group hover:bg-beigeRevolution/10"
                       >
                         <div className="aspect-w-3 aspect-h-2">
                           <div className="object-cover overflow-hidden rounded-lg shadow-none">
@@ -102,10 +106,10 @@ export default function Artistas(props) {
 
                         <div className="space-y-2">
                           <div className="space-y-1 text-lg font-medium leading-6">
-                            <h3 className="text-coalCrescendo">
+                            <h3 className="text-orangeRevolution">
                               {artist.name}
                             </h3>
-                            <p className="font-normal capitalize text-mossCrescendo">
+                            <p className="font-normal text-gray-600 capitalize">
                               {artist.instrument}
                             </p>
                           </div>

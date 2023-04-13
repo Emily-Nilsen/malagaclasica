@@ -13,7 +13,7 @@ export default function Contactar() {
       description={t('common:contactar_description')}
       keywords={t('common:contactar_keywords')}
     >
-      <div className="relative bg-greyCrescendo">
+      <div className="relative bg-beigeRevolution/10">
         <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
@@ -25,9 +25,9 @@ export default function Contactar() {
           className="lg:absolute lg:inset-0"
         >
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <div className="relative object-cover w-full h-64 lg:absolute lg:h-full">
+            <div className="relative object-cover w-full h-64 lg:absolute lg:h-full bg-beigeRevolution">
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
                 alt="Crescendo waves"
                 unoptimized={true}
                 layout="fill"
@@ -40,21 +40,35 @@ export default function Contactar() {
         <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
           <div className="lg:pr-8">
             <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-              <h2 className="text-5xl font-extrabold tracking-normal sm:text-6xl text-coalCrescendo">
+              <h2 className="text-5xl font-extrabold tracking-tight sm:text-6xl text-orangeRevolution">
                 {t('contact:title')}
               </h2>
-              <p className="mt-4 text-lg text-mossCrescendo sm:mt-3">
+              <p className="mt-4 text-lg text-gray-600 sm:mt-3">
                 {t('contact:subtitle')}
               </p>
-              <dl className="mt-8 text-base transition duration-200 ease-in-out cursor-pointer text-greenCrescendo hover:text-coalCrescendo">
+              <dl className="mt-8 text-base transition duration-200 ease-in-out cursor-pointer text-blueRevolution">
+                {/* phone */}
+                <div className="mt-3">
+                  <dt className="sr-only">Telefono</dt>
+                  <dd className="flex">
+                    <PhoneIcon
+                      className="flex-shrink-0 w-6 h-6 text-orangeRevolution/60"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3">699 06 74 52</span>
+                  </dd>
+                </div>
+                {/* email */}
                 <div className="mt-3">
                   <dt className="sr-only">Email</dt>
                   <dd className="flex">
                     <MailIcon
-                      className="flex-shrink-0 w-6 h-6 text-blueCrescendo"
+                      className="flex-shrink-0 w-6 h-6 text-orangeRevolution/60"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">malagaclasica@gmail.com</span>
+                    <span className="ml-3">
+                      anamariagomezaguilar.secretaria@gmail.com
+                    </span>
                   </dd>
                 </div>
               </dl>
@@ -77,7 +91,7 @@ export default function Contactar() {
                 <div>
                   <label
                     htmlFor="first-name"
-                    className="block text-sm font-medium text-coalCrescendo"
+                    className="block text-sm font-medium text-gray-700"
                   >
                     {t('contact:first_name')}
                   </label>
@@ -88,14 +102,14 @@ export default function Contactar() {
                       id="first-name"
                       required
                       autoComplete="given-name"
-                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
+                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
                     />
                   </div>
                 </div>
                 <div>
                   <label
                     htmlFor="last-name"
-                    className="block text-sm font-medium text-coalCrescendo"
+                    className="block text-sm font-medium text-gray-700"
                   >
                     {t('contact:surname')}
                   </label>
@@ -106,14 +120,14 @@ export default function Contactar() {
                       id="last-name"
                       required
                       autoComplete="family-name"
-                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
+                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
                     />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-coalCrescendo"
+                    className="block text-sm font-medium text-gray-700"
                   >
                     {t('contact:email')}
                   </label>
@@ -124,7 +138,7 @@ export default function Contactar() {
                       required
                       type="email"
                       autoComplete="email"
-                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
+                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
                     />
                   </div>
                 </div>
@@ -133,7 +147,7 @@ export default function Contactar() {
                   <div className="flex justify-between">
                     <label
                       htmlFor="phone"
-                      className="block text-sm font-medium text-coalCrescendo"
+                      className="block text-sm font-medium text-gray-700"
                     >
                       {t('contact:phone')}
                     </label>
@@ -151,7 +165,7 @@ export default function Contactar() {
                       id="phone"
                       autoComplete="tel"
                       aria-describedby="phone-description"
-                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
+                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
                     />
                   </div>
                 </div>
@@ -159,7 +173,7 @@ export default function Contactar() {
                   <div className="flex justify-between">
                     <label
                       htmlFor="how-can-we-help"
-                      className="block text-sm font-medium text-coalCrescendo"
+                      className="block text-sm font-medium text-gray-700"
                     >
                       {t('contact:help')}
                     </label>
@@ -178,7 +192,7 @@ export default function Contactar() {
                       maxLength="500"
                       aria-describedby="how-can-we-help-description"
                       rows={4}
-                      className="block w-full border rounded-md shadow-none sm:text-sm focus:ring-blueCrescendo focus:border-blueCrescendo border-greyCrescendo"
+                      className="block w-full border rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
                       defaultValue={''}
                     />
                   </div>
@@ -187,7 +201,7 @@ export default function Contactar() {
                 <div className="text-right sm:col-span-2">
                   <button
                     type="submit"
-                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none bg-mossCrescendo hover:bg-blueCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none bg-orangeRevolution hover:bg-blueRevolution focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution"
                   >
                     {t('contact:submit')}
                   </button>

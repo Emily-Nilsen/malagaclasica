@@ -4,18 +4,18 @@ function MapTalentos() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="bg-greyCrescendo">
-        <div className="bg-greyCrescendo">
+      <div className="bg-white">
+        <div className="bg-white">
           <div className="px-4 pt-16 mx-auto max-w-7xl sm:pt-24 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="mt-1 text-4xl font-extrabold text-mossCrescendo sm:text-5xl sm:tracking-normal lg:text-6xl">
+              <h1 className="mt-1 text-4xl font-extrabold tracking-tight text-orangeRevolution sm:text-5xl lg:text-6xl">
                 {t('talents:map_title')}
               </h1>
-              <p className="max-w-xl mx-auto mt-5 text-xl text-coalCrescendo">
+              <p className="max-w-xl mx-auto mt-5 text-xl text-gray-600">
                 {t('talents:map_subtitle')}
               </p>
               <div>
-                <dd className="mt-5 text-mossCrescendo">
+                <dd className="mt-5 text-blueRevolution">
                   <p>{t('talents:map_address_top')}</p>
                   <p>{t('talents:map_address_bottom')}</p>
                 </dd>

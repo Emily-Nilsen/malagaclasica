@@ -46,21 +46,21 @@ export default function Theatres() {
           <div className="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
             <div>
               <div className="pb-10 border-b border-gray-200">
-                <h2 className="font-medium text-greenCrescendo">
+                <h2 className="font-medium text-orangeRevolution">
                   {t('program:theatre_subtitle')}
                 </h2>
-                <p className="mt-2 text-3xl font-extrabold tracking-tight text-coalCrescendo sm:text-4xl">
+                <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-blueRevolution sm:text-4xl">
                   {t('program:theatre_cervantes')}
-                </p>
+                </h1>
               </div>
 
               <dl className="mt-10 space-y-10">
                 {detailsCervantes.map((detail) => (
                   <div key={detail.name}>
-                    <dt className="text-base font-medium text-coalCrescendo">
+                    <dt className="text-base font-medium text-gray-700">
                       {detail.name}
                     </dt>
-                    <dd className="max-w-sm mt-3 text-base text-mossCrescendo">
+                    <dd className="max-w-sm mt-3 text-base text-gray-500">
                       {detail.description}
                     </dd>
                   </div>
@@ -74,7 +74,7 @@ export default function Theatres() {
                 >
                   <button
                     type="button"
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none hover:text-mossCrescendo bg-mossCrescendo hover:bg-greyCrescendo focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none bg-orangeRevolution hover:bg-blueRevolution focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution"
                   >
                     <TicketIcon
                       className="w-5 h-5 mr-2 -ml-1"
@@ -100,7 +100,7 @@ export default function Theatres() {
               >
                 <div className="object-cover object-center w-full h-full">
                   <Image
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/cervantes_mv87mp.webp"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/NG-revoluciones_ecfcmj.webp"
                     alt="Teatro Cervantes"
                     unoptimized={true}
                     layout="fill"
@@ -154,7 +154,7 @@ export default function Theatres() {
       </div>
 
       {/* Teatro Echegaray */}
-      <div className="bg-greyCrescendo">
+      <div className="bg-beigeRevolution/10">
         <div className="max-w-2xl px-4 py-24 mx-auto sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
             <div>
@@ -171,7 +171,7 @@ export default function Theatres() {
               >
                 <div className="object-cover object-center w-full h-full">
                   <Image
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686312/M%C3%A1laga%20Cl%C3%A1sica/echegaray_bfaqwq.webp"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Foto_04_revoluciones_jvrwqs.webp"
                     alt="Teatro Echegaray"
                     unoptimized={true}
                     layout="fill"
@@ -222,21 +222,21 @@ export default function Theatres() {
 
             <div className="lg:pl-20">
               <div className="pb-10 border-b border-gray-200">
-                <h2 className="font-medium text-greenCrescendo">
+                <h2 className="font-medium text-orangeRevolution">
                   {t('program:theatre_subtitle')}
                 </h2>
-                <p className="mt-2 text-3xl font-extrabold tracking-tight text-coalCrescendo sm:text-4xl">
+                <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-blueRevolution sm:text-4xl">
                   {t('program:theatre_echegaray')}
-                </p>
+                </h1>
               </div>
 
               <dl className="mt-10 space-y-10">
                 {detailsEchegaray.map((detail) => (
                   <div key={detail.name}>
-                    <dt className="text-base font-medium text-coalCrescendo">
+                    <dt className="text-base font-medium text-gray-700">
                       {detail.name}
                     </dt>
-                    <dd className="max-w-sm mt-3 text-base text-mossCrescendo">
+                    <dd className="max-w-sm mt-3 text-base text-gray-500">
                       {detail.description}
                     </dd>
                   </div>
@@ -250,7 +250,7 @@ export default function Theatres() {
                 >
                   <button
                     type="button"
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none hover:text-mossCrescendo bg-mossCrescendo hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueCrescendo"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none bg-orangeRevolution hover:bg-blueRevolution focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution"
                   >
                     <TicketIcon
                       className="w-5 h-5 mr-2 -ml-1"

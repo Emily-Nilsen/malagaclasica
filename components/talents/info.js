@@ -18,14 +18,14 @@ export default function InfoTalentos() {
   ];
 
   return (
-    <div className="relative py-16 bg-gray-50 sm:py-24">
+    <div className="relative py-16 bg-beigeRevolution/10 sm:py-24">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div className="relative sm:py-16 lg:py-0">
           <div
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 w-full opacity-25 right-1/2 bg-blueCrescendo rounded-r-3xl lg:right-72" />
+            <div className="absolute inset-y-0 w-full opacity-25 right-1/2 bg-beigeRevolution/50 rounded-r-3xl lg:right-72" />
           </div>
           <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
@@ -50,7 +50,7 @@ export default function InfoTalentos() {
                 />
               </motion.div>
               {/* <div className="absolute inset-0 bg-blueCrescendo mix-blend-multiply" /> */}
-              <div className="absolute inset-0 bg-gradient-to-t from-coalCrescendo via-coalCrescendo opacity-70" />
+              <div className="absolute inset-0 bg-gradient-to-t from-blueRevolution via-orangeRevolution opacity-70" />
               <div className="relative px-8">
                 <blockquote className="mt-8">
                   <footer className="mt-4">
@@ -67,10 +67,10 @@ export default function InfoTalentos() {
         <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h2 className="w-full text-4xl font-semibold text-coalCrescendo md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 xl:text-6xl sm:text-5xl">
+            <h2 className="w-full text-4xl font-semibold tracking-tight text-blueRevolution md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 xl:text-6xl sm:text-5xl">
               {t('talents:title_3')}
             </h2>
-            <div className="mt-6 space-y-6 text-mossCrescendo">
+            <div className="mt-6 space-y-6 text-gray-500">
               <p className="text-lg">{t('talents:para_1')}</p>
               <p className="text-base leading-7">
                 {t('talents:para_7_start')}
@@ -79,7 +79,7 @@ export default function InfoTalentos() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span className="font-semibold transition duration-300 ease-in-out hover:text-coalCrescendo">
+                  <span className="font-semibold transition duration-300 ease-in-out hover:text-orangeRevolution">
                     {t('talents:para_7_link')}
                   </span>
                 </a>
@@ -99,10 +99,10 @@ export default function InfoTalentos() {
                   key={stat.label}
                   className="pt-6 border-t-2 border-gray-100"
                 >
-                  <dt className="text-base font-medium text-coalCrescendo">
+                  <dt className="text-base font-medium text-orangeRevolution">
                     {stat.label}
                   </dt>
-                  <dd className="text-3xl font-semibold tracking-normal text-mossCrescendo">
+                  <dd className="text-3xl font-semibold tracking-normal text-blueRevolution">
                     <h2>{stat.value}</h2>
                   </dd>
                 </div>
@@ -113,7 +113,7 @@ export default function InfoTalentos() {
                 href="https://www.academiagalamian.com/laacademia"
                 target="_blank"
                 rel="noreferrer"
-                className="text-base font-medium transition duration-200 ease-in-out text-greenCrescendo hover:text-coalCrescendo"
+                className="text-base font-medium text-gray-500 transition duration-200 ease-in-out hover:text-orangeRevolution"
               >
                 {' '}
                 {t('talents:free_entry')} <span aria-hidden="true">&rarr;</span>{' '}

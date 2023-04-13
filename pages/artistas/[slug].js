@@ -36,14 +36,14 @@ const Artist = ({ artist }) => {
   const router = useRouter();
   const { t } = useTranslation();
   return (
-    <div className="relative py-16 bg-greyCrescendo sm:py-24">
+    <div className="relative py-16 bg-white sm:py-24">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div className="relative sm:py-16 lg:py-0">
           <div
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 w-full opacity-25 right-1/2 bg-blueCrescendo rounded-r-3xl lg:right-72" />
+            <div className="absolute inset-y-0 w-full opacity-10 right-1/2 bg-beigeRevolution rounded-r-3xl lg:right-72" />
           </div>
           <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Artist*/}
@@ -71,7 +71,7 @@ const Artist = ({ artist }) => {
                   />
                 </div>
               </motion.div>
-              <figcaption className="flex mt-3 text-base text-gray-500">
+              <figcaption className="flex items-center mt-3 text-base text-gray-600">
                 <CameraIcon
                   className="flex-none w-5 h-5 text-gray-400"
                   aria-hidden="true"
@@ -87,13 +87,13 @@ const Artist = ({ artist }) => {
         <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h1 className="text-4xl font-extrabold tracking-normal text-coalCrescendo sm:text-5xl">
+            <h1 className="text-4xl font-extrabold tracking-tight text-blueRevolution sm:text-5xl">
               {artist.name}
             </h1>
-            <h2 className="mt-2 text-lg capitalize text-coalCrescendo">
+            <h2 className="mt-2 text-lg capitalize text-orangeRevolution">
               {artist.instrument}
             </h2>
-            <div className="mt-6 space-y-6 text-mossCrescendo">
+            <div className="mt-6 space-y-6 text-gray-500">
               <p className="text-lg">{artist.para_1}</p>
               {artist.sentences.map((sentence, i) => (
                 <p key={i} className="text-base leading-7">
@@ -106,7 +106,7 @@ const Artist = ({ artist }) => {
           <div className="mt-10">
             <div className="mt-10">
               <Link href="/artistas" passHref>
-                <a className="text-base font-medium transition duration-200 ease-in-out text-coalCrescendo hover:text-mossCrescendo">
+                <a className="text-base font-medium transition duration-200 ease-in-out text-orangeRevolution hover:text-blueRevolution">
                   {' '}
                   {t('common:back_artists')}{' '}
                   <span aria-hidden="true">&rarr;</span>{' '}
