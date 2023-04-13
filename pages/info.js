@@ -134,7 +134,7 @@ export default function Info() {
                       className="object-cover object-center overflow-hidden rounded-lg shadow-none"
                     >
                       <Image
-                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/crescendo_awrvdz.webp"
+                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Foto_02_revoluciones_b8del4.webp"
                         alt="Málaga Clásica"
                         width={2228}
                         height={1300}
