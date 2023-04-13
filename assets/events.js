@@ -248,7 +248,7 @@ const events = [
     date: `04 June, 2023`,
     price: `regular`,
     title: `THE GREATNESS OF BEETHOVEN`,
-    location: `Cervantes Theatre, 8 p.m.`,
+    location: `Cervantes Theatre, 7 p.m.`,
     sentence: [
       `Beethoven’s extensive body of work enriched and influenced the symphonic, chamber and instrumental repertoire. The works presented in this program did just that. They also cover two interesting moments in Beethoven’s compositional development. The trio op. 70 takes place in the midst of his middle period, while the quintet op. 29 can be considered the end of his early period.`,
       `Beethoven’s musical life was a revolution in its whole. The world has retained a few of Beethoven staples to showcase the cliche of a creative genius, who with a reckless stroke of the pen, broke all known musical form.`,
@@ -533,7 +533,7 @@ const events = [
     date: `04 de junio, 2023`,
     price: `regular`,
     title: `LA GRANDEZA DE BEETHOVEN`,
-    location: `Teatro Cervantes, 20:00 h.`,
+    location: `Teatro Cervantes, 19:00 h.`,
     sentence: [
       `El extenso catálogo de la obra de Beethoven ha enriquecido e influido el repertorio sinfónico, camerístico e instrumental. Las obras presentadas en este programa además, vienen de dos momentos interesantes en el desarrollo compositivo de Beethoven. El trio op. 70 está ubicado en el periodo medio mientras que el quinteto op. 29 es la última obra de su primer periodo. `,
       `La vida musical de Beethoven fue una revolución vista desde su plenitud. El mundo ha mantenido vigente algunos éxitos de Beethoven a través de los cuales se muestra la imagen cliché de un genio creativo, quien de un plumazo rompió toda forma musical existente.`,

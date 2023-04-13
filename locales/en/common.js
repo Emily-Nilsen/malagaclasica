@@ -15,7 +15,7 @@ const common = {
   ticket_cost_en: `€`,
   no_discounts: `(usual discounts do not apply)`,
   discount: `Discount`,
-  discount_text: `discount for the purchase of all 7 concerts of the cycle.`,
+  discount_text: `discount for the purchase of all 5 concerts of the cycle.`,
 
   // 404 Page Not Found
   notfound_title_1: 'Uh oh!',

@@ -75,7 +75,7 @@ export default function InfoTalentos() {
               <p className="text-base leading-7">
                 {t('talents:para_7_start')}
                 <a
-                  href="https://www.academiagalamian.com/laacademia"
+                  href="https://www.academiagalamian.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -110,7 +110,7 @@ export default function InfoTalentos() {
             </dl>
             <div className="mt-10">
               <a
-                href="https://www.academiagalamian.com/laacademia"
+                href="https://www.academiagalamian.com"
                 target="_blank"
                 rel="noreferrer"
                 className="text-base font-medium text-gray-500 transition duration-200 ease-in-out hover:text-orangeRevolution"

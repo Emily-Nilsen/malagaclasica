@@ -126,7 +126,7 @@ const Concert = ({ event }) => {
                         key={i}
                         className="border-l border-orangeRevolution/50 pl-9"
                       >
-                        <blockquote className="italic font-medium text-coalCrescendo">
+                        <blockquote className="italic font-medium text-blueRevolution">
                           <p className="py-2">{song}</p>
                         </blockquote>
                       </figure>
@@ -154,7 +154,7 @@ const Concert = ({ event }) => {
               ) : (
                 <PricingRegular />
               )}
-              {/* <Discount /> */}
+              <Discount />
               <div className="flex mt-10">
                 <a
                   href="https://teatrocervantes.com/es/genero/musica/x-malaga-clasica-crescendo/"
@@ -173,7 +173,7 @@ const Concert = ({ event }) => {
                   </button>
                 </a>
                 <Link href="/programa" passHref>
-                  <button className="inline-flex justify-center px-4 py-2 ml-6 text-sm font-medium text-gray-600 transition duration-200 ease-in-out bg-white border border-transparent rounded-md shadow-none hover:text-blueRevolution hover:bg-beigeRevolution/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution">
+                  <button className="inline-flex justify-center px-4 py-2 ml-6 text-sm font-medium text-gray-600 transition duration-200 ease-in-out bg-white border border-transparent rounded-md shadow-none hover:text-blueRevolution hover:bg-orangeRevolution/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution">
                     {t('common:program')}
                   </button>
                 </Link>

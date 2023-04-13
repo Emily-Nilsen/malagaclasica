@@ -10,12 +10,12 @@ export default function Discount() {
           <div className="px-6 py-8 bg-white rounded-lg sm:p-10 lg:flex lg:items-center">
             <div className="flex-1">
               <div>
-                <h3 className="inline-flex px-4 py-1 text-sm font-semibold tracking-wide uppercase bg-gray-100 rounded-full text-mossCrescendo">
+                <h3 className="inline-flex px-4 py-1 text-sm font-semibold tracking-wide uppercase rounded-full bg-orangeRevolution/30 text-blueRevolution">
                   {t('common:discount')}
                 </h3>
               </div>
-              <div className="mt-4 text-lg text-coalCrescendo">
-                <span className="font-semibold text-coalCrescendo">15%</span>{' '}
+              <div className="mt-4 text-lg text-gray-700">
+                <span className="font-semibold text-orangeRevolution">15%</span>{' '}
                 {t('common:discount_text')}
               </div>
             </div>
