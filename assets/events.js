@@ -21,7 +21,7 @@ const events = [
       {
         composer: [`P.D.Q. Bach (Peter Schickele) (1742-1807)`],
         info: `Sonata for viola 4 hands and piano`,
-        artists: [`Rumen Cvetkov viola`, `Tomoko Akasaka viola`],
+        artists: [`Laura Romero Alba viola`, `Tomoko Akasaka viola`],
       },
       {
         composer: [`Henry Cowell (1897-1965)`],
@@ -30,8 +30,8 @@ const events = [
       },
       {
         composer: [`Niccolò Paganini (1782-1840)`],
-        info: `‘Moses Fantasie’ on the G string, MS 23, arr. for viola and piano`,
-        artists: [`Rumen Cvetkov viola`, `Natalia Kuchaeva piano`],
+        info: `‘Moses Fantasie’ on the G string, MS 23, arr. for violin and piano`,
+        artists: [`Robert Kowalski violin`, `Natalia Kuchaeva piano`],
       },
       {
         composer: [`John Cage (1912-1992)`],
@@ -102,7 +102,7 @@ const events = [
         artists: [
           `Robert Kowalski violin`,
           `Joanna Wronko violin`,
-          `Rumen Cvetkov viola`,
+          `Laura Romero Alba viola`,
           `Øyvind Gimse cello`,
         ],
       },
@@ -307,7 +307,7 @@ const events = [
       {
         composer: [`P.D.Q. Bach (Peter Schickele) (1742-1807)`],
         info: `Sonata para viola a 4 manos y piano`,
-        artists: [`Rumen Cvetkov viola`, `Tomoko Akasaka viola`],
+        artists: [`Laura Romero Alba viola`, `Tomoko Akasaka viola`],
       },
       {
         composer: [`Henry Cowell (1897-1965)`],
@@ -316,8 +316,8 @@ const events = [
       },
       {
         composer: [`Niccolò Paganini (1782-1840)`],
-        info: `‘Fantasia de Moises’ en la cuerda Sol, MS 23, arr. para viola y piano`,
-        artists: [`Rumen Cvetkov viola`, `Natalia Kuchaeva piano`],
+        info: `‘Fantasia de Moises’ en la cuerda Sol, MS 23, arr. para violín y piano`,
+        artists: [`Robert Kowalski violín`, `Natalia Kuchaeva piano`],
       },
       {
         composer: [`John Cage (1912-1992)`],
@@ -388,7 +388,7 @@ const events = [
         artists: [
           `Robert Kowalski violín`,
           `Joanna Wronko violín`,
-          `Rumen Cvetkov viola`,
+          `Laura Romero Alba viola`,
           `Øyvind Gimse violonchelo`,
         ],
       },

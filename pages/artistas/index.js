@@ -26,7 +26,7 @@ export default function Artistas(props) {
           type: 'fade',
           ease: 'easeIn',
         }}
-        className="relative px-10 bg-white sm:px-12"
+        className="relative bg-white sm:px-12"
       >
         <div className="absolute inset-0 bg-beigeRevolution">
           <div className="object-cover h-full">
@@ -42,12 +42,13 @@ export default function Artistas(props) {
             </div>
           </div>
         </div>
-        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
-          <div className="p-10 -m-10 bg-white w-fit">
-            <h1 className="text-5xl font-extrabold tracking-tight text-orangeRevolution sm:text-6xl lg:text-7xl">
-              {t('artists:hero_title')}
+        <div className="relative px-0 py-24 mx-auto sm:max-w-7xl max-w-none sm:py-32 sm:px-6 lg:px-8">
+          <div className="pt-2 bg-white sm:pt-10 sm:-m-10 sm:p-10 sm:w-fit">
+            <h1 className="text-4xl font-extrabold tracking-tight text-center text-orangeRevolution sm:text-6xl lg:text-7xl sm:text-left">
+              {t('artists:hero_title')}{' '}
+              <span className="text-blueRevolution sm:hidden">2023</span>
             </h1>
-            <p className="max-w-sm mt-6 text-xl text-gray-600">
+            <p className="hidden max-w-sm mt-6 text-xl text-gray-600 sm:block">
               {t('artists:hero_subtitle')}
             </p>
           </div>

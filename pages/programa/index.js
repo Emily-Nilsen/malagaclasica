@@ -27,11 +27,11 @@ export default function Programa(props) {
           type: 'fade',
           ease: 'easeIn',
         }}
-        className="relative px-10 sm:px-10 bg-beigeRevolution"
+        className="relative sm:px-10 bg-beigeRevolution"
       >
         <div className="absolute inset-0">
           <div className="object-cover w-full h-full">
-            <div className="absolute right-0 w-2/3 h-full">
+            <div className="absolute right-0 w-full h-full sm:w-2/3">
               <Image
                 src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1681299766/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
                 alt="Málaga Clásica"
@@ -43,24 +43,29 @@ export default function Programa(props) {
             </div>
           </div>
         </div>
-        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
-          <div className="max-w-2xl p-10 -m-10 bg-white w-fit">
-            <h2 className="text-lg font-normal tracking-wide text-orangeRevolution">
-              {t('program:date_title')}
-              2023
-            </h2>
-            <h1 className="text-5xl font-extrabold tracking-tight text-blueRevolution sm:text-6xl lg:text-7xl">
-              {t('common:title')}
-            </h1>
-            <p className="max-w-3xl mt-6 text-xl text-gray-500">
+        {/* <div className="absolute inset-0 bg-orangeRevolution mix-blend-multiply sm:opacity-70 opacity-90" /> */}
+        <div className="relative px-0 py-32 sm:mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
+          <div className="w-full px-4 pt-3 pb-1 mt-0 bg-white sm:pt-4 sm:px-8 sm:w-fit sm:mt-0">
+            <div className="text-center max-w-none sm:text-left">
+              <h2 className="text-lg font-normal tracking-wide text-orangeRevolution">
+                {t('program:date_title')}
+                2023
+              </h2>
+              <h1 className="pt-3 text-5xl font-extrabold tracking-tight uppercase text-blueRevolution sm:text-6xl lg:text-7xl ">
+                {t('common:title')}
+              </h1>
+            </div>
+          </div>
+          {/* <div className="px-4 pt-4 sm:px-0 sm:pt-0">
+            <p className="text-xl text-white sm:max-w-sm sm:mt-16">
               {t('program:hero_text_1')}
               <span className="font-semibold">{t('program:hero_text_2')}</span>
               {t('program:hero_text_3')}
             </p>
-          </div>
+          </div> */}
         </div>
       </motion.div>
-      <div className="px-4 pt-16 pb-20 bg-beigeRevolution/10 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="px-4 pt-16 pb-20 bg-beigeRevolution/20 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
           <div>
             <h1 className="text-4xl font-extrabold tracking-tight text-orangeRevolution sm:text-5xl md:text-6xl">

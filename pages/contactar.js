@@ -32,7 +32,7 @@ export default function Contactar() {
                 unoptimized={true}
                 layout="fill"
                 objectFit="cover"
-                objectPosition="bottom"
+                objectPosition="top"
               />
             </div>
           </div>
@@ -52,10 +52,10 @@ export default function Contactar() {
                   <dt className="sr-only">Telefono</dt>
                   <dd className="flex">
                     <PhoneIcon
-                      className="flex-shrink-0 w-6 h-6 text-orangeRevolution/60"
+                      className="flex-shrink-0 w-6 h-6 text-orangeRevolution/70"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">699 06 74 52</span>
+                    <span className="ml-3 font-medium">699 06 74 52</span>
                   </dd>
                 </div>
                 {/* email */}
@@ -63,10 +63,10 @@ export default function Contactar() {
                   <dt className="sr-only">Email</dt>
                   <dd className="flex">
                     <MailIcon
-                      className="flex-shrink-0 w-6 h-6 text-orangeRevolution/60"
+                      className="flex-shrink-0 w-6 h-6 text-orangeRevolution/70"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">
+                    <span className="ml-3 font-medium">
                       anamariagomezaguilar.secretaria@gmail.com
                     </span>
                   </dd>

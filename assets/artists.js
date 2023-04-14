@@ -127,32 +127,34 @@ const artists = [
     ],
     image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Joanna_Wronko_sq_ipgycw.webp`,
   },
-  // Rumen Cvetkov
+  // Laura Romero
   {
     locale: `es`,
-    name: `Rumen Cvetkov`,
-    slug_name: `Rumen Cvetkov ES`,
+    name: `Laura Romero`,
+    slug_name: `Laura Romero ES`,
     instrument: `viola`,
-    para_1: `Ha actuado en importantes escenarios como el Berliner Filharmoniker Hall, Carnegie Hall, Wigmore Hall, Walt Disney Hall, Pallacio de Bellas Artes de Ciudad de México, y ha colaborado con músicos como Ida Haendel, Bernard Greenhouse, Mihail Muntian, sir Harold Martina, José Feghali, Christian Tetzlaff o Vladimir Mendelssohn, y los miembros de los cuartetos Borromeo, Kronos, Aviv, Jerusalem y Verdi.`,
+    para_1: `Nacida en Málaga, Laura Romero Alba concluye su formación como violinista en el Conservatorio Superior de Málaga y en la Academia Internacional ‘Ivan Galamian’, y se traslada a Estados Unidos, donde finaliza sus estudios de postgrado en la Universidad de Indiana con el maestro Grigory Kalinovsky.`,
     sentences: [
-      `En 2012, el maestro Zubin Mehta le invitó a ser el nuevo solista de viola del Palau de Les Arts Reina Sofia de Valencia. En 2019 editó su primer CD con sonatas de Brahms junto con el pianista Ludmil Angelov.`,
-      `Es profesor de Viola en el Conservatorio de Tilburg (Países Bajos) y en la New Bulgarian University (Sofía, Bulgaria), fundador del ensemble Solistas Mediterráneos, y es cofundador y codirector artístico del MurciArt Music Festival.`,
+      `Durante toda su carrera artística se ha formado con profesores de la talla de Jesús Reina o Anna Margrethe Nilsen, formación complementada con clases magistrales de célebres pedagogos como Pinchas Zukerman, Patinka Kopec, Alfredo García, Yuri Volguin o Alexander Sitkovetsky. Como concertista solista, su trayectoria abarca desde conciertos en distintos puntos de la geografía española así como en otras ciudades del extranjero, como Oslo (Noruega) y Houston (Texas, Estados Unidos).`,
+      `En los últimos años, ha actuado como solista con “Quivir Ensemble” y con la Joven Orquesta de la Academia Galamian en la provincia de Málaga. Durante su estancia en los Estados Unidos, ha formado parte de orquestas como Columbus Indiana Philarmonic, Richmond Symphony Orchestra o Terre Haute Symphony Orchestra.`,
+      `En el ámbito nacional, ha actuado junto a orquestas como la Orquesta Filarmónica de Málaga, la Joven Orquesta Nacional de España o la Orquesta de la Ciudad de Almería. Actualmente es miembro de la Orquesta Sinfónica Provincial de Málaga y la Orquesta Sinfónica ‘Pop’ del Soho, con la que ha participado en el musical ‘Company’. En el ámbito de la música de cámara, actualmente, pertenece a la agrupación ‘Astrea Quintet’, y ha participado en calidad de violinista y viola en los pasados VII, VIII y IX Festival Internacional de Música de Cámara Málaga Clásica.`,
     ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/rumen-cvetkov_mopwol.webp`,
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Laura_Romero_Alba_skmexb.webp`,
   },
 
-  // English - Rumen Cvetkov
+  // English - Laura Romero
   {
     locale: `en`,
-    name: `Rumen Cvetkov`,
-    slug_name: `Rumen Cvetkov EN`,
+    name: `Laura Romero`,
+    slug_name: `Laura Romero EN`,
     instrument: `viola`,
-    para_1: `He has performed in important venues worldwide such as Berliner Filharmoniker Hall, Carnegie Hall, Wigmore Hall, Walt Disney Hall, Pallacio de Bellas Artes of Mexico City and has collaborated with musicians such as Ida Haendel, Bernard Greenhouse, Mihail Muntian, Sir Harold Martina, Jose Feghali, Christian Tetzlaff, Vladimir Mendelssohn.`,
+    para_1: `Born in Málaga, Laura Romero Alba has studied at the Conservatory of Music of Málaga and at the Galamian International Academy, and later on completed her postgraduate studies in the United States at the Indiana University with maestro Grigory Kalinovsky.`,
     sentences: [
-      `In 2012 he was invited by Maestro Zubin Mehta to become the solo violist of the Royal Spanish Opera House “Queen Sofia” in Valencia. His debut solo CD “Brahms Alliance” with pianist Ludmil Angelov.`,
-      `Currently, he is a Professor of viola at Tilburg Conservatory (Holland) and New Bulgarian University (Sofia, Bulgaria), the founder and Artistic Leader of Chamber Orchestra “Mediterranean Soloists”, and founder and Artistic Director of MurciArt Music Festival.`,
+      `Throughout her artistic career she has received masterclasses and work with teachers like Jesús Reina, Anna Margrethe Nilsen, Pinchas Zukerman, Patinka Kopec, Alfredo García, Yuri Volguin and Alexander Sitkovetsky. As a soloist, she has performed all over Spain, as well as in other cities abroad, such as Oslo (Norway) and Houston (Texas, United States).`,
+      `Recently she has performed as a soloist with the "Quivir Ensemble" and with the Youth Orchestra of the Galamian Academy in the province of Malaga. During her stay in the United States, she formed part of orchestras such as the Columbus Indiana Philharmonic, the Richmond Symphony Orchestra and the Terre Haute Symphony Orchestra.`,
+      `In Spain she has performed with orchestras such as the Malaga Philharmonic Orchestra, the National Youth Orchestra of Spain and the Almería City Orchestra. She is currently a member of the Malaga Provincial Symphony Orchestra and the Soho Symphony Orchestra, with which she has participated in the musical Company. In the field of chamber music, she currently belongs to the group 'Astrea Quintet', and has participated as a violinist and violist in the past VII, VIII and IX Málaga Clásica International Chamber Music Festival.`,
     ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/rumen-cvetkov_mopwol.webp`,
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Laura_Romero_Alba_skmexb.webp`,
   },
   // Léa Hennino
   {

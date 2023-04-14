@@ -68,7 +68,7 @@ export default function Theatres() {
               </dl>
               <div className="mt-10">
                 <a
-                  href="https://teatrocervantes.com/es/genero/musica/x-malaga-clasica-crescendo/"
+                  href="https://teatrocervantes.com/es/genero/musica/xi-malaga-clasica-revoluciones/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -244,7 +244,7 @@ export default function Theatres() {
               </dl>
               <div className="mt-10">
                 <a
-                  href="https://www.teatroechegaray.com/es/ciclos-y-festivales/x-malaga-clasica-crescendo"
+                  href="https://www.teatroechegaray.com/es/genero/musica/"
                   target="_blank"
                   rel="noreferrer"
                 >

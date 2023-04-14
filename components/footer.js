@@ -7,10 +7,13 @@ export default function Footer() {
 
   const navigation = {
     links: [
-      { name: 'teatrocervantes.es', href: 'https://www.teatrocervantes.com/' },
+      {
+        name: 'teatrocervantes.es',
+        href: 'https://teatrocervantes.com/es/genero/musica/xi-malaga-clasica-revoluciones/',
+      },
       {
         name: 'teatroechegaray.es',
-        href: 'https://www.teatroechegaray.com/es/',
+        href: 'https://www.teatroechegaray.com/es/genero/musica/',
       },
     ],
     social: [
@@ -53,37 +56,37 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-mossCrescendo">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+    <footer className="bg-blueRevolution">
+      <div className="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
         <nav
-          className="-mx-5 -my-2 flex flex-wrap justify-center"
+          className="flex flex-wrap justify-center -mx-5 -my-2"
           aria-label="Footer"
         >
           {navigation.links.map((item) => (
             <div key={item.name} className="px-5 py-2">
               <a href={item.href} target="_blank" rel="noreferrer">
-                <h2 className="text-2xl text-greyCrescendo hover:text-blueCrescendo transition duration-200 ease-in-out cursor-pointer">
+                <h2 className="text-2xl text-white transition duration-200 ease-in-out cursor-pointer hover:text-orangeRevolution">
                   {item.name}
                 </h2>
               </a>
             </div>
           ))}
         </nav>
-        <div className="mt-8 flex justify-center space-x-6">
+        <div className="flex justify-center mt-8 space-x-6">
           {navigation.social.map((item) => (
             <a
               key={item.name}
               href={item.href}
               target="_blank"
               rel="noreferrer"
-              className="text-greyCrescendo hover:text-blueCrescendo transition duration-200 ease-in-out"
+              className="transition duration-200 ease-in-out text-white/90 hover:text-orangeRevolution"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="w-6 h-6" aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-8 text-center text-base text-greyCrescendo opacity-75">
+        <p className="mt-8 text-sm text-center sm:text-base text-white/70">
           &copy; {new Date().getFullYear()} {t('footer:copyright')}
         </p>
       </div>

@@ -2,7 +2,17 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
+import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
+
+import { AyuntamientoLogo } from '../../components/logos';
+import { MalagaProculturaLogo } from '../../components/logos';
+import { TeatroCervantesLogo } from '../../components/logos';
+import { TeatroEchegarayLogo } from '../../components/logos';
+import { GalamianLogo } from '../../components/logos';
+import { ReinaNilsenLogo } from '../../components/logos';
+import { LaCaixaLogo } from '../../components/logos';
+import { HoteldelPintorLogo } from '../../components/logos';
 
 const container = {
   hidden: { opacity: 0 },
@@ -31,60 +41,44 @@ const itemBottom = {
 
 const logos = [
   {
-    image: `/static/ayuntamiento.svg`,
-    alt: `Ayuntamiento de Málaga`,
-    link: `https://www.malaga.eu/`,
-    height: 50,
-    width: 200,
+    logoMark: (
+      <AyuntamientoLogo className="w-24 h-auto sm:w-32 fill-orangeRevolution" />
+    ),
   },
   {
-    image: `/static/malaga-procultura.svg`,
-    alt: `Málaga Procultura`,
-    link: `https://www.malagaprocultura.com/`,
-    height: 50,
-    width: 130,
+    logoMark: (
+      <MalagaProculturaLogo className="w-auto h-3 sm:h-4 fill-orangeRevolution" />
+    ),
   },
   {
-    image: `/static/cervantes.svg`,
-    alt: `Teatro Cervantes`,
-    link: `https://www.teatrocervantes.com/`,
-    height: 50,
-    width: 120,
+    logoMark: (
+      <TeatroCervantesLogo className="w-auto sm:h-9 h-7 fill-orangeRevolution stroke-orangeRevolution" />
+    ),
   },
   {
-    image: `/static/echegaray.svg`,
-    alt: `Teatro Echegaray`,
-    link: `https://www.teatroechegaray.com/es/`,
-    height: 50,
-    width: 120,
+    logoMark: (
+      <TeatroEchegarayLogo className="w-auto h-6 sm:h-8 fill-orangeRevolution" />
+    ),
   },
   {
-    image: `/static/aig.svg`,
-    alt: `Acadamia Internacional Galamian`,
-    link: `https://www.academiagalamian.com/`,
-    height: 50,
-    width: 200,
+    logoMark: (
+      <GalamianLogo className="w-auto h-9 sm:h-12 fill-orangeRevolution stroke-orangeRevolution" />
+    ),
   },
   {
-    image: `/static/reina-nilsen.svg`,
-    alt: `Fundación Reina Nilsen`,
-    link: `https://www.academiagalamian.com/`,
-    height: 50,
-    width: 200,
+    logoMark: (
+      <ReinaNilsenLogo className="w-auto sm:h-12 h-9 fill-orangeRevolution" />
+    ),
   },
   {
-    image: `/static/la-caixa.svg`,
-    alt: `Fundación La Caixa`,
-    link: `https://fundacionlacaixa.org/`,
-    height: 65,
-    width: 200,
+    logoMark: (
+      <LaCaixaLogo className="w-auto h-12 sm:h-16 fill-orangeRevolution" />
+    ),
   },
   {
-    image: `/static/pintor.svg`,
-    alt: `Hotel del Pintor`,
-    link: `https://www.hoteldelpintor.com/`,
-    height: 65,
-    width: 200,
+    logoMark: (
+      <HoteldelPintorLogo className="w-auto h-12 sm:h-16 fill-orangeRevolution" />
+    ),
   },
 ];
 
@@ -93,15 +87,30 @@ function classNames(...classes) {
 }
 
 export default function Hero() {
+  const { locale, locales, defaultLocale, asPath } = useRouter();
   const { t } = useTranslation();
-  const crescendo = ['c', 'r', 'e', 's', 'c', 'e', 'n', 'd', 'o'];
+  const revoluciones = [
+    'r',
+    'e',
+    'v',
+    'o',
+    'l',
+    'u',
+    'c',
+    'i',
+    'o',
+    'n',
+    'e',
+    's',
+  ];
+  const revolutions = ['r', 'e', 'v', 'o', 'l', 'u', 't', 'i', 'o', 'n', 's'];
   return (
-    <div className="bg-greyCrescendo">
+    <div className="bg-beigeRevolution/10">
       <main>
         <div>
           {/* Hero card */}
           <div className="relative">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-greyCrescendo" />
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-beigeRevolution/10" />
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="relative shadow-none sm:overflow-hidden h-[50vh]">
                 <div className="absolute inset-0">
@@ -113,40 +122,63 @@ export default function Hero() {
                       type: 'fade',
                       ease: 'easeIn',
                     }}
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-full bg-beigeRevolution/10"
                   >
-                    <Image
-                      unoptimized={true}
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686310/M%C3%A1laga%20Cl%C3%A1sica/crescendo-blue_jnpl2q.webp"
-                      alt="Crescendo Festival"
-                    />
+                    {/* mobile */}
+                    <div className="sm:hidden">
+                      <Image
+                        unoptimized={true}
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="right"
+                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
+                        alt="Revoluciones Festival"
+                        className="bg-beigeRevolution"
+                      />
+                    </div>
+                    {/* desktop */}
+                    <div className="hidden sm:block">
+                      <Image
+                        unoptimized={true}
+                        layout="fill"
+                        objectFit="contain"
+                        objectPosition="right"
+                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
+                        alt="Revoluciones Festival"
+                        className="bg-beigeRevolution"
+                      />
+                    </div>
                   </motion.div>
                 </div>
-                <div className="relative flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
-                  <div>
+                <div className="relative flex items-center justify-center h-full sm:justify-start sm:px-6 lg:px-8">
+                  <div className="w-full px-6 pt-3 bg-white sm:w-fit sm:p-10">
                     <motion.h1
                       variants={container}
                       initial="hidden"
                       animate="show"
-                      className="block font-extrabold tracking-normal text-center text-greyCrescendo text-7xl sm:text-8xl lg:text-9xl"
+                      className="block text-5xl font-extrabold tracking-tight text-center uppercase text-orangeRevolution sm:text-7xl lg:text-8xl"
                     >
-                      {crescendo.map((letter, i) => (
-                        <motion.span key={i} variants={item}>
-                          {letter}
-                        </motion.span>
-                      ))}
+                      {locale === 'en'
+                        ? revolutions.map((letter, i) => (
+                            <motion.span key={i} variants={item}>
+                              {letter}
+                            </motion.span>
+                          ))
+                        : revoluciones.map((letter, i) => (
+                            <motion.span key={i} variants={item}>
+                              {letter}
+                            </motion.span>
+                          ))}
                     </motion.h1>
 
                     <motion.h2
                       variants={itemBottom}
                       initial="hidden"
                       animate="show"
-                      className="max-w-lg mx-auto mt-3 text-3xl text-center sm:text-4xl lg:text-5xl text-greyCrescendo sm:max-w-3xl"
+                      className="max-w-lg mx-auto mt-3 text-2xl text-center sm:text-4xl lg:text-5xl text-blueRevolution sm:max-w-3xl"
                     >
-                      6__12/6/2022
+                      29/05__04/06{' '}
+                      <span className="text-orangeRevolution">&nbsp;2023</span>
                     </motion.h2>
                   </div>
                 </div>
@@ -155,26 +187,19 @@ export default function Hero() {
           </div>
 
           {/* Logo cloud */}
-          <div className="bg-greyCrescendo">
+          <div className="bg-beigeRevolution/10">
             <div className="px-4 py-10 mx-auto sm:py-16 max-w-7xl sm:px-6 lg:px-8">
-              <p className="text-sm font-semibold tracking-wide text-center uppercase text-coalCrescendo">
+              <p className="text-sm font-semibold tracking-wide text-center text-gray-600 uppercase">
                 {t('home:cloud_title')}
               </p>
               {/* Mobile screen cloud */}
-              <div className="grid grid-cols-4 gap-3 mt-6 sm:hidden">
+              <div className="grid grid-cols-2 gap-3 mt-6 sm:hidden">
                 {logos.map((logo) => (
                   <div
                     key={logo.name}
                     className="flex items-center justify-center"
                   >
-                    <div className="transition duration-200 ease-in-out hover:brightness-125">
-                      <Image
-                        width={logo.width}
-                        height={logo.height}
-                        src={logo.image}
-                        alt={logo.alt}
-                      />
-                    </div>
+                    <div>{logo.logoMark}</div>
                   </div>
                 ))}
               </div>
@@ -186,14 +211,7 @@ export default function Hero() {
                     className="flex items-center justify-center"
                   >
                     <a href={logo.link} target="_blank" rel="noreferrer">
-                      <div className="transition duration-200 ease-in-out cursor-pointer hover:brightness-125">
-                        <Image
-                          width={logo.width}
-                          height={logo.height}
-                          src={logo.image}
-                          alt={logo.alt}
-                        />
-                      </div>
+                      <div>{logo.logoMark}</div>
                     </a>
                   </div>
                 ))}

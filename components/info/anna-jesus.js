@@ -28,9 +28,9 @@ export default function AnnaJesus() {
               type: 'fade',
               ease: 'easeIn',
             }}
-            className="object-cover w-full h-full bg-beigeRevolution"
+            className="object-cover w-full sm:h-full h-3/4 bg-beigeRevolution"
           >
-            <div className="absolute right-0 w-3/4 h-full">
+            <div className="absolute right-0 w-3/4 sm:h-full h-3/4">
               <Image
                 src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1681299766/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
                 alt="Málaga Clásica"

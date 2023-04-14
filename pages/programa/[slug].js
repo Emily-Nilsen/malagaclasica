@@ -157,7 +157,7 @@ const Concert = ({ event }) => {
               <Discount />
               <div className="flex mt-10">
                 <a
-                  href="https://teatrocervantes.com/es/genero/musica/x-malaga-clasica-crescendo/"
+                  href="https://teatrocervantes.com/es/genero/musica/xi-malaga-clasica-revoluciones/"
                   target="_blank"
                   rel="noreferrer"
                 >

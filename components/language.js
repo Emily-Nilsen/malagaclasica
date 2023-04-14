@@ -19,7 +19,7 @@ export default function Language() {
     <span className="relative z-0 inline-flex rounded-md shadow-none">
       <button
         type="button"
-        className="relative inline-flex items-center px-4 py-2 text-sm font-semibold transition duration-300 ease-in-out border border-l-0 opacity-75 rounded-l-md border-blueCrescendo bg-t text-mossCrescendo hover:text-greenCrescendo focus:z-10 focus:outline-none border-y-0 focus:ring-0 hover:opacity-1"
+        className="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-white transition duration-300 ease-in-out border border-l-0 rounded-l-md border-orangeRevolution/50 bg-t hover:text-orangeRevolution focus:z-10 focus:outline-none border-y-0 focus:ring-0"
       >
         <Link activeClassName={locale === 'en'} href={asPath} locale="en">
           <p>ENG</p>
@@ -28,7 +28,7 @@ export default function Language() {
 
       <button
         type="button"
-        className="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-semibold transition duration-300 ease-in-out border border-r-0 opacity-75 rounded-r-md border-blueCrescendo bg-t text-mossCrescendo hover:text-greenCrescendo focus:z-10 focus:outline-none focus:ring-0 border-y-0 hover:opacity-1"
+        className="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-semibold text-white transition duration-300 ease-in-out border border-r-0 rounded-r-md border-orangeRevolution/50 bg-t hover:text-orangeRevolution focus:z-10 focus:outline-none focus:ring-0 border-y-0"
       >
         <Link activeClassName={locale === 'es'} href={asPath} locale="es">
           <p>ESP</p>

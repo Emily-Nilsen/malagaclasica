@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import AnnaJesus from '../components/info/anna-jesus';
+import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
 import { CameraIcon } from '@heroicons/react/solid';
@@ -31,8 +32,9 @@ const itemBottom = {
 };
 
 export default function Info() {
+  const { locale, locales, defaultLocale, asPath } = useRouter();
   const { t } = useTranslation();
-  const crescendo = [
+  const revoluciones = [
     'R',
     'e',
     'v',
@@ -46,6 +48,7 @@ export default function Info() {
     'e',
     's',
   ];
+  const revolutions = ['r', 'e', 'v', 'o', 'l', 'u', 't', 'i', 'o', 'n', 's'];
 
   return (
     <Layout
@@ -53,7 +56,7 @@ export default function Info() {
       description={t('common:info_description')}
       keywords={t('common:info_keywords')}
     >
-      <div className="relative px-10 sm:px-12 bg-beigeRevolution">
+      <div className="relative px-10 py-28 sm:px-12 bg-beigeRevolution sm:py-0">
         <div className="absolute inset-0">
           <motion.div
             whileInView={{ opacity: 1 }}
@@ -77,29 +80,35 @@ export default function Info() {
             </div>
           </motion.div>
         </div>
-        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
-          <div className="p-10 -m-10 bg-white w-fit">
+        <div className="relative px-0 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
+          <div className="px-3 pt-3 pb-1 -m-10 text-center bg-white sm:px-9 sm:pt-6 sm:pb-4 sm:w-fit sm:text-left">
             <motion.h1
               variants={container}
               initial="hidden"
               animate="show"
-              className="block text-5xl font-extrabold tracking-tight text-left text-orangeRevolution sm:text-6xl lg:text-7xl"
+              className="block text-4xl font-extrabold tracking-tight uppercase text-orangeRevolution sm:text-5xl lg:text-6xl"
             >
-              {crescendo.map((letter, i) => (
-                <motion.span key={i} variants={item}>
-                  {letter}
-                </motion.span>
-              ))}
+              {locale === 'en'
+                ? revolutions.map((letter, i) => (
+                    <motion.span key={i} variants={item}>
+                      {letter}
+                    </motion.span>
+                  ))
+                : revoluciones.map((letter, i) => (
+                    <motion.span key={i} variants={item}>
+                      {letter}
+                    </motion.span>
+                  ))}
             </motion.h1>
 
             <motion.h2
               variants={itemBottom}
               initial="hidden"
               animate="show"
-              className="max-w-3xl mt-3 text-xl sm:text-2xl text-blueRevolution"
+              className="max-w-3xl text-lg sm:mt-3 sm:text-2xl text-blueRevolution"
             >
-              29/05 – 04/06 <br />
-              <span className="text-orangeRevolution">2023</span>
+              29/05__04/06{' '}
+              <span className="text-orangeRevolution">&nbsp;2023</span>
             </motion.h2>
           </div>
         </div>
