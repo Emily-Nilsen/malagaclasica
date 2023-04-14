@@ -65,8 +65,9 @@ const events = [
     title: `REVOLUTION OF THE PEOPLE`,
     location: `Echegaray Theatre, 8 p.m.`,
     sentence: [
-      `According to the painter Kandinsky “every work of art is the offspring of its time”. Taking this as truth, it makes every work of art unique and unrepeatable, as is any given moment. This statement does not tie a work of art however to a given time, as the contents which shape the work are timeless.`,
-      `Often enough, the resulting work is not only misunderstood at the time of its inception, but also grossly rejected. Each piece presented in this concert caused an uproar in their respective premieres, their sole existence was conceived as a scandal by the public. The vast time period covered in this concert is very telling that it is not a exception that this occurs, but that this phenomenon is present throughout history.`,
+      `A work of art originates from such a powerful place, that its force and drive can truly move mountains. The way that artwork resonates with people can ignite the spark of a revolution which has long been growing within their hearts.`,
+      `Auber’s work did just that, being the only known opera to have directly caused such a social riot, leading to the Belgian revolution.`,
+      `The rest of the program presents the unity that music can bring, and the way that different people and nations have expressed idealism, change and triumph through the power of music. `,
     ],
     detailsOne: [
       {
@@ -135,9 +136,8 @@ const events = [
     title: `SCANDAL!`,
     location: `Echegaray Theatre, 8 p.m.`,
     sentence: [
-      `A work of art originates from such a powerful place, that its force and drive can truly move mountains. The way that artwork resonates with people can ignite the spark of a revolution which has long been growing within their hearts.`,
-      `Auber’s work did just that, being the only known opera to have directly caused such a social riot, leading to the Belgian revolution.`,
-      `The rest of the program presents the unity that music can bring, and the way that different people and nations have expressed idealism, change and triumph through the power of music. `,
+      `According to the painter Kandinsky “every work of art is the offspring of its time”. Taking this as truth, it makes every work of art unique and unrepeatable, as is any given moment. This statement does not tie a work of art however to a given time, as the contents which shape the work are timeless.`,
+      `Often enough, the resulting work is not only misunderstood at the time of its inception, but also grossly rejected. Each piece presented in this concert caused an uproar in their respective premieres, their sole existence was conceived as a scandal by the public. The vast time period covered in this concert is very telling that it is not a exception that this occurs, but that this phenomenon is present throughout history.`,
     ],
     detailsOne: [
       {
@@ -351,8 +351,9 @@ const events = [
     title: `REVOLUCION POPULAR`,
     location: `Teatro Echegaray, 20:00 h.`,
     sentence: [
-      `Según el pintor Kandinsky ‘cada obra de arte es hijo de su tiempo’. Dar esta afirmación por verdad hace de cada obra de arte algo único e irrepetible, como lo es cada momento. Esto no quiere decir que la obra de arte esté atada a un tiempo, ya que el contenido que le da forma es atemporal.`,
-      `A menudo, la obra resultante no es sólo malentendida en el tiempo de su creación, sino brutalmente rechazada. Cada pieza presentada en este concierto causó revueltas en sus estrenos, siendo su existencia percibida como un escándalo para el público. El amplio espacio temporal cubierto en este programa muestra con no es una excepción que esto ocurra, sino más bien un fenómeno que está presente a lo largo de la historia.`,
+      `Una obra de arte procede de un lugar tan poderoso, que su fuerza y empuje puede verdaderamente mover montañas. La manera en la que las obras de arte resuenan con la gente puede encender la chispa de una revolución que haya estado creciendo en el corazón de las personas.`,
+      `La obra de Auber hizo justo eso, siendo la única ópera (que se sepa) que haya causado directamente una revuelta social, dando pie a la revolución belga.`,
+      `El resto del programa presenta la unión que puede traer la música, y la manera en la que diferentes pueblos y naciones han expresado su idealismo, cambio y triunfo a través del poder de la música. `,
     ],
     detailsOne: [
       {
@@ -421,9 +422,8 @@ const events = [
     title: `¡ESCÁNDALO!`,
     location: `Teatro Echegaray, 20:00 h.`,
     sentence: [
-      `Una obra de arte procede de un lugar tan poderoso, que su fuerza y empuje puede verdaderamente mover montañas. La manera en la que las obras de arte resuenan con la gente puede encender la chispa de una revolución que haya estado creciendo en el corazón de las personas.`,
-      `La obra de Auber hizo justo eso, siendo la única ópera (que se sepa) que haya causado directamente una revuelta social, dando pie a la revolución belga.`,
-      `El resto del programa presenta la unión que puede traer la música, y la manera en la que diferentes pueblos y naciones han expresado su idealismo, cambio y triunfo a través del poder de la música. `,
+      `Según el pintor Kandinsky ‘cada obra de arte es hijo de su tiempo’. Dar esta afirmación por verdad hace de cada obra de arte algo único e irrepetible, como lo es cada momento. Esto no quiere decir que la obra de arte esté atada a un tiempo, ya que el contenido que le da forma es atemporal.`,
+      `A menudo, la obra resultante no es sólo malentendida en el tiempo de su creación, sino brutalmente rechazada. Cada pieza presentada en este concierto causó revueltas en sus estrenos, siendo su existencia percibida como un escándalo para el público. El amplio espacio temporal cubierto en este programa muestra con no es una excepción que esto ocurra, sino más bien un fenómeno que está presente a lo largo de la historia.`,
     ],
     detailsOne: [
       {
