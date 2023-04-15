@@ -12,14 +12,15 @@ function MapTalentos() {
                 {t('talents:map_title')}
               </h1>
               <p className="max-w-xl mx-auto mt-5 text-xl text-gray-600">
-                {t('talents:map_subtitle')}
+                {/* {t('talents:map_subtitle')} */}
               </p>
-              <div>
+              {/* Address */}
+              {/* <div>
                 <dd className="mt-5 text-blueRevolution">
                   <p>{t('talents:map_address_top')}</p>
                   <p>{t('talents:map_address_bottom')}</p>
                 </dd>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -28,7 +29,7 @@ function MapTalentos() {
             <div className="relative w-full overflow-hidden rounded-lg">
               <iframe
                 className="relative"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.911215610666!2d-4.425277384850915!3d36.72469347996414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7be83f3cefd%3A0x9e61e826897f09a3!2sUnicaja%20Concert%20Hall%20Mar%C3%ADa%20Cristina!5e0!3m2!1sen!2sno!4v1649336135958!5m2!1sen!2sno"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.952007840044!2d-1.8820857874480295!3d37.29627123946128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd652b2506cd8fa9%3A0x46ebebe50fa3e44b!2sTeatro%20Echegaray!5e0!3m2!1sen!2sno!4v1681542955717!5m2!1sen!2sno"
                 width="100%"
                 height={600}
                 style={{ border: 0 }}

@@ -9,23 +9,23 @@ const talents = {
   para_5: `Free admission for masterclasses and concerts while seats are available.`,
 
   // Info Section
-  image_title: `Galamian International Academy, Málaga`,
+  image_title: `Echegaray Theatre, Málaga`,
   title_3: `Concerts & masterclasses`,
   para_6: `The approximate duration of each concert is 1 hour.`,
   para_7_start: `Concerts and masterclasses take place at the `,
-  para_7_link: `Galamian International Academy`,
+  para_7_link: `Echegaray Theatre.`,
   para_7_end: `, situated in the Unicaja María Cristina Concert Hall, Málaga.`,
   para_8: `Detailed information about the program and the chosen groups will be published one week before the shows.`,
   masterclasses_title: `Masterclasses`,
   dates: `May 29–30`,
   time: `Time`,
-  masterclasses_time: `2 p.m.`,
+  masterclasses_time: `6 p.m.`,
   concerts_title: `Concerts`,
   concerts_time: `6 p.m.`,
   free_entry: `Free entry while seats are available`,
 
   // Map Section
-  map_title: `Galamian International Academy`,
+  map_title: `Echegaray Theatre`,
   map_subtitle: `Unicaja María Cristina Concert Hall`,
   map_address_top: `Calle Marqués de Valdecañas, 2`,
   map_address_bottom: `29008 Málaga`,

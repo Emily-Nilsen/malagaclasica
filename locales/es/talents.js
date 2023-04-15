@@ -9,23 +9,23 @@ const talents = {
   para_5: `Entrada libre para las clases magistrales y conciertos hasta completar el aforo.`,
 
   // Info Section
-  image_title: `Academia Internacional Galamian, Málaga`,
+  image_title: `Teatro Echegaray, Málaga`,
   title_3: `Conciertos y clases magistrales`,
   para_6: `La duración aproximada de cada concierto es de 1 hora.`,
-  para_7_start: `Los conciertos y clase magistrales tienen lugar en la `,
-  para_7_link: `Academia Internacional Galamian`,
+  para_7_start: `Los conciertos y clase magistrales tienen lugar en el `,
+  para_7_link: `Teatro Echegaray.`,
   para_7_end: `  situada en la Sala Unicaja de Conciertos María Cristina, Málaga.`,
   para_8: `La información detallada sobre el programa y los grupos elegidos se publicará una semana antes de los espectáculos.`,
   masterclasses_title: `Clases magistrales`,
   dates: `mayo de 29–30`,
   time: `Hora`,
-  masterclasses_time: `14:00`,
+  masterclasses_time: `18:00`,
   concerts_title: `Conciertos`,
   concerts_time: `18:00`,
   free_entry: `Entrada libre hasta completar el aforo`,
 
   // Map Section
-  map_title: `Academia Internacional Galamian`,
+  map_title: `Teatro Echegaray`,
   map_subtitle: `Sala Unicaja de Conciertos María Cristina`,
   map_address_top: `Calle Marqués de Valdecañas, 2`,
   map_address_bottom: `29008 Málaga`,

@@ -41,7 +41,7 @@ export default function InfoTalentos() {
                 className="absolute inset-0 object-cover w-full h-full"
               >
                 <Image
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686226/M%C3%A1laga%20Cl%C3%A1sica/aig_locfn8.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/echegaray_fcc1ko.jpg"
                   alt="Teatro Echegaray"
                   layout="fill"
                   objectFit="cover"
@@ -75,7 +75,7 @@ export default function InfoTalentos() {
               <p className="text-base leading-7">
                 {t('talents:para_7_start')}
                 <a
-                  href="https://www.academiagalamian.com/"
+                  href="https://www.teatroechegaray.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -84,10 +84,10 @@ export default function InfoTalentos() {
                   </span>
                 </a>
 
-                {t('talents:para_7_end')}
+                {/* {t('talents:para_7_end')} */}
               </p>
               {/* Detailed information about the program and the chosen groups will be published one week before the shows */}
-              {/* <p className="text-base leading-7">{t('talents:para_8')}</p> */}
+              <p className="text-base leading-7">{t('talents:para_8')}</p>
             </div>
           </div>
 
@@ -110,7 +110,7 @@ export default function InfoTalentos() {
             </dl>
             <div className="mt-10">
               <a
-                href="https://www.academiagalamian.com"
+                href="https://www.teatroechegaray.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-base font-medium text-gray-500 transition duration-200 ease-in-out hover:text-orangeRevolution"
