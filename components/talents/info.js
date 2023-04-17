@@ -13,8 +13,19 @@ export default function InfoTalentos() {
       label: `${t('talents:time')}`,
       value: `${t('talents:masterclasses_time')}`,
     },
-    { label: `${t('talents:concerts_title')}`, value: `${t('talents:dates')}` },
-    { label: `${t('talents:time')}`, value: `${t('talents:concerts_time')}` },
+    {
+      label: `${t('talents:concerts_title')}`,
+      value: `${t('talents:concert_date')}`,
+    },
+    { label: `${t('talents:time')}`, value: `${t('talents:concert_time')}` },
+    {
+      label: `${t('talents:concert_conference')}`,
+      value: `${t('talents:concert_conference_date')}`,
+    },
+    {
+      label: `${t('talents:time')}`,
+      value: `${t('talents:concert_conference_time')}`,
+    },
   ];
 
   return (
@@ -108,6 +119,9 @@ export default function InfoTalentos() {
                 </div>
               ))}
             </dl>
+            <div className="mt-6 space-y-6 text-gray-500">
+              <p>{t('talents:concert_conference_note')}</p>
+            </div>
             <div className="mt-10">
               <a
                 href="https://www.teatroechegaray.com/"

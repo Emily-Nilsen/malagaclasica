@@ -17,11 +17,17 @@ const talents = {
   para_7_end: `, situated in the Unicaja María Cristina Concert Hall, Málaga.`,
   para_8: `Detailed information about the program and the chosen groups will be published one week before the shows.`,
   masterclasses_title: `Masterclasses`,
-  dates: `May 29–30`,
+  dates: `May 29-30`,
   time: `Time`,
-  masterclasses_time: `6 p.m.`,
+  masterclasses_time: `Time to be determined`,
   concerts_title: `Concerts`,
-  concerts_time: `6 p.m.`,
+  concert_date: 'May 29',
+  concert_time: `8 p.m.`,
+  concert_conference: 'Conference and concert*',
+  concert_conference_date: 'May 30',
+  concert_conference_time: '8 p.m.',
+  concert_conference_note:
+    '*Conference with festival artists about the theme Revolutions',
   free_entry: `Free entry while seats are available`,
 
   // Map Section

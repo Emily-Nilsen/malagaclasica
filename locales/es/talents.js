@@ -19,9 +19,15 @@ const talents = {
   masterclasses_title: `Clases magistrales`,
   dates: `mayo de 29–30`,
   time: `Hora`,
-  masterclasses_time: `18:00`,
+  masterclasses_time: `Tiempo que determine`,
   concerts_title: `Conciertos`,
-  concerts_time: `18:00`,
+  concert_date: 'mayo de 29',
+  concert_time: `20:00`,
+  concert_conference: 'Conferencia y concierto*',
+  concert_conference_date: 'mayo de 30',
+  concert_conference_time: '20:00',
+  concert_conference_note:
+    '*Conferencia con artistas del festival sobre el tema Revoluciones',
   free_entry: `Entrada libre hasta completar el aforo`,
 
   // Map Section
