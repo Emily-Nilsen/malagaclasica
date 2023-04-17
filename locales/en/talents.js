@@ -20,7 +20,7 @@ const talents = {
   dates: `May 29-30`,
   time: `Time`,
   masterclasses_time: `Time to be determined`,
-  concerts_title: `Concerts`,
+  concerts_title: `Concert`,
   concert_date: 'May 29',
   concert_time: `8 p.m.`,
   concert_conference: 'Conference and concert*',
