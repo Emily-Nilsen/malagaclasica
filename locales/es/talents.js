@@ -19,7 +19,7 @@ const talents = {
   masterclasses_title: `Clases magistrales`,
   dates: `mayo de 29–30`,
   time: `Hora`,
-  masterclasses_time: `Tiempo que determine`,
+  masterclasses_time: `Por determinar`,
   concerts_title: `Concierto`,
   concert_date: 'mayo de 29',
   concert_time: `20:00`,
