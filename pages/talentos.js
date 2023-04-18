@@ -58,7 +58,7 @@ const Talentos = () => {
             <Image
               width={2356}
               height={1564}
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686312/M%C3%A1laga%20Cl%C3%A1sica/talentos_q5cok3.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/talentos_rm7kx6.webp"
               alt="Talentos"
               layout="responsive"
               objectFit="cover"
@@ -66,6 +66,7 @@ const Talentos = () => {
               priority
               unoptimized={true}
             />
+            <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
           </motion.div>
           <div className="absolute flex flex-col items-center justify-start w-40 py-8 mx-4 md:w-48 lg:w-72 md:flex-row sm:py-10 md:py-10 xl:py-20 md:mx-8 lg:mx-20 xl:mx-20">
             {/* Talentos */}
