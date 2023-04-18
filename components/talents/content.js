@@ -25,8 +25,8 @@ export default function ContentTalentos() {
           <p>{t('talents:para_3')}</p>
           <p>{t('talents:para_4')}</p>
 
-          <h2 className="text-blueRevolution">{t('talents:title_2')}</h2>
-          <p>{t('talents:para_5')}</p>
+          {/* <h2 className="text-blueRevolution">{t('talents:title_2')}</h2>
+          <p>{t('talents:para_5')}</p> */}
         </div>
 
         {/* Announce new talent program */}
