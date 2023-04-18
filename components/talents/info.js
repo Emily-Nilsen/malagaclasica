@@ -122,7 +122,7 @@ export default function InfoTalentos() {
             <div className="mt-6 space-y-6 text-gray-500">
               <p>{t('talents:concert_conference_note')}</p>
             </div>
-            <div className="mt-10">
+            {/* <div className="mt-10">
               <a
                 href="https://www.teatroechegaray.com/"
                 target="_blank"
@@ -132,7 +132,7 @@ export default function InfoTalentos() {
                 {' '}
                 {t('talents:free_entry')} <span aria-hidden="true">&rarr;</span>{' '}
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
