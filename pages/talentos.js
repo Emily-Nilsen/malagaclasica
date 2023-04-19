@@ -58,7 +58,7 @@ const Talentos = () => {
             <Image
               width={2356}
               height={1564}
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/talentos_rm7kx6.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/talentos_nhflyf.webp"
               alt="Talentos"
               layout="responsive"
               objectFit="cover"
