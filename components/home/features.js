@@ -31,7 +31,7 @@ export default function Features() {
       name: `${t('home:feature_talentos')}`,
       href: 'talentos',
       imageSrc:
-        'https://res.cloudinary.com/dt3k2apqd/image/upload/v1653686312/M%C3%A1laga%20Cl%C3%A1sica/img-4_t6p3xr.webp',
+        'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/talentos_nhflyf.webp',
       imageAlt: 'Festival Málaga Clásica',
     },
   ];
