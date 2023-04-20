@@ -60,6 +60,8 @@ const common = {
   talentos_title: `Talents | Málaga Clásica Festival`,
   talentos_description: `Read about the talent concerts and masterclasses offered through the Málaga Clásica International Chamber Music Festival.`,
   talentos_keywords: `Galamian International Academy, Unicaja María Cristina Concert Hall, free entry`,
+
+  download_pdf: `Download PDF`,
 };
 
 export default common;

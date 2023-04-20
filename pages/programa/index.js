@@ -108,8 +108,28 @@ export default function Programa(props) {
                 </Link>
               ))}
           </div>
+          {/* pdf */}
+          <a download href="/Revoluciones_2023.pdf">
+            <article className="relative flex flex-col justify-end w-40 mt-6 overflow-hidden transition duration-300 ease-in-out bg-white sm:w-48 isolate rounded-2xl hover:contrast-125">
+              <Image
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Revoluciones_pdf_xlciim.webp"
+                alt="Revoluciones 2023 - PDF"
+                width={1862}
+                height={2584}
+                className="absolute inset-0 object-cover w-full h-full -z-10"
+              />
+              <div className="absolute bottom-0 w-full h-40 -z-10 bg-gradient-to-t from-blueRevolution" />
+              <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-orangeRevolution/10" />
+
+              <h3 className="absolute bottom-0 p-3 font-medium leading-6 text-white">
+                <span className="absolute inset-0" />
+                {t('common:download_pdf')}
+              </h3>
+            </article>
+          </a>
         </div>
       </div>
+
       <Theatres />
     </Layout>
   );

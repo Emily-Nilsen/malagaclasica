@@ -60,6 +60,8 @@ const common = {
   talentos_title: `Talentos | Festival Málaga Clásica`,
   talentos_description: `Conoce los conciertos de talento y clases magistrales que se ofrecen a través del Festival Internacional de Música de Cámara Málaga Clásica.`,
   talentos_keywords: `Academia Internacional Galamian, Sala Unicaja de Conciertos María Cristina, entrada libre`,
+
+  download_pdf: `Descargar PDF`,
 };
 
 export default common;
