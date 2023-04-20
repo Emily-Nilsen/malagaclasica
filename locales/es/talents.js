@@ -20,15 +20,18 @@ const talents = {
   dates: `mayo de 29–30`,
   time: `Hora`,
   masterclasses_time: `–`,
-  concerts_title: `Concierto`,
-  concert_date: 'mayo de 29',
-  concert_time: `20:00`,
-  concert_conference: 'Conferencia y concierto*',
-  concert_conference_date: 'mayo de 30',
-  concert_conference_time: '20:00',
+  concerts_title: `Concierto ‘Málaga talentos’`,
+  concert_date: 'lunes 29',
+  concert_time: `20.00 h`,
+  concert_conference: 'Conferencia Revoluciones y concierto ‘Málaga talentos’*',
+  concert_conference_date: 'martes 30',
+  concert_conference_time: '20.00 h',
   concert_conference_note:
     '*Conferencia con artistas del festival sobre el tema Revoluciones',
   free_entry: `Entrada libre hasta completar el aforo`,
+  concert_note:
+    'Entrada por invitación, disponibles en todos los canales del Teatro Cervantes y el Cine Albéniz a partir del viernes 26 de mayo a las 11.00 horas (2 por persona).',
+  more_info: `Para más información:`,
 
   // Map Section
   map_title: `Teatro Echegaray`,

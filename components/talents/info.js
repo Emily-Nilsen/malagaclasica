@@ -122,6 +122,16 @@ export default function InfoTalentos() {
             <div className="mt-6 space-y-6 text-gray-500">
               <p>{t('talents:concert_conference_note')}</p>
             </div>
+            {/* Revoluciones */}
+            <div className="mt-10 text-gray-500">
+              {t('talents:concert_note')}
+            </div>
+            <div className="mt-10 text-gray-500">
+              <span className="font-semibold">{t('talents:more_info')}</span>
+              <br /> secretaria.malagaclasica@gmail.com
+              <br /> Tel. 699 067 452
+            </div>
+
             {/* <div className="mt-10">
               <a
                 href="https://www.teatroechegaray.com/"

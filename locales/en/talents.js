@@ -21,14 +21,17 @@ const talents = {
   time: `Time`,
   masterclasses_time: `–`,
   concerts_title: `Concert`,
-  concert_date: 'May 29',
+  concert_date: 'Monday 29',
   concert_time: `8 p.m.`,
   concert_conference: 'Conference and concert*',
-  concert_conference_date: 'May 30',
+  concert_conference_date: 'Tuesday 30',
   concert_conference_time: '8 p.m.',
   concert_conference_note:
     '*Conference with festival artists about the theme Revolutions',
   free_entry: `Free entry while seats are available`,
+  concert_note:
+    'Entrance by invitation, available on all channels of the Teatro Cervantes and the Cine Albéniz from Friday 26 May at 11.00 (2 per person).',
+  more_info: `For More information:`,
 
   // Map Section
   map_title: `Echegaray Theatre`,
