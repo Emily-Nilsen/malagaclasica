@@ -31,6 +31,8 @@ const talents = {
   free_entry: `Free entry while seats are available`,
   concert_note:
     'Entrance by invitation, available on all channels of the Teatro Cervantes and the Cine Albéniz from Friday 26 May at 11.00 (2 per person).',
+  cervantes: 'Cervantes Theatre',
+  cine: 'Cine Albéniz',
   more_info: `For More information:`,
 
   // Map Section

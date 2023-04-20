@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 import { motion } from 'framer-motion';
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 
 export default function InfoTalentos() {
   const { t } = useTranslation();
@@ -126,11 +128,59 @@ export default function InfoTalentos() {
             <div className="mt-10 text-gray-500">
               {t('talents:concert_note')}
             </div>
-            <div className="mt-10 text-gray-500">
-              <span className="font-semibold">{t('talents:more_info')}</span>
-              <br /> secretaria.malagaclasica@gmail.com
-              <br /> Tel. 699 067 452
+            <div className="flex mt-10">
+              <a
+                href="https://teatrocervantes.com/es/genero/musica/xi-malaga-clasica-revoluciones/malaga-talentos-1389"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button
+                  type="button"
+                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none bg-orangeRevolution hover:bg-blueRevolution focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution"
+                >
+                  {t('talents:cervantes')}
+                </button>
+              </a>
+              <a
+                href="http://cinealbeniz.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="inline-flex justify-center px-4 py-2 ml-6 text-sm font-medium text-gray-600 transition duration-200 ease-in-out bg-white border border-transparent rounded-md shadow-none hover:text-blueRevolution hover:bg-orangeRevolution/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution">
+                  {t('talents:cine')}
+                </button>
+              </a>
             </div>
+            <div className="flex"></div>
+            <div className="mt-12 text-gray-500">
+              <span className="font-semibold">{t('talents:more_info')}</span>
+            </div>
+            <dl className="mt-3 text-base transition duration-200 ease-in-out text-blueRevolution">
+              {/* phone */}
+              <div className="mt-3">
+                <dt className="sr-only">Telefono</dt>
+                <dd className="flex">
+                  <PhoneIcon
+                    className="flex-shrink-0 w-6 h-6 text-orangeRevolution/70"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3 font-medium">699 06 74 52</span>
+                </dd>
+              </div>
+              {/* email */}
+              <div className="mt-3">
+                <dt className="sr-only">Email</dt>
+                <dd className="flex">
+                  <MailIcon
+                    className="flex-shrink-0 w-6 h-6 text-orangeRevolution/70"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3 font-medium">
+                    secretaria.malagaclasica@gmail.com
+                  </span>
+                </dd>
+              </div>
+            </dl>
 
             {/* <div className="mt-10">
               <a

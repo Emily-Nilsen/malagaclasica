@@ -31,6 +31,8 @@ const talents = {
   free_entry: `Entrada libre hasta completar el aforo`,
   concert_note:
     'Entrada por invitación, disponibles en todos los canales del Teatro Cervantes y el Cine Albéniz a partir del viernes 26 de mayo a las 11.00 horas (2 por persona).',
+  cervantes: 'Teatro Cervantes',
+  cine: 'Cine Albéniz',
   more_info: `Para más información:`,
 
   // Map Section

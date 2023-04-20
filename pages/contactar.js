@@ -46,7 +46,7 @@ export default function Contactar() {
               <p className="mt-4 text-lg text-gray-600 sm:mt-3">
                 {t('contact:subtitle')}
               </p>
-              <dl className="mt-8 text-base transition duration-200 ease-in-out cursor-pointer text-blueRevolution">
+              <dl className="mt-8 text-base transition duration-200 ease-in-out text-blueRevolution">
                 {/* phone */}
                 <div className="mt-3">
                   <dt className="sr-only">Telefono</dt>
