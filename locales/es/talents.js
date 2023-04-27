@@ -73,6 +73,18 @@ const talents = {
   wed_li_2: `Allegro de la Sonata nr.1; J. M. Leclaire`,
   wed_li_3: `Tango cromático; J. Martin`,
   wed_li_4: `Sonata opus 30 nº 2 de L. v. Beethoven (I. Allegro con brio; II. Adagio cantabile; III. Scherzo-Trio)`,
+
+  talents: 'talentos',
+  convocatoria: 'Convocatoria',
+  abierta: 'Abierta',
+  requisitos: 'Requisitos',
+  wish: 'Si deseas participar, envía:',
+  requisito01: 'Vídeo corto con propuesta. Máximo 10 minutos.',
+  requisito02: 'Nombre artístico y fotografía de grupo de Camara.',
+  requisito03: 'Datos de los solicitantes.',
+  requisitoNote: '*No es necesaria la obra completa.',
+  deadline: 'Fecha límite:',
+  deadlineDate: '15 de mayo',
 };
 
 export default talents;

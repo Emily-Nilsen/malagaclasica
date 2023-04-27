@@ -74,6 +74,18 @@ const talents = {
   wed_li_2: `Allegro of the Sonata nr. 1; J.M. Leclaire`,
   wed_li_3: `Chromatic Tango; J. Martin`,
   wed_li_4: `Sonata opus 30 no. 2 by L. v. Beethoven (I. Allegro con brio; II. Adagio cantabile; III. Scherzo-Trio)`,
+
+  talents: 'talents',
+  convocatoria: 'Applications',
+  abierta: 'open',
+  requisitos: 'Requirements',
+  wish: 'If you wish to participate, send:',
+  requisito01: 'A short video of maximum 10 min.',
+  requisito02: 'Artistic name and photo of the chamber group.',
+  requisito03: 'Participant’s information.',
+  requisitoNote: '*Not necessary to send a complete work.',
+  deadline: 'Deadline:',
+  deadlineDate: 'May 15th',
 };
 
 export default talents;
