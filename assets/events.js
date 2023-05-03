@@ -166,7 +166,7 @@ const events = [
         artists: [
           `Joanna Wronko violin`,
           `Robert Kowalski violin`,
-          `Léa Hennino viola`,
+          `Chieh-Fan Yiu viola`,
           `Øyvind Gimse cello`,
         ],
       },
@@ -229,7 +229,7 @@ const events = [
         artists: [
           `Anna Margrethe Nilsen violin`,
           `Jesus Reina violin`,
-          `Léa Hennino viola`,
+          `Chieh-Fan Yiu viola`,
           `Tomoko Akasaka viola`,
           `Adolfo Gutiérrez cello`,
           `Øyvind Gimse cello`,
@@ -275,7 +275,7 @@ const events = [
           `Jesus Reina violin`,
           `Anna Margrethe Nilsen violin`,
           `Tomoko Akasaka viola`,
-          `Léa Hennino viola`,
+          `Chieh-Fan Yiu viola`,
           `Øyvind Gimse cello`,
         ],
       },
@@ -452,7 +452,7 @@ const events = [
         artists: [
           `Joanna Wronko violín`,
           `Robert Kowalski violín`,
-          `Léa Hennino viola`,
+          `Chieh-Fan Yiu viola`,
           `Øyvind Gimse violonchelo`,
         ],
       },
@@ -514,7 +514,7 @@ const events = [
         artists: [
           `Anna Margrethe Nilsen violín`,
           `Jesus Reina violín`,
-          `Léa Hennino viola`,
+          `Chieh-Fan Yiu viola`,
           `Tomoko Akasaka viola`,
           `Adolfo Gutiérrez violonchelo`,
           `Øyvind Gimse violonchelo`,
@@ -559,7 +559,7 @@ const events = [
           `Jesus Reina violín`,
           `Anna Margrethe Nilsen violín`,
           `Tomoko Akasaka viola`,
-          `Léa Hennino viola`,
+          `Chieh-Fan Yiu viola`,
           `Øyvind Gimse violonchelo`,
         ],
       },

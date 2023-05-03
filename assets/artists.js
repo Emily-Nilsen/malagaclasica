@@ -156,34 +156,37 @@ const artists = [
     ],
     image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Laura_Romero_Alba_skmexb.webp`,
   },
-  // Léa Hennino
+  // Chieh-Fan Yiu
   {
     locale: `es`,
-    name: `Léa Hennino`,
-    slug_name: `Léa Hennino ES`,
+    name: `Chieh-Fan Yiu`,
+    slug_name: `Chieh-Fan Yiu ES`,
     instrument: `viola`,
-    para_1: `Músico versátil y ganadora de premios internacionales, Léa ha actuado con artistas de renombre como Modigliani Quartet, Christophe Coin, Jean-Guihen Queyras, Eric Le Sage, Emmanuel Pahud, Paul Meyer, Nicolas Dautricourt, Adam Laloum, Francois Salque, Clara-Yumi Kang, David Kadoush, Pierre Fouchenneret, Marie et Guillaume Chilemme, Victor Julien-Lafferière, Barnabas Kelemen, David Grimal, Edgar Moreau, Alina Pogotskina, Alena Baeva, Boris Brovtsyn, Daishin Kashimoto, Guy Braunstein, Nicholas Angelich, Gauthier Capuçon, Sarah Nemtanu, Yan Levionnois, Nelson Goerner, Marc Coppey, Anne Queffelec, Itamar Golan, Denis Pascal, Augustin Dumay, Renaud Capucon, Gérard Caussé y Clemens Hagen.`,
+    para_1: `Aclamado por el New York Times como “encantador”, el violista canadiense nacido en Taiwán, Chieh-Fan Yiu, es el ganador triple del premio del Concurso Lionel Tertis, incluido el Premio del Presidente del Jurado de Yuri Bashmet. El Dr. Yiu actúa frecuentemente con Brooklyn Art Song Society, Carnegie Hill Concerts, Frisson Ensemble, PhiloSonia Music y New York Classical Players.`,
     sentences: [
-      `Ha tocado con la Orquesta de Cámara de Toulouse, Orchestre de Picardie y regularmente como viola principal de la Orquesta de París y Les Dissonances, bajo la dirección del violinista David Grimal, y participado en festivales como Krzyzowa Music for Europe, Kronberg "Cello Plus" , Ravinia Steans Music Institute, Verbier Festival Academy, IMS Prussia Cove, Aurora Chamber Music y Encuentro de Santander.`,
-      `Léa colabora con la violonchelista Héloïse Luzzati en su proyecto La boite à pépites y Festival Un temps pour elles, cuya ambición es promover a mujeres compositoras. Artista asociado del Ensemble I Giardini, grabaron el álbum Nuits au côté Véronique Gens y un álbum dedicado a la música de Caroline Shaw. En 2022 crea, con el violonchelista Yan Levionnois, un proyecto basado en el Don Quijote de Strauss con narrador e ilustraciones, estrenado en el Théâtre des Champs-Élysées.`,
-      `Lea estudió en el Conservatorio de París y con Nobuko Imai y Lawrence Power en Suiza. Toca una viola de Charles Coquet y un arco de Sylvain Bigot.`,
+      `Sus actuaciones lo han llevado por todo el mundo en festivales como Carbondale Arts en Colorado, Chamber Music Society of the Carolinas, Music@Menlo, Moritzburg, Verbier, Aspen y Sarasota Music Festivals. También es miembro fundador del Festival de Música Ben Feng en Taiwán, ahora en su décima temporada. Aparece regularmente con la Orquesta de Cámara de Filadelfia, la Orquesta Experiencial y el Ensemble Metropolis.`,
+      `Ha colaborado con David Cohen, Chad Hoopes, Tessa Lark, Matthew Lipman, Sasha Sitkovetsky, Josu De Solaun, así como con los cuartetos Argus, Emerson, Formosa y Tesla. Como violista del Ensemble For The Romantic Century, un ensemble que combina obras completamente escenificadas con música de cámara en vivo y diseños visuales elaborados, el Dr. Yiu ha protagonizado 'El caso Dreyfus', 'Porque no podía parar: un encuentro con Emily Dickinson' y 'La oreja de Van Gogh', con más de 70 funciones hasta la fecha.`,
+      `Como pedagogo y mentor, el Dr. Yiu se ha desempeñado como artista residente en el Instituto de Gobierno Rockefeller de la Universidad Estatal de Nueva York, SUNY Schenectady, el programa CHIME de la Orquesta Juvenil del Empire State, así como en la Escuela de Música Moores en la Universidad de Houston.`,
+      `El Dr. Yiu es violista del ensemble Delirium Musicum en Los Ángeles, que acaba de lanzar su álbum titulado "Seasons" para Warner Classics.`,
     ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Lei%CC%80a_Hennino_sq_tbythk.webp`,
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Chieh-Fan_Yiu_s5nb1f.webp`,
   },
 
-  // English - Léa Hennino
+  // English - Chieh-Fan Yiu
   {
     locale: `en`,
-    name: `Léa Hennino`,
-    slug_name: `Léa Hennino EN`,
+    name: `Chieh-Fan Yiu`,
+    slug_name: `Chieh-Fan Yiu EN`,
     instrument: `viola`,
-    para_1: `A versatile musician and international prizewinner, Léa has performed with renowned artists such as the Modigliani Quartet, Christophe Coin, Jean-Guihen Queyras, Eric Le Sage, Emmanuel Pahud, Paul Meyer, Nicolas Dautricourt, Adam Laloum, Francois Salque, Clara-Yumi Kang, David Kadoush, Pierre Fouchenneret, Marie et Guillaume Chilemme, Victor Julien-Lafferière, Barnabas Kelemen, David Grimal, Edgar Moreau, Alina Pogotskina, Alena Baeva, Boris Brovtsyn, Daishin Kashimoto, Guy Braunstein, Nicholas Angelich, Gauthier Capuçon, Sarah Nemtanu, Yan Levionnois, Nelson Goerner, Marc Coppey, Anne Queffelec, Itamar Golan, Denis Pascal, Augustin Dumay, Renaud Capucon, Gérard Caussé and Clemens Hagen.`,
+    para_1: `Hailed by the New York Times as “Ravishing,” Taiwanese-born Canadian violist Chieh-Fan Yiu is the triple-prized winner of the Lionel Tertis Competition, including Yuri Bashmet’s President Of The Jury Prize. Dr. Yiu performs regularly with Brooklyn Art Song Society, Carnegie Hill Concerts, Frisson Ensemble, PhiloSonia Music, and New York Classical Players.`,
     sentences: [
-      `She has played with the Toulouse Chamber Orchestra, Orchestre de Picardie and regularly as principal viola of the Paris Orchestra and Les Dissonances, under the direction of violinist David Grimal, and taken part in festivals such as Krzyzowa Music for Europe, Kronberg "Cello Plus", Ravinia Steans Music Institute, Verbier Festival Academy, IMS Prussia Cove, Aurora Chamber Music and Encuentro de Santander.`,
-      `Léa collaborates with cellist Héloïse Luzzati in her project La boite à pépites and Festival Un temps pour elles, whose ambition is to promote female composers. Associate artist of the Ensemble I Giardini, they recorded the album Nuits au côté Véronique Gens and an album dedicated to the music of Caroline Shaw. In 2022 she created, with cellist Yan Levionnois, a project based on Strauss’s Don Quixote with narrator and illustrations, premiered in Théâtre des Champs-Élysées.`,
-      `Lea studied at the Paris’ Conservatory, and with Nobuko Imai and Lawrence Power in Switzerland. She plays a viola by Charles Coquet and a bow by Sylvain Bigot.`,
+      `His performances have taken him around the world in festivals such as Carbondale Arts in Colorado, Chamber Music Society of the Carolinas, Music@Menlo, Moritzburg, Verbier, Aspen, and Sarasota Music Festivals. He is a founding member of Ben Feng Music Festival in Taiwan, now in its tenth season and regularly appears with Chamber Orchestra of Philadelphia, Experiential Orchestra, and Metropolis Ensemble.`,
+      `He has collaborated with David Cohen, Chad Hoopes, Tessa Lark, Matthew Lipman, Sasha Sitkovetsky, Josu De Solaun, as well as the Argus, Emerson, Formosa, and Tesla Quartets.
+      As the violist of Ensemble For The Romantic Century, an ensemble that combines fully staged plays with live chamber music and elaborate visual designs, Dr. Yiu has starred in ‘The Dreyfus Affair’, 'Because I Could Not Stop: An Encounter With Emily Dickinson', and ‘Van Gogh’s Ear’, playing more than 70 performances to date.`,
+      `As a pedagogue and mentor, Dr. Yiu has served as artist-in-residence at the State University of New York Rockefeller Institute of Government, SUNY Schenectady, Empire State Youth Orchestra’s CHIME program and Moores School of Music in University of Houston.`,
+      `Dr. Yiu is the violist of ensemble Delirium Musicum, who just released their album titled “Seasons” for Warner Classics.`,
     ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Lei%CC%80a_Hennino_sq_tbythk.webp`,
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Chieh-Fan_Yiu_s5nb1f.webp`,
   },
   // Tomoko Akasaka
   {
