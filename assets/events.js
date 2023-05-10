@@ -21,7 +21,11 @@ const events = [
       {
         composer: [`P.D.Q. Bach (Peter Schickele) (1742-1807)`],
         info: `Sonata for viola 4 hands and piano`,
-        artists: [`Laura Romero Alba viola`, `Tomoko Akasaka viola`],
+        artists: [
+          `Laura Romero Alba viola`,
+          `Tomoko Akasaka viola`,
+          `Natalia Kuchaeva piano`,
+        ],
       },
       {
         composer: [`Henry Cowell (1897-1965)`],
@@ -307,7 +311,11 @@ const events = [
       {
         composer: [`P.D.Q. Bach (Peter Schickele) (1742-1807)`],
         info: `Sonata para viola a 4 manos y piano`,
-        artists: [`Laura Romero Alba viola`, `Tomoko Akasaka viola`],
+        artists: [
+          `Laura Romero Alba viola`,
+          `Tomoko Akasaka viola`,
+          `Natalia Kuchaeva piano`,
+        ],
       },
       {
         composer: [`Henry Cowell (1897-1965)`],
