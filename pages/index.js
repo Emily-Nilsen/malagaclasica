@@ -18,24 +18,17 @@ export default function Home() {
       >
         <div>
           {/* Temporary Coming Soon Page */}
-          {/* <div className="flex flex-col min-h-full pt-16 pb-12 bg-white">
+          <div className="flex flex-col min-h-full pt-16 pb-12 bg-white">
             <main className="flex flex-col justify-center flex-grow w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="px-4 pt-4 pb-8 mx-auto max-w-7xl sm:py-10 sm:px-6 lg:px-8">
                 <div className="text-center">
-                  <div className="grid max-w-xs grid-cols-3 gap-0 mx-auto lg:max-w-lg sm:max-w-sm">
-                    <div className="flex col-span-1 justify-self-end">
-                      <div>
-                        <Image
-                          width={161}
-                          height={53}
-                          src="/static/crescendo-grey.svg"
-                          alt="Logo Málaga Clásica"
-                        />
-                      </div>
+                  <div className="grid max-w-xs grid-cols-3 gap-0 pb-2 mx-auto lg:max-w-lg sm:max-w-sm">
+                    <div className="flex col-span-1 justify-self-center">
+                      <MalagaclasicaLogo className="w-auto h-10 fill-orangeRevolution" />
                     </div>
                     <div className="flex items-center justify-center col-span-2">
                       <div>
-                        <p className="text-2xl font-normal tracking-wider uppercase sm:text-3xl lg:text-4xl text-coalCrescendo">
+                        <p className="text-2xl font-normal tracking-wider text-gray-700 uppercase sm:text-3xl lg:text-4xl">
                           Málaga Clásica
                         </p>
                       </div>
@@ -48,7 +41,7 @@ export default function Home() {
                     </p>
                   </div>
                   <h3 className="max-w-xl mx-auto mt-5 text-2xl font-bold tracking-wider uppercase sm:text-3xl lg:text-4xl text-mossCrescendo">
-                    2023
+                    2024
                   </h3>
                 </div>
               </div>
@@ -64,10 +57,10 @@ export default function Home() {
                 </div>
               </div>
             </main>
-          </div> */}
+          </div>
 
           {/* From 2023 */}
-          <div className="bg-beigeRevolution/10">
+          {/* <div className="bg-beigeRevolution/10">
             <div className="px-4 pt-4 pb-8 mx-auto max-w-7xl sm:py-10 sm:px-6 lg:px-8">
               <div className="text-center">
                 <div className="grid max-w-xs grid-cols-3 gap-0 pb-2 mx-auto lg:max-w-lg sm:max-w-sm">
@@ -96,7 +89,7 @@ export default function Home() {
           </div>
           <Hero />
           <Features />
-          <Testimonials />
+          <Testimonials /> */}
         </div>
       </Layout>
     </>

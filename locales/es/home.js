@@ -24,7 +24,7 @@ const home = {
 
   // Coming Soon
   coming_soon: `¡Estate atento!`,
-  dates_coming: `Próximamente se publicarán las fechas del festival Málaga Clásica 2023.`,
+  dates_coming: `Próximamente se publicarán las fechas del festival Málaga Clásica 2024.`,
 };
 
 export default home;

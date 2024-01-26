@@ -24,7 +24,7 @@ const home = {
 
   // Coming Soon
   coming_soon: `Stay tuned!`,
-  dates_coming: `The 2023 Málaga Clásica festival dates will be published soon.`,
+  dates_coming: `The 2024 Málaga Clásica festival dates will be published soon.`,
 };
 
 export default home;
