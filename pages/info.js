@@ -37,16 +37,28 @@ export default function Info() {
   const revoluciones = [
     'R',
     'e',
-    'v',
-    'o',
-    'l',
-    'u',
-    'c',
-    'i',
+    's',
     'o',
     'n',
+    'a',
+    'n',
+    'c',
+    'i',
+    'a',
+    's',
+    '',
+    'd',
+    'e',
+    'l',
+    '',
     'e',
     's',
+    'p',
+    'í',
+    'r',
+    'i',
+    't',
+    'u',
   ];
   const revolutions = ['r', 'e', 'v', 'o', 'l', 'u', 't', 'i', 'o', 'n', 's'];
 
@@ -107,8 +119,8 @@ export default function Info() {
               animate="show"
               className="max-w-3xl text-lg sm:mt-3 sm:text-2xl text-blueRevolution"
             >
-              29/05__04/06{' '}
-              <span className="text-orangeRevolution">&nbsp;2023</span>
+              27/05__01/06{' '}
+              <span className="text-orangeRevolution">&nbsp;2024</span>
             </motion.h2>
           </div>
         </div>

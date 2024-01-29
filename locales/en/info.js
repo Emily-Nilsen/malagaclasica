@@ -1,14 +1,14 @@
 const info = {
-  title: `11th International Chamber Music Festival`,
-  para_1: `Evolution is something inherent to life. Every so often, large-scale changes occur in very short periods of time. We usually call these revolutions.`,
-  para_2: `Through the history of humanity, revolutions have been something like evolution caused by human will. There have been revolutions of various kinds: technological, industrial, digital, spiritual, philosophical, scientific, artistic... some of them striving to question a status quo that is often replaced by another.`,
-  para_3: `There are also revolutions that have been true failures, originating from the darkest ambitions of the human being, disguised as advances, progress or a struggle for values ​​that end up plunging society into darkness. In those cases, it is common for another revolution to emerge and shed light on the ever-changing history of humanity.`,
+  title: `12th International Chamber Music Festival`,
+  para_1: `Dear audience,`,
+  para_2: `It is with great pleasure and excitement that we warmly welcome you to the 12th edition of Málaga Clásica, our beloved international chamber music festival. This year, under the radiant Andalusian sky, we explore a chamber repertoire that delves into the realms of human emotion and spirituality. The theme for this edition, “Spiritual Resonance”, invites you to explore the power of music as it resonates with the human spirit.`,
+  para_3: `Throughout the festival, we have carefully curated a repertoire spanning centuries and continents, bringing together the masterpieces of renowned composers whose creations have left an indelible mark on the world of classical music. From the exquisite melodies of Albinoni to the intricate counterpoint of Busoni, the moving lyricism of Schubert, the romantic fervor of Mendelssohn and Brahms, to the bold expressions of Shostakovich, Saint-Saëns, Clarke, Turina, and Enescu. In addition to these timeless classics, we are thrilled to introduce you to the voices of our time. The festival will feature world premieres by the brilliant musicians De Solaun and Aurignac, whose compositions are filled with authenticity and originality.`,
   subtitle: `The composers`,
-  para_4: `Just as each new path taken affects our perception of the world, it also influences a musician's approach to composing, performing, and even listening. In the five thematic concerts of this edition, we will address several changes in musical paradigms, linked to various revolutions, covering repertoire from the Baroque period to the 20th century.`,
-  para_5: `You will hear works that expanded the use of instruments, and others that caused a real commotion at their premieres, even social riots. A long time had to pass before many of these pieces were perceived as magnificent or genius works of art. Among all of the pieces performed, there will be true discoveries for the listener.`,
-  para_6: `In the 11th edition of Málaga Clásica: Revolution, the profound and transformative power of music will be brought to light. We welcome you to this exciting week of live performances by our group of captivating artists.`,
-  para_7: `With all the love and music from our hearts,`,
-  co_directors: `Co-Directors of the Málaga Clásica Festival`,
+  para_4: `As we gather in the historic and picturesque city of Málaga, let us not only enjoy the beauty of the music but also reflect on the universal themes that connect us all. Music, with its ability to transcend language and culture, serves as a powerful medium to explore our shared humanity.`,
+  para_5: `In conclusion, we extend our gratitude to each of you for joining us in this musical feast. Your presence adds vitality to the notes resonating within these ancient walls. May this festival be a celebration of the human spirit and a source of inspiration for all.`,
+  para_6: ``,
+  para_7: `With heartfelt appreciation,`,
+  co_directors: `Artistic Directors of Málaga Clásica`,
   honorary_director: `Honorary Director of the Málaga Clásica Festival`,
 };
 
