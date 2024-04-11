@@ -27,7 +27,7 @@ const itemBottom = {
   show: {
     opacity: [0, 0.2, 0.5, 0.8, 1],
     y: 0,
-    transition: { type: 'spring', stiffness: 30, duration: 1.3, delay: 1.5 },
+    transition: { type: 'spring', stiffness: 30, duration: 1.3, delay: 1.2 },
   },
 };
 
