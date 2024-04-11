@@ -39,13 +39,15 @@ export default function Features() {
     <div>
       <section>
         {/* Feature section */}
-        <div className="bg-white">
+        <div className="bg-pink3_2024/50">
           <div className="max-w-2xl px-4 pt-10 pb-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="max-w-3xl">
-              <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-blueRevolution sm:text-5xl">
+              <h4 className="mt-2 text-4xl font-bold tracking-normal text-blueText2024 sm:text-5xl">
                 {t('home:features_title')}
-              </h1>
-              <p className="mt-4 text-gray-500">{t('home:features_text')}</p>
+              </h4>
+              <p className="mt-4 text-blueGreyDark2024">
+                {t('home:features_text')}
+              </p>
             </div>
 
             <div className="grid items-start grid-cols-2 mt-11 sm:gap-y-16 gap-y-10 gap-x-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
@@ -77,9 +79,9 @@ export default function Features() {
                       }}
                       className="mt-4"
                     >
-                      <h2 className="text-2xl font-medium text-gray-600 group-hover:text-orangeRevolution">
+                      <h4 className="text-2xl italic font-bold text-pinkText2024 group-hover:text-blueGrey2024">
                         {feature.name}
-                      </h2>
+                      </h4>
                     </motion.div>
                     <div className="overflow-hidden bg-gray-100 rounded-lg aspect-w-1 aspect-h-1">
                       <div className="object-cover object-center transition duration-300 ease-in-out group-hover:brightness-125">

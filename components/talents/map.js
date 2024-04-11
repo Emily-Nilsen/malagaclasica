@@ -8,10 +8,10 @@ function MapTalentos() {
         <div className="bg-white">
           <div className="px-4 pt-16 mx-auto max-w-7xl sm:pt-24 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="mt-1 text-4xl font-extrabold tracking-tight text-orangeRevolution sm:text-5xl lg:text-6xl">
+              <h4 className="mt-0 text-4xl italic font-extrabold tracking-normal text-blueText2024 sm:text-5xl lg:text-6xl">
                 {t('talents:map_title')}
-              </h1>
-              <p className="max-w-xl mx-auto mt-5 text-xl text-gray-600">
+              </h4>
+              <p className="max-w-xl mx-auto text-xl text-gray-600 -mt-7 sm:-mt-3">
                 {/* {t('talents:map_subtitle')} */}
               </p>
               {/* Address */}

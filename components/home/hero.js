@@ -13,6 +13,7 @@ import { GalamianLogo } from '../../components/logos';
 import { ReinaNilsenLogo } from '../../components/logos';
 import { LaCaixaLogo } from '../../components/logos';
 import { HoteldelPintorLogo } from '../../components/logos';
+import { MalagaIcon } from '../../components/logos';
 
 const container = {
   hidden: { opacity: 0 },
@@ -42,42 +43,41 @@ const itemBottom = {
 const logos = [
   {
     logoMark: (
-      <AyuntamientoLogo className="w-24 h-auto sm:w-32 fill-orangeRevolution" />
+      <AyuntamientoLogo className="w-24 h-auto sm:w-32 fill-gray-600" />
     ),
   },
   {
     logoMark: (
-      <MalagaProculturaLogo className="w-auto h-3 sm:h-4 fill-orangeRevolution" />
+      <MalagaProculturaLogo className="w-auto h-3 sm:h-4 fill-gray-600" />
     ),
   },
   {
     logoMark: (
-      <TeatroCervantesLogo className="w-auto sm:h-9 h-7 fill-orangeRevolution stroke-orangeRevolution" />
+      <TeatroCervantesLogo className="w-auto sm:h-9 h-7 fill-gray-600 stroke-gray-600" />
     ),
   },
   {
     logoMark: (
-      <TeatroEchegarayLogo className="w-auto h-6 sm:h-8 fill-orangeRevolution" />
+      <TeatroEchegarayLogo className="w-auto h-6 sm:h-8 fill-gray-600" />
     ),
   },
   {
-    logoMark: (
-      <GalamianLogo className="w-auto h-9 sm:h-12 fill-orangeRevolution stroke-orangeRevolution" />
-    ),
+    logoMark: <MalagaIcon className="w-auto h-8 sm:h-10 fill-gray-600" />,
+  },
+  // {
+  //   logoMark: (
+  //     <GalamianLogo className="w-auto h-9 sm:h-12 fill-gray-600 stroke-gray-600" />
+  //   ),
+  // },
+  {
+    logoMark: <ReinaNilsenLogo className="w-auto sm:h-12 h-9 fill-gray-600" />,
+  },
+  {
+    logoMark: <LaCaixaLogo className="w-auto h-12 sm:h-16 fill-gray-600" />,
   },
   {
     logoMark: (
-      <ReinaNilsenLogo className="w-auto sm:h-12 h-9 fill-orangeRevolution" />
-    ),
-  },
-  {
-    logoMark: (
-      <LaCaixaLogo className="w-auto h-12 sm:h-16 fill-orangeRevolution" />
-    ),
-  },
-  {
-    logoMark: (
-      <HoteldelPintorLogo className="w-auto h-12 sm:h-16 fill-orangeRevolution" />
+      <HoteldelPintorLogo className="w-auto h-12 sm:h-16 fill-gray-600" />
     ),
   },
 ];
@@ -89,97 +89,131 @@ function classNames(...classes) {
 export default function Hero() {
   const { locale, locales, defaultLocale, asPath } = useRouter();
   const { t } = useTranslation();
-  const revoluciones = [
-    'r',
-    'e',
-    'v',
-    'o',
-    'l',
-    'u',
-    'c',
-    'i',
-    'o',
-    'n',
+  const resonancias = [
+    'R',
     'e',
     's',
+    'o',
+    'n',
+    'a',
+    'n',
+    'c',
+    'i',
+    'a',
+    's',
+    ' ',
+    'd',
+    'e',
+    'l',
+    ' ',
+    'e',
+    's',
+    'p',
+    'í',
+    'r',
+    'i',
+    't',
+    'u',
   ];
-  const revolutions = ['r', 'e', 'v', 'o', 'l', 'u', 't', 'i', 'o', 'n', 's'];
+  const spiritual = [
+    'S',
+    'p',
+    'i',
+    'r',
+    'i',
+    't',
+    'u',
+    'a',
+    'l',
+    ' ',
+    'R',
+    'e',
+    's',
+    'o',
+    'n',
+    'a',
+    'n',
+    'c',
+    'e',
+    ,
+  ];
   return (
-    <div className="bg-beigeRevolution/10">
+    <div className="bg-transparent">
       <main>
         <div>
           {/* Hero card */}
           <div className="relative">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-beigeRevolution/10" />
-            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div className="relative shadow-none sm:overflow-hidden h-[50vh]">
-                <div className="absolute inset-0">
-                  <motion.div
-                    whileInView={{ opacity: 1 }}
-                    initial={{ opacity: 0 }}
-                    transition={{
-                      duration: 0.8,
-                      type: 'fade',
-                      ease: 'easeIn',
-                    }}
-                    className="object-cover w-full h-full bg-beigeRevolution/10"
-                  >
-                    {/* mobile */}
-                    <div className="sm:hidden">
-                      <Image
-                        unoptimized={true}
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="right"
-                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
-                        alt="Revoluciones Festival"
-                        className="bg-beigeRevolution"
-                      />
-                    </div>
-                    {/* desktop */}
-                    <div className="hidden sm:block">
-                      <Image
-                        unoptimized={true}
-                        layout="fill"
-                        objectFit="contain"
-                        objectPosition="right"
-                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
-                        alt="Revoluciones Festival"
-                        className="bg-beigeRevolution"
-                      />
-                    </div>
-                  </motion.div>
-                </div>
+            <div className="absolute inset-0">
+              <motion.div
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  duration: 0.8,
+                  type: 'fade',
+                  ease: 'easeIn',
+                }}
+                className="object-cover w-full h-full bg-transparent"
+              >
+                {/* mobile */}
+                {/* <div className="sm:hidden">
+                  <Image
+                    unoptimized={true}
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="center"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Resonancias_del_espiritu_2024_desktop_bxxhso.webp"
+                    alt="Resonancias de la espiritu"
+                    className=""
+                  />
+                </div> */}
+                {/* desktop */}
+                {/* <div className="hidden sm:block">
+                  <Image
+                    unoptimized={true}
+                    layout="fill"
+                    objectFit="cover"
+                    // objectFit="contain"
+                    objectPosition="center"
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Resonancias_del_espiritu_2024_desktop_bxxhso.webp"
+                    alt="Resonancias de la espiritu"
+                    className=""
+                  />
+                </div> */}
+              </motion.div>
+            </div>
+            <div className="absolute inset-0 bg-transparent" />
+            <div className="w-screen h-full mx-auto bg-transparent sm:px-0 lg:px-0">
+              <div className="relative shadow-none sm:overflow-visible">
                 <div className="relative flex items-center justify-center h-full sm:justify-start sm:px-6 lg:px-8">
-                  <div className="w-full px-6 pt-3 bg-white sm:w-fit sm:p-10">
-                    <motion.h1
+                  <div className="w-full px-6 pt-3 bg-t sm:mt-80 sm:w-fit sm:p-10">
+                    <motion.h4
                       variants={container}
                       initial="hidden"
                       animate="show"
-                      className="block text-5xl font-extrabold tracking-tight text-center uppercase text-orangeRevolution sm:text-7xl lg:text-8xl"
+                      className="block pt-40 text-5xl italic font-bold text-center text-gray-900 sm:pt-20 sm:text-6xl lg:text-7xl"
                     >
                       {locale === 'en'
-                        ? revolutions.map((letter, i) => (
+                        ? spiritual.map((letter, i) => (
                             <motion.span key={i} variants={item}>
                               {letter}
                             </motion.span>
                           ))
-                        : revoluciones.map((letter, i) => (
+                        : resonancias.map((letter, i) => (
                             <motion.span key={i} variants={item}>
                               {letter}
                             </motion.span>
                           ))}
-                    </motion.h1>
+                    </motion.h4>
 
-                    <motion.h2
+                    <motion.h3
                       variants={itemBottom}
                       initial="hidden"
                       animate="show"
-                      className="max-w-lg mx-auto mt-3 text-2xl text-center sm:text-4xl lg:text-5xl text-blueRevolution sm:max-w-3xl"
+                      className="max-w-lg mx-auto mt-3 text-xl font-normal text-center text-gray-600 sm:text-3xl lg:text-4xl sm:max-w-3xl"
                     >
-                      29/05__04/06{' '}
-                      <span className="text-orangeRevolution">&nbsp;2023</span>
-                    </motion.h2>
+                      27/05__01/06{' '}
+                      <span className="text-gray-900">&nbsp;2024</span>
+                    </motion.h3>
                   </div>
                 </div>
               </div>
@@ -187,9 +221,9 @@ export default function Hero() {
           </div>
 
           {/* Logo cloud */}
-          <div className="bg-beigeRevolution/10">
-            <div className="px-4 py-10 mx-auto sm:py-16 max-w-7xl sm:px-6 lg:px-8">
-              <p className="text-sm font-semibold tracking-wide text-center text-gray-600 uppercase">
+          <div className="relative bg-transparent z-1">
+            <div className="relative z-20 px-4 py-10 mx-auto sm:py-16 max-w-7xl sm:px-6 lg:px-8">
+              <p className="text-sm font-semibold tracking-wide text-center text-gray-900 uppercase">
                 {t('home:cloud_title')}
               </p>
               {/* Mobile screen cloud */}

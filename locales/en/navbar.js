@@ -10,10 +10,10 @@ const navbar = {
   link_contactar: `Contact`,
 
   // Program-dropdown
-  overview_title: `May 31 & 1-4 June concerts, 2023`,
-  concert_overview: `Overview`,
-  concert_06: `NEW PATHS - Opening concert`,
-  concert_06_href: `/en/programa/NEW-PATHS-Opening-concert`,
+  overview_title: `27 May – 1 June, 2024`,
+  concert_overview: `Concert Program 2024`,
+  concert_06: `PRAYER - Opening concert`,
+  concert_06_href: `/en/programa/PRAYER-Opening-concert`,
   concert_07: `REVOLUTION OF THE PEOPLE`,
   concert_07_href: `/en/programa/REVOLUTION-OF-THE-PEOPLE`,
   concert_08: `Four - EQUILIBRIO`,

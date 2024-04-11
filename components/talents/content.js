@@ -9,14 +9,14 @@ export default function ContentTalentos() {
     <div className="px-4 py-16 overflow-hidden bg-white xl:py-36 sm:px-6 lg:px-8">
       <div className="relative px-4 sm:px-6 lg:px-8">
         <div className="mx-auto text-lg max-w-prose">
-          <h1>
-            <span className="block text-base font-semibold tracking-wide text-center uppercase text-orangeRevolution">
+          <h4>
+            <span className="block text-base font-semibold tracking-wide text-center uppercase text-pinkText2024">
               {t('talents:subtitle_1')}
             </span>
-            <span className="block mt-2 text-5xl font-extrabold leading-none tracking-tight text-center sm:text-6xl text-blueRevolution">
+            <span className="block mt-2 text-5xl italic font-extrabold leading-none tracking-normal text-center sm:text-6xl text-blueText2024">
               {t('talents:title_1')}
             </span>
-          </h1>
+          </h4>
           <p className="mt-8 text-xl leading-8 text-gray-500">
             {t('talents:para_1')}
           </p>

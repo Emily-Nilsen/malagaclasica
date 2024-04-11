@@ -1,6 +1,6 @@
 const common = {
   //title
-  title: 'Revoluciones',
+  title: 'Resonancias del Espíritu',
 
   // buttons
   buy_tickets: `Compra entradas`,
@@ -15,7 +15,7 @@ const common = {
   ticket_cost_en: ``,
   no_discounts: `(no aplicables descuentos habituales)`,
   discount: `Descuento`,
-  discount_text: `descuento por la compra de los 5 conciertos del ciclo.`,
+  discount_text: `descuento por la compra de los seis conciertos del ciclo.`,
 
   // 404 Page Not Found
   notfound_title_1: '¡Oh oh!',

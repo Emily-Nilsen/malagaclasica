@@ -4,12 +4,7 @@
 
 @font-face {
   font-family: 'Helvetica Neue';
-  /* src: url('../assets/fonts/HelveticaNeueLTStd-Bd.otf'); */
   src: url('../assets/fonts/HelveticaNeueLTStd-BdCn.otf');
-  /* src: url('../assets/fonts/HelveticaNeueLTStd-Blk.otf');
-  src: url('../assets/fonts/HelveticaNeueLTStd-Cn.otf');
-  src: url('../assets/fonts/HelveticaNeueLTStd-CnO.otf');
-  src: url('../assets/fonts/HelveticaNeueLTStd-Roman.otf'); */
 }
 
 html,
@@ -40,4 +35,8 @@ h2 {
 
 h3 {
   font-family: futura-pt, sans-serif;
+}
+
+h4 {
+  font-family: 'lora', serif;
 }

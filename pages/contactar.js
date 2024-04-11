@@ -13,7 +13,7 @@ export default function Contactar() {
       description={t('common:contactar_description')}
       keywords={t('common:contactar_keywords')}
     >
-      <div className="relative bg-beigeRevolution/10">
+      <div className="relative bg-blue2024/10">
         <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
@@ -25,14 +25,14 @@ export default function Contactar() {
           className="lg:absolute lg:inset-0"
         >
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <div className="relative object-cover w-full h-64 lg:absolute lg:h-full bg-beigeRevolution">
+            <div className="relative object-cover w-full h-64 lg:absolute lg:h-full bg-blue2024">
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
-                alt="Crescendo waves"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Resonancias_del_espiritu_2024_desktop_bxxhso.webp"
+                alt="Resonancias del espíritu 2024"
                 unoptimized={true}
                 layout="fill"
                 objectFit="cover"
-                objectPosition="top"
+                objectPosition="center"
               />
             </div>
           </div>
@@ -40,19 +40,19 @@ export default function Contactar() {
         <div className="relative px-4 py-16 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
           <div className="lg:pr-8">
             <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-              <h2 className="text-5xl font-extrabold tracking-tight sm:text-6xl text-orangeRevolution">
+              <h4 className="text-5xl italic font-extrabold tracking-normal sm:text-6xl text-blueText2024">
                 {t('contact:title')}
-              </h2>
+              </h4>
               <p className="mt-4 text-lg text-gray-600 sm:mt-3">
                 {t('contact:subtitle')}
               </p>
-              <dl className="mt-8 text-base transition duration-200 ease-in-out text-blueRevolution">
+              <dl className="mt-8 text-base transition duration-200 ease-in-out text-blueGreyDark2024">
                 {/* phone */}
                 <div className="mt-3">
                   <dt className="sr-only">Telefono</dt>
                   <dd className="flex">
                     <PhoneIcon
-                      className="flex-shrink-0 w-6 h-6 text-orangeRevolution/70"
+                      className="flex-shrink-0 w-6 h-6 text-blueText2024"
                       aria-hidden="true"
                     />
                     <span className="ml-3 font-medium">699 06 74 52</span>
@@ -63,7 +63,7 @@ export default function Contactar() {
                   <dt className="sr-only">Email</dt>
                   <dd className="flex">
                     <MailIcon
-                      className="flex-shrink-0 w-6 h-6 text-orangeRevolution/70"
+                      className="flex-shrink-0 w-6 h-6 text-blueText2024"
                       aria-hidden="true"
                     />
                     <span className="ml-3 font-medium">
@@ -102,7 +102,7 @@ export default function Contactar() {
                       id="first-name"
                       required
                       autoComplete="given-name"
-                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
+                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueText2024 focus:border-blueText2024 border-blue2024/30"
                     />
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export default function Contactar() {
                       id="last-name"
                       required
                       autoComplete="family-name"
-                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
+                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueText2024 focus:border-blueText2024 border-blue2024/30"
                     />
                   </div>
                 </div>
@@ -138,7 +138,7 @@ export default function Contactar() {
                       required
                       type="email"
                       autoComplete="email"
-                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
+                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueText2024 focus:border-blueText2024 border-blue2024/30"
                     />
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export default function Contactar() {
                       id="phone"
                       autoComplete="tel"
                       aria-describedby="phone-description"
-                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
+                      className="block w-full rounded-md shadow-none sm:text-sm focus:ring-blueText2024 focus:border-blueText2024 border-blue2024/30"
                     />
                   </div>
                 </div>
@@ -192,7 +192,7 @@ export default function Contactar() {
                       maxLength="500"
                       aria-describedby="how-can-we-help-description"
                       rows={4}
-                      className="block w-full border rounded-md shadow-none sm:text-sm focus:ring-orangeRevolution focus:border-orangeRevolution border-beigeRevolution/30"
+                      className="block w-full border rounded-md shadow-none sm:text-sm focus:ring-blueText2024 focus:border-blueText2024 border-blue2024/30"
                       defaultValue={''}
                     />
                   </div>
@@ -201,7 +201,7 @@ export default function Contactar() {
                 <div className="text-right sm:col-span-2">
                   <button
                     type="submit"
-                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none bg-orangeRevolution hover:bg-blueRevolution focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orangeRevolution"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white transition duration-200 ease-in-out border border-transparent rounded-md shadow-none bg-blueText2024 hover:bg-blueGreyDark2024 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueText2024"
                   >
                     {t('contact:submit')}
                   </button>

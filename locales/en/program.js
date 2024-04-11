@@ -1,16 +1,17 @@
 const program = {
-  date_title: `31 May - 04 June, `,
+  date_title: `27 May - 01 June, `,
   hero_text_1: `The concerts will take place from `,
-  hero_text_2: `May 31 to June 4`,
+  hero_text_2: `May 27 to June 1`,
   hero_text_3: ` at the Echegaray Theatre in Malaga. Tickets can be obtained online or at the ticket offices of the Cervantes Theatre and Echegaray Theatre.`,
   title: `Themed concerts`,
-  subtitle: `11th anniversary concert program for the Málaga Clásica International Chamber Music Festival.`,
+  subtitle: `12th anniversary concert program for the Málaga Clásica International Chamber Music Festival.`,
 
   read_more: `Read full details`,
   buy_tickets: `Buy tickets`,
   theatre_subtitle: `Málaga Clásica Festival `,
   theatre_cervantes: `Cervantes Theatre`,
   theatre_echegaray: `Echegaray Theatre`,
+  theatre_catedral: `Málaga Cathedral`,
 
   cervantes_address: `Calle Ramos Marín, 1, 29012 Málaga`,
   cervantes_weekday: `Ticket office hours Monday to Friday (business hours)`,
@@ -22,6 +23,8 @@ const program = {
   echegaray_address: `Calle Echegaray 6. 29015 Málaga`,
   ticket_hours: `Ticket office hours`,
   echegaray_tickets: `Show days, from one hour before and up to half an hour after the concert begins.`,
+
+  catedral_address: `Calle Molina Lario, 9. 29015 Málaga`,
 
   time_place_echegaray: `8 p.m. - Echegaray Theatre`,
   time_place_cervantes: `8 p.m. - Cervantes Theatre`,

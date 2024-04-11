@@ -1,10 +1,10 @@
 const talents = {
   // Content Section
-  subtitle_1: `11th Málaga Clásica Festival`,
+  subtitle_1: `12th Málaga Clásica Festival`,
   title_1: `Talent concerts`,
   para_1: `As a chamber music festival, and following one of the main philosophies of the genre, we understand that Málaga Clásica ought to be an event closely tied to and celebrated by the audience and the city of Málaga. As such, we aim for a reciprocal relationship where all parties involved can enjoy the music.`,
-  para_3: `In this eleventh edition, we want young talents to be able to participate in the festival by allowing them to play and share experiences with internationally renowned guest musicians, organized in collaboration with the Galamian International Academy.`,
-  para_4: `The groups of young talents, chosen through a selection process by our artistic directors, will be in charge of performing in the concerts of this series. They will also be the lucky ones to receive the masterclasses scheduled during the festival.`,
+  para_3: `In this XII edition, we want young talents to participate in the festival, allowing them to perform and share experiences with the invited musicians of international prestige.`,
+  para_4: `The groups of young talents, chosen through a selection process by our artistic directors, will be in charge of performing in one of the concerts of this series. They will also be the lucky ones to receive the masterclasses scheduled during the festival.`,
   title_2: `Masterclasses`,
   para_5: `Free admission for masterclasses and concerts while seats are available.`,
 

@@ -66,78 +66,136 @@ const artists = [
     image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/anna-nilsen_kolwch.webp`,
   },
 
-  // Robert Kowalski
+  // Nicolas Dautricourt
   {
     locale: `es`,
-    name: `Robert Kowalski`,
-    slug_name: `Robert Kowalski ES`,
-    instrument: `violín`,
-    para_1: `El primer concertino de la Orchestra della Svizzera italiana cautiva al público con un sonido único e intenso y una musicalidad que es a la vez vivaz y elegante.`,
+    name: `Nicolas Dautricourt`,
+    slug_name: `Nicolas Dautricourt ES`,
+    instrument: `violín & viola`,
+    para_1: `El renombrado violinista francés Nicolas Dautricourt, aclamado como el Descubrimiento Clásico del Año por ADAMI y galardonado con el Premio Sacem Georges Enesco, ha dejado una marca indeleble en la escena de la música clásica.`,
     sentences: [
-      `Comenzó a estudiar el violín con siete años y solo cuatro años después interpretó el concierto para violín de Mendelssohn con la Orquesta Filarmónica del Báltico. Aparece regularmente como solista y músico de cámara en festivales de música en Europa, Estados Unidos y Asia, actuando en prestigiosas salas de conciertos como el Wiener Musikverein, el Mozarteum de Salzburgo, el Laeiszhalle (Hamburgo) y el Carnegie Hall (Nueva York).`,
-      `Ha ganado premios en concursos internacionales, incluido el Concurso Internacional de Personalidades Musicales Aleksander Tansman en Polonia, el Premio a Artistas Jóvenes del Ministerio de Cultura de Polonia y el Premio a Creadores Jóvenes del alcalde de su ciudad natal de Gdansk. `,
-      `Robert estudió en Alemania y Suiza con Waleri Gradow, y más tarde con Kolja Blacher y Ana Chumachenco. Su desarrollo musical también estuvo profundamente influenciado por Bernard Greenhouse, Ivry Gitlis e Ida Haendel y ha trabajado con notables musicos como Vladimir Ashkenazy, Reinhard Goebel, Martha Argerich y Julian Rachlin.`,
-      `Su grabación del concierto para violín de Richard Strauss con la Orchestra della Svizzera Italiana y Markus Poschner, lanzada en 2018 por el sello CPO, obtuvo elogios de la crítica en toda Europa y la nominación a los International Classical Music Awards 2019. En 2016 se unió a la mundialmente reconocida Cuarteto Karol Szymanowski. Toca un violín J. B. Vuillaume de 1860, cedido generosamente por la Fondazione per l'Arte e Socialità.`,
+      `Actuando a nivel mundial, desde el Kennedy Center hasta el Tokyo Bunka Kaikan, ha colaborado con orquestas como la Detroit Symphony, la Royal Philharmonic Orchestra y la Orchestre National de France. También bajo la dirección de distinguidos directores como Leonard Slatkin, Paavo Järvi y Fabien Gabel.`,
+      `Su participación en festivales como Lockenhaus Kammermusikfest y Jazz à Vienne muestra su versatilidad. Como intérprete de un Stradivarius, la dirección artística de Dautricourt en "Fêtes Musicales de Corbigny" añade a su carrera multifacética.`,
     ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Robert_Kowalski_g93mwg.webp`,
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Nicolas_Dautricourt_bzxdyo.webp`,
   },
+
+  // English - Nicolas Dautricourt
+  {
+    locale: `en`,
+    name: `Nicolas Dautricourt`,
+    slug_name: `Nicolas Dautricourt EN`,
+    instrument: `violin & viola`,
+    para_1: `Renowned French violinist Nicolas Dautricourt, lauded as ADAMI Classical Discovery of the Year and recipient of the Sacem Georges Enesco Prize, has left an indelible mark on the classical music scene.`,
+    sentences: [
+      `Performing globally, from the Kennedy Center to Tokyo Bunka Kaikan, he's collaborated with orchestras like the Detroit Symphony, Royal Philharmonic Orchestra, and Orchestre National de France, and under the baton of distinguished conductors such as Leonard Slatkin, Paavo Järvi, and Fabien Gabel.
+      `,
+      `His participation in festivals like Lockenhaus Kammermusikfest and Jazz à Vienne showcases his versatility. A Stradivari player, Dautricourt's artistic directorship of "Fêtes Musicales de Corbigny" adds to his multifaceted career.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Nicolas_Dautricourt_bzxdyo.webp`,
+  },
+
+  // Clémence de Forceville
+  {
+    locale: `es`,
+    name: `Clémence de Forceville`,
+    slug_name: `Clémence de Forceville ES`,
+    instrument: `violín`,
+    para_1: `Clémence de Forceville es una destacada violinista francesa.`,
+    sentences: [
+      `Bajo la tutela de eminentes mentores como Olivier Charlier y Antje Weithaas, obtuvo reconocimiento internacional desde temprana edad. Como solista, colaboró con orquestas como la Filarmónica de Baden-Baden y la Orchestre de Chambre de Paris. Su dedicación a la música de cámara es evidente en su papel como primera violinista del Cuarteto de Cuerdas Hieronymus y su colaboración con el Trío Sōra, que resultó en la aclamada grabación de los Tríos de Beethoven, recibiendo el Choc Classica del año 2021.`,
+      `Además, el liderazgo de Clémence como concertino en orquestas como la Orchestre National de Lille resalta su versatilidad y destreza en el repertorio sinfónico. Como asistente en la clase de Philippe Graffin en el Conservatoire National Supérieur de Musique et de Danse de Paris desde 2021, ha contribuido notablemente a la próxima generación de músicos. Apoyada por la Fundación Boubo-Music, Clémence toca un violín Lorenzo Storioni de 1777. Recientemente, fue nombrada concertino en la Orchestre de Chambre de Lausanne.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Cle%CC%81mence_de_Forceville_sxgcd6.webp`,
+  },
+
+  // English - Clémence de Forceville
+  {
+    locale: `en`,
+    name: `Clémence de Forceville`,
+    slug_name: `Clémence de Forceville EN`,
+    instrument: `violin`,
+    para_1: `Clémence de Forceville stands out as a prominent French violinist.`,
+    sentences: [
+      `Under the tutelage of esteemed mentors Olivier Charlier and Antje Weithaas, she earned international acclaim early on. She collaborated as a soloist with orchestras like the Baden-Baden Philharmonic and the Orchestre de Chambre de Paris. Her commitment to chamber music is evident in her role as the first violin of the Hieronymus String Quartet and her collaboration with the Trio Sōra, resulting in the critically acclaimed recording of Beethoven Trios, receiving the Choc Classica of the year 2021.
+      `,
+      `In addition, Clémence's leadership as concertmaster in orchestras like the Orchestre National de Lille highlights her versatility and prowess in the symphonic repertoire. As an assistant in Philippe Graffin's class at the Conservatoire National Supérieur de Musique et de Danse de Paris since 2021, she has notably contributed to the next generation of musicians. Supported by the Boubo-Music Foundation, Clémence performs on a 1777 Lorenzo Storioni violin. Clémence was recently appointed concertmaster at the Orchestre de Chambre de Lausanne.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Cle%CC%81mence_de_Forceville_sxgcd6.webp`,
+  },
+
+  // Robert Kowalski
+  // {
+  //   locale: `es`,
+  //   name: `Robert Kowalski`,
+  //   slug_name: `Robert Kowalski ES`,
+  //   instrument: `violín`,
+  //   para_1: `El primer concertino de la Orchestra della Svizzera italiana cautiva al público con un sonido único e intenso y una musicalidad que es a la vez vivaz y elegante.`,
+  //   sentences: [
+  //     `Comenzó a estudiar el violín con siete años y solo cuatro años después interpretó el concierto para violín de Mendelssohn con la Orquesta Filarmónica del Báltico. Aparece regularmente como solista y músico de cámara en festivales de música en Europa, Estados Unidos y Asia, actuando en prestigiosas salas de conciertos como el Wiener Musikverein, el Mozarteum de Salzburgo, el Laeiszhalle (Hamburgo) y el Carnegie Hall (Nueva York).`,
+  //     `Ha ganado premios en concursos internacionales, incluido el Concurso Internacional de Personalidades Musicales Aleksander Tansman en Polonia, el Premio a Artistas Jóvenes del Ministerio de Cultura de Polonia y el Premio a Creadores Jóvenes del alcalde de su ciudad natal de Gdansk. `,
+  //     `Robert estudió en Alemania y Suiza con Waleri Gradow, y más tarde con Kolja Blacher y Ana Chumachenco. Su desarrollo musical también estuvo profundamente influenciado por Bernard Greenhouse, Ivry Gitlis e Ida Haendel y ha trabajado con notables musicos como Vladimir Ashkenazy, Reinhard Goebel, Martha Argerich y Julian Rachlin.`,
+  //     `Su grabación del concierto para violín de Richard Strauss con la Orchestra della Svizzera Italiana y Markus Poschner, lanzada en 2018 por el sello CPO, obtuvo elogios de la crítica en toda Europa y la nominación a los International Classical Music Awards 2019. En 2016 se unió a la mundialmente reconocida Cuarteto Karol Szymanowski. Toca un violín J. B. Vuillaume de 1860, cedido generosamente por la Fondazione per l'Arte e Socialità.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Robert_Kowalski_g93mwg.webp`,
+  // },
 
   // English - Robert Kowalski
-  {
-    locale: `en`,
-    name: `Robert Kowalski`,
-    slug_name: `Robert Kowalski EN`,
-    instrument: `violin`,
-    para_1: `The first concertmaster of the Orchestra della Svizzera italiana captivates audiences with a unique, intense sound and a musicality that is at once lively and elegant.`,
-    sentences: [
-      `He began studying the violin aged seven, and only four years later performed Mendelssohn’s Violin Concerto with the Baltic Philharmonic Orchestra. He appears regularly as a soloist and chamber musician at music festivals in Europe, the USA and Asia, performing in prestigious concert venues such as the Wiener Musikverein, Mozarteum Salzburg, Laeiszhalle (Hamburg) and Carnegie Hall (New York).`,
-      `He has won prizes in international competitions, including the Aleksander Tansman International Competition of Musical Personalities in Poland, Young Artists Award of the Polish Ministry of Culture, and Young Creators Award from the mayor of his native city of Gdansk.`,
-      `Robert studied in Germany and Switzerland with Waleri Gradow, and later on with Kolja Blacher and Ana Chumachenco. His musical development was also profoundly influenced by Bernard Greenhouse, Ivry Gitlis and Ida Haendel and he has worked with remarkable musicians such as Vladimir Ashkenazy, Reinhard Goebel, Martha Argerich and Julian Rachlin.`,
-      `His recording of the violin concerto by Richard Strauss with the Orchestra della Svizzera Italiana and Markus Poschner, released in 2018 by the CPO label, earned critical acclaim throughout Europe and the nomination for International Classical Music Awards 2019. In 2016 he joined the world-renowned Karol Szymanowski Quartet. He plays a J. B. Vuillaume violin from 1860, on generous loan from the Fondazione per l'Arte e Socialità.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Robert_Kowalski_g93mwg.webp`,
-  },
+  // {
+  //   locale: `en`,
+  //   name: `Robert Kowalski`,
+  //   slug_name: `Robert Kowalski EN`,
+  //   instrument: `violin`,
+  //   para_1: `The first concertmaster of the Orchestra della Svizzera italiana captivates audiences with a unique, intense sound and a musicality that is at once lively and elegant.`,
+  //   sentences: [
+  //     `He began studying the violin aged seven, and only four years later performed Mendelssohn’s Violin Concerto with the Baltic Philharmonic Orchestra. He appears regularly as a soloist and chamber musician at music festivals in Europe, the USA and Asia, performing in prestigious concert venues such as the Wiener Musikverein, Mozarteum Salzburg, Laeiszhalle (Hamburg) and Carnegie Hall (New York).`,
+  //     `He has won prizes in international competitions, including the Aleksander Tansman International Competition of Musical Personalities in Poland, Young Artists Award of the Polish Ministry of Culture, and Young Creators Award from the mayor of his native city of Gdansk.`,
+  //     `Robert studied in Germany and Switzerland with Waleri Gradow, and later on with Kolja Blacher and Ana Chumachenco. His musical development was also profoundly influenced by Bernard Greenhouse, Ivry Gitlis and Ida Haendel and he has worked with remarkable musicians such as Vladimir Ashkenazy, Reinhard Goebel, Martha Argerich and Julian Rachlin.`,
+  //     `His recording of the violin concerto by Richard Strauss with the Orchestra della Svizzera Italiana and Markus Poschner, released in 2018 by the CPO label, earned critical acclaim throughout Europe and the nomination for International Classical Music Awards 2019. In 2016 he joined the world-renowned Karol Szymanowski Quartet. He plays a J. B. Vuillaume violin from 1860, on generous loan from the Fondazione per l'Arte e Socialità.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Robert_Kowalski_g93mwg.webp`,
+  // },
 
   // Joanna Wronko
-  {
-    locale: `es`,
-    name: `Joanna Wronko`,
-    slug_name: `Joanna Wronko ES`,
-    instrument: `violín`,
-    para_1: `La violinista polaca Joanna Wronko es una músico polivalente con una amplia experiencia en el mundo de orquesta y música de cámara.`,
-    sentences: [
-      `Estudió en Friburgo con la prof. Magdalena Rezler, completando su Diploma de Solista en Hamburgo con la prof. Kolja Blacher. Durante el Festival Holland Music Sessions fue nominada al premio New Masters on Tour con un recital de debut en el Concertgebouw en 2007. En 2008 grabó un CD a dúo con Frank van de Laar, que ha sido retransmitido por la radio holandesa y polaca. Joanna ha aparecido en festivales como el Festival de Música de Colmar (Francia), Keshet Eilon (Israel), Gustav Mahler Academy (Italia), Festival en el Centro Europeo Penderecki (Polonia) y Grachtenfestival en Amsterdam.`,
-      `Ha trabajado con Radio Philharmonisch Orkest, Nederlands Kammerorkest Orkest, Royal Concertgebouw Orchestra, Mahler Chamber Orchestra y Orchestra Mozart, como principal de segundos con Royal Opera House Covent Garden, London Philharmonic Orchestra, Scottish Chamber Orchestra, Philharmonia Orchestra, y colaborado con directores como Claudio Abbado, Bernard Haitink, Andris Nelsons, Daniel Harding y Sir John Eliot Gardiner.`,
-      `Ha realizado giras con Academy of St.Martin in the Fields dirigida por Joshua Bell en Europa, Asia y EE. UU. De 2019 a 2021 ocupó el cargo de primera concertino en la Noord Nederlands Orkest, y ha sido concertino invitada de Balletorkest, Antwerp Symphony, Trondheim Symphony, Odense Symphony, Stavanger Symphony, Orquesta Sinfónica de Galicia y Orquesta Ciudad de Granada con quien se presentó recientemente en el Festival Musika-Música de Bilbao.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Joanna_Wronko_sq_ipgycw.webp`,
-  },
+  // {
+  //   locale: `es`,
+  //   name: `Joanna Wronko`,
+  //   slug_name: `Joanna Wronko ES`,
+  //   instrument: `violín`,
+  //   para_1: `La violinista polaca Joanna Wronko es una músico polivalente con una amplia experiencia en el mundo de orquesta y música de cámara.`,
+  //   sentences: [
+  //     `Estudió en Friburgo con la prof. Magdalena Rezler, completando su Diploma de Solista en Hamburgo con la prof. Kolja Blacher. Durante el Festival Holland Music Sessions fue nominada al premio New Masters on Tour con un recital de debut en el Concertgebouw en 2007. En 2008 grabó un CD a dúo con Frank van de Laar, que ha sido retransmitido por la radio holandesa y polaca. Joanna ha aparecido en festivales como el Festival de Música de Colmar (Francia), Keshet Eilon (Israel), Gustav Mahler Academy (Italia), Festival en el Centro Europeo Penderecki (Polonia) y Grachtenfestival en Amsterdam.`,
+  //     `Ha trabajado con Radio Philharmonisch Orkest, Nederlands Kammerorkest Orkest, Royal Concertgebouw Orchestra, Mahler Chamber Orchestra y Orchestra Mozart, como principal de segundos con Royal Opera House Covent Garden, London Philharmonic Orchestra, Scottish Chamber Orchestra, Philharmonia Orchestra, y colaborado con directores como Claudio Abbado, Bernard Haitink, Andris Nelsons, Daniel Harding y Sir John Eliot Gardiner.`,
+  //     `Ha realizado giras con Academy of St.Martin in the Fields dirigida por Joshua Bell en Europa, Asia y EE. UU. De 2019 a 2021 ocupó el cargo de primera concertino en la Noord Nederlands Orkest, y ha sido concertino invitada de Balletorkest, Antwerp Symphony, Trondheim Symphony, Odense Symphony, Stavanger Symphony, Orquesta Sinfónica de Galicia y Orquesta Ciudad de Granada con quien se presentó recientemente en el Festival Musika-Música de Bilbao.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Joanna_Wronko_sq_ipgycw.webp`,
+  // },
 
   // English - Joanna Wronko
-  {
-    locale: `en`,
-    name: `Joanna Wronko`,
-    slug_name: `Joanna Wronko EN`,
-    instrument: `violin`,
-    para_1: `The Polish violinist Joanna Wronko is a versatile musician with a broad experience in the world of orchestra and chamber music.`,
-    sentences: [
-      `She studied in Freiburg with prof. Magdalena Rezler, completing her Solo Diploma in Hamburg with prof. Kolja Blacher. During the Festival Holland Music Sessions she got nominated for the New Masters on Tour prize with a debut recital in the Concertgebouw in 2007. In 2008 she recorded a duo CD with Frank van de Laar, which has been broadcasted by Dutch and Polish radio. Joanna has appeared in festivals such as the Music Festival in Colmar (France), Keshet Eilon (Israel), Gustav Mahler Academy (Italy), Festival in the European Penderecki Center (Poland) and Grachtenfestival in Amsterdam.`,
-      `She has worked with the Radio Philharmonisch Orkest, Nederlands Kammerorkest Orkest, Royal Concertgebouw Orchestra, Mahler Chamber Orchestra and Orchestra Mozart, as principal 2nd with Royal Opera House Covent Garden, London Philharmonic Orchestra, Scottish Chamber Orchestra, Philharmonia Orchestra, and collaborated with conductors like Claudio Abbado, Bernard Haitink, Andris Nelsons, Daniel Harding, Sir John and Eliot Gardiner.`,
-      `She has toured with Academy of St.Martin in the Fields led by Joshua Bell in Europe, Asia and USA. From 2019 to 2021 she held a position as the first concertmaster at the Noord Nederlands Orkest, and been guest concert master of Balletorkest, Antwerp Symphony, Trondheim Symphony, Odense Symphony, Stavanger Symphony, Orquesta Sinfónica de Galicia and Orquesta Ciudad de Granada with whom she appeared recently at the Festival Musika-Música in Bilbao.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Joanna_Wronko_sq_ipgycw.webp`,
-  },
+  // {
+  //   locale: `en`,
+  //   name: `Joanna Wronko`,
+  //   slug_name: `Joanna Wronko EN`,
+  //   instrument: `violin`,
+  //   para_1: `The Polish violinist Joanna Wronko is a versatile musician with a broad experience in the world of orchestra and chamber music.`,
+  //   sentences: [
+  //     `She studied in Freiburg with prof. Magdalena Rezler, completing her Solo Diploma in Hamburg with prof. Kolja Blacher. During the Festival Holland Music Sessions she got nominated for the New Masters on Tour prize with a debut recital in the Concertgebouw in 2007. In 2008 she recorded a duo CD with Frank van de Laar, which has been broadcasted by Dutch and Polish radio. Joanna has appeared in festivals such as the Music Festival in Colmar (France), Keshet Eilon (Israel), Gustav Mahler Academy (Italy), Festival in the European Penderecki Center (Poland) and Grachtenfestival in Amsterdam.`,
+  //     `She has worked with the Radio Philharmonisch Orkest, Nederlands Kammerorkest Orkest, Royal Concertgebouw Orchestra, Mahler Chamber Orchestra and Orchestra Mozart, as principal 2nd with Royal Opera House Covent Garden, London Philharmonic Orchestra, Scottish Chamber Orchestra, Philharmonia Orchestra, and collaborated with conductors like Claudio Abbado, Bernard Haitink, Andris Nelsons, Daniel Harding, Sir John and Eliot Gardiner.`,
+  //     `She has toured with Academy of St.Martin in the Fields led by Joshua Bell in Europe, Asia and USA. From 2019 to 2021 she held a position as the first concertmaster at the Noord Nederlands Orkest, and been guest concert master of Balletorkest, Antwerp Symphony, Trondheim Symphony, Odense Symphony, Stavanger Symphony, Orquesta Sinfónica de Galicia and Orquesta Ciudad de Granada with whom she appeared recently at the Festival Musika-Música in Bilbao.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Joanna_Wronko_sq_ipgycw.webp`,
+  // },
   // Laura Romero
   {
     locale: `es`,
     name: `Laura Romero`,
     slug_name: `Laura Romero ES`,
-    instrument: `viola`,
-    para_1: `Nacida en Málaga, Laura Romero Alba concluye su formación como violinista en el Conservatorio Superior de Málaga y en la Academia Internacional ‘Ivan Galamian’, y se traslada a Estados Unidos, donde finaliza sus estudios de postgrado en la Universidad de Indiana con el maestro Grigory Kalinovsky.`,
+    instrument: `violín & viola`,
+    para_1: `Nacida en Málaga, Laura Romero Alba comienza a tocar el violín a la edad de 7 años.`,
     sentences: [
-      `Durante toda su carrera artística se ha formado con profesores de la talla de Jesús Reina o Anna Margrethe Nilsen, formación complementada con clases magistrales de célebres pedagogos como Pinchas Zukerman, Patinka Kopec, Alfredo García, Yuri Volguin o Alexander Sitkovetsky. Como concertista solista, su trayectoria abarca desde conciertos en distintos puntos de la geografía española así como en otras ciudades del extranjero, como Oslo (Noruega) y Houston (Texas, Estados Unidos).`,
-      `En los últimos años, ha actuado como solista con “Quivir Ensemble” y con la Joven Orquesta de la Academia Galamian en la provincia de Málaga. Durante su estancia en los Estados Unidos, ha formado parte de orquestas como Columbus Indiana Philarmonic, Richmond Symphony Orchestra o Terre Haute Symphony Orchestra.`,
-      `En el ámbito nacional, ha actuado junto a orquestas como la Orquesta Filarmónica de Málaga, la Joven Orquesta Nacional de España o la Orquesta de la Ciudad de Almería. Actualmente es miembro de la Orquesta Sinfónica Provincial de Málaga y la Orquesta Sinfónica ‘Pop’ del Soho, con la que ha participado en el musical ‘Company’. En el ámbito de la música de cámara, actualmente, pertenece a la agrupación ‘Astrea Quintet’, y ha participado en calidad de violinista y viola en los pasados VII, VIII y IX Festival Internacional de Música de Cámara Málaga Clásica.`,
+      `Tras concluir su formación en el Conservatorio Superior de Málaga y en la Academia Internacional Galamian, con los profesores Anna Margrethe Nilsen y Jesús Reina, se traslada a Estados Unidos, donde realiza sus estudios de posgrado con el maestro Grigory Kalinovsky, en la Universidad de Indiana.`,
+      `Ha recibido masterclases de la mano de célebres pedagogos como Pinchas Zukerman o Patinka Kopec. Ha ofrecido conciertos en distintos puntos de Europa y Estados Unidos. En el ámbito de la música de cámara, participa en diversas agrupaciones como ‘River Quintet’ o ‘Camerata Bitácora’ tocando tanto el violín como la viola. Ha formado parte de orquestas como Columbus Indiana Philarmonic, Richmond Symphony Orchestra o Terre Haute Symphony Orchestra y ha actuado recientemente junto a la Hispanian Symphony Orchestra, la Orquesta Filarmónica de Málaga y la Joven Orquesta Nacional de España.`,
+      `Recientemente fue profesora asistente de violín y viola en la Academia Internacional Galamian en Málaga, y actualmente es miembro fundadora del quinteto Astrea.`,
     ],
     image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Laura_Romero_Alba_skmexb.webp`,
   },
@@ -147,47 +205,47 @@ const artists = [
     locale: `en`,
     name: `Laura Romero`,
     slug_name: `Laura Romero EN`,
-    instrument: `viola`,
-    para_1: `Born in Málaga, Laura Romero Alba has studied at the Conservatory of Music of Málaga and at the Galamian International Academy, and later on completed her postgraduate studies in the United States at the Indiana University with maestro Grigory Kalinovsky.`,
+    instrument: `violin & viola`,
+    para_1: `Born in Malaga, Laura Romero Alba started playing the violin at seven.`,
     sentences: [
-      `Throughout her artistic career she has received masterclasses and work with teachers like Jesús Reina, Anna Margrethe Nilsen, Pinchas Zukerman, Patinka Kopec, Alfredo García, Yuri Volguin and Alexander Sitkovetsky. As a soloist, she has performed all over Spain, as well as in other cities abroad, such as Oslo (Norway) and Houston (Texas, United States).`,
-      `Recently she has performed as a soloist with the "Quivir Ensemble" and with the Youth Orchestra of the Galamian Academy in the province of Malaga. During her stay in the United States, she formed part of orchestras such as the Columbus Indiana Philharmonic, the Richmond Symphony Orchestra and the Terre Haute Symphony Orchestra.`,
-      `In Spain she has performed with orchestras such as the Malaga Philharmonic Orchestra, the National Youth Orchestra of Spain and the Almería City Orchestra. She is currently a member of the Malaga Provincial Symphony Orchestra and the Soho Symphony Orchestra, with which she has participated in the musical Company. In the field of chamber music, she currently belongs to the group 'Astrea Quintet', and has participated as a violinist and violist in the past VII, VIII and IX Málaga Clásica International Chamber Music Festival.`,
+      `After completing her studies at the Conservatory of Music in Malaga and the Galamian International Academy, studying with professors Anna Margrethe Nilsen and Jesús Reina, she moved to the United States, where she is currently completing her postgraduate studies at the University of Indiana with violin professor Grigory Kalinovsky.`,
+      `She has also received masterclasses from pedagogues such as Pinchas Zukerman and Patinka Kopec. She has performed as a soloist in various European and United States places. In chamber music, she participates in multiple groups, such as the ‘River Quintet’ and ‘Camerata Bitácora’ playing both the violin and the viola. She has been part of orchestras such as Columbus, Indiana Philarmonic, Richmond Symphony Orchestra and Terre Haute Symphony Orchestra.`,
+      `She has recently performed alongside the Hispanian Symphony Orchestra, the Philharmonic Orchestra of Malaga, and the Young National Orchestra of Spain. Until recently, she served as assistant professor of violin and viola at the Galamian International Academy in Malaga. Currently, she is a founding member of the Astrea quintet.`,
     ],
     image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Laura_Romero_Alba_skmexb.webp`,
   },
   // Chieh-Fan Yiu
-  {
-    locale: `es`,
-    name: `Chieh-Fan Yiu`,
-    slug_name: `Chieh-Fan Yiu ES`,
-    instrument: `viola`,
-    para_1: `Aclamado por el New York Times como “encantador”, el violista canadiense nacido en Taiwán, Chieh-Fan Yiu, es el ganador triple del premio del Concurso Lionel Tertis, incluido el Premio del Presidente del Jurado de Yuri Bashmet. El Dr. Yiu actúa frecuentemente con Brooklyn Art Song Society, Carnegie Hill Concerts, Frisson Ensemble, PhiloSonia Music y New York Classical Players.`,
-    sentences: [
-      `Sus actuaciones lo han llevado por todo el mundo en festivales como Carbondale Arts en Colorado, Chamber Music Society of the Carolinas, Music@Menlo, Moritzburg, Verbier, Aspen y Sarasota Music Festivals. También es miembro fundador del Festival de Música Ben Feng en Taiwán, ahora en su décima temporada. Aparece regularmente con la Orquesta de Cámara de Filadelfia, la Orquesta Experiencial y el Ensemble Metropolis.`,
-      `Ha colaborado con David Cohen, Chad Hoopes, Tessa Lark, Matthew Lipman, Sasha Sitkovetsky, Josu De Solaun, así como con los cuartetos Argus, Emerson, Formosa y Tesla. Como violista del Ensemble For The Romantic Century, un ensemble que combina obras completamente escenificadas con música de cámara en vivo y diseños visuales elaborados, el Dr. Yiu ha protagonizado 'El caso Dreyfus', 'Porque no podía parar: un encuentro con Emily Dickinson' y 'La oreja de Van Gogh', con más de 70 funciones hasta la fecha.`,
-      `Como pedagogo y mentor, el Dr. Yiu se ha desempeñado como artista residente en el Instituto de Gobierno Rockefeller de la Universidad Estatal de Nueva York, SUNY Schenectady, el programa CHIME de la Orquesta Juvenil del Empire State, así como en la Escuela de Música Moores en la Universidad de Houston.`,
-      `El Dr. Yiu es violista del ensemble Delirium Musicum en Los Ángeles, que acaba de lanzar su álbum titulado "Seasons" para Warner Classics.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Chieh-Fan_Yiu_s5nb1f.webp`,
-  },
+  // {
+  //   locale: `es`,
+  //   name: `Chieh-Fan Yiu`,
+  //   slug_name: `Chieh-Fan Yiu ES`,
+  //   instrument: `viola`,
+  //   para_1: `Aclamado por el New York Times como “encantador”, el violista canadiense nacido en Taiwán, Chieh-Fan Yiu, es el ganador triple del premio del Concurso Lionel Tertis, incluido el Premio del Presidente del Jurado de Yuri Bashmet. El Dr. Yiu actúa frecuentemente con Brooklyn Art Song Society, Carnegie Hill Concerts, Frisson Ensemble, PhiloSonia Music y New York Classical Players.`,
+  //   sentences: [
+  //     `Sus actuaciones lo han llevado por todo el mundo en festivales como Carbondale Arts en Colorado, Chamber Music Society of the Carolinas, Music@Menlo, Moritzburg, Verbier, Aspen y Sarasota Music Festivals. También es miembro fundador del Festival de Música Ben Feng en Taiwán, ahora en su décima temporada. Aparece regularmente con la Orquesta de Cámara de Filadelfia, la Orquesta Experiencial y el Ensemble Metropolis.`,
+  //     `Ha colaborado con David Cohen, Chad Hoopes, Tessa Lark, Matthew Lipman, Sasha Sitkovetsky, Josu De Solaun, así como con los cuartetos Argus, Emerson, Formosa y Tesla. Como violista del Ensemble For The Romantic Century, un ensemble que combina obras completamente escenificadas con música de cámara en vivo y diseños visuales elaborados, el Dr. Yiu ha protagonizado 'El caso Dreyfus', 'Porque no podía parar: un encuentro con Emily Dickinson' y 'La oreja de Van Gogh', con más de 70 funciones hasta la fecha.`,
+  //     `Como pedagogo y mentor, el Dr. Yiu se ha desempeñado como artista residente en el Instituto de Gobierno Rockefeller de la Universidad Estatal de Nueva York, SUNY Schenectady, el programa CHIME de la Orquesta Juvenil del Empire State, así como en la Escuela de Música Moores en la Universidad de Houston.`,
+  //     `El Dr. Yiu es violista del ensemble Delirium Musicum en Los Ángeles, que acaba de lanzar su álbum titulado "Seasons" para Warner Classics.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Chieh-Fan_Yiu_s5nb1f.webp`,
+  // },
 
   // English - Chieh-Fan Yiu
-  {
-    locale: `en`,
-    name: `Chieh-Fan Yiu`,
-    slug_name: `Chieh-Fan Yiu EN`,
-    instrument: `viola`,
-    para_1: `Hailed by the New York Times as “Ravishing,” Taiwanese-born Canadian violist Chieh-Fan Yiu is the triple-prized winner of the Lionel Tertis Competition, including Yuri Bashmet’s President Of The Jury Prize. Dr. Yiu performs regularly with Brooklyn Art Song Society, Carnegie Hill Concerts, Frisson Ensemble, PhiloSonia Music, and New York Classical Players.`,
-    sentences: [
-      `His performances have taken him around the world in festivals such as Carbondale Arts in Colorado, Chamber Music Society of the Carolinas, Music@Menlo, Moritzburg, Verbier, Aspen, and Sarasota Music Festivals. He is a founding member of Ben Feng Music Festival in Taiwan, now in its tenth season and regularly appears with Chamber Orchestra of Philadelphia, Experiential Orchestra, and Metropolis Ensemble.`,
-      `He has collaborated with David Cohen, Chad Hoopes, Tessa Lark, Matthew Lipman, Sasha Sitkovetsky, Josu De Solaun, as well as the Argus, Emerson, Formosa, and Tesla Quartets.
-      As the violist of Ensemble For The Romantic Century, an ensemble that combines fully staged plays with live chamber music and elaborate visual designs, Dr. Yiu has starred in ‘The Dreyfus Affair’, 'Because I Could Not Stop: An Encounter With Emily Dickinson', and ‘Van Gogh’s Ear’, playing more than 70 performances to date.`,
-      `As a pedagogue and mentor, Dr. Yiu has served as artist-in-residence at the State University of New York Rockefeller Institute of Government, SUNY Schenectady, Empire State Youth Orchestra’s CHIME program and Moores School of Music in University of Houston.`,
-      `Dr. Yiu is the violist of ensemble Delirium Musicum, who just released their album titled “Seasons” for Warner Classics.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Chieh-Fan_Yiu_s5nb1f.webp`,
-  },
+  // {
+  //   locale: `en`,
+  //   name: `Chieh-Fan Yiu`,
+  //   slug_name: `Chieh-Fan Yiu EN`,
+  //   instrument: `viola`,
+  //   para_1: `Hailed by the New York Times as “Ravishing,” Taiwanese-born Canadian violist Chieh-Fan Yiu is the triple-prized winner of the Lionel Tertis Competition, including Yuri Bashmet’s President Of The Jury Prize. Dr. Yiu performs regularly with Brooklyn Art Song Society, Carnegie Hill Concerts, Frisson Ensemble, PhiloSonia Music, and New York Classical Players.`,
+  //   sentences: [
+  //     `His performances have taken him around the world in festivals such as Carbondale Arts in Colorado, Chamber Music Society of the Carolinas, Music@Menlo, Moritzburg, Verbier, Aspen, and Sarasota Music Festivals. He is a founding member of Ben Feng Music Festival in Taiwan, now in its tenth season and regularly appears with Chamber Orchestra of Philadelphia, Experiential Orchestra, and Metropolis Ensemble.`,
+  //     `He has collaborated with David Cohen, Chad Hoopes, Tessa Lark, Matthew Lipman, Sasha Sitkovetsky, Josu De Solaun, as well as the Argus, Emerson, Formosa, and Tesla Quartets.
+  //     As the violist of Ensemble For The Romantic Century, an ensemble that combines fully staged plays with live chamber music and elaborate visual designs, Dr. Yiu has starred in ‘The Dreyfus Affair’, 'Because I Could Not Stop: An Encounter With Emily Dickinson', and ‘Van Gogh’s Ear’, playing more than 70 performances to date.`,
+  //     `As a pedagogue and mentor, Dr. Yiu has served as artist-in-residence at the State University of New York Rockefeller Institute of Government, SUNY Schenectady, Empire State Youth Orchestra’s CHIME program and Moores School of Music in University of Houston.`,
+  //     `Dr. Yiu is the violist of ensemble Delirium Musicum, who just released their album titled “Seasons” for Warner Classics.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Chieh-Fan_Yiu_s5nb1f.webp`,
+  // },
   // Tomoko Akasaka
   {
     locale: `es`,
@@ -219,6 +277,63 @@ const artists = [
     ],
     image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/tomoko_ndhzaw.webp`,
   },
+
+  // Rumen Cvetkov
+  // {
+  //   locale: `es`,
+  //   name: `Rumen Cvetkov`,
+  //   slug_name: `Rumen Cvetkov ES`,
+  //   instrument: `viola`,
+  //   para_1: `Ha actuado en importantes escenarios como el Berliner Filharmoniker Hall, Carnegie Hall, Wigmore Hall, Walt Disney Hall, Pallacio de Bellas Artes de Ciudad de México, y ha colaborado con músicos como Ida Haendel, Bernard Greenhouse, Mihail Muntian, sir Harold Martina, José Feghali, Christian Tetzlaff o Vladimir Mendelssohn, y los miembros de los cuartetos Borromeo, Kronos, Aviv, Jerusalem y Verdi.`,
+  //   sentences: [
+  //     `En 2012, el maestro Zubin Mehta le invitó a ser el nuevo solista de viola del Palau de Les Arts Reina Sofia de Valencia. En 2019 editó su primer CD con sonatas de Brahms junto con el pianista Ludmil Angelov.`,
+  //     `Es profesor de Viola en el Conservatorio de Tilburg (Países Bajos) y en la New Bulgarian University (Sofía, Bulgaria), fundador del ensemble Solistas Mediterráneos, y es cofundador y codirector artístico del MurciArt Music Festival.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/rumen-cvetkov_mopwol.webp`,
+  // },
+
+  // English - Rumen Cvetkov
+  // {
+  //   locale: `en`,
+  //   name: `Rumen Cvetkov`,
+  //   slug_name: `Rumen Cvetkov EN`,
+  //   instrument: `viola`,
+  //   para_1: `He has performed in important venues worldwide, such as Berliner Philharmoniker Hall, Carnegie Hall, Wigmore Hall, Walt Disney Hall, Palacio de Bellas Artes of Mexico City and has collaborated with musicians such as Ida Haendel, Bernard Greenhouse, Mihail Muntian, Sir Harold Martina, Jose Feghali, Christian Tetzlaff, Vladimir Mendelssohn.`,
+  //   sentences: [
+  //     `In 2012 he was invited by Maestro Zubin Mehta to become the solo violist of the Royal Spanish Opera House “Queen Sofia” in Valencia. His debut solo CD, “Brahms Alliance”, with pianist Ludmil Angelov.`,
+  //     `Currently, he is a Professor of viola at Tilburg Conservatory (Holland) and New Bulgarian University (Sofia, Bulgaria), the founder and Artistic Leader of the Chamber Orchestra “Mediterranean Soloists”, and the founder and Artistic Director of MurciArt Music Festival.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/rumen-cvetkov_mopwol.webp`,
+  // },
+
+  // Razvan Popovici
+  {
+    locale: `es`,
+    name: `Razvan Popovici`,
+    slug_name: `Razvan Popovici ES`,
+    instrument: `viola`,
+    para_1: `El violista rumano Razvan Popovici ha actuado en escenarios prestigiosos, como Théatre-dés-Champs-Elysées (París), Filarmónica de Colonia, Carnegie Hall (Nueva York), Concertgebouw (Ámsterdam), Wigmore Hall (Londres), Suntory Hall (Tokio), Gasteig (Munich), Kennedy Center (Washington) y el Vienna Konzerthaus y Musikverein, Atheneum (Bucarest), Prinzregententheater (Munich), De Singel (Antwerpen), BOZAR (Bruselas), y con orquestas como la Orquesta de Cámara de Colonia, Kamerata Kronstadt, Kobe Chamber Orchestra, Lohja City Orchestra, Transylvania Symphony Orchestra Cluj, Sibiu State Philharmonic, Romanian National Radio Orchestra y George Enescu Philharmonic Bucharest. `,
+    sentences: [
+      `Como músico de cámara ha colaborado con Natalia Gutman, Shlomo Mintz, Enrico Pace, Giovanni Sollima, Konstantin Lifschitz, Lawrence Power, así como con los cuartetos Szymanowski, Vertavo, Casal, Danel, Kelémen, Glinka o Schumann, miembros del quarteto Amadeus y Ensemble Wien-Berlin, y ha lanzado ocho CDs con el Ensemble Raro, que realiza giras frecuentes por Europa, Japón y América del Norte.`,
+      `Es el Fundador y Director Ejecutivo del Festival Chiemgauer Musikfrühling en Alemania, del Festival SoNoRo en Bucarest y del Festival SoNoRo Arezzo en Toscana, así como Director Artístico de la Serie de Música de Cámara DA CAPO en Bucarest. Enseña regularmente en Villa Musica, y ha sido nombrado profesor en el Real Conservatorio de Amberes.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/razvan-popovici_xq4gj1.webp`,
+  },
+
+  // English - Razvan Popovici
+  {
+    locale: `en`,
+    name: `Razvan Popovici`,
+    slug_name: `Razvan Popovici EN`,
+    instrument: `viola`,
+    para_1: `The Romanian violist Razvan Popovici has performed in prestigious venues, including Théatre-dés-Champs-Elysées (Paris), Cologne Philharmony, Carnegie Hall (New York), Concertgebouw (Amsterdam), Wigmore Hall (London), Suntory Hall (Tokyo), Gasteig (Munich), Kennedy Center (Washington) and the Vienna Konzerthaus and Musikverein, Atheneum (Bucharest), Prinzregententheater (Munich), De Singel (Antwerpen), BOZAR (Brussels), and with orchestras such as the Cologne Chamber Orchestra, Camerata Kronstadt, Kobe Chamber Orchestra, Lohja City Orchestra, Transylvania Symphony Orchestra Cluj, Sibiu State Philharmonic, Romanian National Radio Orchestra and George Enescu Philharmonic Bucharest.`,
+    sentences: [
+      `As a chamber musician, he has collaborated with Natalia Gutman, Shlomo Mintz, Enrico Pace, Giovanni Sollima, Konstantin Lifschitz, Lawrence Power, as well as alongside the Szymanowski, Vertavo, Casal, Danel, Kelémen, Glinka or Schumann Quartets, members of the Amadeus Quartet and Ensemble Wien-Berlin, and has released eight CDs with the Ensemble Raro, which frequently tours Europe, Japan and North America.`,
+      `Popovici is the Founder and Executive Director of the Chiemgauer Musikfrühling Festival in Germany, the SoNoRo Festival in Bucharest and the SoNoRo Arezzo Festival in Tuscany, as well as the Artistic Director of the DA CAPO Chamber Music Series in Bucharest. He teaches regularly at the Villa Musica and has been appointed professor at the Royal Conservatory in Antwerp.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/razvan-popovici_xq4gj1.webp`,
+  },
+
   // Øyvind Gimse
   {
     locale: `es`,
@@ -248,35 +363,92 @@ const artists = [
     ],
     image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/%C3%98yvind_Gimse_sq_iaqsrn.webp`,
   },
-  // Adolfo Gutiérrez
+
+  // Per Nyström
   {
     locale: `es`,
-    name: `Adolfo Gutiérrez`,
-    slug_name: `Adolfo Gutiérrez ES`,
+    name: `Per Nyström`,
+    slug_name: `Per Nyström ES`,
     instrument: `violonchelo`,
-    para_1: `Adolfo Gutiérrez, ganador del premio Ravel 2012, debutó con la London Symphony Orchestra en el prestigioso ciclo Ibermusica, en Madrid, interpretando el Concierto para violonchelo de Elgar y enseguida fue invitado a actuar con la Royal Philharmonic Orchestra (Charles Dutoit) , Orquesta Nacional de España (Ton Koopman) y en el Festival Mendelssohn en la Gewandhaus de Leipzig.`,
+    para_1: `Per, actualmente el violonchelista principal de Uppsala Chamber Soloists & Orchestra, cofundó y tocó con el galardonado Cuarteto Yggdrasil de 1990 a 2011, disfrutando de una residencia en la Universidad de Aberdeen.`,
     sentences: [
-      `Entre sus compromisos caben a destacar actuaciones como solista con la Orquesta Filarmónica de Londres (Vladimir Jurowski), la Orquesta Nacional de España (Krzysztof Penderecki), la Sinfónica de Fort Worth bajo la dirección de Miguel Harth-Bedoya, la Orquesta Sinfónica Nacional de Colombia y actuaciones en el Festival de Ravinia y el Festival de Verano de la Sinfónica de Montreal.`,
-      `Adolfo ha actuado en escenarios importantes como el Concertgebouw de Ámsterdam, el Auditorio Nacional de Música de Madrid, el Ford Theatre de Los Ángeles, l'Auditori y Palau de la Música de Barcelona, ​​la Sala Bulgaria de Sofía o el Palacio Euskalduna de Bilbao, y ha colaborado con directores como como Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali y Antoni Ros-Marbà.`,
-      `Adolfo ha grabado Barber, Rachmaninov, Piazzolla y el ciclo completo de las suites para violonchelo de J.S. Bach con el sello Verso. Su grabación reciente de las sonatas completas de Beethoven con el pianista Christopher Park ha recibido excelentes críticas. Adolfo toca un Francesco Ruggieri, hecho a mano en Cremona en 1673.`,
+      `Posteriormente, fue violonchelista solista en Camerata Nordica de 2001 a 2016, combinando responsabilidades artísticas y de formación. Desde 2005, ocupa el cargo de director artístico de los festivales Kammarmusikens vänner, organizando cerca de 70 festivales internacionales y clases magistrales que atraen a participantes de todo el mundo. Además de sus compromisos orquestales, Per contribuye a conjuntos como el Trio Elégiaque y el Swedish Piano Trio, actuando como invitado en festivales globales.`,
+      `Reconocido por sus contribuciones, es miembro honorario de por vida de la Universidad de Aberdeen y ha recibido la Medalla Real "Literis et artibus". Per toca un violonchelo Antonio & Giuseppe Gagliano de 1796 proveniente de Nápoles y es conocido por su fuerza, levantando 200 kg en un levantamiento de pesas.`,
     ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Per_Nystro%CC%88m_wplq3e.webp`,
   },
 
-  // English - Adolfo Gutiérrez
+  // English - Per Nyström
   {
     locale: `en`,
-    name: `Adolfo Gutiérrez`,
-    slug_name: `Adolfo Gutiérrez EN`,
+    name: `Per Nyström`,
+    slug_name: `Per Nyström EN`,
     instrument: `cello`,
-    para_1: `Adolfo Gutiérrez, the winner of the Ravel prize 2012, made his debut with the London Symphony Orchestra in the prestigious Ibermusica series, in Madrid, performing Elgar’s Cello Concerto and following was invited to perform with the Royal Philharmonic Orchestra (Charles Dutoit), Orquesta Nacional de España (Ton Koopman) and at the Mendelssohn Festival at Leipzig’s Gewandhaus.`,
+    para_1: `Per, currently the principal cellist with Uppsala Chamber Soloists & Orchestra, co-founded and played with the prize-winning Yggdrasil Quartet from 1990 to 2011, enjoying a residency at the University of Aberdeen.`,
     sentences: [
-      `Current highlights include performances as a soloist with the London Philharmonic Orchestra (Vladimir Jurowski), Orquesta Nacional de España (Krzysztof Penderecki), Fort Worth Symphony under Miguel Harth-Bedoya, Orquesta Sinfónica Nacional de Colombia and performances at the Ravinia Festival and Montreal Symphony’s Summer Festival.`,
-      `Adolfo has performed at major venues such as Amsterdam’s Concertgebouw, Auditorio Nacional de Música in Madrid, Ford Theatre in Los Angeles, l’Auditori and Palau de la Música in Barcelona, Bulgaria Hall in Sofia and Palacio Euskalduna in Bilbao, and collaborated with conductors such as Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali and Antoni Ros-Marbà.`,
-      `Adolfo has recorded Barber, Rachmaninov, Piazzolla and the complete cycle of the cello suites by J.S. Bach on the Verso label. His recent recording of the complete Beethoven Sonatas with pianist Christopher Park received great critical acclaim. Adolfo plays a Francesco Ruggieri, handcrafted in Cremona in 1673. `,
+      `Following this, he served as the solo cellist in Camerata Nordica from 2001 to 2016, combining artistic and lineup responsibilities. Since 2005, he has held the position of artistic director for Kammarmusikens vänner festivals, organizing nearly 70 international festivals and masterclasses that attract participants worldwide. In addition to his orchestral commitments, Per contributes to ensembles like Trio Elégiaque and the Swedish Piano Trio, performing as a guest at global festivals.`,
+      `Recognized for his contributions, he holds an honorary lifetime membership at the University of Aberdeen and has been awarded the Royal Medal "Literis et artibus." Per plays a 1796 Antonio & Giuseppe Gagliano cello from Naples and is known for his strength, lifting 200 kg in a deadlift.`,
     ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Per_Nystro%CC%88m_wplq3e.webp`,
   },
+
+  // Gabriel Ureña
+  {
+    locale: `es`,
+    name: `Gabriel Ureña`,
+    slug_name: `Gabriel Ureña ES`,
+    instrument: `violonchelo`,
+    para_1: `Gabriel Ureña ha tocado como solista con la London City Orchestra, Oviedo Filarmonía o Arteus Orquesta y en salas internacionales prestigiosas como el Musikverein (Viena), Teatro de los Campos Elíseos (París), Seoul Arts Center, Auditorio Nacional de Música (Madrid), Palau de la Música (Barcelona) o el Teatro de la Maestranza (Sevilla).`,
+    sentences: [
+      `Ha compartido escenario con artistas como Leo Nucci, Edita Gruberová, Ainhoa Arteta, Ruggero Raimondi, Anna Netrebko, Ilya Gringolts, Benjamin Schmid, las hermanas Labèque, Natalia Gutman o Midori, y ha ganado el Primer Premio del Concurso de Cello de Arquillos (Jaén) y del Concurso Internacional de Música de Cámara "Ciudad de Manresa”.`,
+      `Entre los hitos más recientes de su carrera figuran la publicación de su primer CD, con el sello Aria Classics, con obras de Prokofiev, Shostakovich y Rachmaninov, junto al pianista Patxi Aizpiri, su concierto como solista con la Orquesta Filarmónica de Málaga o su debut con la Orquesta Nacional de Colombia en el Teatro Colón de Bogotá.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Gabriel_Urena_k3zidf.webp`,
+  },
+
+  // English - Gabriel Ureña
+  {
+    locale: `en`,
+    name: `Gabriel Ureña`,
+    slug_name: `Gabriel Ureña EN`,
+    instrument: `cello`,
+    para_1: `Gabriel Ureña has performed as a soloist with the London City Orchestra, Oviedo Philharmonic and Arteus Orquesta and in prestigious international venues such as the Musikverein (Vienna), Theater of the Champs Elysees (Paris), Seoul Arts Center, National Auditorium of Music (Madrid), Palau de la Música (Barcelona) and the Teatro de la Maestranza (Seville).`,
+    sentences: [
+      `He has shared the stage with artists such as Leo Nucci, Edita Gruberová, Ainhoa Arteta, Ruggero Raimondi, Anna Netrebko, Ilya Gringolts, Benjamin Schmid, the Labèque sisters, Natalia Gutman and Midori, and is the First Prize Winner of the Cello Competition of Arquillos (Jaén) and the International Chamber Music Competition "City of Manresa”.`,
+      `Among the most recent milestones of his career are the publication of his first CD for the label Aria Classics, with works by Prokofiev, Shostakovich and Rachmaninov, with the pianist Patxi Aizpiri, his solo appearance with the Malaga Philharmonic Orchestra and his debut with the Colombian National Orchestra at the Teatro Colón in Bogotá.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Gabriel_Urena_k3zidf.webp`,
+  },
+
+  // Adolfo Gutiérrez
+  // {
+  //   locale: `es`,
+  //   name: `Adolfo Gutiérrez`,
+  //   slug_name: `Adolfo Gutiérrez ES`,
+  //   instrument: `violonchelo`,
+  //   para_1: `Adolfo Gutiérrez, ganador del premio Ravel 2012, debutó con la London Symphony Orchestra en el prestigioso ciclo Ibermusica, en Madrid, interpretando el Concierto para violonchelo de Elgar y enseguida fue invitado a actuar con la Royal Philharmonic Orchestra (Charles Dutoit) , Orquesta Nacional de España (Ton Koopman) y en el Festival Mendelssohn en la Gewandhaus de Leipzig.`,
+  //   sentences: [
+  //     `Entre sus compromisos caben a destacar actuaciones como solista con la Orquesta Filarmónica de Londres (Vladimir Jurowski), la Orquesta Nacional de España (Krzysztof Penderecki), la Sinfónica de Fort Worth bajo la dirección de Miguel Harth-Bedoya, la Orquesta Sinfónica Nacional de Colombia y actuaciones en el Festival de Ravinia y el Festival de Verano de la Sinfónica de Montreal.`,
+  //     `Adolfo ha actuado en escenarios importantes como el Concertgebouw de Ámsterdam, el Auditorio Nacional de Música de Madrid, el Ford Theatre de Los Ángeles, l'Auditori y Palau de la Música de Barcelona, ​​la Sala Bulgaria de Sofía o el Palacio Euskalduna de Bilbao, y ha colaborado con directores como como Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali y Antoni Ros-Marbà.`,
+  //     `Adolfo ha grabado Barber, Rachmaninov, Piazzolla y el ciclo completo de las suites para violonchelo de J.S. Bach con el sello Verso. Su grabación reciente de las sonatas completas de Beethoven con el pianista Christopher Park ha recibido excelentes críticas. Adolfo toca un Francesco Ruggieri, hecho a mano en Cremona en 1673.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
+  // },
+
+  // English - Adolfo Gutiérrez
+  // {
+  //   locale: `en`,
+  //   name: `Adolfo Gutiérrez`,
+  //   slug_name: `Adolfo Gutiérrez EN`,
+  //   instrument: `cello`,
+  //   para_1: `Adolfo Gutiérrez, the winner of the Ravel prize 2012, made his debut with the London Symphony Orchestra in the prestigious Ibermusica series, in Madrid, performing Elgar’s Cello Concerto and following was invited to perform with the Royal Philharmonic Orchestra (Charles Dutoit), Orquesta Nacional de España (Ton Koopman) and at the Mendelssohn Festival at Leipzig’s Gewandhaus.`,
+  //   sentences: [
+  //     `Current highlights include performances as a soloist with the London Philharmonic Orchestra (Vladimir Jurowski), Orquesta Nacional de España (Krzysztof Penderecki), Fort Worth Symphony under Miguel Harth-Bedoya, Orquesta Sinfónica Nacional de Colombia and performances at the Ravinia Festival and Montreal Symphony’s Summer Festival.`,
+  //     `Adolfo has performed at major venues such as Amsterdam’s Concertgebouw, Auditorio Nacional de Música in Madrid, Ford Theatre in Los Angeles, l’Auditori and Palau de la Música in Barcelona, Bulgaria Hall in Sofia and Palacio Euskalduna in Bilbao, and collaborated with conductors such as Edward Gardner, José Ramón Encinar, Roberto Minczuk, Pablo González, Anu Tali and Antoni Ros-Marbà.`,
+  //     `Adolfo has recorded Barber, Rachmaninov, Piazzolla and the complete cycle of the cello suites by J.S. Bach on the Verso label. His recent recording of the complete Beethoven Sonatas with pianist Christopher Park received great critical acclaim. Adolfo plays a Francesco Ruggieri, handcrafted in Cremona in 1673. `,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/adolfo-gutierrez_fkv4oe.webp`,
+  // },
 
   // Natalia Kucháeva
   {
@@ -308,91 +480,149 @@ const artists = [
     image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Natalia_Kuchaeva_sq_xhbtyf.webp`,
   },
 
-  // Julien Quentin
+  // Josu De Solaun
   {
     locale: `es`,
-    name: `Julien Quentin`,
-    slug_name: `Julien Quentin ES`,
+    name: `Josu De Solaun`,
+    slug_name: `Josu De Solaun ES`,
     instrument: `piano`,
-    para_1: `El pianista francés Julien Quentin ha actuado en el Concertgebouw (Amsterdam), Wigmore Hall (Londres), Louvre (París), Baden-Baden Festspielhaus, Filarmónica de Berlín, Gewandhaus (Leipzig), Konzerthaus (Viena), Teatro Mariinsky (San Petersburgo), en Avery Fisher, Alice Tully y Carnegie Hall en Nueva York.`,
+    para_1: `El pianista hispanoamericano Josu De Solaun es el ganador del Primer Premio del XIII Concurso Internacional de Piano George Enescu, Bucarest, el XV Concurso Internacional de Piano José Iturbi y el Primer Concurso de Piano de la Unión Europea.`,
     sentences: [
-      `Ha grabado para EMI, Channel Classics, Sony RCA, Hungaroton y Decca. Julien Quentin comenzó sus estudios en el Conservatorio de Ginebra con Alexis Golovine, recibió su Diploma de Artista bajo la tutela de Emile Naoumoff en la Universidad de Indiana y el Diploma de Posgrado de la Juilliard School, estudiando con György Sándor.`,
-      `Con "Musica Litoralis" en el Piano Salon Christophori en Berlín, ha creado una exitosa serie de conciertos que recuerda a los salones de los locos años veinte. Con artistas visuales, explora nuevas visiones artísticas que unen varias formas de arte.`,
-      `Persigue su interés por otros géneros musicales colaborando con los pianistas Kelvin Sholar, Kaan Bulak y Francesco Tristano, o los productores Adrien de Maublanc y Cesar Merveille en proyectos que van desde la improvisación hasta la producción de música electrónica, sobre todo dentro de sus nuevos proyectos Midiminuit & Les Coeurs Brisés.`,
+      `Ha sido invitado a actuar en distinguidas salas de conciertos de todo el mundo, incluyendo al Ateneo Rumano de Bucarest, el Teatro La Fenice de Venecia, el Teatro Mariinsky de San Petersburgo, el Kennedy Center de Washington, Carnegie Hall y Metropolitan Opera de Nueva York, Southbank Centre de Londres, Salle Cortot de París, Schumann Haus de Leipzig, Novel Hall en Taipei, la Sala Silvestre Revueltas de la Ciudad de México, el Palacio Nostitz de Praga, la Academia de España en Roma, el Festival Internacional de Música de Menton y todas las principales ciudades de España. `,
+      `La temporada 2020-2021 contó con su concierto–debut de improvisación libre al piano, panDEMiCity, en el Auditorio Ciudad de León, así como actuaciones como solista con orquestas en España, República Checa y Rumanía. En 2021, también recibió el prestigioso premio ICMA (International Classical Music Awards) por su grabación de Sonatas para violín y piano francesas con la violinista Franziska Pietsch («Fantasque«), y en 2023, recibión el mismo galardón por su álbum Haydn Piano Sonatas. Su último álbum en solitario de obras de Brahms y Schumann para el sello IBS Classical – «Digressions» – ha cosechado excelentes críticas.`,
     ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Julien_Quentin_cemtl1.webp`,
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Josu_de_Solaun_mrounb.webp`,
   },
+
+  // English - Josu De Solaun
+  {
+    locale: `en`,
+    name: `Josu De Solaun`,
+    slug_name: `Josu De Solaun EN`,
+    instrument: `piano`,
+    para_1: `Spanish-American pianist Josu De Solaun is the winner of the First Prize of the XIII George Enescu International Piano Competition, Bucharest, the XV José Iturbi International Piano Competition and the First Piano Competition of the European Union.`,
+    sentences: [
+      `He has been invited to perform in distinguished concert halls around the world, including the Romanian Athenaeum in Bucharest, the La Fenice Theater in Venice, the Mariinsky Theater in St. Petersburg, the Kennedy Center in Washington, Carnegie Hall and the Metropolitan Opera in New York, the Southbank Center in London, the Salle Cortot in Paris, the Schumann Haus in Leipzig, the Novel Hall in Taipei, the Sala Silvestre Revueltas in Mexico City, the Nostitz Palace in Prague, the Spanish Academy in Rome, the International Music Festival of Menton and all the main cities of Spain. `,
+      `The 2020-2021 season featured his free improvisation concert-debut on piano, panDEMiCity, at the León Auditorium, as well as solo performances with orchestras, in Spain, the Czech Republic and Romania. In 2021, he also received the prestigious ICMA (International Classical Music Awards) award for his recording of French Violin and Piano Sonatas with violinist Franziska Pietsch (“Fantasque”), and in 2023 he obtained the same award for his Haydn Piano Sonatas album. His latest solo album of works by Brahms and Schumann for the IBS Classical label – “Digressions” – has garnered great reviews.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Josu_de_Solaun_mrounb.webp`,
+  },
+
+  // Antonio del Pino
+  {
+    locale: `es`,
+    name: `Antonio del Pino`,
+    slug_name: `Antonio del Pino ES`,
+    instrument: `órgano`,
+    para_1: `Antonio del Pino, doctor en Musicología por el Pontificio Instituto de Música Sacra de Roma, destaca como violista, organista y director coral.`,
+    sentences: [
+      `Su trayectoria incluye participación en festivales internacionales en Italia, como Castelli d'Aria, Musica a Tramonti y Fiori Musicali de Zurich en Suiza, además de festivales en Portugal como São Vicente de Fora en Lisboa, Festival Internacional de Mafra, y en Suiza el Festival Internacional de Música de Rocca Massima.`,
+      `Dirige el coro de la Catedral de Málaga, donde también desempeña el cargo de organista y coordina el ciclo de órgano en primavera. Investigador becado por la Junta de Andalucía, ha destacado en proyectos sobre el compositor malagueño Juan B. Cansino Antolínez. Obtuvo el Magisterio en Canto Gregoriano y Dirección de Coro en Milán, defendiendo una tesis sobre la influencia aquitana en los cantorales de Canto Llano de la Catedral de Málaga.`,
+      `Fundador de la Capilla Maestro Iribarren, ha colaborado con reconocidos músicos como Marco Frisina, organizando estrenos mundiales. Su labor editorial abarca artículos y ediciones críticas, y en 2019 recibió el Premio a la mejor labor musical del año de Málaga.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Antonio_del_Pino_lok4vw.webp`,
+  },
+
+  // English - Antonio del Pino
+  {
+    locale: `en`,
+    name: `Antonio del Pino`,
+    slug_name: `Antonio del Pino EN`,
+    instrument: `organ`,
+    para_1: `Antonio del Pino, a Ph.D. in Musicology from the Pontifical Institute of Sacred Music in Rome, stands out as a violist, organist, and choral director.`,
+    sentences: [
+      `His career includes participation in international festivals in Italy, such as Castelli d'Aria, Musica a Tramonti, and Fiori Musicali in Zurich, Switzerland, as well as festivals in Portugal, including São Vicente de Fora in Lisbon and the International Festival of Mafra, and in Switzerland, the International Music Festival of Rocca Massima.`,
+      `He directs the choir of the Cathedral of Malaga, where he also serves as the organist and coordinates the spring organ cycle. A researcher funded by the Junta de Andalucía, he has excelled in projects related to the Malaga composer Juan B. Cansino Antolínez. He obtained a Master's degree in Gregorian Chant and Choir Direction in Milan, defending a thesis on the Aquitanian influence in the plainchant choirbooks of the Cathedral of Malaga.`,
+      `As the founder of the Capilla Maestro Iribarren, he has collaborated with renowned musicians like Marco Frisina, organising world premieres. His editorial work encompasses articles and critical editions, and in 2019, he was awarded the prize for the Musical Achievement of the Year in Malaga.`,
+    ],
+    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Antonio_del_Pino_lok4vw.webp`,
+  },
+
+  // Julien Quentin
+  // {
+  //   locale: `es`,
+  //   name: `Julien Quentin`,
+  //   slug_name: `Julien Quentin ES`,
+  //   instrument: `piano`,
+  //   para_1: `El pianista francés Julien Quentin ha actuado en el Concertgebouw (Amsterdam), Wigmore Hall (Londres), Louvre (París), Baden-Baden Festspielhaus, Filarmónica de Berlín, Gewandhaus (Leipzig), Konzerthaus (Viena), Teatro Mariinsky (San Petersburgo), en Avery Fisher, Alice Tully y Carnegie Hall en Nueva York.`,
+  //   sentences: [
+  //     `Ha grabado para EMI, Channel Classics, Sony RCA, Hungaroton y Decca. Julien Quentin comenzó sus estudios en el Conservatorio de Ginebra con Alexis Golovine, recibió su Diploma de Artista bajo la tutela de Emile Naoumoff en la Universidad de Indiana y el Diploma de Posgrado de la Juilliard School, estudiando con György Sándor.`,
+  //     `Con "Musica Litoralis" en el Piano Salon Christophori en Berlín, ha creado una exitosa serie de conciertos que recuerda a los salones de los locos años veinte. Con artistas visuales, explora nuevas visiones artísticas que unen varias formas de arte.`,
+  //     `Persigue su interés por otros géneros musicales colaborando con los pianistas Kelvin Sholar, Kaan Bulak y Francesco Tristano, o los productores Adrien de Maublanc y Cesar Merveille en proyectos que van desde la improvisación hasta la producción de música electrónica, sobre todo dentro de sus nuevos proyectos Midiminuit & Les Coeurs Brisés.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Julien_Quentin_cemtl1.webp`,
+  // },
 
   // English - Julien Quentin
-  {
-    locale: `en`,
-    name: `Julien Quentin`,
-    slug_name: `Julien Quentin EN`,
-    instrument: `piano`,
-    para_1: `French pianist Julien Quentin has appeared at the Concertgebouw (Amsterdam), Wigmore Hall (London), Louvre (Paris), Baden-Baden Festspielhaus, Berlin Philharmonie, Gewandhaus (Leipzig), Konzerthaus (Vienna), Mariinsky Theatre (Saint Petersburg), in Avery Fisher, Alice Tully and Carnegie Hall in New York.`,
-    sentences: [
-      `He has recorded for EMI, Channel Classics, Sony RCA, Hungaroton and Decca. Julien Quentin started his studies at the Geneva Conservatory with Alexis Golovine, received his Artist Diploma under the tutelage of Emile Naoumoff at Indiana University, and Graduate Diploma from the Juilliard School, studying with György Sándor.`,
-      `With ‘Musica Litoralis’ at the Piano Salon Christophori in Berlin, he has created a successful concert series reminiscent of the salons of the Roaring Twenties. With visual artists, he explores new artistic visions bringing various art forms together.`,
-      `He pursues his interest in other genres of music collaborating with pianists Kelvin Sholar, Kaan Bulak and Francesco Tristano, or producers Adrien de Maublanc and Cesar Merveille in projects ranging from improvisation to producing electronic music, most notably within their new projects Midiminuit & Les Coeurs Brisés.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Julien_Quentin_cemtl1.webp`,
-  },
+  // {
+  //   locale: `en`,
+  //   name: `Julien Quentin`,
+  //   slug_name: `Julien Quentin EN`,
+  //   instrument: `piano`,
+  //   para_1: `French pianist Julien Quentin has appeared at the Concertgebouw (Amsterdam), Wigmore Hall (London), Louvre (Paris), Baden-Baden Festspielhaus, Berlin Philharmonie, Gewandhaus (Leipzig), Konzerthaus (Vienna), Mariinsky Theatre (Saint Petersburg), in Avery Fisher, Alice Tully and Carnegie Hall in New York.`,
+  //   sentences: [
+  //     `He has recorded for EMI, Channel Classics, Sony RCA, Hungaroton and Decca. Julien Quentin started his studies at the Geneva Conservatory with Alexis Golovine, received his Artist Diploma under the tutelage of Emile Naoumoff at Indiana University, and Graduate Diploma from the Juilliard School, studying with György Sándor.`,
+  //     `With ‘Musica Litoralis’ at the Piano Salon Christophori in Berlin, he has created a successful concert series reminiscent of the salons of the Roaring Twenties. With visual artists, he explores new artistic visions bringing various art forms together.`,
+  //     `He pursues his interest in other genres of music collaborating with pianists Kelvin Sholar, Kaan Bulak and Francesco Tristano, or producers Adrien de Maublanc and Cesar Merveille in projects ranging from improvisation to producing electronic music, most notably within their new projects Midiminuit & Les Coeurs Brisés.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Julien_Quentin_cemtl1.webp`,
+  // },
 
   // Susanne Hvinden Hals
-  {
-    locale: `es`,
-    name: `Susanne Hvinden Hals`,
-    slug_name: `Susanne Hvinden Hals ES`,
-    instrument: `soprano`,
-    para_1: `La joven soprano noruega, Susanne Hvinden Hals, proviene de Oslo, Noruega. Recibió su Master de Música, voz y ópera en la Real Academia Danesa de Música en Copenhague.`,
-    sentences: [
-      `Debutó en la Ópera de Montpellier en Francia en 2003 con el Coro Infantil Femenino Noruego, y posteriormente ha interpretado papeles como Susanna en «Le nozze di Figaro»  de Mozart, Adele en «Die Fledermaus»  de J. Strauss, Pamina en «Die Zauberflöte» de Mozart, y Lucia en «La violación de Lucrecia» de Benjamin Britten.`,
-      `Susanne es una soprano muy solicitada en Noruega, y ha colaborado con varias orquestas en oratorios y actúa en varios festivales y conciertos tanto en Noruega como en el extranjero. Junto con su hermana y violinista Kathrine Hvinden Hals, forma el dúo Søstrene Hals.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Susanne_Hvinden_Hals_sq_nizgnv.webp`,
-  },
+  // {
+  //   locale: `es`,
+  //   name: `Susanne Hvinden Hals`,
+  //   slug_name: `Susanne Hvinden Hals ES`,
+  //   instrument: `soprano`,
+  //   para_1: `La joven soprano noruega, Susanne Hvinden Hals, proviene de Oslo, Noruega. Recibió su Master de Música, voz y ópera en la Real Academia Danesa de Música en Copenhague.`,
+  //   sentences: [
+  //     `Debutó en la Ópera de Montpellier en Francia en 2003 con el Coro Infantil Femenino Noruego, y posteriormente ha interpretado papeles como Susanna en «Le nozze di Figaro»  de Mozart, Adele en «Die Fledermaus»  de J. Strauss, Pamina en «Die Zauberflöte» de Mozart, y Lucia en «La violación de Lucrecia» de Benjamin Britten.`,
+  //     `Susanne es una soprano muy solicitada en Noruega, y ha colaborado con varias orquestas en oratorios y actúa en varios festivales y conciertos tanto en Noruega como en el extranjero. Junto con su hermana y violinista Kathrine Hvinden Hals, forma el dúo Søstrene Hals.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Susanne_Hvinden_Hals_sq_nizgnv.webp`,
+  // },
 
   // English - Susanne Hvinden Hals
-  {
-    locale: `en`,
-    name: `Susanne Hvinden Hals`,
-    slug_name: `Susanne Hvinden Hals EN`,
-    instrument: `soprano`,
-    para_1: `The young Norwegian soprano, Susanne Hvinden Hals, hails from Oslo, Norway. She received her Master of Music, voice and opera at The Royal Danish Academy of Music in Copenhagen.`,
-    sentences: [
-      `She made her debut at the Opera Montpellier in France in 2003 with the Norwegian Girls Choir, and has later on sung roles such as Susanna in Mozart´s «Le nozze di Figaro», Adele in «Die Fledermaus», J. Strauss, Pamina in «Die Zauberflöte», and Lucia in «The rape of Lucretia» by Benjamin Britten.`,
-      `Susanne is a highly sought-after soprano in Norway, and has collaborated with various orchestras in oratorios, and performs at several festivals and concerts both in Norway and abroad. Together with her sister and violinist Kathrine Hvinden Hals, she forms the duo Søstrene Hals.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Susanne_Hvinden_Hals_sq_nizgnv.webp`,
-  },
+  // {
+  //   locale: `en`,
+  //   name: `Susanne Hvinden Hals`,
+  //   slug_name: `Susanne Hvinden Hals EN`,
+  //   instrument: `soprano`,
+  //   para_1: `The young Norwegian soprano, Susanne Hvinden Hals, hails from Oslo, Norway. She received her Master of Music, voice and opera at The Royal Danish Academy of Music in Copenhagen.`,
+  //   sentences: [
+  //     `She made her debut at the Opera Montpellier in France in 2003 with the Norwegian Girls Choir, and has later on sung roles such as Susanna in Mozart´s «Le nozze di Figaro», Adele in «Die Fledermaus», J. Strauss, Pamina in «Die Zauberflöte», and Lucia in «The rape of Lucretia» by Benjamin Britten.`,
+  //     `Susanne is a highly sought-after soprano in Norway, and has collaborated with various orchestras in oratorios, and performs at several festivals and concerts both in Norway and abroad. Together with her sister and violinist Kathrine Hvinden Hals, she forms the duo Søstrene Hals.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Susanne_Hvinden_Hals_sq_nizgnv.webp`,
+  // },
 
   // Nils Nilsen
-  {
-    locale: `es`,
-    name: `Nils Nilsen`,
-    slug_name: `Nils Nilsen ES`,
-    instrument: `tenor`,
-    para_1: `El tenor Nils Georg Nilsen debutó en el Lincoln Center de Nueva York tras recibir su Master de Música de la Manhattan School of Music en 2012.`,
-    sentences: [
-      `Desde entonces, ha cantado como solista con la Orquesta Sinfónica de Chicago, en la Ópera de Israel, la Ópera National de Noruega y Opera Tampa en Florida, y ha actuado en varios festivales y conciertos internacionales en Europa y los Estados Unidos. Nils Georg ha sido el ganador del Premio Solveig en el Concurso Edvard Grieg, el Premio del Público durante el festival LidalNorth en numerosas ocasiones y el Concurso de Música para Jóvenes en Noruega.`,
-      `Recientemente ha cantado el Mozart Requiem con la Orquesta de Radio Noruega, Rossinis Stabat Mater y Handels Messiah con la Orquesta Sinfónica Drammen y en el Festival Ravinia en los Estados Unidos, y es Profesor de Voz en la Academia Internacional Galamian en Málaga. Desde 2021 forma parte del grupo vocal Nordic Tenors, junto a los tenores Jan-Tore Saltnes and Roald Haarr.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Nils_Nilsen_sq_bdcfss.webp`,
-  },
+  // {
+  //   locale: `es`,
+  //   name: `Nils Nilsen`,
+  //   slug_name: `Nils Nilsen ES`,
+  //   instrument: `tenor`,
+  //   para_1: `El tenor Nils Georg Nilsen debutó en el Lincoln Center de Nueva York tras recibir su Master de Música de la Manhattan School of Music en 2012.`,
+  //   sentences: [
+  //     `Desde entonces, ha cantado como solista con la Orquesta Sinfónica de Chicago, en la Ópera de Israel, la Ópera National de Noruega y Opera Tampa en Florida, y ha actuado en varios festivales y conciertos internacionales en Europa y los Estados Unidos. Nils Georg ha sido el ganador del Premio Solveig en el Concurso Edvard Grieg, el Premio del Público durante el festival LidalNorth en numerosas ocasiones y el Concurso de Música para Jóvenes en Noruega.`,
+  //     `Recientemente ha cantado el Mozart Requiem con la Orquesta de Radio Noruega, Rossinis Stabat Mater y Handels Messiah con la Orquesta Sinfónica Drammen y en el Festival Ravinia en los Estados Unidos, y es Profesor de Voz en la Academia Internacional Galamian en Málaga. Desde 2021 forma parte del grupo vocal Nordic Tenors, junto a los tenores Jan-Tore Saltnes and Roald Haarr.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Nils_Nilsen_sq_bdcfss.webp`,
+  // },
 
   // English - Nils Nilsen
-  {
-    locale: `en`,
-    name: `Nils Nilsen`,
-    slug_name: `Nils Nilsen EN`,
-    instrument: `tenor`,
-    para_1: `Tenor Nils Georg Nilsen debuted at the Lincoln Center in New York after receiving his Master of Music from Manhattan School of Music in 2012.`,
-    sentences: [
-      `Since then he has appeared as a soloist with the Chicago Symphony Orchestra, at the Israeli Opera, the Norwegian Opera House and Opera Tampa in Florida, and performed in several international festivals and concerts in Europe and the US. Nils Georg has won the Solveig’s Award in the Edvard Grieg Competition, the Audience Award during the festival LidalNorth on numerous occasions, and the Youth Music Competition in Norway.`,
-      `In addition to being professor of Voice at the Galamian International Accademy in Malaga, Nils Georg is a sought-after tenor, and recent highlights include Mozart Requiem with the Norwegian Radio Orchestra, Rossinis Stabat Mater and Handels Messiah with Drammen Symphony Orchestra and performances at the Ravinia Festival in the US. Since 2021 he is part of the vocal group Nordic Tenors, together with the tenors Jan-Tore Saltnes and Roald Haarr.`,
-    ],
-    image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Nils_Nilsen_sq_bdcfss.webp`,
-  },
+  // {
+  //   locale: `en`,
+  //   name: `Nils Nilsen`,
+  //   slug_name: `Nils Nilsen EN`,
+  //   instrument: `tenor`,
+  //   para_1: `Tenor Nils Georg Nilsen debuted at the Lincoln Center in New York after receiving his Master of Music from Manhattan School of Music in 2012.`,
+  //   sentences: [
+  //     `Since then he has appeared as a soloist with the Chicago Symphony Orchestra, at the Israeli Opera, the Norwegian Opera House and Opera Tampa in Florida, and performed in several international festivals and concerts in Europe and the US. Nils Georg has won the Solveig’s Award in the Edvard Grieg Competition, the Audience Award during the festival LidalNorth on numerous occasions, and the Youth Music Competition in Norway.`,
+  //     `In addition to being professor of Voice at the Galamian International Accademy in Malaga, Nils Georg is a sought-after tenor, and recent highlights include Mozart Requiem with the Norwegian Radio Orchestra, Rossinis Stabat Mater and Handels Messiah with Drammen Symphony Orchestra and performances at the Ravinia Festival in the US. Since 2021 he is part of the vocal group Nordic Tenors, together with the tenors Jan-Tore Saltnes and Roald Haarr.`,
+  //   ],
+  //   image: `https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Nils_Nilsen_sq_bdcfss.webp`,
+  // },
 ];
 
 export default artists;

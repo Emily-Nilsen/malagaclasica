@@ -18,8 +18,8 @@ export default function AnnaJesus() {
   return (
     <div>
       {/* Info Section Two */}
-      <div className="relative bg-white">
-        <div className="absolute inset-0">
+      <div className="relative bg-pink3_2024/50">
+        {/* <div className="absolute inset-0">
           <motion.div
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
@@ -28,11 +28,11 @@ export default function AnnaJesus() {
               type: 'fade',
               ease: 'easeIn',
             }}
-            className="object-cover w-full sm:h-full h-3/4 bg-beigeRevolution"
+            className="object-cover w-full sm:h-full h-3/4 bg-blue2024"
           >
-            <div className="absolute right-0 w-3/4 sm:h-full h-3/4">
+            <div className="absolute inset-0">
               <Image
-                src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1681299766/M%C3%A1laga%20Cl%C3%A1sica/violin_spirals_yngvdp.svg"
+                src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/M%C3%A1laga%20Cl%C3%A1sica/Resonancias_del_espiritu_2024_desktop_bxxhso.webp"
                 alt="Málaga Clásica"
                 unoptimized={true}
                 layout="fill"
@@ -42,14 +42,14 @@ export default function AnnaJesus() {
               />
             </div>
           </motion.div>
-        </div>
-        <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8"></div>
+        </div> */}
+        {/* <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8"></div> */}
       </div>
-      <div className="bg-white">
-        <div className="max-w-2xl px-4 pt-16 pb-24 mx-auto sm:pb-32 sm:pt-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="bg-pink3_2024/50">
+        <div className="max-w-2xl px-4 pt-0 pb-24 mx-auto sm:pb-32 sm:pt-0 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
             <div>
-              <div className="pb-10 border-b border-orangeRevolution/20">
+              <div className="pb-10 border-b border-pinkText2024/30">
                 <div className="text-gray-600 ">
                   <p>{t('info:para_5')}</p>
                   <p className="mt-5">{t('info:para_6')}</p>
@@ -60,10 +60,10 @@ export default function AnnaJesus() {
               <dl className="mt-10 space-y-10">
                 {directors.map((feature) => (
                   <div key={feature.name}>
-                    <dt className="text-base font-medium text-blueRevolution">
+                    <h4 className="text-lg italic font-bold text-pinkText2024">
                       {feature.name}
-                    </dt>
-                    <dd className="mt-3 text-base font-normal text-gray-600">
+                    </h4>
+                    <dd className="mt-3 text-base font-medium text-blueGrey2024">
                       {feature.description}
                     </dd>
                   </div>

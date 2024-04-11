@@ -31,14 +31,14 @@ export default function InfoTalentos() {
   ];
 
   return (
-    <div className="relative py-16 bg-beigeRevolution/10 sm:py-24">
+    <div className="relative py-16 bg-pink3_2024/30 sm:py-24">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
         <div className="relative sm:py-16 lg:py-0">
           <div
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 w-full opacity-25 right-1/2 bg-beigeRevolution/50 rounded-r-3xl lg:right-72" />
+            <div className="absolute inset-y-0 w-full opacity-100 right-1/2 bg-pink3_2024/50 rounded-r-3xl lg:right-72" />
           </div>
           <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Testimonial card*/}
@@ -63,7 +63,7 @@ export default function InfoTalentos() {
                 />
               </motion.div>
               {/* <div className="absolute inset-0 bg-blueCrescendo mix-blend-multiply" /> */}
-              <div className="absolute inset-0 bg-gradient-to-t from-blueRevolution via-orangeRevolution opacity-70" />
+              <div className="absolute inset-0 bg-gradient-to-t from-blueText2024 via-pinkText2024 opacity-70" />
               <div className="relative px-8">
                 <blockquote className="mt-8">
                   <footer className="mt-4">
@@ -80,9 +80,9 @@ export default function InfoTalentos() {
         <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h2 className="w-full text-4xl font-semibold tracking-tight text-blueRevolution md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 xl:text-6xl sm:text-5xl">
+            <h4 className="w-full text-4xl font-bold tracking-normal text-pinkText2024 md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 xl:text-6xl sm:text-5xl">
               {t('talents:title_3')}
-            </h2>
+            </h4>
             <div className="mt-6 space-y-6 text-gray-500">
               <p className="text-lg">{t('talents:para_1')}</p>
               <p className="text-base leading-7">
@@ -105,7 +105,7 @@ export default function InfoTalentos() {
           </div>
 
           {/* Stats section */}
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
               {stats.map((stat) => (
                 <div
@@ -124,7 +124,7 @@ export default function InfoTalentos() {
             <div className="mt-6 space-y-6 text-gray-500">
               <p>{t('talents:concert_conference_note')}</p>
             </div>
-            {/* Revoluciones */}
+
             <div className="mt-10 text-gray-500">
               {t('talents:concert_note')}
             </div>
@@ -152,16 +152,25 @@ export default function InfoTalentos() {
               </a>
             </div>
             <div className="flex"></div>
+
+            
+          </div> */}
+          {/* More info */}
+          <div>
             <div className="mt-12 text-gray-500">
-              <span className="font-semibold">{t('talents:more_info')}</span>
+              <span className="">
+                <h4 className="text-lg italic font-bold text-blueText2024">
+                  {t('talents:more_info')}
+                </h4>
+              </span>
             </div>
-            <dl className="mt-3 text-base transition duration-200 ease-in-out text-blueRevolution">
+            <dl className="mt-3 text-base transition duration-200 ease-in-out text-blueGreyDark2024">
               {/* phone */}
               <div className="mt-3">
                 <dt className="sr-only">Telefono</dt>
                 <dd className="flex">
                   <PhoneIcon
-                    className="flex-shrink-0 w-6 h-6 text-orangeRevolution/70"
+                    className="flex-shrink-0 w-6 h-6 text-pinkText2024"
                     aria-hidden="true"
                   />
                   <span className="ml-3 font-medium">699 06 74 52</span>
@@ -172,7 +181,7 @@ export default function InfoTalentos() {
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <MailIcon
-                    className="flex-shrink-0 w-6 h-6 text-orangeRevolution/70"
+                    className="flex-shrink-0 w-6 h-6 text-pinkText2024"
                     aria-hidden="true"
                   />
                   <span className="ml-3 font-medium">
@@ -181,18 +190,6 @@ export default function InfoTalentos() {
                 </dd>
               </div>
             </dl>
-
-            {/* <div className="mt-10">
-              <a
-                href="https://www.teatroechegaray.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-base font-medium text-gray-500 transition duration-200 ease-in-out hover:text-orangeRevolution"
-              >
-                {' '}
-                {t('talents:free_entry')} <span aria-hidden="true">&rarr;</span>{' '}
-              </a>
-            </div> */}
           </div>
         </div>
       </div>

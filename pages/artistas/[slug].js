@@ -43,7 +43,7 @@ const Artist = ({ artist }) => {
             aria-hidden="true"
             className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
-            <div className="absolute inset-y-0 w-full opacity-10 right-1/2 bg-beigeRevolution rounded-r-3xl lg:right-72" />
+            <div className="absolute inset-y-0 w-full opacity-100 bg-pink3_2024/40 right-1/2 rounded-r-3xl lg:right-72" />
           </div>
           <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
             {/* Artist*/}
@@ -73,7 +73,7 @@ const Artist = ({ artist }) => {
               </motion.div>
               <figcaption className="flex items-center mt-3 text-base text-gray-600">
                 <CameraIcon
-                  className="flex-none w-5 h-5 text-gray-400"
+                  className="flex-none w-5 h-5 text-pinkText2024"
                   aria-hidden="true"
                 />
                 <span className="ml-2">
@@ -87,12 +87,12 @@ const Artist = ({ artist }) => {
         <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h1 className="text-4xl font-extrabold tracking-tight text-blueRevolution sm:text-5xl">
+            <h4 className="text-4xl font-bold tracking-normal text-blueText2024 sm:text-5xl">
               {artist.name}
-            </h1>
-            <h2 className="mt-2 text-lg capitalize text-orangeRevolution">
+            </h4>
+            <h4 className="mt-2 text-lg italic font-bold capitalize text-pinkText2024">
               {artist.instrument}
-            </h2>
+            </h4>
             <div className="mt-6 space-y-6 text-gray-500">
               <p className="text-lg">{artist.para_1}</p>
               {artist.sentences.map((sentence, i) => (
@@ -106,7 +106,7 @@ const Artist = ({ artist }) => {
           <div className="mt-10">
             <div className="mt-10">
               <Link href="/artistas" passHref>
-                <a className="text-base font-medium transition duration-200 ease-in-out text-orangeRevolution hover:text-blueRevolution">
+                <a className="text-base font-medium transition duration-200 ease-in-out text-pinkText2024 hover:text-blueText2024">
                   {' '}
                   {t('common:back_artists')}{' '}
                   <span aria-hidden="true">&rarr;</span>{' '}
